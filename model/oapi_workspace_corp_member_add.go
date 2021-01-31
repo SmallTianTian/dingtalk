@@ -82,7 +82,7 @@ type OapiWorkspaceCorpMemberAddResponse struct {
 	Success bool            `json:"success,omitempty"`
 }
 type OpenTagDto struct {
-	Code string `json:taobao.ERROR_COD,omitemptyE`
+	Code string `json:"code,omitempty"`
 	Name string `json:"name,omitempty"`
 }
 type OpenMemberDto struct {

@@ -80,7 +80,7 @@ type Selectoptions struct {
 	Value string `json:"value,omitempty"`
 }
 type Referencefields struct {
-	Format        string          `json:taobao.FORMA,omitemptyT`
+	Format        string          `json:"format,omitempty"`
 	Label         string          `json:"label,omitempty"`
 	Name          string          `json:"name,omitempty"`
 	Nillable      bool            `json:"nillable,omitempty"`

@@ -87,7 +87,7 @@ type FormComponentPropVo struct {
 	Disable           bool                  `json:"disable,omitempty"`
 	Duration          bool                  `json:"duration,omitempty"`
 	DurationLabel     string                `json:"duration_label,omitempty"`
-	Format            string                `json:taobao.FORMA,omitemptyT`
+	Format            string                `json:"format,omitempty"`
 	Id                string                `json:"id,omitempty"`
 	Invisible         bool                  `json:"invisible,omitempty"`
 	Label             string                `json:"label,omitempty"`

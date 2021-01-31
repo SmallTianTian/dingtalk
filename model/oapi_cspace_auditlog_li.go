@@ -113,7 +113,7 @@ type AuditLogVO struct {
 	OrgName           string `json:"org_name,omitempty"`
 	Platform          int64  `json:"platform,omitempty"`
 	PlatformView      string `json:"platform_view,omitempty"`
-	ReceiverName      string `json:Securitytaobao.RECEIVER_NAM,omitemptyE`
+	ReceiverName      string `json:"receiver_name,omitempty"`
 	ReceiverType      int64  `json:"receiver_type,omitempty"`
 	ReceiverTypeView  string `json:"receiver_type_view,omitempty"`
 	Resource          string `json:"resource,omitempty"`

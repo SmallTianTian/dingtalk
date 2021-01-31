@@ -80,7 +80,7 @@ func (this *OapiSmartworkHrmNavigationbarConfigGetRequest) GetTaobaoResp() *taob
 }
 
 type HrmNavChangeVo struct {
-	Code string `json:taobao.ERROR_COD,omitemptyE`
+	Code string `json:"code,omitempty"`
 	Url  string `json:"url,omitempty"`
 }
 type OapiSmartworkHrmNavigationbarConfigGetResponse struct {
@@ -91,7 +91,7 @@ type OapiSmartworkHrmNavigationbarConfigGetResponse struct {
 type HrmNavBarTreePointLevel5Vo struct {
 	AuthKey      string `json:"auth_key,omitempty"`
 	AuthType     string `json:"auth_type,omitempty"`
-	Code         string `json:taobao.ERROR_COD,omitemptyE`
+	Code         string `json:"code,omitempty"`
 	Icon         string `json:"icon,omitempty"`
 	Name         string `json:"name,omitempty"`
 	NoPermission bool   `json:"no_permission,omitempty"`
@@ -104,7 +104,7 @@ type HrmNavBarTreePointLevel4Vo struct {
 	AuthKey      string                       `json:"auth_key,omitempty"`
 	AuthType     string                       `json:"auth_type,omitempty"`
 	Children     []HrmNavBarTreePointLevel5Vo `json:"children,omitempty"`
-	Code         string                       `json:taobao.ERROR_COD,omitemptyE`
+	Code         string                       `json:"code,omitempty"`
 	Icon         string                       `json:"icon,omitempty"`
 	Name         string                       `json:"name,omitempty"`
 	NoPermission bool                         `json:"no_permission,omitempty"`
@@ -117,7 +117,7 @@ type HrmNavBarTreePointLevel3Vo struct {
 	AuthKey      string                       `json:"auth_key,omitempty"`
 	AuthType     string                       `json:"auth_type,omitempty"`
 	Children     []HrmNavBarTreePointLevel4Vo `json:"children,omitempty"`
-	Code         string                       `json:taobao.ERROR_COD,omitemptyE`
+	Code         string                       `json:"code,omitempty"`
 	Icon         string                       `json:"icon,omitempty"`
 	Name         string                       `json:"name,omitempty"`
 	NoPermission bool                         `json:"no_permission,omitempty"`
@@ -130,7 +130,7 @@ type HrmNavBarTreePointLevel2Vo struct {
 	AuthKey      string                       `json:"auth_key,omitempty"`
 	AuthType     string                       `json:"auth_type,omitempty"`
 	Children     []HrmNavBarTreePointLevel3Vo `json:"children,omitempty"`
-	Code         string                       `json:taobao.ERROR_COD,omitemptyE`
+	Code         string                       `json:"code,omitempty"`
 	Icon         string                       `json:"icon,omitempty"`
 	Name         string                       `json:"name,omitempty"`
 	NoPermission bool                         `json:"no_permission,omitempty"`
@@ -143,7 +143,7 @@ type HrmNavBarTreePointLevel1Vo struct {
 	AuthKey      string                       `json:"auth_key,omitempty"`
 	AuthType     string                       `json:"auth_type,omitempty"`
 	Children     []HrmNavBarTreePointLevel2Vo `json:"children,omitempty"`
-	Code         string                       `json:taobao.ERROR_COD,omitemptyE`
+	Code         string                       `json:"code,omitempty"`
 	Icon         string                       `json:"icon,omitempty"`
 	Name         string                       `json:"name,omitempty"`
 	NoPermission bool                         `json:"no_permission,omitempty"`

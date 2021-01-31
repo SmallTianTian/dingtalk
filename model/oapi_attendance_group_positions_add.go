@@ -90,7 +90,7 @@ type OapiAttendanceGroupPositionsAddResponse struct {
 	Result DingOpenResult `json:"result,omitempty"`
 }
 type ErrorInfo struct {
-	Code        string     `json:taobao.ERROR_COD,omitemptyE`
+	Code        string     `json:"code,omitempty"`
 	FailureList []Position `json:"failure_list,omitempty"`
 	Msg         string     `json:"msg,omitempty"`
 }

@@ -85,7 +85,7 @@ func (this *OapiGettokenRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiGettokenResponse struct {
 	taobao.TaobaoResponse
-	AccessToken string `json:DingTalktaobao.ACCESS_TOKE,omitemptyN`
+	AccessToken string `json:"access_token,omitempty"`
 	Errcode     int64  `json:"errcode,omitempty"`
 	Errmsg      string `json:"errmsg,omitempty"`
 	ExpiresIn   int64  `json:"expires_in,omitempty"`

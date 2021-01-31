@@ -95,7 +95,7 @@ type OapiCspaceFilePresignedurlGetResponse struct {
 	Success            bool              `json:"success,omitempty"`
 }
 type GenerateUrlResult struct {
-	Code    string `json:taobao.ERROR_COD,omitemptyE`
+	Code    string `json:"code,omitempty"`
 	Mediaid string `json:"mediaid,omitempty"`
 	Url     string `json:"url,omitempty"`
 }

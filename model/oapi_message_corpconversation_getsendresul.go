@@ -74,7 +74,7 @@ type OapiMessageCorpconversationGetsendresultResponse struct {
 	SendResult AsyncSendResult `json:"send_result,omitempty"`
 }
 type SendForbiddenModel struct {
-	Code   string `json:taobao.ERROR_COD,omitemptyE`
+	Code   string `json:"code,omitempty"`
 	Count  int64  `json:"count,omitempty"`
 	Userid string `json:"userid,omitempty"`
 }

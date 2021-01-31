@@ -86,7 +86,7 @@ type OapiEduCourseListResponse struct {
 }
 type CourseVO struct {
 	BizKey        string `json:"biz_key,omitempty"`
-	Code          string `json:taobao.ERROR_COD,omitemptyE`
+	Code          string `json:"code,omitempty"`
 	EndTime       int64  `json:"end_time,omitempty"`
 	Introduce     string `json:"introduce,omitempty"`
 	Name          string `json:"name,omitempty"`

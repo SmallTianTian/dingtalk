@@ -73,7 +73,7 @@ type AppInfoDoModel struct {
 	Alias         string `json:"alias,omitempty"`
 	AppChannel    int64  `json:"app_channel,omitempty"`
 	AppId         string `json:"app_id,omitempty"`
-	AppKey        string `json:taobao.APP_KE,omitemptyY`
+	AppKey        string `json:"app_key,omitempty"`
 	AppType       int64  `json:"app_type,omitempty"`
 	AutoInstall   int64  `json:"auto_install,omitempty"`
 	ClientId      int64  `json:"client_id,omitempty"`

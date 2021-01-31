@@ -111,7 +111,7 @@ type EventAuditLogDto struct {
 	OrgName           string `json:"org_name,omitempty"`
 	Platform          string `json:"platform,omitempty"`
 	ProjectName       string `json:"project_name,omitempty"`
-	ReceiverName      string `json:Securitytaobao.RECEIVER_NAM,omitemptyE`
+	ReceiverName      string `json:"receiver_name,omitempty"`
 	Resource          string `json:"resource,omitempty"`
 	ResourceExtension string `json:"resource_extension,omitempty"`
 	ResourceSize      string `json:"resource_size,omitempty"`

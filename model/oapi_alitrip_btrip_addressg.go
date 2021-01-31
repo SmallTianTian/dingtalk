@@ -63,7 +63,7 @@ type OpenApiJumpInfoRq struct {
 	ActionType  int64  `json:"action_type,omitempty"`
 	Corpid      string `json:"corpid,omitempty"`
 	ItineraryId string `json:"itinerary_id,omitempty"`
-	Phone       string `json:Securitytaobao.PHON,omitemptyE`
+	Phone       string `json:"phone,omitempty"`
 	Type        int64  `json:"type,omitempty"`
 	Userid      string `json:"userid,omitempty"`
 }

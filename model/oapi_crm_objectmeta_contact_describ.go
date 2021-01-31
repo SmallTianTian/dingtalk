@@ -60,7 +60,7 @@ type SelectOptions struct {
 	Value string `json:"value,omitempty"`
 }
 type ReferenceFields struct {
-	Format        string          `json:taobao.FORMA,omitemptyT`
+	Format        string          `json:"format,omitempty"`
 	Label         string          `json:"label,omitempty"`
 	Name          string          `json:"name,omitempty"`
 	Nillable      bool            `json:"nillable,omitempty"`
@@ -74,7 +74,7 @@ type RollUpSummaryFields struct {
 }
 type Fields struct {
 	Customized          bool                  `json:"customized,omitempty"`
-	Format              string                `json:taobao.FORMA,omitemptyT`
+	Format              string                `json:"format,omitempty"`
 	Label               string                `json:"label,omitempty"`
 	Name                string                `json:"name,omitempty"`
 	Nillable            bool                  `json:"nillable,omitempty"`

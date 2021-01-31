@@ -71,7 +71,7 @@ type OapiAlitripBtripFlightCitySuggestResponse struct {
 	Success bool      `json:"success,omitempty"`
 }
 type CityVo struct {
-	Code       string `json:taobao.ERROR_COD,omitemptyE`
+	Code       string `json:"code,omitempty"`
 	Distance   int64  `json:"distance,omitempty"`
 	Name       string `json:"name,omitempty"`
 	TravelName string `json:"travel_name,omitempty"`

@@ -67,7 +67,7 @@ type DeviceEventVo struct {
 	Data  string `json:"data,omitempty"`
 	Dn    string `json:"dn,omitempty"`
 	Pk    string `json:"pk,omitempty"`
-	Topic string `json:MessageFields.DATA_TOPI,omitemptyC`
+	Topic string `json:"topic,omitempty"`
 }
 type OapiSmartdeviceBatcheventPostResponse struct {
 	taobao.TaobaoResponse

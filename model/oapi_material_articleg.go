@@ -79,7 +79,7 @@ type OapiMaterialArticleGetResponse struct {
 	Digest        string `json:"digest,omitempty"`
 	Errcode       int64  `json:"errcode,omitempty"`
 	Errmsg        string `json:"errmsg,omitempty"`
-	PublishStatus int64  `json:Securitytaobao.PUBLISH_STATU,omitemptyS`
+	PublishStatus int64  `json:"publish_status,omitempty"`
 	PublishTime   int64  `json:"publish_time,omitempty"`
 	ThumbMediaId  string `json:"thumb_media_id,omitempty"`
 	Title         string `json:"title,omitempty"`

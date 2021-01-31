@@ -86,7 +86,7 @@ type AppVersionDoModel struct {
 	InstId           int64  `json:"inst_id,omitempty"`
 	IsDeleted        int64  `json:"is_deleted,omitempty"`
 	MainUrl          string `json:"main_url,omitempty"`
-	Md5              string `json:taobao.SIGN_METHOD_MD,omitempty5`
+	Md5              string `json:"md5,omitempty"`
 	MosecJobId       string `json:"mosec_job_id,omitempty"`
 	MosecStatus      int64  `json:"mosec_status,omitempty"`
 	PackageUrl       string `json:"package_url,omitempty"`

@@ -80,7 +80,7 @@ type ConferenceInfoDo struct {
 	Poi               string   `json:"poi,omitempty"`
 	StartTime         int64    `json:"start_time,omitempty"`
 	Status            int64    `json:"status,omitempty"`
-	Topic             string   `json:MessageFields.DATA_TOPI,omitemptyC`
+	Topic             string   `json:"topic,omitempty"`
 	TopicPicUrl       string   `json:"topic_pic_url,omitempty"`
 	Type              int64    `json:"type,omitempty"`
 	Version           int64    `json:"version,omitempty"`

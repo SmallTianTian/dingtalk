@@ -169,7 +169,7 @@ type Body struct {
 	Author    string `json:"author,omitempty"`
 	Content   string `json:"content,omitempty"`
 	FileCount string `json:"file_count,omitempty"`
-	Form      []Form `json:taobao.CONTENT_TYPE_FOR,omitemptyM`
+	Form      []Form `json:"form,omitempty"`
 	Image     string `json:"image,omitempty"`
 	Rich      Rich   `json:"rich,omitempty"`
 	Title     string `json:"title,omitempty"`

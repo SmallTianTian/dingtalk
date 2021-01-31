@@ -60,7 +60,7 @@ func (this *OapiAlitripBtripProjectAddRequest) GetTaobaoResp() *taobao.TaobaoRes
 }
 
 type OpenProjectRs struct {
-	Code                  string `json:taobao.ERROR_COD,omitemptyE`
+	Code                  string `json:"code,omitempty"`
 	Corpid                string `json:"corpid,omitempty"`
 	ProjectName           string `json:"project_name,omitempty"`
 	ThirdPartCostCenterId string `json:"third_part_cost_center_id,omitempty"`

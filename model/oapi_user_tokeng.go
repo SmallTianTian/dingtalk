@@ -68,6 +68,6 @@ type OapiUserTokenGetResponse struct {
 	Result UserToken4JsapiResponse `json:"result,omitempty"`
 }
 type UserToken4JsapiResponse struct {
-	AccessToken string `json:DingTalktaobao.ACCESS_TOKE,omitemptyN`
+	AccessToken string `json:"access_token,omitempty"`
 	ExpireIn    int64  `json:"expire_in,omitempty"`
 }

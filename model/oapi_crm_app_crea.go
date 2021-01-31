@@ -76,7 +76,7 @@ type GetCrmMicroAppResponse struct {
 	Agentid     int64  `json:"agentid,omitempty"`
 	AppDesc     string `json:"app_desc,omitempty"`
 	AppIcon     string `json:"app_icon,omitempty"`
-	AppKey      string `json:taobao.APP_KE,omitemptyY`
+	AppKey      string `json:"app_key,omitempty"`
 	AppSecret   string `json:"app_secret,omitempty"`
 	BizKey      string `json:"biz_key,omitempty"`
 	Homepage    string `json:"homepage,omitempty"`
