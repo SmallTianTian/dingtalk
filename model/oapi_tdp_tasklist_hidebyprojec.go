@@ -89,6 +89,4 @@ func (this *OapiTdpTasklistHidebyprojectRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiTdpTasklistHidebyprojectResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

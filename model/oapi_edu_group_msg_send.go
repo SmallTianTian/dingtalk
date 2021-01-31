@@ -121,7 +121,5 @@ func (this *OapiEduGroupMsgSendRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiEduGroupMsgSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

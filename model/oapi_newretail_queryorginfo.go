@@ -53,9 +53,7 @@ func (this *OapiNewretailQueryorginfoRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiNewretailQueryorginfoResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  Org    `json:"result,omitempty"`
+	Result Org `json:"result,omitempty"`
 }
 type Org struct {
 	Licensemediaid          string `json:"licensemediaid,omitempty"`

@@ -73,7 +73,5 @@ func (this *OapiExtcontactListlabelgroupsRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiExtcontactListlabelgroupsResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
 	Results []OpenLabelGroup `json:"results,omitempty"`
 }

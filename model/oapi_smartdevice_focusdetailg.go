@@ -70,8 +70,6 @@ func (this *OapiSmartdeviceFocusdetailGetRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiSmartdeviceFocusdetailGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 	Result  PageVO `json:"result,omitempty"`
 	Success bool   `json:"success,omitempty"`
 }

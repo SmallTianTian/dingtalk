@@ -89,7 +89,5 @@ func (this *OapiCateringAllowanceCapacityGetRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiCateringAllowanceCapacityGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                                 `json:"errcode,omitempty"`
-	Errmsg  string                                `json:"errmsg,omitempty"`
-	Result  CateringOpenGetDeductCapacityResponse `json:"result,omitempty"`
+	Result CateringOpenGetDeductCapacityResponse `json:"result,omitempty"`
 }

@@ -73,8 +73,6 @@ func (this *OapiAttendanceVacationTypeDeleteRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiAttendanceVacationTypeDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
 	Result  LeaveTypeVo `json:"result,omitempty"`
 	Success bool        `json:"success,omitempty"`
 }

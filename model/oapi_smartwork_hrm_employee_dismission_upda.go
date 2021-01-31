@@ -83,8 +83,6 @@ type EmpDismissionUpdateParam struct {
 }
 type OapiSmartworkHrmEmployeeDismissionUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  bool   `json:"result,omitempty"`
-	Suc     bool   `json:"suc,omitempty"`
+	Result bool `json:"result,omitempty"`
+	Suc    bool `json:"suc,omitempty"`
 }

@@ -100,8 +100,6 @@ func (this *OapiRhinoMosExecPerformContextAddRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiRhinoMosExecPerformContextAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
 	Model   []OperationPerformDto `json:"model,omitempty"`
 	Success bool                  `json:"success,omitempty"`
 }

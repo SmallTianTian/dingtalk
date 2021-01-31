@@ -81,7 +81,5 @@ func (this *OapiCrmObjectdataFollowrecordQueryRequest) GetTaobaoResp() *taobao.T
 
 type OapiCrmObjectdataFollowrecordQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
-	Result  IterablePage `json:"result,omitempty"`
+	Result IterablePage `json:"result,omitempty"`
 }

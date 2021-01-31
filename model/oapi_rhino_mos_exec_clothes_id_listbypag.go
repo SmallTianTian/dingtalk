@@ -71,8 +71,6 @@ type PageQueryClothesReq struct {
 }
 type OapiRhinoMosExecClothesIdListbypageResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
 	Model   []int64 `json:"model,omitempty"`
 	Success bool    `json:"success,omitempty"`
 }

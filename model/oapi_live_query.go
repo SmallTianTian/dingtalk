@@ -66,9 +66,7 @@ type GetDetailReqModel struct {
 }
 type OapiLiveQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  GetDetailRespModel `json:"result,omitempty"`
+	Result GetDetailRespModel `json:"result,omitempty"`
 }
 type GetDetailRespModel struct {
 	AppointmentTime time.Time       `json:"appointment_time,omitempty"`

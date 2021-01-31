@@ -198,7 +198,5 @@ func (this *OapiUserCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Userid  string `json:"userid,omitempty"`
+	Userid string `json:"userid,omitempty"`
 }

@@ -81,6 +81,4 @@ func (this *OapiTdpTaskBasicDeletebyprojectRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiTdpTaskBasicDeletebyprojectResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

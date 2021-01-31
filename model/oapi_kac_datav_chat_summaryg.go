@@ -64,9 +64,7 @@ type ImSummaryRequest struct {
 }
 type OapiKacDatavChatSummaryGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
-	Result  ImSummaryResponse `json:"result,omitempty"`
+	Result ImSummaryResponse `json:"result,omitempty"`
 }
 type ImSummaryResponse struct {
 	ActiveGroupCount   int64  `json:"active_group_count,omitempty"`

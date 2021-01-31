@@ -81,7 +81,5 @@ func (this *OapiLiveGroupliveStatisticsRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiLiveGroupliveStatisticsResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  GroupLiveStatistics `json:"result,omitempty"`
+	Result GroupLiveStatistics `json:"result,omitempty"`
 }

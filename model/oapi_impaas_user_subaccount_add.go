@@ -66,8 +66,6 @@ type AddSubAccountReq struct {
 }
 type OapiImpaasUserSubaccountAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
 	Result  AddSubAccountResp `json:"result,omitempty"`
 	Success bool              `json:"success,omitempty"`
 }

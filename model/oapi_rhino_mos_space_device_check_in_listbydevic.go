@@ -66,7 +66,5 @@ type WorkstationDeviceListReq struct {
 }
 type OapiRhinoMosSpaceDeviceCheckInListbydeviceResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                           `json:"errcode,omitempty"`
-	Errmsg  string                          `json:"errmsg,omitempty"`
-	Model   []ProdWorkstationDeviceCheckDto `json:"model,omitempty"`
+	Model []ProdWorkstationDeviceCheckDto `json:"model,omitempty"`
 }

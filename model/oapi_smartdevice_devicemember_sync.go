@@ -81,7 +81,5 @@ func (this *OapiSmartdeviceDevicememberSyncRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiSmartdeviceDevicememberSyncResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64    `json:"errcode,omitempty"`
-	Errmsg  string   `json:"errmsg,omitempty"`
-	Result  []string `json:"result,omitempty"`
+	Result []string `json:"result,omitempty"`
 }

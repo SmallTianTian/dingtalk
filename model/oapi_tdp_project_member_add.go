@@ -89,7 +89,5 @@ func (this *OapiTdpProjectMemberAddRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiTdpProjectMemberAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
-	Result  Project `json:"result,omitempty"`
+	Result Project `json:"result,omitempty"`
 }

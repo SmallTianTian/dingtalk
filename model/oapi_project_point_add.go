@@ -113,8 +113,6 @@ func (this *OapiProjectPointAddRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiProjectPointAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 	Result  string `json:"result,omitempty"`
 	Success bool   `json:"success,omitempty"`
 }

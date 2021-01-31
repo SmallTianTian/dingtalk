@@ -89,9 +89,7 @@ func (this *OapiKacDatavAnnualReportGetRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiKacDatavAnnualReportGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
-	Result  AnnualReportResponse `json:"result,omitempty"`
+	Result AnnualReportResponse `json:"result,omitempty"`
 }
 type AnnualReportResponse struct {
 	AtCheckDays1y              int64  `json:"at_check_days_1y,omitempty"`

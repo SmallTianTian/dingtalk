@@ -101,9 +101,7 @@ func (this *OapiSceneservicegroupGroupQueryRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiSceneservicegroupGroupQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  Page   `json:"result,omitempty"`
+	Result Page `json:"result,omitempty"`
 }
 type GroupResponse struct {
 	GroupName          string `json:"group_name,omitempty"`

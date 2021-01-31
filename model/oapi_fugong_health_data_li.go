@@ -89,7 +89,5 @@ func (this *OapiFugongHealthDataListRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiFugongHealthDataListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }

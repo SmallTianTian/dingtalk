@@ -73,9 +73,7 @@ func (this *OapiAtsResumeCheckexistenceRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiAtsResumeCheckexistenceResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  ResumeCheckResultVo `json:"result,omitempty"`
+	Result ResumeCheckResultVo `json:"result,omitempty"`
 }
 type ResumeCheckResultVo struct {
 	Existed      bool     `json:"existed,omitempty"`

@@ -69,9 +69,7 @@ type ProdWorkstationConditionReq struct {
 }
 type OapiRhinoMosSpaceWorkstationGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Model   ProdWorkstationDto `json:"model,omitempty"`
+	Model ProdWorkstationDto `json:"model,omitempty"`
 }
 type ProdWorkstationDto struct {
 	CategoryCode        string `json:"category_code,omitempty"`

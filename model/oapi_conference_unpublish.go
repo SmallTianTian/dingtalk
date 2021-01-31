@@ -73,6 +73,4 @@ func (this *OapiConferenceUnpublishRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiConferenceUnpublishResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

@@ -117,7 +117,5 @@ func (this *OapiHrmEmployeeAddresumerecordRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiHrmEmployeeAddresumerecordResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  string `json:"result,omitempty"`
+	Result string `json:"result,omitempty"`
 }

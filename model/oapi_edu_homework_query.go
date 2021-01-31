@@ -74,8 +74,6 @@ func (this *OapiEduHomeworkQueryRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiEduHomeworkQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
 	Result  OpenHwDetailResponse `json:"result,omitempty"`
 	Success bool                 `json:"success,omitempty"`
 }

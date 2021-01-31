@@ -229,7 +229,5 @@ func (this *OapiDepartmentUpdateRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiDepartmentUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Id      int64  `json:"id,omitempty"`
+	Id int64 `json:"id,omitempty"`
 }

@@ -61,7 +61,5 @@ func (this *OapiExtcontactCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiExtcontactCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Userid  string `json:"userid,omitempty"`
+	Userid string `json:"userid,omitempty"`
 }

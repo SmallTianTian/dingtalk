@@ -97,6 +97,4 @@ func (this *OapiProcessSyncRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiProcessSyncResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

@@ -80,9 +80,7 @@ type Bizdatavo struct {
 }
 type OapiSmartworkHrmMasterSaveResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  IntegrateBatchResultVO `json:"result,omitempty"`
+	Result IntegrateBatchResultVO `json:"result,omitempty"`
 }
 type IntegrateBatchResultVO struct {
 	AllSuccess bool         `json:"all_success,omitempty"`

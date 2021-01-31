@@ -65,8 +65,6 @@ type GetLoginTokenReq struct {
 }
 type OapiImpaasUserGetlogintokenResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
 	Result  GetLoginTokenResp `json:"result,omitempty"`
 	Success bool              `json:"success,omitempty"`
 }

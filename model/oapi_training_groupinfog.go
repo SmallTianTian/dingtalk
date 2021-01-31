@@ -65,7 +65,5 @@ type RequestVO struct {
 }
 type OapiTrainingGroupinfoGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
-	Result  GroupInfo `json:"result,omitempty"`
+	Result GroupInfo `json:"result,omitempty"`
 }

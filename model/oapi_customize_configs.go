@@ -97,6 +97,4 @@ func (this *OapiCustomizeConfigSetRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiCustomizeConfigSetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

@@ -65,6 +65,4 @@ func (this *OapiAppstoreInternalOrderFinishRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiAppstoreInternalOrderFinishResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

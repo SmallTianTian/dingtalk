@@ -66,9 +66,7 @@ type OpenApiGetProductOrderDetailReq struct {
 }
 type OapiRhinoOrderDetailGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Model   Model  `json:"model,omitempty"`
+	Model Model `json:"model,omitempty"`
 }
 type OpenApiProductOrderDetailDto struct {
 	Id             int64  `json:"id,omitempty"`

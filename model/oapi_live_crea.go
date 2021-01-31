@@ -75,9 +75,7 @@ type CreateLiveReqModel struct {
 }
 type OapiLiveCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  CreateLiveRespModel `json:"result,omitempty"`
+	Result CreateLiveRespModel `json:"result,omitempty"`
 }
 type LiveUrlExtModel struct {
 	LiveUrlHigh     string `json:"live_url_high,omitempty"`

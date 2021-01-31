@@ -66,9 +66,7 @@ func (this *OapiAttendanceClassGetRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiAttendanceClassGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
-	Result  AtClassForTopVo `json:"result,omitempty"`
+	Result AtClassForTopVo `json:"result,omitempty"`
 }
 type AtTimeVo struct {
 	Across    int64     `json:"across,omitempty"`

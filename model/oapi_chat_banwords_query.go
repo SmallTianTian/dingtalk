@@ -73,8 +73,6 @@ func (this *OapiChatBanwordsQueryRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiChatBanwordsQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
 	Result  OpenBanWordModel `json:"result,omitempty"`
 	Success bool             `json:"success,omitempty"`
 }

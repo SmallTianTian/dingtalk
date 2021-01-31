@@ -65,9 +65,7 @@ func (this *OapiAttendanceGetusergroupRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiAttendanceGetusergroupResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  AtGroupFullForTopVo `json:"result,omitempty"`
+	Result AtGroupFullForTopVo `json:"result,omitempty"`
 }
 type AtGroupFullForTopVo struct {
 	Classes []AtClassVo `json:"classes,omitempty"`

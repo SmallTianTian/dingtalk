@@ -73,8 +73,6 @@ func (this *OapiAttendanceShiftSearchRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiAttendanceShiftSearchResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
 	Result  []TopMinimalismShiftVO `json:"result,omitempty"`
 	Success bool                   `json:"success,omitempty"`
 }

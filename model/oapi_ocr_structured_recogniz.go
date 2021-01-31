@@ -73,9 +73,7 @@ func (this *OapiOcrStructuredRecognizeRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiOcrStructuredRecognizeResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  OcrStructuredResult `json:"result,omitempty"`
+	Result OcrStructuredResult `json:"result,omitempty"`
 }
 type OcrStructuredResult struct {
 	Angle          int64  `json:"angle,omitempty"`

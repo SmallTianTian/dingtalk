@@ -113,7 +113,5 @@ func (this *OapiAtsEvaluateJobmatchFinishRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiAtsEvaluateJobmatchFinishResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  bool   `json:"result,omitempty"`
+	Result bool `json:"result,omitempty"`
 }

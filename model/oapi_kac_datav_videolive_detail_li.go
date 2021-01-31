@@ -66,9 +66,7 @@ type VideoLiveDetailRequest struct {
 }
 type OapiKacDatavVideoliveDetailListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  VideoLiveDetailResponse `json:"result,omitempty"`
+	Result VideoLiveDetailResponse `json:"result,omitempty"`
 }
 type VideoLiveDetailVo struct {
 	Cid                  string `json:"cid,omitempty"`

@@ -81,7 +81,5 @@ func (this *OapiWorkspaceTaskGetbysourceidRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiWorkspaceTaskGetbysourceidResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  Task   `json:"result,omitempty"`
+	Result Task `json:"result,omitempty"`
 }

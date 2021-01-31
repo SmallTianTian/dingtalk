@@ -65,7 +65,5 @@ func (this *OapiRoleAddrolegroupRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiRoleAddrolegroupResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	GroupId int64  `json:"groupId,omitempty"`
+	GroupId int64 `json:"groupId,omitempty"`
 }

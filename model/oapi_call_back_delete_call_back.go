@@ -53,6 +53,4 @@ func (this *OapiCallBackDeleteCallBackRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiCallBackDeleteCallBackResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

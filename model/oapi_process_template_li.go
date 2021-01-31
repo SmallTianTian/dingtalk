@@ -77,8 +77,6 @@ func (this *OapiProcessTemplateListRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiProcessTemplateListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
 	Result  CorpTemplateVo `json:"result,omitempty"`
 	Success bool           `json:"success,omitempty"`
 }

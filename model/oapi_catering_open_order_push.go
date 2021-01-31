@@ -161,7 +161,5 @@ func (this *OapiCateringOpenOrderPushRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiCateringOpenOrderPushResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  bool   `json:"result,omitempty"`
+	Result bool `json:"result,omitempty"`
 }

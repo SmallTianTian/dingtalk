@@ -84,8 +84,6 @@ type OpenApiNewReimbursementRq struct {
 }
 type OapiAlitripBtripReimbursementInitResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
 	Module  OpenApiNewReimbursementRs `json:"module,omitempty"`
 	Success bool                      `json:"success,omitempty"`
 }

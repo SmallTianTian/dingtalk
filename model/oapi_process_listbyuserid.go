@@ -81,9 +81,7 @@ func (this *OapiProcessListbyuseridRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiProcessListbyuseridResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
-	Result  HomePageProcessTemplateVo `json:"result,omitempty"`
+	Result HomePageProcessTemplateVo `json:"result,omitempty"`
 }
 type HomePageProcessTemplateVo struct {
 	NextCursor  int64          `json:"next_cursor,omitempty"`

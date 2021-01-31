@@ -91,7 +91,5 @@ func (this *OapiAttendanceGetleavetimebynamesRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiAttendanceGetleavetimebynamesResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
-	Result  ColumnValListForTopVo `json:"result,omitempty"`
+	Result ColumnValListForTopVo `json:"result,omitempty"`
 }

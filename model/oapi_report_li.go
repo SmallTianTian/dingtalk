@@ -121,7 +121,5 @@ func (this *OapiReportListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiReportListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  PageVo `json:"result,omitempty"`
+	Result PageVo `json:"result,omitempty"`
 }

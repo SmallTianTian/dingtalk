@@ -85,6 +85,4 @@ func (this *OapiMicroappSetVisibleScopesRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiMicroappSetVisibleScopesResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

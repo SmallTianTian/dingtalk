@@ -53,8 +53,6 @@ func (this *OapiWorkspaceProjectQueryRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiWorkspaceProjectQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
 	Result  OpenProjectDto `json:"result,omitempty"`
 	Success bool           `json:"success,omitempty"`
 }

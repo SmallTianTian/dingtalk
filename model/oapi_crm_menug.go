@@ -65,8 +65,6 @@ func (this *OapiCrmMenuGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiCrmMenuGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
 	Result  OnlineNavigationModel `json:"result,omitempty"`
 	Success bool                  `json:"success,omitempty"`
 }

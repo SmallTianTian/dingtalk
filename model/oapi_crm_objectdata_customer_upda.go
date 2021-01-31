@@ -61,8 +61,6 @@ func (this *OapiCrmObjectdataCustomerUpdateRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiCrmObjectdataCustomerUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
 	Result  ObjectDataCreateDto `json:"result,omitempty"`
 	Success bool                `json:"success,omitempty"`
 }

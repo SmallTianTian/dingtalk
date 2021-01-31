@@ -75,6 +75,4 @@ type Eapp struct {
 }
 type OapiSnsSendMsgResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

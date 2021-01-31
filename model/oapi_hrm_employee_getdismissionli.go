@@ -81,7 +81,5 @@ func (this *OapiHrmEmployeeGetdismissionlistRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiHrmEmployeeGetdismissionlistResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Page    HrmApiPage `json:"page,omitempty"`
+	Page HrmApiPage `json:"page,omitempty"`
 }

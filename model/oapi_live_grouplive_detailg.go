@@ -65,9 +65,7 @@ type GroupLiveStatisticsReq struct {
 }
 type OapiLiveGroupliveDetailGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  GroupLiveStatistics `json:"result,omitempty"`
+	Result GroupLiveStatistics `json:"result,omitempty"`
 }
 type Groupliveviewers struct {
 	PlayDuration       int64  `json:"play_duration,omitempty"`

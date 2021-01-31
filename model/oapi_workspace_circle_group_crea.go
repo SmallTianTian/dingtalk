@@ -65,9 +65,7 @@ type OpenCreateGroupRequestDto struct {
 }
 type OapiWorkspaceCircleGroupCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                      `json:"errcode,omitempty"`
-	Errmsg  string                     `json:"errmsg,omitempty"`
-	Result  OpenCreateGroupResponseDto `json:"result,omitempty"`
+	Result OpenCreateGroupResponseDto `json:"result,omitempty"`
 }
 type OpenCreateGroupResponseDto struct {
 	ConversationId string `json:"conversation_id,omitempty"`

@@ -105,9 +105,7 @@ func (this *OapiAttendanceApproveDurationCalculateRequest) GetTaobaoResp() *taob
 
 type OapiAttendanceApproveDurationCalculateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
-	Result  TopDurationVo `json:"result,omitempty"`
+	Result TopDurationVo `json:"result,omitempty"`
 }
 type TopDayDurationVo struct {
 	Date     string `json:"date,omitempty"`

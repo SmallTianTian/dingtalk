@@ -89,9 +89,7 @@ func (this *OapiCollectionFormListRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiCollectionFormListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }
 type FormSchemaResponse struct {
 	Creator  string              `json:"creator,omitempty"`

@@ -65,9 +65,7 @@ func (this *OapiUserAssociatedUnionidTransferRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiUserAssociatedUnionidTransferResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64    `json:"errcode,omitempty"`
-	Errmsg  string   `json:"errmsg,omitempty"`
-	Result  UseridVo `json:"result,omitempty"`
+	Result UseridVo `json:"result,omitempty"`
 }
 type UseridVo struct {
 	ContactType int64  `json:"contact_type,omitempty"`

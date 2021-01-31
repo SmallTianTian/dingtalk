@@ -220,9 +220,7 @@ type DeptTitle struct {
 }
 type OapiV2UserCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  UserCreateResponse `json:"result,omitempty"`
+	Result UserCreateResponse `json:"result,omitempty"`
 }
 type UserCreateResponse struct {
 	Userid string `json:"userid,omitempty"`

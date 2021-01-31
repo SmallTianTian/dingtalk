@@ -68,7 +68,5 @@ type GrantCspaceRequest struct {
 }
 type OapiProcessinstanceCspacePreviewResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
-	Result  AppSpaceResponse `json:"result,omitempty"`
+	Result AppSpaceResponse `json:"result,omitempty"`
 }

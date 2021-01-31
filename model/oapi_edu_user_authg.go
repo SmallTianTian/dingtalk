@@ -73,9 +73,7 @@ func (this *OapiEduUserAuthGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiEduUserAuthGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
-	Result  UserGetRequest `json:"result,omitempty"`
+	Result UserGetRequest `json:"result,omitempty"`
 }
 type UserGetRequest struct {
 	RealAuthed bool   `json:"real_authed,omitempty"`

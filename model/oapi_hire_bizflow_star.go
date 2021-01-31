@@ -81,9 +81,7 @@ func (this *OapiHireBizflowStartRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiHireBizflowStartResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
-	Result  TopStartBizFlowResult `json:"result,omitempty"`
+	Result TopStartBizFlowResult `json:"result,omitempty"`
 }
 type TopStartBizFlowResult struct {
 	MobileJumpUrl string `json:"mobile_jump_url,omitempty"`

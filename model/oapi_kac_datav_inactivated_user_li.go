@@ -66,9 +66,7 @@ type UnactivatedUserRequest struct {
 }
 type OapiKacDatavInactivatedUserListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  UnactivatedUserResponse `json:"result,omitempty"`
+	Result UnactivatedUserResponse `json:"result,omitempty"`
 }
 type UnactivatedUserVo struct {
 	DeptId      int64  `json:"dept_id,omitempty"`

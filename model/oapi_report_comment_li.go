@@ -83,8 +83,6 @@ func (this *OapiReportCommentListRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiReportCommentListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
 	Result  ReportPageVo `json:"result,omitempty"`
 	Success bool         `json:"success,omitempty"`
 }

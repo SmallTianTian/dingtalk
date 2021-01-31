@@ -81,8 +81,6 @@ func (this *OapiSmartworkHrmEmployeeV2ListRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiSmartworkHrmEmployeeV2ListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
 	Result  []EmpRosterFieldVo `json:"result,omitempty"`
 	Success bool               `json:"success,omitempty"`
 }

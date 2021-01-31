@@ -64,9 +64,7 @@ type GetGroupInfoRequest struct {
 }
 type OapiImpaasGroupQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
-	Result  GroupInfo `json:"result,omitempty"`
+	Result GroupInfo `json:"result,omitempty"`
 }
 type GroupInfo struct {
 	Chatid      string              `json:"chatid,omitempty"`

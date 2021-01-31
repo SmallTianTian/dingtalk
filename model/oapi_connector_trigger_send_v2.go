@@ -71,9 +71,7 @@ type TriggerMsgRequest struct {
 }
 type OapiConnectorTriggerSendV2Response struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  TriggerMsgResponse `json:"result,omitempty"`
+	Result TriggerMsgResponse `json:"result,omitempty"`
 }
 type TriggerMsgResponse struct {
 	RequestId string `json:"request_id,omitempty"`

@@ -73,7 +73,5 @@ func (this *OapiOrgUserteaminviteAcceptRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiOrgUserteaminviteAcceptResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  bool   `json:"result,omitempty"`
+	Result bool `json:"result,omitempty"`
 }

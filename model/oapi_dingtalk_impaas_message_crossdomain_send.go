@@ -77,6 +77,4 @@ type TopCrossDomainMessageSendModel struct {
 }
 type OapiDingtalkImpaasMessageCrossdomainSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

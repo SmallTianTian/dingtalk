@@ -109,8 +109,6 @@ type OrderBy struct {
 }
 type OapiEnterpriseFamilydrListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
 	Result  []FamilyDoctorDataVo `json:"result,omitempty"`
 	Success bool                 `json:"success,omitempty"`
 }

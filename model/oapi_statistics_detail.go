@@ -61,9 +61,7 @@ func (this *OapiStatisticsDetailsRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiStatisticsDetailsResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  []EnterpriseDataVo `json:"result,omitempty"`
+	Result []EnterpriseDataVo `json:"result,omitempty"`
 }
 type EnterpriseDataVo struct {
 	Date         string `json:"date,omitempty"`

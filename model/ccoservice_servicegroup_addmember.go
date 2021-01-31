@@ -73,9 +73,7 @@ func (this *CcoserviceServicegroupAddmemberRequest) GetTaobaoResp() *taobao.Taob
 
 type CcoserviceServicegroupAddmemberResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  AddMembersResponseModel `json:"result,omitempty"`
+	Result AddMembersResponseModel `json:"result,omitempty"`
 }
 type AddMembersResponseModel struct {
 	DingtalkId string `json:"dingtalk_id,omitempty"`

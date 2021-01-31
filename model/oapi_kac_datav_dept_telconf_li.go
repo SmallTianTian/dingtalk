@@ -66,9 +66,7 @@ type TelConferenceSummaryRequest struct {
 }
 type OapiKacDatavDeptTelconfListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                            `json:"errcode,omitempty"`
-	Errmsg  string                           `json:"errmsg,omitempty"`
-	Result  TelConferenceDeptSummaryResponse `json:"result,omitempty"`
+	Result TelConferenceDeptSummaryResponse `json:"result,omitempty"`
 }
 type TelConferenceDeptSummaryVo struct {
 	DeptId         int64  `json:"dept_id,omitempty"`

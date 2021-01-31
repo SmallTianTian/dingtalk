@@ -69,9 +69,7 @@ type TopInspectTaskDeptQueryPram struct {
 }
 type OapiInspectTaskListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }
 type TopInspectTaskVo struct {
 	CheckInTime  int64  `json:"check_in_time,omitempty"`

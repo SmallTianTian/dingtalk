@@ -81,9 +81,7 @@ func (this *OapiAtsJobListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiAtsJobListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
-	Result  AtsPageResult `json:"result,omitempty"`
+	Result AtsPageResult `json:"result,omitempty"`
 }
 type AtsPageResult struct {
 	HasMore    bool          `json:"has_more,omitempty"`

@@ -65,6 +65,4 @@ func (this *OapiV2SafeSetenableRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiV2SafeSetenableResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

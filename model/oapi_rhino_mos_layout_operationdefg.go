@@ -121,9 +121,7 @@ func (this *OapiRhinoMosLayoutOperationdefGetRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiRhinoMosLayoutOperationdefGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
-	Result  OperationDefDto `json:"result,omitempty"`
+	Result OperationDefDto `json:"result,omitempty"`
 }
 type OperationExecutorAssignDto struct {
 	ExecutorId string `json:"executor_id,omitempty"`

@@ -204,6 +204,4 @@ func (this *OapiV2UserUpdateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiV2UserUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

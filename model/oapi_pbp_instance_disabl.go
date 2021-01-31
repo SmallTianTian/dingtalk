@@ -73,6 +73,4 @@ func (this *OapiPbpInstanceDisableRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiPbpInstanceDisableResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

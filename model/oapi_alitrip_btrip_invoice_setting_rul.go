@@ -72,8 +72,6 @@ type OpenInvoiceRuleRq struct {
 }
 type OapiAlitripBtripInvoiceSettingRuleResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
 	Module  OpenInvoiceRuleRS `json:"module,omitempty"`
 	Success bool              `json:"success,omitempty"`
 }

@@ -73,6 +73,4 @@ func (this *OapiRoleVisibleSetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiRoleVisibleSetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

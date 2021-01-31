@@ -66,9 +66,7 @@ type GroupLiveRecordReq struct {
 }
 type OapiLiveGroupliveListbytimeResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
-	Result  []GroupLiveListResult `json:"result,omitempty"`
+	Result []GroupLiveListResult `json:"result,omitempty"`
 }
 type GroupLiveListResult struct {
 	Duration  int64  `json:"duration,omitempty"`

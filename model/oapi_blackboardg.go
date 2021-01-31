@@ -75,8 +75,6 @@ func (this *OapiBlackboardGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiBlackboardGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
 	Result  OapiBlackboardVo `json:"result,omitempty"`
 	Success bool             `json:"success,omitempty"`
 }

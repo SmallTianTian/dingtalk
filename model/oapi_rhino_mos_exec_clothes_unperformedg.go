@@ -71,8 +71,6 @@ type GetUnPerformedClothesByOperationReq struct {
 }
 type OapiRhinoMosExecClothesUnperformedGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
 	Model   PageResult `json:"model,omitempty"`
 	Success bool       `json:"success,omitempty"`
 }

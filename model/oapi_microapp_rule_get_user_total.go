@@ -69,7 +69,5 @@ func (this *OapiMicroappRuleGetUserTotalRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiMicroappRuleGetUserTotalResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64    `json:"errcode,omitempty"`
-	Errmsg  string   `json:"errmsg,omitempty"`
-	Result  []Result `json:"result,omitempty"`
+	Result []Result `json:"result,omitempty"`
 }

@@ -91,9 +91,7 @@ func (this *OapiAttendanceGetcolumnvalRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiAttendanceGetcolumnvalResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
-	Result  ColumnValListForTopVo `json:"result,omitempty"`
+	Result ColumnValListForTopVo `json:"result,omitempty"`
 }
 type ColumnDayAndVal struct {
 	Date  time.Time `json:"date,omitempty"`

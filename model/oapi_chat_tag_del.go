@@ -73,7 +73,5 @@ func (this *OapiChatTagDeleteRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiChatTagDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

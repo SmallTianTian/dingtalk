@@ -61,9 +61,7 @@ func (this *OapiKacDatavDeptChatSummaryListRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiKacDatavDeptChatSummaryListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
-	Result  ImDeptSummaryResponse `json:"result,omitempty"`
+	Result ImDeptSummaryResponse `json:"result,omitempty"`
 }
 type ImDeptSummaryVo struct {
 	DeptId                   int64  `json:"dept_id,omitempty"`

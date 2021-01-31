@@ -69,7 +69,5 @@ func (this *OapiWorkbenchShortcutListbypagingRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiWorkbenchShortcutListbypagingResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
-	Result  IsvOrgShortcutListDTO `json:"result,omitempty"`
+	Result IsvOrgShortcutListDTO `json:"result,omitempty"`
 }

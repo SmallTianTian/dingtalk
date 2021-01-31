@@ -100,8 +100,6 @@ func (this *OapiRhinoMosExecClothesScrapRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiRhinoMosExecClothesScrapResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Model   bool   `json:"model,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Model   bool `json:"model,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

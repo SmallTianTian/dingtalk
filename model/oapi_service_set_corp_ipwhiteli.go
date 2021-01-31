@@ -69,6 +69,4 @@ func (this *OapiServiceSetCorpIpwhitelistRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiServiceSetCorpIpwhitelistResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

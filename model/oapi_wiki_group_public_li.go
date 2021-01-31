@@ -89,8 +89,6 @@ func (this *OapiWikiGroupPublicListRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiWikiGroupPublicListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
 	Result  OpenPageResult `json:"result,omitempty"`
 	Success bool           `json:"success,omitempty"`
 }

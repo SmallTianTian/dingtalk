@@ -65,8 +65,6 @@ func (this *OapiImChatScenegroupGetRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiImChatScenegroupGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                        `json:"errcode,omitempty"`
-	Errmsg  string                       `json:"errmsg,omitempty"`
 	Result  DecorationGroupQueryResponse `json:"result,omitempty"`
 	Success bool                         `json:"success,omitempty"`
 }

@@ -65,9 +65,7 @@ func (this *OapiUserListidRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserListidResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  ListUserByDeptResponse `json:"result,omitempty"`
+	Result ListUserByDeptResponse `json:"result,omitempty"`
 }
 type ListUserByDeptResponse struct {
 	UseridList []string `json:"userid_list,omitempty"`

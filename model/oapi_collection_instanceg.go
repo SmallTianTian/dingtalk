@@ -74,9 +74,7 @@ func (this *OapiCollectionInstanceGetRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiCollectionInstanceGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
-	Result  FormInstanceVo `json:"result,omitempty"`
+	Result FormInstanceVo `json:"result,omitempty"`
 }
 type FormData struct {
 	Key   string `json:"key,omitempty"`

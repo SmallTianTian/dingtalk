@@ -65,9 +65,7 @@ func (this *OapiCrmAuthGroupPermissionListRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiCrmAuthGroupPermissionListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  Result `json:"result,omitempty"`
+	Result Result `json:"result,omitempty"`
 }
 type OperateScope struct {
 	HasAuth bool   `json:"has_auth,omitempty"`

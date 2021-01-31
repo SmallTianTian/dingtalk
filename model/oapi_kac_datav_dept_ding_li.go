@@ -66,9 +66,7 @@ type DingUsageSummaryRequest struct {
 }
 type OapiKacDatavDeptDingListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                        `json:"errcode,omitempty"`
-	Errmsg  string                       `json:"errmsg,omitempty"`
-	Result  DingUsageDeptSummaryResponse `json:"result,omitempty"`
+	Result DingUsageDeptSummaryResponse `json:"result,omitempty"`
 }
 type DingUsageDeptSummaryVo struct {
 	DeptId          int64  `json:"dept_id,omitempty"`

@@ -70,8 +70,6 @@ type PreEntryEmployeeAddParam struct {
 }
 type OapiSmartworkHrmEmployeeAddpreentryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 	Success bool   `json:"success,omitempty"`
 	Userid  string `json:"userid,omitempty"`
 }

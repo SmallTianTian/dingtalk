@@ -105,9 +105,7 @@ func (this *OapiRhinoMosLayoutOperationdefGetflowRequest) GetTaobaoResp() *taoba
 
 type OapiRhinoMosLayoutOperationdefGetflowResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  OperationDefFlowDto `json:"result,omitempty"`
+	Result OperationDefFlowDto `json:"result,omitempty"`
 }
 type OperationDefFlowDto struct {
 	Active        bool              `json:"active,omitempty"`

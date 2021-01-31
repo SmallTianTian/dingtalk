@@ -73,9 +73,7 @@ func (this *OapiAtsCandidateGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiAtsCandidateGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
-	Result  TopCandidateVO `json:"result,omitempty"`
+	Result TopCandidateVO `json:"result,omitempty"`
 }
 type TopCandidateVO struct {
 	CandidateId     string `json:"candidate_id,omitempty"`

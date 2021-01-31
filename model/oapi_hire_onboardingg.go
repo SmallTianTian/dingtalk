@@ -53,9 +53,7 @@ func (this *OapiHireOnboardingGetRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiHireOnboardingGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
-	Result  OnboardingVo `json:"result,omitempty"`
+	Result OnboardingVo `json:"result,omitempty"`
 }
 type FeatureGuideVo struct {
 	GuideStatus string `json:"guide_status,omitempty"`

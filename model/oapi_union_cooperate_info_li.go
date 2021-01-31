@@ -65,8 +65,6 @@ func (this *OapiUnionCooperateInfoListRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiUnionCooperateInfoListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
 	Result  []OpenCooperateUnionVo `json:"result,omitempty"`
 	Success bool                   `json:"success,omitempty"`
 }

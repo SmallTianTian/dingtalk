@@ -73,7 +73,5 @@ func (this *OapiWorkspaceCorpGroupBindRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiWorkspaceCorpGroupBindResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64    `json:"errcode,omitempty"`
-	Errmsg  string   `json:"errmsg,omitempty"`
-	Result  []string `json:"result,omitempty"`
+	Result []string `json:"result,omitempty"`
 }

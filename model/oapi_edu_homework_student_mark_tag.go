@@ -117,8 +117,6 @@ func (this *OapiEduHomeworkStudentMarkTagRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiEduHomeworkStudentMarkTagResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  int64  `json:"result,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Result  int64 `json:"result,omitempty"`
+	Success bool  `json:"success,omitempty"`
 }

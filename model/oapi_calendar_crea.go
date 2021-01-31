@@ -61,7 +61,5 @@ func (this *OapiCalendarCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiCalendarCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
-	Result  CorpCalendarCreateResult `json:"result,omitempty"`
+	Result CorpCalendarCreateResult `json:"result,omitempty"`
 }

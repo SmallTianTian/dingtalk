@@ -61,6 +61,4 @@ func (this *OapiProcessWorkrecordDeleteRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiProcessWorkrecordDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

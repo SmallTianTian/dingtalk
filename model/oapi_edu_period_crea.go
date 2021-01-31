@@ -87,8 +87,6 @@ type OpenPeriod struct {
 }
 type OapiEduPeriodCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
 	Result  OpenPeriodCreateResponse `json:"result,omitempty"`
 	Success bool                     `json:"success,omitempty"`
 }

@@ -81,9 +81,7 @@ func (this *OapiAtsPluginStatisticsJobListRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiAtsPluginStatisticsJobListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
-	Result  AtsPageResult `json:"result,omitempty"`
+	Result AtsPageResult `json:"result,omitempty"`
 }
 type TopJobStatisticsVo struct {
 	BizCode         string `json:"biz_code,omitempty"`

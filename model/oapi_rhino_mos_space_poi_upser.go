@@ -69,7 +69,5 @@ type SpacePoiUpsertReq struct {
 }
 type OapiRhinoMosSpacePoiUpsertResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
-	Model   SpacePoiDto `json:"model,omitempty"`
+	Model SpacePoiDto `json:"model,omitempty"`
 }

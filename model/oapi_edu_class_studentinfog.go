@@ -77,8 +77,6 @@ func (this *OapiEduClassStudentinfoGetRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiEduClassStudentinfoGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
 	Result  OpenStudentSelectDto `json:"result,omitempty"`
 	Success bool                 `json:"success,omitempty"`
 }

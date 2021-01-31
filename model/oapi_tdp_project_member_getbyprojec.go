@@ -89,9 +89,7 @@ type PageRequest struct {
 }
 type OapiTdpProjectMemberGetbyprojectResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
-	Result  PageResponse `json:"result,omitempty"`
+	Result PageResponse `json:"result,omitempty"`
 }
 type Member struct {
 	BelongCorpId   string    `json:"belong_corp_id,omitempty"`

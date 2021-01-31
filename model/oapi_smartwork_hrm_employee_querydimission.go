@@ -73,8 +73,6 @@ func (this *OapiSmartworkHrmEmployeeQuerydimissionRequest) GetTaobaoResp() *taob
 
 type OapiSmartworkHrmEmployeeQuerydimissionResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
 	Result  Paginator `json:"result,omitempty"`
 	Success bool      `json:"success,omitempty"`
 }

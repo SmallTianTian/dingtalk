@@ -70,7 +70,5 @@ type ProdWorkstationUpsertDto struct {
 }
 type OapiRhinoMosSpaceWorkstationUpsertResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Model   ProdWorkstationDto `json:"model,omitempty"`
+	Model ProdWorkstationDto `json:"model,omitempty"`
 }

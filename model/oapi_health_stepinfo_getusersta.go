@@ -65,7 +65,5 @@ func (this *OapiHealthStepinfoGetuserstatusRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiHealthStepinfoGetuserstatusResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Status  bool   `json:"status,omitempty"`
+	Status bool `json:"status,omitempty"`
 }

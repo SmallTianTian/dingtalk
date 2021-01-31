@@ -65,9 +65,7 @@ func (this *OapiCertifyQueryinfoRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiCertifyQueryinfoResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  YunQi2018CertifyVO `json:"result,omitempty"`
+	Result YunQi2018CertifyVO `json:"result,omitempty"`
 }
 type YunQi2018CertifyVO struct {
 	CertifyFaceImage string `json:"certify_face_image,omitempty"`

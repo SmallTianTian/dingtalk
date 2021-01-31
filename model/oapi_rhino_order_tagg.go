@@ -66,9 +66,7 @@ type QueryTagByProductOrderReq struct {
 }
 type OapiRhinoOrderTagGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
-	Model   OrderTagDto `json:"model,omitempty"`
+	Model OrderTagDto `json:"model,omitempty"`
 }
 type OrderTagDto struct {
 	BomReady        bool   `json:"bom_ready,omitempty"`

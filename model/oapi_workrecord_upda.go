@@ -73,7 +73,5 @@ func (this *OapiWorkrecordUpdateRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiWorkrecordUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  bool   `json:"result,omitempty"`
+	Result bool `json:"result,omitempty"`
 }

@@ -92,8 +92,6 @@ func (this *OapiDingpayOrderMarkotherpayRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiDingpayOrderMarkotherpayResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                         `json:"errcode,omitempty"`
-	Errmsg  string                        `json:"errmsg,omitempty"`
 	Result  OrderMarkOtherPayOpenResponse `json:"result,omitempty"`
 	Success bool                          `json:"success,omitempty"`
 }

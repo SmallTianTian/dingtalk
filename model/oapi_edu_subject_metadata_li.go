@@ -129,8 +129,6 @@ func (this *OapiEduSubjectMetadataListRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiEduSubjectMetadataListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
 	Result  PageQueryResponse `json:"result,omitempty"`
 	Success bool              `json:"success,omitempty"`
 }

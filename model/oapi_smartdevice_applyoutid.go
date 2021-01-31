@@ -73,8 +73,6 @@ func (this *OapiSmartdeviceApplyoutidRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiSmartdeviceApplyoutidResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
 	Result  OutDeviceIdVo `json:"result,omitempty"`
 	Success bool          `json:"success,omitempty"`
 }

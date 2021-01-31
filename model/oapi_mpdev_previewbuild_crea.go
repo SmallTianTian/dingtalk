@@ -166,8 +166,6 @@ type OpenSubPackageVo struct {
 }
 type OapiMpdevPreviewbuildCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
 	Result  BuildResultVo `json:"result,omitempty"`
 	Success bool          `json:"success,omitempty"`
 }

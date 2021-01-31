@@ -66,9 +66,7 @@ type McsSummaryRequest struct {
 }
 type OapiKacDatavDeptVideoconfListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  McsDeptSummaryResponse `json:"result,omitempty"`
+	Result McsDeptSummaryResponse `json:"result,omitempty"`
 }
 type McsDeptSummaryVo struct {
 	DeptId         int64  `json:"dept_id,omitempty"`

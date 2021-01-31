@@ -65,8 +65,6 @@ func (this *OapiSmartdeviceFacegroupRemoveallRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiSmartdeviceFacegroupRemoveallResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  bool   `json:"result,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Result  bool `json:"result,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

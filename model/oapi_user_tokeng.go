@@ -65,9 +65,7 @@ func (this *OapiUserTokenGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserTokenGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  UserToken4JsapiResponse `json:"result,omitempty"`
+	Result UserToken4JsapiResponse `json:"result,omitempty"`
 }
 type UserToken4JsapiResponse struct {
 	AccessToken string `json:DingTalktaobao.ACCESS_TOKE,omitemptyN`

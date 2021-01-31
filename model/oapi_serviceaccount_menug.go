@@ -65,9 +65,7 @@ func (this *OapiServiceaccountMenuGetRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiServiceaccountMenuGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
-	Menu    MenuConfigDTO `json:"menu,omitempty"`
+	Menu MenuConfigDTO `json:"menu,omitempty"`
 }
 type MenuSubButtonDTO struct {
 	Key     string `json:"key,omitempty"`

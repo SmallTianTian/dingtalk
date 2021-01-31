@@ -65,9 +65,7 @@ func (this *OapiV2DepartmentListparentbydeptRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiV2DepartmentListparentbydeptResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                          `json:"errcode,omitempty"`
-	Errmsg  string                         `json:"errmsg,omitempty"`
-	Result  DeptListParentByDeptIdResponse `json:"result,omitempty"`
+	Result DeptListParentByDeptIdResponse `json:"result,omitempty"`
 }
 type DeptListParentByDeptIdResponse struct {
 	ParentIdList []int64 `json:"parent_id_list,omitempty"`

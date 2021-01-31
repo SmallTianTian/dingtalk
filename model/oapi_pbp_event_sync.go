@@ -61,6 +61,4 @@ func (this *OapiPbpEventSyncRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiPbpEventSyncResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

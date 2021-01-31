@@ -100,8 +100,6 @@ func (this *OapiDingpayOrderApplypayRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiDingpayOrderApplypayResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
 	Result  OrderApplyPayOpenResponse `json:"result,omitempty"`
 	Success bool                      `json:"success,omitempty"`
 }

@@ -73,6 +73,4 @@ func (this *OapiServiceaccountMenuUpdateRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiServiceaccountMenuUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

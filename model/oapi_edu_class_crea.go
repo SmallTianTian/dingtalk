@@ -87,8 +87,6 @@ type OpenClass struct {
 }
 type OapiEduClassCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
 	Result  OpenClassCreateResponse `json:"result,omitempty"`
 	Success bool                    `json:"success,omitempty"`
 }

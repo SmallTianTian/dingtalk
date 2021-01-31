@@ -108,8 +108,6 @@ func (this *OapiRhinoMosExecPerformReworkRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiRhinoMosExecPerformReworkResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
 	Model   OperationPerformDto `json:"model,omitempty"`
 	Success bool                `json:"success,omitempty"`
 }

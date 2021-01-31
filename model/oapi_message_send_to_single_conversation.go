@@ -81,7 +81,5 @@ func (this *OapiMessageSendToSingleConversationRequest) GetTaobaoResp() *taobao.
 
 type OapiMessageSendToSingleConversationResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	MsgId   string `json:"msg_id,omitempty"`
+	MsgId string `json:"msg_id,omitempty"`
 }

@@ -121,7 +121,5 @@ func (this *OapiRhinoMosLayoutOperationdefSaveflowRequest) GetTaobaoResp() *taob
 
 type OapiRhinoMosLayoutOperationdefSaveflowResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  int64  `json:"result,omitempty"`
+	Result int64 `json:"result,omitempty"`
 }

@@ -73,9 +73,7 @@ func (this *OapiSmartdeviceMeetingroomListRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiSmartdeviceMeetingroomListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
-	Result  OpenPageResult `json:"result,omitempty"`
+	Result OpenPageResult `json:"result,omitempty"`
 }
 type MeetingRoomOpenInfo struct {
 	Capacity string  `json:"capacity,omitempty"`

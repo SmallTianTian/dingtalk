@@ -67,8 +67,6 @@ type OpenUpdateWorkspaceDto struct {
 }
 type OapiWorkspaceUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
 	Result  OpenWorkspaceDto `json:"result,omitempty"`
 	Success bool             `json:"success,omitempty"`
 }

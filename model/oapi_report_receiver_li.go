@@ -81,8 +81,6 @@ func (this *OapiReportReceiverListRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiReportReceiverListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
 	Result  ReportPageVo `json:"result,omitempty"`
 	Success bool         `json:"success,omitempty"`
 }

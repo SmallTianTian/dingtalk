@@ -73,8 +73,6 @@ func (this *OapiDingmiGroupGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiDingmiGroupGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
 	Result  GroupChatDataResult `json:"result,omitempty"`
 	Success string              `json:"success,omitempty"`
 }

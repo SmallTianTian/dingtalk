@@ -69,9 +69,7 @@ type PlayBackReqModel struct {
 }
 type OapiLivePlaybackResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
-	Result  PlayBackRespModel `json:"result,omitempty"`
+	Result PlayBackRespModel `json:"result,omitempty"`
 }
 type PlayBackModel struct {
 	CoverUrl       string    `json:"cover_url,omitempty"`

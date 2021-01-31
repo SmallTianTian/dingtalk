@@ -81,9 +81,7 @@ func (this *OapiDingpayBillQuerytagRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiDingpayBillQuerytagResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
-	Result  BillTagQueryOpenResponse `json:"result,omitempty"`
+	Result BillTagQueryOpenResponse `json:"result,omitempty"`
 }
 type BillTagQueryOpenResponse struct {
 	Tags []string `json:"tags,omitempty"`

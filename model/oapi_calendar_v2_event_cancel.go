@@ -81,7 +81,5 @@ func (this *OapiCalendarV2EventCancelRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiCalendarV2EventCancelResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

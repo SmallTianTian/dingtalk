@@ -65,8 +65,6 @@ func (this *OapiIndustryDepartmentGetRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiIndustryDepartmentGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
 	Result  OpenIndustryDeptInfo `json:"result,omitempty"`
 	Success bool                 `json:"success,omitempty"`
 }

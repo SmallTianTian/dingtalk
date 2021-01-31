@@ -69,8 +69,6 @@ type OpenSearchRq struct {
 }
 type OapiAlitripBtripApplyGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
 	Module  OpenApplyRs `json:"module,omitempty"`
 	Success bool        `json:"success,omitempty"`
 }

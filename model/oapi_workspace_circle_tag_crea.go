@@ -65,8 +65,6 @@ type FvTagCreateOpenDto struct {
 }
 type OapiWorkspaceCircleTagCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
 	Result  FvPostTagOpenDto `json:"result,omitempty"`
 	Success bool             `json:"success,omitempty"`
 }

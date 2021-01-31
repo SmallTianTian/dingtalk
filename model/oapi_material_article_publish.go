@@ -73,7 +73,5 @@ func (this *OapiMaterialArticlePublishRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiMaterialArticlePublishResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Url     string `json:"url,omitempty"`
+	Url string `json:"url,omitempty"`
 }

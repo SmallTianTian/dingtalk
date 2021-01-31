@@ -97,9 +97,7 @@ func (this *OapiCateringAllowancePredeductBetaRequest) GetTaobaoResp() *taobao.T
 
 type OapiCateringAllowancePredeductBetaResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                         `json:"errcode,omitempty"`
-	Errmsg  string                        `json:"errmsg,omitempty"`
-	Result  CateringOpenPreDeductResponse `json:"result,omitempty"`
+	Result CateringOpenPreDeductResponse `json:"result,omitempty"`
 }
 type CateringOpenPreDeductResponse struct {
 	DeductedAmount int64  `json:"deducted_amount,omitempty"`

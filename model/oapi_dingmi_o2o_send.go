@@ -77,8 +77,6 @@ func (this *OapiDingmiO2oSendRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiDingmiO2oSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 	Result  string `json:"result,omitempty"`
 	Success bool   `json:"success,omitempty"`
 }

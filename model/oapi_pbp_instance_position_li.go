@@ -97,7 +97,5 @@ func (this *OapiPbpInstancePositionListRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiPbpInstancePositionListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }

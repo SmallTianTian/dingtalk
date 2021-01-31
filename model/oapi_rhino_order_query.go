@@ -75,9 +75,7 @@ type OpenApiQueryProductOrderReq struct {
 }
 type OapiRhinoOrderQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64    `json:"errcode,omitempty"`
-	Errmsg  string   `json:"errmsg,omitempty"`
-	Model   PageInfo `json:"model,omitempty"`
+	Model PageInfo `json:"model,omitempty"`
 }
 type PageInfo struct {
 	List     []ProductOrderDto `json:"list,omitempty"`

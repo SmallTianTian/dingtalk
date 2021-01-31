@@ -73,9 +73,7 @@ func (this *OapiSmartworkHrmMasterCheckRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiSmartworkHrmMasterCheckResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  IntegrateBatchResultVo `json:"result,omitempty"`
+	Result IntegrateBatchResultVo `json:"result,omitempty"`
 }
 type Failresult struct {
 	BizUk     string `json:"biz_uk,omitempty"`

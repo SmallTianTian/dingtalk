@@ -65,9 +65,7 @@ func (this *OapiDingpayRedenvelopeGetRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiDingpayRedenvelopeGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
-	Result  RedEnvelopeGetResult `json:"result,omitempty"`
+	Result RedEnvelopeGetResult `json:"result,omitempty"`
 }
 type RedEnvelopeGetResult struct {
 	CorpBizNo    string `json:"corp_biz_no,omitempty"`

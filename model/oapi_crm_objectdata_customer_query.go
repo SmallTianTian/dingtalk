@@ -89,7 +89,5 @@ func (this *OapiCrmObjectdataCustomerQueryRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiCrmObjectdataCustomerQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
-	Result  IterablePage `json:"result,omitempty"`
+	Result IterablePage `json:"result,omitempty"`
 }

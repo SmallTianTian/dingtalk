@@ -73,6 +73,4 @@ func (this *OapiV2SafeSetdisableRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiV2SafeSetdisableResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

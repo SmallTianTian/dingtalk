@@ -53,9 +53,7 @@ func (this *OapiAttendanceGetattcolumnsRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiAttendanceGetattcolumnsResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  AttColumnsForTopVo `json:"result,omitempty"`
+	Result AttColumnsForTopVo `json:"result,omitempty"`
 }
 type ColumnForTopVo struct {
 	Alias        string `json:"alias,omitempty"`

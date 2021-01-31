@@ -140,7 +140,5 @@ func (this *OapiDingpayRedenvelopeSendRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiDingpayRedenvelopeSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
-	Result  RedEnvelopeGetResult `json:"result,omitempty"`
+	Result RedEnvelopeGetResult `json:"result,omitempty"`
 }

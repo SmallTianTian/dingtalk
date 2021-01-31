@@ -69,8 +69,6 @@ func (this *OapiRetailUserTokenGenerateRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiRetailUserTokenGenerateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
 	Result  UserBindDto `json:"result,omitempty"`
 	Success bool        `json:"success,omitempty"`
 }

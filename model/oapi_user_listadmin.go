@@ -53,9 +53,7 @@ func (this *OapiUserListadminRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserListadminResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  []ListAdminResponse `json:"result,omitempty"`
+	Result []ListAdminResponse `json:"result,omitempty"`
 }
 type ListAdminResponse struct {
 	SysLevel int64  `json:"sys_level,omitempty"`

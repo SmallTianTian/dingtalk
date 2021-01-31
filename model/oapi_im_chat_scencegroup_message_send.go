@@ -143,7 +143,5 @@ func (this *OapiImChatScencegroupMessageSendRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiImChatScencegroupMessageSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Succ    bool   `json:"succ,omitempty"`
+	Succ bool `json:"succ,omitempty"`
 }

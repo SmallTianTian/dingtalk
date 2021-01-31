@@ -73,6 +73,4 @@ func (this *OapiSmartdeviceMeetingroomCheckinRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiSmartdeviceMeetingroomCheckinResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

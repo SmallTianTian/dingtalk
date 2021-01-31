@@ -114,6 +114,4 @@ type TaskUpdate struct {
 }
 type OapiTdpTaskBasicUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

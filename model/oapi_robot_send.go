@@ -138,6 +138,4 @@ type Feedcard struct {
 }
 type OapiRobotSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

@@ -65,9 +65,7 @@ type QureyProcessRequest struct {
 }
 type OapiProcessFormConditionListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	List    []SimpleFormComponentVo `json:"list,omitempty"`
+	List []SimpleFormComponentVo `json:"list,omitempty"`
 }
 type SimpleFormComponentVo struct {
 	Id    string `json:"id,omitempty"`

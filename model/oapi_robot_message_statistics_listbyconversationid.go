@@ -97,8 +97,6 @@ func (this *OapiRobotMessageStatisticsListbyconversationidRequest) GetTaobaoResp
 
 type OapiRobotMessageStatisticsListbyconversationidResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
 	Result  RobotMsgStatPageResponse `json:"result,omitempty"`
 	Success bool                     `json:"success,omitempty"`
 }

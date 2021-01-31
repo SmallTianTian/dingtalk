@@ -113,8 +113,6 @@ func (this *OapiAttendanceVacationTypeCreateRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiAttendanceVacationTypeCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
 	Result  LeaveTypeVo `json:"result,omitempty"`
 	Success bool        `json:"success,omitempty"`
 }

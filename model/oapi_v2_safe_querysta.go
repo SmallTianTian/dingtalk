@@ -65,9 +65,7 @@ func (this *OapiV2SafeQuerystatusRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiV2SafeQuerystatusResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  SafeQueryStatusResponse `json:"result,omitempty"`
+	Result SafeQueryStatusResponse `json:"result,omitempty"`
 }
 type SafeQueryStatusResponse struct {
 	Disable bool `json:"disable,omitempty"`

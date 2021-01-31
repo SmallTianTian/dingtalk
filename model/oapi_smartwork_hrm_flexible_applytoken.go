@@ -73,8 +73,6 @@ func (this *OapiSmartworkHrmFlexibleApplytokenRequest) GetTaobaoResp() *taobao.T
 
 type OapiSmartworkHrmFlexibleApplytokenResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
 	Result  FlexibleTokenVo `json:"result,omitempty"`
 	Success bool            `json:"success,omitempty"`
 }

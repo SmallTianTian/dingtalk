@@ -65,8 +65,6 @@ func (this *OapiMpdevAccesskeyGetRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiMpdevAccesskeyGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
 	Result  OssTokenVo `json:"result,omitempty"`
 	Success bool       `json:"success,omitempty"`
 }

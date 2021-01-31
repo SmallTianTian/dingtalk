@@ -89,9 +89,7 @@ func (this *OapiLiveGroupliveViewrecordRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiLiveGroupliveViewrecordResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
-	Result  QueryLiveViewRecordDetail `json:"result,omitempty"`
+	Result QueryLiveViewRecordDetail `json:"result,omitempty"`
 }
 type UserViewRecordDetailModelList struct {
 	LiveBeginUnixTime int64  `json:"live_begin_unix_time,omitempty"`

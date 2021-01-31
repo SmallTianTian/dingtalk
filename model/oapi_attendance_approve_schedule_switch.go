@@ -137,6 +137,4 @@ func (this *OapiAttendanceApproveScheduleSwitchRequest) GetTaobaoResp() *taobao.
 
 type OapiAttendanceApproveScheduleSwitchResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

@@ -84,6 +84,4 @@ func (this *OapiFileUploadChunkRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiFileUploadChunkResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

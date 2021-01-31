@@ -61,7 +61,5 @@ func (this *OapiDingTaskCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiDingTaskCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
-	Result  TaskSendResult `json:"result,omitempty"`
+	Result TaskSendResult `json:"result,omitempty"`
 }

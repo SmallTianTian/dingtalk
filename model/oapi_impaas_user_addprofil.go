@@ -68,8 +68,6 @@ type AddProfileReq struct {
 }
 type OapiImpaasUserAddprofileResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
 	Result  AddProfileResp `json:"result,omitempty"`
 	Success bool           `json:"success,omitempty"`
 }

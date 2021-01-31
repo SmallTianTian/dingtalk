@@ -65,8 +65,6 @@ func (this *OapiSnsConversationInfoRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiSnsConversationInfoResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
 	Result  SnsOpenGroupInfoResponse `json:"result,omitempty"`
 	Success bool                     `json:"success,omitempty"`
 }

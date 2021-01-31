@@ -65,9 +65,7 @@ func (this *CcoserviceServicegroupGetRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type CcoserviceServicegroupGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
-	Result  ServiceConversationModel `json:"result,omitempty"`
+	Result ServiceConversationModel `json:"result,omitempty"`
 }
 type ServiceConversationModel struct {
 	ConversationType int64  `json:"conversation_type,omitempty"`

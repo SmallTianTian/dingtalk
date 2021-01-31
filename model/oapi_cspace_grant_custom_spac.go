@@ -109,6 +109,4 @@ func (this *OapiCspaceGrantCustomSpaceRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiCspaceGrantCustomSpaceResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

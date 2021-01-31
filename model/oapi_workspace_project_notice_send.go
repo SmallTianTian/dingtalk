@@ -71,8 +71,6 @@ type OpenSendNoticeRequestDto struct {
 }
 type OapiWorkspaceProjectNoticeSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
 	Result  OpenSendNoticeResponseDto `json:"result,omitempty"`
 	Success bool                      `json:"success,omitempty"`
 }

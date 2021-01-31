@@ -105,9 +105,7 @@ func (this *OapiV2UserListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiV2UserListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }
 type ListUserResponse struct {
 	Active           bool    `json:"active,omitempty"`

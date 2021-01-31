@@ -68,9 +68,7 @@ type OpenApiBatchGetProductOrderReq struct {
 }
 type OapiRhinoOrderBatchGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                             `json:"errcode,omitempty"`
-	Errmsg  string                            `json:"errmsg,omitempty"`
-	Model   OpenApiBatchGetProductOrderResult `json:"model,omitempty"`
+	Model OpenApiBatchGetProductOrderResult `json:"model,omitempty"`
 }
 type OpenApiProductOrderDto struct {
 	ActualFinishTime       time.Time `json:"actual_finish_time,omitempty"`

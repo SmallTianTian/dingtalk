@@ -61,8 +61,6 @@ func (this *OapiAlitripBtripApplySearchRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiAlitripBtripApplySearchResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
 	Module  []OpenApplyRs `json:"module,omitempty"`
 	Success bool          `json:"success,omitempty"`
 }

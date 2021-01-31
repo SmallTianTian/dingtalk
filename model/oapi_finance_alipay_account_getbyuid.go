@@ -53,9 +53,7 @@ func (this *OapiFinanceAlipayAccountGetbyuidRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiFinanceAlipayAccountGetbyuidResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
-	Result  AlipayUserVo `json:"result,omitempty"`
+	Result AlipayUserVo `json:"result,omitempty"`
 }
 type AlipayUserVo struct {
 	AlipayUserId string `json:"alipay_user_id,omitempty"`

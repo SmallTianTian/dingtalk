@@ -69,9 +69,7 @@ type ClothesGroupByOperationCondition struct {
 }
 type OapiRhinoMosExecClothesGroupbyoperationCountResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Model   []CountGroupByIdDto `json:"model,omitempty"`
+	Model []CountGroupByIdDto `json:"model,omitempty"`
 }
 type CountGroupByIdDto struct {
 	Count int64 `json:"count,omitempty"`

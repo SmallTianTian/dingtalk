@@ -153,7 +153,5 @@ func (this *OapiAttendanceApproveFinishRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiAttendanceApproveFinishResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
-	Result  TopDurationVo `json:"result,omitempty"`
+	Result TopDurationVo `json:"result,omitempty"`
 }

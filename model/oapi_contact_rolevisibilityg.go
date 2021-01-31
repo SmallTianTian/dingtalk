@@ -61,8 +61,6 @@ func (this *OapiContactRolevisibilityGetRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiContactRolevisibilityGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                          `json:"errcode,omitempty"`
-	Errmsg  string                         `json:"errmsg,omitempty"`
 	Result  []OpenRolePermissionForContact `json:"result,omitempty"`
 	Success bool                           `json:"success,omitempty"`
 }

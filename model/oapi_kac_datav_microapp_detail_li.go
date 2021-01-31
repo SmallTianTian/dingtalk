@@ -66,9 +66,7 @@ type MicroAppSummaryRequest struct {
 }
 type OapiKacDatavMicroappDetailListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  MicroAppSummaryResponse `json:"result,omitempty"`
+	Result MicroAppSummaryResponse `json:"result,omitempty"`
 }
 type MicroAppSummaryVo struct {
 	MicroAppName      string `json:"micro_app_name,omitempty"`

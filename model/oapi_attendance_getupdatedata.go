@@ -74,8 +74,6 @@ func (this *OapiAttendanceGetupdatedataRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiAttendanceGetupdatedataResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
 	Result  AtCheckInfoForOpenVo `json:"result,omitempty"`
 	Success bool                 `json:"success,omitempty"`
 }

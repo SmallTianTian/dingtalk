@@ -81,7 +81,5 @@ func (this *OapiInactiveUserGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiInactiveUserGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  PageVo `json:"result,omitempty"`
+	Result PageVo `json:"result,omitempty"`
 }

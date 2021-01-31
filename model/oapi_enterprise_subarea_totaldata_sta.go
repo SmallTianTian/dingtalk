@@ -105,8 +105,6 @@ func (this *OapiEnterpriseSubareaTotaldataStatRequest) GetTaobaoResp() *taobao.T
 
 type OapiEnterpriseSubareaTotaldataStatResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
 	Result  []AreaStatDataVO `json:"result,omitempty"`
 	Success bool             `json:"success,omitempty"`
 }

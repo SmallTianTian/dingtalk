@@ -65,9 +65,7 @@ func (this *OapiConferenceGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiConferenceGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64            `json:"errcode,omitempty"`
-	Errmsg  string           `json:"errmsg,omitempty"`
-	Result  ConferenceInfoDo `json:"result,omitempty"`
+	Result ConferenceInfoDo `json:"result,omitempty"`
 }
 type ConferenceInfoDo struct {
 	Address           string   `json:"address,omitempty"`

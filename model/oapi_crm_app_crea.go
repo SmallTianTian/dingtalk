@@ -70,9 +70,7 @@ type CreateCrmMicroAppRequest struct {
 }
 type OapiCrmAppCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  GetCrmMicroAppResponse `json:"result,omitempty"`
+	Result GetCrmMicroAppResponse `json:"result,omitempty"`
 }
 type GetCrmMicroAppResponse struct {
 	Agentid     int64  `json:"agentid,omitempty"`

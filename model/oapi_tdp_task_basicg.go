@@ -73,7 +73,5 @@ func (this *OapiTdpTaskBasicGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiTdpTaskBasicGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
-	Result  OrgTask `json:"result,omitempty"`
+	Result OrgTask `json:"result,omitempty"`
 }

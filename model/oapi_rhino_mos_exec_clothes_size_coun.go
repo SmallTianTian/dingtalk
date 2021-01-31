@@ -67,8 +67,6 @@ type ClothesGroupBySizeConditionReq struct {
 }
 type OapiRhinoMosExecClothesSizeCountResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                        `json:"errcode,omitempty"`
-	Errmsg  string                       `json:"errmsg,omitempty"`
 	Model   []ClothesCountGroupBySizeDto `json:"model,omitempty"`
 	Success bool                         `json:"success,omitempty"`
 }

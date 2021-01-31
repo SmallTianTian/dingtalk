@@ -113,7 +113,5 @@ func (this *OapiRhinoMosLayoutOperationdefsSectionfirstRequest) GetTaobaoResp() 
 
 type OapiRhinoMosLayoutOperationdefsSectionfirstResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
-	Result  []OperationDefDto `json:"result,omitempty"`
+	Result []OperationDefDto `json:"result,omitempty"`
 }

@@ -63,8 +63,6 @@ func (this *OapiAlitripBtripHotelOrderSearchRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiAlitripBtripHotelOrderSearchResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
 	Module  []OpenHotelOrderRs `json:"module,omitempty"`
 	Success bool               `json:"success,omitempty"`
 }

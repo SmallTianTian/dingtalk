@@ -89,7 +89,5 @@ func (this *OapiWorkrecordGetbyuseridRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiWorkrecordGetbyuseridResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
 	Records PageResult `json:"records,omitempty"`
 }

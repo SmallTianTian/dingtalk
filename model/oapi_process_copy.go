@@ -105,9 +105,7 @@ func (this *OapiProcessCopyRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiProcessCopyResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
-	Result  ProcessVo `json:"result,omitempty"`
+	Result ProcessVo `json:"result,omitempty"`
 }
 type ProcessVo struct {
 	BizCategoryId string `json:"biz_category_id,omitempty"`

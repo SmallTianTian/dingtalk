@@ -121,8 +121,6 @@ func (this *OapiRhinoMosExecTrackUnbindRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiRhinoMosExecTrackUnbindResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Model   bool   `json:"model,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Model   bool `json:"model,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

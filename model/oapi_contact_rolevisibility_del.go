@@ -61,7 +61,5 @@ func (this *OapiContactRolevisibilityDeleteRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiContactRolevisibilityDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

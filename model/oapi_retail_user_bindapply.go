@@ -77,8 +77,6 @@ type UserBindParam struct {
 }
 type OapiRetailUserBindapplyResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
 	Result  UserBindDto `json:"result,omitempty"`
 	Success bool        `json:"success,omitempty"`
 }

@@ -65,7 +65,5 @@ func (this *OapiCrmObjectmetaDescribeRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiCrmObjectmetaDescribeResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
-	Result  DObject `json:"result,omitempty"`
+	Result DObject `json:"result,omitempty"`
 }

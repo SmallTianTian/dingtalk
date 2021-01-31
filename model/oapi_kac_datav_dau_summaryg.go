@@ -64,9 +64,7 @@ type DauSummaryRequest struct {
 }
 type OapiKacDatavDauSummaryGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  DauSummaryResponse `json:"result,omitempty"`
+	Result DauSummaryResponse `json:"result,omitempty"`
 }
 type DauSummaryResponse struct {
 	ActivatedCount   int64 `json:"activated_count,omitempty"`

@@ -74,9 +74,7 @@ func (this *OapiAtsJobGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiAtsJobGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
-	Result  JobSimpleVO `json:"result,omitempty"`
+	Result JobSimpleVO `json:"result,omitempty"`
 }
 type JobAddressVO struct {
 	Detail    string `json:"detail,omitempty"`

@@ -70,8 +70,6 @@ type OpenCostCenterAddEntityRq struct {
 }
 type OapiAlitripBtripCostCenterEntityAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
 	Result  OpenCostCenterAddEntityRs `json:"result,omitempty"`
 	Success bool                      `json:"success,omitempty"`
 }

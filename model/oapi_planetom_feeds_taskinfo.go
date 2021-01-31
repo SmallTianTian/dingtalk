@@ -65,9 +65,7 @@ func (this *OapiPlanetomFeedsTaskinfoRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiPlanetomFeedsTaskinfoResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
-	Result  []UploadFeedRspModel `json:"result,omitempty"`
+	Result []UploadFeedRspModel `json:"result,omitempty"`
 }
 type UploadFeedRspModel struct {
 	ProcessMsg string `json:"process_msg,omitempty"`

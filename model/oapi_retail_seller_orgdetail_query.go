@@ -67,8 +67,6 @@ func (this *OapiRetailSellerOrgdetailQueryRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiRetailSellerOrgdetailQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64    `json:"errcode,omitempty"`
-	Errmsg  string   `json:"errmsg,omitempty"`
 	Result  []OrgDto `json:"result,omitempty"`
 	Success bool     `json:"success,omitempty"`
 }

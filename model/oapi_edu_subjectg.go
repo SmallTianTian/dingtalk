@@ -89,8 +89,6 @@ func (this *OapiEduSubjectGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiEduSubjectGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
 	Result  SubjectInstanceDTO `json:"result,omitempty"`
 	Success bool               `json:"success,omitempty"`
 }

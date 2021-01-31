@@ -70,9 +70,7 @@ func (this *OapiTdpProjectBasicGetRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiTdpProjectBasicGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  Task   `json:"result,omitempty"`
+	Result Task `json:"result,omitempty"`
 }
 type Task struct {
 	BelongCorpId     string    `json:"belong_corp_id,omitempty"`

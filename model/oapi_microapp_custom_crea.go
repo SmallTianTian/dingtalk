@@ -137,9 +137,7 @@ func (this *OapiMicroappCustomCreateRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiMicroappCustomCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
-	Result  CustomAppCreateResponseVo `json:"result,omitempty"`
+	Result CustomAppCreateResponseVo `json:"result,omitempty"`
 }
 type CustomAppCreateResponseVo struct {
 	AgentId      int64  `json:"agent_id,omitempty"`

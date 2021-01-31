@@ -78,8 +78,6 @@ type OpenCardTaskSubmitParam struct {
 }
 type OapiEduCardUserTaskSubmitResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
 	Result  CardTaskSubmitResponse `json:"result,omitempty"`
 	Success bool                   `json:"success,omitempty"`
 }

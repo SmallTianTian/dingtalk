@@ -65,7 +65,5 @@ func (this *OapiImChatServicegroupUpgradeRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiImChatServicegroupUpgradeResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Success bool `json:"success,omitempty"`
 }

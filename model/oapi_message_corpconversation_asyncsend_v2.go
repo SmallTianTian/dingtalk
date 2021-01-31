@@ -108,7 +108,5 @@ type OA struct {
 }
 type OapiMessageCorpconversationAsyncsendV2Response struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	TaskId  int64  `json:"task_id,omitempty"`
+	TaskId int64 `json:"task_id,omitempty"`
 }

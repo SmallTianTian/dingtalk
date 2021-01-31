@@ -69,7 +69,5 @@ func (this *OapiCallGetuserlistRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiCallGetuserlistResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  Result `json:"result,omitempty"`
+	Result Result `json:"result,omitempty"`
 }

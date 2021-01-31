@@ -61,9 +61,7 @@ func (this *OapiKacDatavTelconfDetailListRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiKacDatavTelconfDetailListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                       `json:"errcode,omitempty"`
-	Errmsg  string                      `json:"errmsg,omitempty"`
-	Result  TelConferenceDetailResponse `json:"result,omitempty"`
+	Result TelConferenceDetailResponse `json:"result,omitempty"`
 }
 type TelConferenceDetailVo struct {
 	ConfId        string `json:"conf_id,omitempty"`

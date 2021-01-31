@@ -82,9 +82,7 @@ func (this *OapiAttendanceGetleaveapprovedurationRequest) GetTaobaoResp() *taoba
 
 type OapiAttendanceGetleaveapprovedurationResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  ApproveDurationForTopVo `json:"result,omitempty"`
+	Result ApproveDurationForTopVo `json:"result,omitempty"`
 }
 type ApproveDurationForTopVo struct {
 	DurationInMinutes int64 `json:"duration_in_minutes,omitempty"`

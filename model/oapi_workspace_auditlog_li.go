@@ -97,9 +97,7 @@ func (this *OapiWorkspaceAuditlogListRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiWorkspaceAuditlogListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
-	Result  OpenAuditLogDto `json:"result,omitempty"`
+	Result OpenAuditLogDto `json:"result,omitempty"`
 }
 type EventAuditLogDto struct {
 	Action            string `json:"action,omitempty"`

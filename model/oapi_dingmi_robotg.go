@@ -61,8 +61,6 @@ func (this *OapiDingmiRobotGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiDingmiRobotGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
 	Result  CustomCrowdRobotDTO `json:"result,omitempty"`
 	Success bool                `json:"success,omitempty"`
 }

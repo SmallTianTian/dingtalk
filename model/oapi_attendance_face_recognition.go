@@ -65,9 +65,7 @@ func (this *OapiAttendanceFaceRecognitionRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiAttendanceFaceRecognitionResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
-	Result  TopUserInfoVO `json:"result,omitempty"`
+	Result TopUserInfoVO `json:"result,omitempty"`
 }
 type TopUserInfoVO struct {
 	Userid string `json:"userid,omitempty"`

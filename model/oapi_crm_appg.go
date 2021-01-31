@@ -65,7 +65,5 @@ func (this *OapiCrmAppGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiCrmAppGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  GetCrmMicroAppResponse `json:"result,omitempty"`
+	Result GetCrmMicroAppResponse `json:"result,omitempty"`
 }

@@ -77,8 +77,6 @@ func (this *OapiEduCircleTopiclistRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiEduCircleTopiclistResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
 	Result  []OpenCircleTopicResponse `json:"result,omitempty"`
 	Success bool                      `json:"success,omitempty"`
 }

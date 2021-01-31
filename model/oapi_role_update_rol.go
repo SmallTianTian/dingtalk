@@ -73,6 +73,4 @@ func (this *OapiRoleUpdateRoleRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiRoleUpdateRoleResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

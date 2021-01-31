@@ -73,8 +73,6 @@ func (this *OapiAttendanceGroupSearchRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiAttendanceGroupSearchResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
 	Result  []TopMinimalismGroupVO `json:"result,omitempty"`
 	Success bool                   `json:"success,omitempty"`
 }

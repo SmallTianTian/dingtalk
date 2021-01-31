@@ -89,9 +89,7 @@ func (this *OapiPbpInstanceGroupMemberListRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiPbpInstanceGroupMemberListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }
 type PositionVo struct {
 	MemberId string `json:"member_id,omitempty"`

@@ -89,8 +89,6 @@ func (this *OapiImChatServicegroupCreateRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiImChatServicegroupCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                      `json:"errcode,omitempty"`
-	Errmsg  string                     `json:"errmsg,omitempty"`
 	Result  ServiceGroupCreateResponse `json:"result,omitempty"`
 	Success bool                       `json:"success,omitempty"`
 }

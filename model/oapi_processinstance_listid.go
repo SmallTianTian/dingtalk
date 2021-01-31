@@ -105,7 +105,5 @@ func (this *OapiProcessinstanceListidsRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiProcessinstanceListidsResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }

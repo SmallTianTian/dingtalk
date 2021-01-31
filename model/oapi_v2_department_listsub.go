@@ -69,9 +69,7 @@ func (this *OapiV2DepartmentListsubRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiV2DepartmentListsubResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  []DeptBaseResponse `json:"result,omitempty"`
+	Result []DeptBaseResponse `json:"result,omitempty"`
 }
 type DeptBaseResponse struct {
 	AutoAddUser      bool   `json:"auto_add_user,omitempty"`

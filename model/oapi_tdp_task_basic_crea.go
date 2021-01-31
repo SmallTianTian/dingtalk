@@ -113,9 +113,7 @@ type TaskCreate struct {
 }
 type OapiTdpTaskBasicCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
-	Result  OrgTask `json:"result,omitempty"`
+	Result OrgTask `json:"result,omitempty"`
 }
 type OrgTask struct {
 	BelongCorpId     string        `json:"belong_corp_id,omitempty"`

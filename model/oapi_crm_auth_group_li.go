@@ -53,9 +53,7 @@ func (this *OapiCrmAuthGroupListRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiCrmAuthGroupListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64         `json:"errcode,omitempty"`
-	Errmsg  string        `json:"errmsg,omitempty"`
-	Result  []RoleGroupVo `json:"result,omitempty"`
+	Result []RoleGroupVo `json:"result,omitempty"`
 }
 type RoleGroupVo struct {
 	Name   string `json:"name,omitempty"`

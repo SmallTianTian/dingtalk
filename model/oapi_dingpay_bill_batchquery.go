@@ -278,8 +278,6 @@ func (this *OapiDingpayBillBatchqueryRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiDingpayBillBatchqueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                      `json:"errcode,omitempty"`
-	Errmsg  string                     `json:"errmsg,omitempty"`
 	Result  BillBatchQueryOpenResponse `json:"result,omitempty"`
 	Success bool                       `json:"success,omitempty"`
 }

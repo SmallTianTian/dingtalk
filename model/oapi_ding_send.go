@@ -79,7 +79,5 @@ type OpenDingSendVo struct {
 }
 type OapiDingSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                `json:"errcode,omitempty"`
-	Errmsg  string               `json:"errmsg,omitempty"`
-	Result  CorpDingCreateResult `json:"result,omitempty"`
+	Result CorpDingCreateResult `json:"result,omitempty"`
 }

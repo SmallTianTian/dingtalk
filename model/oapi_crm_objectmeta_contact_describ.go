@@ -53,9 +53,7 @@ func (this *OapiCrmObjectmetaContactDescribeRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiCrmObjectmetaContactDescribeResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
-	Result  DObject `json:"result,omitempty"`
+	Result DObject `json:"result,omitempty"`
 }
 type SelectOptions struct {
 	Key   string `json:"key,omitempty"`

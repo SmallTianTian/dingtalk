@@ -66,8 +66,6 @@ type OpenInvoiceRq struct {
 }
 type OapiAlitripBtripInvoiceSearchResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
 	Invoice []OpenInvoiceDo `json:"invoice,omitempty"`
 	Success bool            `json:"success,omitempty"`
 }

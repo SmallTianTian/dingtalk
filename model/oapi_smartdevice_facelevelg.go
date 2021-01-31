@@ -67,9 +67,7 @@ func (this *OapiSmartdeviceFacelevelGetRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiSmartdeviceFacelevelGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
-	Result  []FaceResultVo `json:"result,omitempty"`
+	Result []FaceResultVo `json:"result,omitempty"`
 }
 type FaceResultVo struct {
 	CertifyType      int64     `json:"certify_type,omitempty"`

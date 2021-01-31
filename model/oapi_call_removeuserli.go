@@ -65,6 +65,4 @@ func (this *OapiCallRemoveuserlistRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiCallRemoveuserlistResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

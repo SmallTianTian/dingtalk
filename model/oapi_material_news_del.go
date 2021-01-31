@@ -73,6 +73,4 @@ func (this *OapiMaterialNewsDeleteRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiMaterialNewsDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

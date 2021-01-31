@@ -75,8 +75,6 @@ func (this *OapiPlanetomFeedsStatisticGetRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiPlanetomFeedsStatisticGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
 	Result  OpenFeedInfoModel `json:"result,omitempty"`
 	Success bool              `json:"success,omitempty"`
 }

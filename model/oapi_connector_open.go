@@ -81,6 +81,4 @@ func (this *OapiConnectorOpenRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiConnectorOpenResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

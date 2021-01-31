@@ -73,8 +73,6 @@ func (this *OapiFinanceLoanContactsListRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiFinanceLoanContactsListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                      `json:"errcode,omitempty"`
-	Errmsg  string                     `json:"errmsg,omitempty"`
 	Result  OpenContactInfoQueryResult `json:"result,omitempty"`
 	Success bool                       `json:"success,omitempty"`
 }

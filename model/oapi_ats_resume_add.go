@@ -137,9 +137,7 @@ type CollResumeMailParam struct {
 }
 type OapiAtsResumeAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  TopCollectResumeResult `json:"result,omitempty"`
+	Result TopCollectResumeResult `json:"result,omitempty"`
 }
 type TopCollectResumeResult struct {
 	MobileJumpUrl string `json:"mobile_jump_url,omitempty"`

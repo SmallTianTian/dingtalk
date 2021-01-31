@@ -71,7 +71,5 @@ type SaveTaskRequest struct {
 }
 type OapiProcessWorkrecordTaskCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
-	Tasks   []TaskTopVo `json:"tasks,omitempty"`
+	Tasks []TaskTopVo `json:"tasks,omitempty"`
 }

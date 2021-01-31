@@ -93,7 +93,5 @@ type SaveProcessRequest struct {
 }
 type OapiProcessSaveResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64        `json:"errcode,omitempty"`
-	Errmsg  string       `json:"errmsg,omitempty"`
-	Result  ProcessTopVo `json:"result,omitempty"`
+	Result ProcessTopVo `json:"result,omitempty"`
 }

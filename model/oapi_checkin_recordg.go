@@ -97,9 +97,7 @@ func (this *OapiCheckinRecordGetRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiCheckinRecordGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }
 type CheckinRecordVo struct {
 	CheckinTime int64    `json:"checkin_time,omitempty"`

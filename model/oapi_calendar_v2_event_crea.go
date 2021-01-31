@@ -86,8 +86,6 @@ type Event struct {
 }
 type OapiCalendarV2EventCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  Event  `json:"result,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Result  Event `json:"result,omitempty"`
+	Success bool  `json:"success,omitempty"`
 }

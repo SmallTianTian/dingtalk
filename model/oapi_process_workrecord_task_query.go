@@ -89,9 +89,7 @@ func (this *OapiProcessWorkrecordTaskQueryRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiProcessWorkrecordTaskQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64      `json:"errcode,omitempty"`
-	Errmsg  string     `json:"errmsg,omitempty"`
-	Result  PageResult `json:"result,omitempty"`
+	Result PageResult `json:"result,omitempty"`
 }
 type FormItemVo struct {
 	Content string `json:"content,omitempty"`

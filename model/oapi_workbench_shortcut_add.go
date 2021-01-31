@@ -105,9 +105,7 @@ func (this *OapiWorkbenchShortcutAddRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiWorkbenchShortcutAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  IsvOrgShortcutStatusDto `json:"result,omitempty"`
+	Result IsvOrgShortcutStatusDto `json:"result,omitempty"`
 }
 type IsvOrgShortcutStatusDto struct {
 	BizNo string `json:"biz_no,omitempty"`

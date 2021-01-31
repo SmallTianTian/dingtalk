@@ -61,9 +61,7 @@ func (this *OapiKacDatavDingGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiKacDatavDingGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
-	Result  DingUsageSummaryResponse `json:"result,omitempty"`
+	Result DingUsageSummaryResponse `json:"result,omitempty"`
 }
 type DingUsageSummaryResponse struct {
 	DingAppCnt      int64 `json:"ding_app_cnt,omitempty"`

@@ -77,9 +77,7 @@ func (this *OapiReportTemplateListbyuseridRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiReportTemplateListbyuseridResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
-	Result  HomePageReportTemplateVo `json:"result,omitempty"`
+	Result HomePageReportTemplateVo `json:"result,omitempty"`
 }
 type ReportTemplateTopVo struct {
 	IconUrl    string `json:"icon_url,omitempty"`

@@ -53,8 +53,6 @@ func (this *OapiOrgpaasOrgInfoGetRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiOrgpaasOrgInfoGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
 	Result  GetOrgInfoResp `json:"result,omitempty"`
 	Success bool           `json:"success,omitempty"`
 }

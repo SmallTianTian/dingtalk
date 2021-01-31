@@ -81,9 +81,7 @@ func (this *OapiAppstoreInternalUnfinishedorderListRequest) GetTaobaoResp() *tao
 
 type OapiAppstoreInternalUnfinishedorderListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
-	Result  PageModel `json:"result,omitempty"`
+	Result PageModel `json:"result,omitempty"`
 }
 type InAppGoodsOrderVO struct {
 	BizOrderId        int64  `json:"biz_order_id,omitempty"`

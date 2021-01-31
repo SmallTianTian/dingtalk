@@ -65,9 +65,7 @@ func (this *OapiUserCountRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserCountResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
-	Result  CountUserResponse `json:"result,omitempty"`
+	Result CountUserResponse `json:"result,omitempty"`
 }
 type CountUserResponse struct {
 	Count int64 `json:"count,omitempty"`

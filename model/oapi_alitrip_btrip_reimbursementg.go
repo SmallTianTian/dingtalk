@@ -73,8 +73,6 @@ func (this *OapiAlitripBtripReimbursementGetRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiAlitripBtripReimbursementGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Module  int64  `json:"module,omitempty"`
-	Success bool   `json:"success,omitempty"`
+	Module  int64 `json:"module,omitempty"`
+	Success bool  `json:"success,omitempty"`
 }

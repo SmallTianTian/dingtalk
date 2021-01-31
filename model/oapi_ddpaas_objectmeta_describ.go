@@ -73,9 +73,7 @@ func (this *OapiDdpaasObjectmetaDescribeRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiDdpaasObjectmetaDescribeResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
-	Result  DObject `json:"result,omitempty"`
+	Result DObject `json:"result,omitempty"`
 }
 type Selectoptions struct {
 	Key   string `json:"key,omitempty"`

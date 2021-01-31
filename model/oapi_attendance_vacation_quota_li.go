@@ -97,8 +97,6 @@ func (this *OapiAttendanceVacationQuotaListRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiAttendanceVacationQuotaListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
 	Result  OapiLeaveQuotaUserListVo `json:"result,omitempty"`
 	Success bool                     `json:"success,omitempty"`
 }

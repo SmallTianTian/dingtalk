@@ -65,9 +65,7 @@ func (this *OapiV2UserGetbymobileRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiV2UserGetbymobileResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  UserGetByMobileResponse `json:"result,omitempty"`
+	Result UserGetByMobileResponse `json:"result,omitempty"`
 }
 type UserGetByMobileResponse struct {
 	Userid string `json:"userid,omitempty"`

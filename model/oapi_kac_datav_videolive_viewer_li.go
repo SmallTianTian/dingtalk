@@ -67,9 +67,7 @@ type GroupLiveViewerReq struct {
 }
 type OapiKacDatavVideoliveViewerListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
-	Result  GroupLiveViewerPageResult `json:"result,omitempty"`
+	Result GroupLiveViewerPageResult `json:"result,omitempty"`
 }
 type GroupLiveViewer struct {
 	PlayDuration          int64  `json:"play_duration,omitempty"`

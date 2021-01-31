@@ -169,6 +169,4 @@ func (this *OapiSceneservicegroupMessageSendRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiSceneservicegroupMessageSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

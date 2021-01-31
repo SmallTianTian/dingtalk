@@ -65,9 +65,7 @@ type GetMessageStatusRequest struct {
 }
 type OapiImpaasMessageGetmessagestatusResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
-	Result  GetMessageStatusResponse `json:"result,omitempty"`
+	Result GetMessageStatusResponse `json:"result,omitempty"`
 }
 type GetMessageStatusResponse struct {
 	TaskCode   int64  `json:"task_code,omitempty"`

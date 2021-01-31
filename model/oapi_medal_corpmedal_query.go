@@ -66,8 +66,6 @@ func (this *OapiMedalCorpmedalQueryRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiMedalCorpmedalQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
 	Result  CorpMedalQueryResponse `json:"result,omitempty"`
 	Success bool                   `json:"success,omitempty"`
 }

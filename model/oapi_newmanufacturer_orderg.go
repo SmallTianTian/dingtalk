@@ -69,8 +69,6 @@ func (this *OapiNewmanufacturerOrderGetRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiNewmanufacturerOrderGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
 	Model   ProductOrderDto `json:"model,omitempty"`
 	Success string          `json:"success,omitempty"`
 }

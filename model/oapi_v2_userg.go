@@ -73,9 +73,7 @@ func (this *OapiV2UserGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiV2UserGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
-	Result  UserGetResponse `json:"result,omitempty"`
+	Result UserGetResponse `json:"result,omitempty"`
 }
 type DeptLeader struct {
 	DeptId int64 `json:"dept_id,omitempty"`

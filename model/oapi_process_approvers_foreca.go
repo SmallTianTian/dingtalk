@@ -72,9 +72,7 @@ type ProcessForecastRequest struct {
 }
 type OapiProcessApproversForecastResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
-	Result  []ProcessForecastResponse `json:"result,omitempty"`
+	Result []ProcessForecastResponse `json:"result,omitempty"`
 }
 type UserProfileVo struct {
 	Name   string `json:"name,omitempty"`

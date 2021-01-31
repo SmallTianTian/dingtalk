@@ -81,9 +81,7 @@ func (this *OapiRoleSimplelistRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiRoleSimplelistResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  PageVo `json:"result,omitempty"`
+	Result PageVo `json:"result,omitempty"`
 }
 type OrgDeptVo struct {
 	DeptId int64  `json:"dept_id,omitempty"`

@@ -65,8 +65,6 @@ func (this *OapiRetailSellerQueryRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiRetailSellerQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64       `json:"errcode,omitempty"`
-	Errmsg  string      `json:"errmsg,omitempty"`
 	Result  []SellerDto `json:"result,omitempty"`
 	Success bool        `json:"success,omitempty"`
 }

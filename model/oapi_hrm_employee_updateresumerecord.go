@@ -129,6 +129,4 @@ func (this *OapiHrmEmployeeUpdateresumerecordRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiHrmEmployeeUpdateresumerecordResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

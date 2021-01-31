@@ -61,7 +61,5 @@ func (this *OapiUserGetDeptMemberRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiUserGetDeptMemberResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64    `json:"errcode,omitempty"`
-	Errmsg  string   `json:"errmsg,omitempty"`
 	UserIds []string `json:"userIds,omitempty"`
 }

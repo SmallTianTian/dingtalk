@@ -88,7 +88,5 @@ func (this *OapiImpaasNewretailSendstaffgroupmessageRequest) GetTaobaoResp() *ta
 
 type OapiImpaasNewretailSendstaffgroupmessageResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  int64  `json:"result,omitempty"`
+	Result int64 `json:"result,omitempty"`
 }

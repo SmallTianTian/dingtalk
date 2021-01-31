@@ -97,9 +97,7 @@ func (this *OapiCrmGroupCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiCrmGroupCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  CreateGroupResponse `json:"result,omitempty"`
+	Result CreateGroupResponse `json:"result,omitempty"`
 }
 type CreateGroupResponse struct {
 	Cid string `json:"cid,omitempty"`

@@ -81,9 +81,7 @@ func (this *OapiSmartdeviceFaceFeatureRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiSmartdeviceFaceFeatureResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64           `json:"errcode,omitempty"`
-	Errmsg  string          `json:"errmsg,omitempty"`
-	Result  []DidoFeatureVo `json:"result,omitempty"`
+	Result []DidoFeatureVo `json:"result,omitempty"`
 }
 type DidoFeatureVo struct {
 	FeatureInfo string `json:"feature_info,omitempty"`

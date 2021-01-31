@@ -73,9 +73,7 @@ func (this *OapiWorkspaceCircleGroupListRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiWorkspaceCircleGroupListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
-	Result  OpenQueryGroupResponseDto `json:"result,omitempty"`
+	Result OpenQueryGroupResponseDto `json:"result,omitempty"`
 }
 type OpenGroupDto struct {
 	AvatarMediaId  string `json:"avatar_media_id,omitempty"`

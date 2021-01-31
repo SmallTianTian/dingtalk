@@ -73,8 +73,6 @@ func (this *OapiFinanceLoanBankcardListRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiFinanceLoanBankcardListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
 	Result  OpenBankcardQueryResult `json:"result,omitempty"`
 	Success bool                    `json:"success,omitempty"`
 }

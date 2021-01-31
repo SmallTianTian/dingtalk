@@ -70,9 +70,7 @@ func (this *OapiAttendanceGetsimplegroupsRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiAttendanceGetsimplegroupsResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  AtGroupListForTopVo `json:"result,omitempty"`
+	Result AtGroupListForTopVo `json:"result,omitempty"`
 }
 type ClassSettingVo struct {
 	AbsenteeismLateMinutes int64    `json:"absenteeism_late_minutes,omitempty"`

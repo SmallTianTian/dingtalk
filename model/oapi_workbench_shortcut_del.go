@@ -73,9 +73,7 @@ func (this *OapiWorkbenchShortcutDeleteRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiWorkbenchShortcutDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
-	Result  IsvOrgShortcutStatusDTO `json:"result,omitempty"`
+	Result IsvOrgShortcutStatusDTO `json:"result,omitempty"`
 }
 type IsvOrgShortcutStatusDTO struct {
 	BizNo string `json:"biz_no,omitempty"`

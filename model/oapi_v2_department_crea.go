@@ -164,9 +164,7 @@ func (this *OapiV2DepartmentCreateRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiV2DepartmentCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
-	Result  DeptCreateResponse `json:"result,omitempty"`
+	Result DeptCreateResponse `json:"result,omitempty"`
 }
 type DeptCreateResponse struct {
 	DeptId int64 `json:"dept_id,omitempty"`

@@ -89,6 +89,4 @@ func (this *OapiCustomizeConversationUpdateRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiCustomizeConversationUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

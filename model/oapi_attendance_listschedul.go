@@ -83,9 +83,7 @@ func (this *OapiAttendanceListscheduleRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiAttendanceListscheduleResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                  `json:"errcode,omitempty"`
-	Errmsg  string                 `json:"errmsg,omitempty"`
-	Result  AtScheduleListForTopVo `json:"result,omitempty"`
+	Result AtScheduleListForTopVo `json:"result,omitempty"`
 }
 type AtScheduleForTopVo struct {
 	ApproveId        int64     `json:"approve_id,omitempty"`

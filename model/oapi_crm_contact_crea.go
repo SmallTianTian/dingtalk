@@ -105,9 +105,7 @@ func (this *OapiCrmContactCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiCrmContactCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                 `json:"errcode,omitempty"`
-	Errmsg  string                `json:"errmsg,omitempty"`
-	Result  CreateContactResponse `json:"result,omitempty"`
+	Result CreateContactResponse `json:"result,omitempty"`
 }
 type CreateContactResponse struct {
 	ContactInstanceId string `json:"contact_instance_id,omitempty"`

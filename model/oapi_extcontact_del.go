@@ -65,6 +65,4 @@ func (this *OapiExtcontactDeleteRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiExtcontactDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

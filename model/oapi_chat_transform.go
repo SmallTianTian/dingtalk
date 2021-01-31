@@ -65,7 +65,5 @@ func (this *OapiChatTransformRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiChatTransformResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Result  string `json:"result,omitempty"`
+	Result string `json:"result,omitempty"`
 }

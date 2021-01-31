@@ -66,9 +66,7 @@ type MachineInfoRequestVo struct {
 }
 type OapiSmartdeviceAtmachineGetByDeptidResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  MachineInfoResultVo `json:"result,omitempty"`
+	Result MachineInfoResultVo `json:"result,omitempty"`
 }
 type MachineVo struct {
 	DeviceName  string `json:"device_name,omitempty"`

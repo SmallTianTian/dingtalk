@@ -73,6 +73,4 @@ func (this *OapiMicroappScopeAddRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiMicroappScopeAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

@@ -113,7 +113,5 @@ func (this *OapiAppstoreOrdersInquiryRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiAppstoreOrdersInquiryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	PayFee  string `json:"pay_fee,omitempty"`
+	PayFee string `json:"pay_fee,omitempty"`
 }

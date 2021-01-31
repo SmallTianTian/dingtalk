@@ -53,9 +53,7 @@ func (this *OapiAttendanceIsopensmartreportRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiAttendanceIsopensmartreportResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
-	Result  IsOpenSmartReportForTopVo `json:"result,omitempty"`
+	Result IsOpenSmartReportForTopVo `json:"result,omitempty"`
 }
 type IsOpenSmartReportForTopVo struct {
 	SmartReport bool `json:"smart_report,omitempty"`

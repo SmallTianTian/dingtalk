@@ -65,8 +65,6 @@ func (this *OapiCateringMealconfigGetRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiCateringMealconfigGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64              `json:"errcode,omitempty"`
-	Errmsg  string             `json:"errmsg,omitempty"`
 	Result  GroupMealSettingVo `json:"result,omitempty"`
 	Success bool               `json:"success,omitempty"`
 }

@@ -81,8 +81,6 @@ func (this *OapiImIntelligentCardSendRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiImIntelligentCardSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                       `json:"errcode,omitempty"`
-	Errmsg  string                      `json:"errmsg,omitempty"`
 	Result  SendInteractiveCardResultVo `json:"result,omitempty"`
 	Success bool                        `json:"success,omitempty"`
 }

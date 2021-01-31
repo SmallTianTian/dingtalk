@@ -73,9 +73,7 @@ func (this *OapiReportTemplateGetbynameRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiReportTemplateGetbynameResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                    `json:"errcode,omitempty"`
-	Errmsg  string                   `json:"errmsg,omitempty"`
-	Result  ReportTemplateResponseVo `json:"result,omitempty"`
+	Result ReportTemplateResponseVo `json:"result,omitempty"`
 }
 type DefaultReceivers struct {
 	UserName string `json:"user_name,omitempty"`

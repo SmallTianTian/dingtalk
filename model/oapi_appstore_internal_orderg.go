@@ -65,9 +65,7 @@ func (this *OapiAppstoreInternalOrderGetRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiAppstoreInternalOrderGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
-	Result  InAppGoodsOrderVo `json:"result,omitempty"`
+	Result InAppGoodsOrderVo `json:"result,omitempty"`
 }
 type InAppGoodsOrderVo struct {
 	BizOrderId        int64  `json:"biz_order_id,omitempty"`

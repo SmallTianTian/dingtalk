@@ -108,7 +108,5 @@ func (this *OapiKefuSendmessageRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiKefuSendmessageResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Taskid  int64  `json:"taskid,omitempty"`
+	Taskid int64 `json:"taskid,omitempty"`
 }

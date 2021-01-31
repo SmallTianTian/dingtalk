@@ -65,9 +65,7 @@ func (this *OapiImChatbotGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiImChatbotGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  []ChatbotInstanceVO `json:"result,omitempty"`
+	Result []ChatbotInstanceVO `json:"result,omitempty"`
 }
 type ChatbotInstanceVO struct {
 	ChatbotUserId string `json:"chatbot_user_id,omitempty"`

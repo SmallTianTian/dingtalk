@@ -73,7 +73,5 @@ func (this *OapiCrmObjectdataCustomerDeleteRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiCrmObjectdataCustomerDeleteResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
-	Result  ObjectDataDeleteDto `json:"result,omitempty"`
+	Result ObjectDataDeleteDto `json:"result,omitempty"`
 }

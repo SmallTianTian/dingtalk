@@ -61,7 +61,5 @@ func (this *OapiRhinoMosSpaceWorkerCheckOutRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiRhinoMosSpaceWorkerCheckOutResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	Model   bool   `json:"model,omitempty"`
+	Model bool `json:"model,omitempty"`
 }

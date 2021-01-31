@@ -93,8 +93,6 @@ type OpenOrderDataRequest struct {
 }
 type OapiEduSubDataGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                                  `json:"errcode,omitempty"`
-	Errmsg  string                                 `json:"errmsg,omitempty"`
 	Result  []OpenEduSchoolStatisticalDataResponse `json:"result,omitempty"`
 	Success bool                                   `json:"success,omitempty"`
 }

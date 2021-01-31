@@ -81,9 +81,7 @@ func (this *OapiSmartdeviceDevicememberListRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiSmartdeviceDevicememberListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
-	Result  PagedList `json:"result,omitempty"`
+	Result PagedList `json:"result,omitempty"`
 }
 type PagedList struct {
 	Cursor  int64    `json:"cursor,omitempty"`

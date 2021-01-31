@@ -73,9 +73,7 @@ type OpenApiSalesOrderCustomInfoQueryReq struct {
 }
 type OapiRhinoSalesOrderCustomInfoQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                                  `json:"errcode,omitempty"`
-	Errmsg  string                                 `json:"errmsg,omitempty"`
-	Model   OpenApiSalesOrderQueryCustomInfoResult `json:"model,omitempty"`
+	Model OpenApiSalesOrderQueryCustomInfoResult `json:"model,omitempty"`
 }
 type OpenApiSalesOrderCustomInfoDto struct {
 	BizIdCustomerOrder           string    `json:"biz_id_customer_order,omitempty"`

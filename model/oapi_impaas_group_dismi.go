@@ -64,6 +64,4 @@ type DismissGroupRequest struct {
 }
 type OapiImpaasGroupDismissResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

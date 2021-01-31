@@ -81,8 +81,6 @@ func (this *OapiEduStudentAttendanceStatisticsGetRequest) GetTaobaoResp() *taoba
 
 type OapiEduStudentAttendanceStatisticsGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                                  `json:"errcode,omitempty"`
-	Errmsg  string                                 `json:"errmsg,omitempty"`
 	Result  GetStudentAttendanceStatisticsResponse `json:"result,omitempty"`
 	Success bool                                   `json:"success,omitempty"`
 }

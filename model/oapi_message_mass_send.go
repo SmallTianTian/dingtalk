@@ -157,7 +157,5 @@ type MessageBody struct {
 }
 type OapiMessageMassSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
-	TaskId  string `json:"task_id,omitempty"`
+	TaskId string `json:"task_id,omitempty"`
 }

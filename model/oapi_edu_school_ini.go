@@ -77,8 +77,6 @@ type OpenCampus struct {
 }
 type OapiEduSchoolInitResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                     `json:"errcode,omitempty"`
-	Errmsg  string                    `json:"errmsg,omitempty"`
 	Result  OpenEduSchoolInitResponse `json:"result,omitempty"`
 	Success bool                      `json:"success,omitempty"`
 }

@@ -64,9 +64,7 @@ type GroupStatisticalSummaryRequest struct {
 }
 type OapiKacDatavGroupGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                           `json:"errcode,omitempty"`
-	Errmsg  string                          `json:"errmsg,omitempty"`
-	Result  GroupStatisticalSummaryResponse `json:"result,omitempty"`
+	Result GroupStatisticalSummaryResponse `json:"result,omitempty"`
 }
 type GroupStatisticalSummaryResponse struct {
 	DeptGroupCnt  int64 `json:"dept_group_cnt,omitempty"`

@@ -89,8 +89,6 @@ func (this *OapiRobotMessageOrggrouptaskQueryRequest) GetTaobaoResp() *taobao.Ta
 
 type OapiRobotMessageOrggrouptaskQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                            `json:"errcode,omitempty"`
-	Errmsg  string                           `json:"errmsg,omitempty"`
 	Result  GroupMessageTaskQueryTopResponse `json:"result,omitempty"`
 	Success bool                             `json:"success,omitempty"`
 }

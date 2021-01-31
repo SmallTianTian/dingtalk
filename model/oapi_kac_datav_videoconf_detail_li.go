@@ -61,9 +61,7 @@ func (this *OapiKacDatavVideoconfDetailListRequest) GetTaobaoResp() *taobao.Taob
 
 type OapiKacDatavVideoconfDetailListResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
-	Result  McsDetailResponse `json:"result,omitempty"`
+	Result McsDetailResponse `json:"result,omitempty"`
 }
 type McsDetailVo struct {
 	ConfId        string `json:"conf_id,omitempty"`

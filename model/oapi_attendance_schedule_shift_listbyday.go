@@ -91,8 +91,6 @@ func (this *OapiAttendanceScheduleShiftListbydaysRequest) GetTaobaoResp() *taoba
 
 type OapiAttendanceScheduleShiftListbydaysResponse struct {
 	taobao.TaobaoResponse
-	Errcode int64                   `json:"errcode,omitempty"`
-	Errmsg  string                  `json:"errmsg,omitempty"`
 	Result  []TopDayScheduleShiftVo `json:"result,omitempty"`
 	Success bool                    `json:"success,omitempty"`
 }
