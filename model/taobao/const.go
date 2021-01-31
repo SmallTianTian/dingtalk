@@ -61,3 +61,21 @@ const (
 	TOP_HTTP_DNS_HOST           = "TOP_HTTP_DNS_HOST"
 	VERSION                     = "v"
 )
+
+// MessageFields
+const (
+	CONFIRM_ATTACH_QUEUE       = "queue"
+	CONFIRM_ID                 = "id"
+	DATA_ATTACH_OUTGOING_TIME  = "outtime"
+	DATA_CONTENT               = "content"
+	DATA_DATAID                = "dataid"
+	DATA_INCOMING_USER_SESSION = "session"
+	DATA_OUTGOING_PUBLISHER    = "publisher"
+	DATA_OUTGOING_USER_ID      = "userid"
+	DATA_OUTGOING_USER_NICK    = "nick"
+	DATA_PUBLISH_TIME          = "time"
+	DATA_TOPIC                 = "topic"
+	KIND                       = "__kind"
+	MSG                        = "msg"
+	OUTGOING_ID                = "id"
+)

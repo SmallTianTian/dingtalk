@@ -7,7 +7,7 @@ type TaobaoRequest interface {
 	GetBatchApiSession() string
 	GetHeaderMap() map[string]string
 	GetTargetAppKey() string
-	GetTextParams() map[string]string
+	GetTextParams() map[string]interface{}
 	getTimestamp() int32
 	GetTopApiCallType() string
 	GetTopApiFormat() string

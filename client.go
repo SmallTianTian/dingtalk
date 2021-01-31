@@ -61,7 +61,16 @@ func (client *DefaultDingTalkClient) executeOApi(req taobao.TaobaoRequest, sessi
 			// TODO
 		}
 	}
-	appParams := req.GetTextParams()
+	appParamsI := req.GetTextParams()
+	appParams := make(map[string]string, len(appParamsI))
+	for k, v := range appParamsI {
+		bs, err := json.Marshal(v)
+		if err != nil {
+			return err
+		}
+		appParams[k] = string(bs)
+	}
+
 	if accessKey != "" {
 		timestamp := CurrentTimeMillis()
 		signature, err := ComputeSignature(accessSecret, GetCanonicalStringForIsv(timestamp, suiteTicket))

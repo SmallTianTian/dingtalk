@@ -28,12 +28,16 @@ func Test_sign(t *testing.T) {
 func Test_GetCropToken(t *testing.T) {
 	client := NewDefaultDingTalkClient("https://oapi.dingtalk.com/service/get_corp_token")
 	req := model.NewOapiServiceGetCorpTokenRequest()
-	req.SetAuthCorpid(corpID)
-	err := client.Execute4(req, suiteKey, suiteSecrect, suiteTicket)
+	req.SetAuthCorpid("dingc365fcabbf733c3535c2f4657eb6378f")
+	err := client.Execute4(req, "suiteKey", "suiteSecrect", "suiteTicket")
 	if err != nil {
-		t.Error(err)
+		fmt.Println("Client error:", err)
 		return
 	}
 
-	t.Error(req.Resp.AccessToken)
+	if req.Resp.IsSuccess() {
+		fmt.Println("succ", req.Resp.Body)
+	} else {
+		fmt.Println("fail", req.Resp.ErrMsg)
+	}
 }

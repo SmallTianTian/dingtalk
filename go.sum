@@ -1,5 +1,3 @@
-github.com/SmallTianTian/go-tools v0.0.0-20200525141818-c35dc772673a h1:afEDb5DQWE5dr8jsp1IriQLrg6y2akXAUh/+fr9JvTo=
-github.com/SmallTianTian/go-tools v0.0.0-20200525141818-c35dc772673a/go.mod h1:FxJqvCsxcZwoYCtKsfTbNhBoSuZ3c/8IBeI/81Ao6e8=
 github.com/andybalholm/brotli v1.0.0 h1:7UCwP93aiSfvWpapti8g88vVVGp2qqtGyePsSuDafo4=
 github.com/andybalholm/brotli v1.0.0/go.mod h1:loMXtMfwqflxFJPmdbJO0a3KNoPuLBgiu3qAvBg8x/Y=
 github.com/klauspost/compress v1.10.7 h1:7rix8v8GpI3ZBb0nSozFRgbtXKv+hOe+qfEpZqybrAg=

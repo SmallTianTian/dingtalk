@@ -114,7 +114,7 @@ func DoGet(url string, params map[string]string, timeout time.Duration) (*HttpRe
 	return _doTimeout(req, resp, nil, "application/x-www-form-urlencoded", timeout)
 }
 
-var Debug = true
+var Debug = false
 var maxDebugBody = 3 * 1024 * 1024
 
 func debugPrint(f func() (head, body []byte), isResp bool) {
