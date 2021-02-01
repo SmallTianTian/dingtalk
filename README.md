@@ -1,6 +1,6 @@
 # dingtalk
 
-钉钉 Golang SDK
+钉钉 Golang SDK(官方 Java 翻译版，使用方式直接参考官方文档。)
 
 **注意：这不是钉钉官方 SDK，只是个人根据官方 JAVA SDK 翻译的。**
 
