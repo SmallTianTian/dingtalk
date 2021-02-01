@@ -19,7 +19,7 @@ const (
 	CTYPE_TEXT_PLAIN            = "text/plain"
 	CTYPE_TEXT_XML              = "text/xml"
 	DATE_TIMEZONE               = "GMT+8"
-	DATE_TIME_FORMAT            = "yyyy-MM-dd HH:mm:ss"
+	DATE_TIME_FORMAT            = "2006-01-02 15:04:05"
 	ERROR_CODE                  = "code"
 	ERROR_MSG                   = "msg"
 	ERROR_RESPONSE              = "error_response"

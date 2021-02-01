@@ -114,11 +114,19 @@ func DoGet(url string, params map[string]string, timeout time.Duration) (*HttpRe
 	return _doTimeout(req, resp, nil, "application/x-www-form-urlencoded", timeout)
 }
 
-var Debug = false
-var maxDebugBody = 3 * 1024 * 1024
+var debug = false
+var mdb = 3 * 1024 * 1024
+
+func OpenDebug(maxDebugBody int) {
+	if maxDebugBody < 10 {
+		maxDebugBody = 10
+	}
+	debug = true
+	mdb = maxDebugBody
+}
 
 func debugPrint(f func() (head, body []byte), isResp bool) {
-	if !Debug {
+	if !debug {
 		return
 	}
 	h, b := f()
@@ -133,8 +141,8 @@ func debugPrint(f func() (head, body []byte), isResp bool) {
 		println(pre, sc.Text())
 	}
 
-	if len(b) > maxDebugBody {
-		b = b[:maxDebugBody]
+	if len(b) > mdb {
+		b = b[:mdb]
 		b = append(b, []byte("...")...)
 	}
 	println(string(b))

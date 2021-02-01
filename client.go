@@ -11,7 +11,12 @@ import (
 	. "github.com/SmallTianTian/dingtalk/utils"
 )
 
+func OpenDebug(maxDebugBody int) {
+	taobao.OpenDebug(maxDebugBody)
+}
+
 type DefaultDingTalkClient struct {
+	DefaultTaobaoClient
 	URL              string
 	needCheckRequest bool
 	timeout          time.Duration
@@ -21,7 +26,22 @@ func NewDefaultDingTalkClient(url string) *DefaultDingTalkClient {
 	return &DefaultDingTalkClient{
 		URL:     url,
 		timeout: 3 * time.Second,
+		DefaultTaobaoClient: DefaultTaobaoClient{
+			timeout:   3 * time.Second,
+			serverUrl: url,
+		},
 	}
+}
+
+func (client *DefaultDingTalkClient) Execute(req taobao.TaobaoRequest) error {
+	return client.executeOApiSession(req, "")
+}
+
+func (client *DefaultDingTalkClient) Execute2(req taobao.TaobaoRequest, session string) error {
+	if IsEmpty(req.GetTopApiCallType()) || req.GetTopApiCallType() == "top" {
+		return client.TExecute2(req, session)
+	}
+	return client.executeOApiSession(req, session)
 }
 
 func (client *DefaultDingTalkClient) Execute3(req taobao.TaobaoRequest, accessKey, accessSecret string) error {
@@ -39,14 +59,7 @@ func (client *DefaultDingTalkClient) Execute5(req taobao.TaobaoRequest, accessKe
 	return client.executeOApi(req, "", accessKey, accessSecret, suiteTicket, corpId)
 }
 
-func (client *DefaultDingTalkClient) ExecuteSession(req taobao.TaobaoRequest, session string) error {
-	if IsEmpty(req.GetTopApiCallType()) || req.GetTopApiCallType() == "top" {
-		// super.execute(request, session)
-	}
-	return client.executeOApiSession(req, session)
-}
-
-func (client *DefaultDingTalkClient) Execute(req taobao.TaobaoRequest, session, accessKey, accessSecret, suiteTicket, corpId string) error {
+func (client *DefaultDingTalkClient) Execute6(req taobao.TaobaoRequest, session, accessKey, accessSecret, suiteTicket, corpId string) error {
 	return nil
 }
 
@@ -55,7 +68,7 @@ func (client *DefaultDingTalkClient) executeOApiSession(req taobao.TaobaoRequest
 }
 
 func (client *DefaultDingTalkClient) executeOApi(req taobao.TaobaoRequest, session, accessKey, accessSecret, suiteTicket, corpId string) error {
-	var fullUrl string
+	fullUrl := client.URL
 	if client.needCheckRequest {
 		if err := req.Check(); err != nil {
 			// TODO
@@ -64,6 +77,10 @@ func (client *DefaultDingTalkClient) executeOApi(req taobao.TaobaoRequest, sessi
 	appParamsI := req.GetTextParams()
 	appParams := make(map[string]string, len(appParamsI))
 	for k, v := range appParamsI {
+		if vs, ok := v.(string); ok {
+			appParams[k] = vs
+			continue
+		}
 		bs, err := json.Marshal(v)
 		if err != nil {
 			return err
@@ -97,6 +114,12 @@ func (client *DefaultDingTalkClient) executeOApi(req taobao.TaobaoRequest, sessi
 			connect = "?"
 		}
 		fullUrl = client.URL + connect + queryStr
+	} else if session != "" {
+		connet := "?"
+		if strings.Index(fullUrl, "?") > 0 {
+			connet = "&"
+		}
+		fullUrl += connet + "access_token=" + session
 	}
 
 	var data *taobao.HttpResponse
