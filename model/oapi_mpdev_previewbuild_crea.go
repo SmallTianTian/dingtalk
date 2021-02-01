@@ -10,7 +10,7 @@ func NewOapiMpdevPreviewbuildCreateRequest() *OapiMpdevPreviewbuildCreateRequest
 }
 
 type OapiMpdevPreviewbuildCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                     OapiMpdevPreviewbuildCreateResponse
 	BuildScriptVersion       string

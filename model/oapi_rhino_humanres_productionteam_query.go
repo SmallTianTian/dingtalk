@@ -11,7 +11,7 @@ func NewOapiRhinoHumanresProductionteamQueryRequest() *OapiRhinoHumanresProducti
 }
 
 type OapiRhinoHumanresProductionteamQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                     OapiRhinoHumanresProductionteamQueryResponse
 	QueryProductionTeamParam string
@@ -70,8 +70,7 @@ type QueryProductionTeamDto struct {
 }
 type OapiRhinoHumanresProductionteamQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64   `json:"errcode,omitempty"`
-	Errmsg          string  `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string  `json:"external_msg_info,omitempty"`
 	Model           []Model `json:"model,omitempty"`
 	StatusCode      int64   `json:"status_code,omitempty"`

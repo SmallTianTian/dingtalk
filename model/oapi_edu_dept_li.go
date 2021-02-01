@@ -10,7 +10,7 @@ func NewOapiEduDeptListRequest() *OapiEduDeptListRequest {
 }
 
 type OapiEduDeptListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduDeptListResponse
 	PageNo          int64

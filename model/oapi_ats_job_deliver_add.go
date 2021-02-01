@@ -10,7 +10,7 @@ func NewOapiAtsJobDeliverAddRequest() *OapiAtsJobDeliverAddRequest {
 }
 
 type OapiAtsJobDeliverAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsJobDeliverAddResponse
 	BizCode         string
@@ -106,6 +106,4 @@ func (this *OapiAtsJobDeliverAddRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 type OapiAtsJobDeliverAddResponse struct {
 	taobao.TaobaoResponse
 	DeliverId string `json:"deliver_id,omitempty"`
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
 }

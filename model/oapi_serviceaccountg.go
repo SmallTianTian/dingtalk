@@ -10,7 +10,7 @@ func NewOapiServiceaccountGetRequest() *OapiServiceaccountGetRequest {
 }
 
 type OapiServiceaccountGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceaccountGetResponse
 	TopHttpMethod   string
@@ -65,8 +65,7 @@ func (this *OapiServiceaccountGetRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiServiceaccountGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode        int64             `json:"errcode,omitempty"`
-	Errmsg         string            `json:"errmsg,omitempty"`
+
 	ServiceAccount ServiceAccountDTO `json:"service_account,omitempty"`
 }
 type ServiceAccountDTO struct {

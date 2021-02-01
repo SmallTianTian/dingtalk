@@ -10,7 +10,7 @@ func NewCorpConversationCorpconversionListmemberRequest() *CorpConversationCorpc
 }
 
 type CorpConversationCorpconversionListmemberRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               CorpConversationCorpconversionListmemberResponse
 	Count              int64

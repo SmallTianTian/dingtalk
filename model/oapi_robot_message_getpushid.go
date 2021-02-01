@@ -9,7 +9,7 @@ func NewOapiRobotMessageGetpushidRequest() *OapiRobotMessageGetpushidRequest {
 }
 
 type OapiRobotMessageGetpushidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRobotMessageGetpushidResponse
 	TopHttpMethod   string

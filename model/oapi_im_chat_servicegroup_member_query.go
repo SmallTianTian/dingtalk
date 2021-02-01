@@ -10,7 +10,7 @@ func NewOapiImChatServicegroupMemberQueryRequest() *OapiImChatServicegroupMember
 }
 
 type OapiImChatServicegroupMemberQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatServicegroupMemberQueryResponse
 	ChatId          string

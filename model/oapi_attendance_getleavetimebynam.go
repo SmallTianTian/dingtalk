@@ -12,7 +12,7 @@ func NewOapiAttendanceGetleavetimebynamesRequest() *OapiAttendanceGetleavetimeby
 }
 
 type OapiAttendanceGetleavetimebynamesRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetleavetimebynamesResponse
 	FromDate        time.Time

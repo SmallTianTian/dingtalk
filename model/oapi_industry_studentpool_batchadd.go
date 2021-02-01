@@ -10,7 +10,7 @@ func NewOapiIndustryStudentpoolBatchaddRequest() *OapiIndustryStudentpoolBatchad
 }
 
 type OapiIndustryStudentpoolBatchaddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiIndustryStudentpoolBatchaddResponse
 	BizCode         string

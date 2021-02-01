@@ -9,7 +9,7 @@ func NewOapiReportCreateRequest() *OapiReportCreateRequest {
 }
 
 type OapiReportCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiReportCreateResponse
 	CreateReportParam string

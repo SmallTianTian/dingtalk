@@ -10,7 +10,7 @@ func NewOapiEduHomeworkCreateRequest() *OapiEduHomeworkCreateRequest {
 }
 
 type OapiEduHomeworkCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiEduHomeworkCreateResponse
 	Attributes       string

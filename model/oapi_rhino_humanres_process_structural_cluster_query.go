@@ -10,7 +10,7 @@ func NewOapiRhinoHumanresProcessStructuralClusterQueryRequest() *OapiRhinoHumanr
 }
 
 type OapiRhinoHumanresProcessStructuralClusterQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiRhinoHumanresProcessStructuralClusterQueryResponse
 	BizIdProcessList string
@@ -73,8 +73,7 @@ func (this *OapiRhinoHumanresProcessStructuralClusterQueryRequest) GetTaobaoResp
 
 type OapiRhinoHumanresProcessStructuralClusterQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64   `json:"errcode,omitempty"`
-	Errmsg          string  `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string  `json:"external_msg_info,omitempty"`
 	Hsfcode         int64   `json:"hsfcode,omitempty"`
 	Model           []Model `json:"model,omitempty"`

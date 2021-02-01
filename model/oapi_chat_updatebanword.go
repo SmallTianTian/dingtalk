@@ -10,7 +10,7 @@ func NewOapiChatUpdatebanwordsRequest() *OapiChatUpdatebanwordsRequest {
 }
 
 type OapiChatUpdatebanwordsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatUpdatebanwordsResponse
 	BanWordsTime    int64

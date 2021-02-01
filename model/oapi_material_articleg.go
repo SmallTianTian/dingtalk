@@ -10,7 +10,7 @@ func NewOapiMaterialArticleGetRequest() *OapiMaterialArticleGetRequest {
 }
 
 type OapiMaterialArticleGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMaterialArticleGetResponse
 	ArticleId       int64
@@ -73,12 +73,11 @@ func (this *OapiMaterialArticleGetRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiMaterialArticleGetResponse struct {
 	taobao.TaobaoResponse
-	ArticleId     int64  `json:"article_id,omitempty"`
-	Content       string `json:"content,omitempty"`
-	CreateTime    int64  `json:"create_time,omitempty"`
-	Digest        string `json:"digest,omitempty"`
-	Errcode       int64  `json:"errcode,omitempty"`
-	Errmsg        string `json:"errmsg,omitempty"`
+	ArticleId  int64  `json:"article_id,omitempty"`
+	Content    string `json:"content,omitempty"`
+	CreateTime int64  `json:"create_time,omitempty"`
+	Digest     string `json:"digest,omitempty"`
+
 	PublishStatus int64  `json:"publish_status,omitempty"`
 	PublishTime   int64  `json:"publish_time,omitempty"`
 	ThumbMediaId  string `json:"thumb_media_id,omitempty"`

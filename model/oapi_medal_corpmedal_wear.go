@@ -10,7 +10,7 @@ func NewOapiMedalCorpmedalWearRequest() *OapiMedalCorpmedalWearRequest {
 }
 
 type OapiMedalCorpmedalWearRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMedalCorpmedalWearResponse
 	Operation       int64

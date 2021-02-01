@@ -10,7 +10,7 @@ func NewOapiMicroappCustomCreateRequest() *OapiMicroappCustomCreateRequest {
 }
 
 type OapiMicroappCustomCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiMicroappCustomCreateResponse
 	AppCorpId        string

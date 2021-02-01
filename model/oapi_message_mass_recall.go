@@ -10,7 +10,7 @@ func NewOapiMessageMassRecallRequest() *OapiMessageMassRecallRequest {
 }
 
 type OapiMessageMassRecallRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageMassRecallResponse
 	TaskId          string

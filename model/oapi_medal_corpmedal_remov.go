@@ -10,7 +10,7 @@ func NewOapiMedalCorpmedalRemoveRequest() *OapiMedalCorpmedalRemoveRequest {
 }
 
 type OapiMedalCorpmedalRemoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMedalCorpmedalRemoveResponse
 	TemplateId      int64

@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiAttendanceGetupdatedataRequest() *OapiAttendanceGetupdatedataRequest {
@@ -11,7 +12,7 @@ func NewOapiAttendanceGetupdatedataRequest() *OapiAttendanceGetupdatedataRequest
 }
 
 type OapiAttendanceGetupdatedataRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetupdatedataResponse
 	TopHttpMethod   string

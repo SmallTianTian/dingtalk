@@ -9,7 +9,7 @@ func NewOapiAlitripBtripAddressGetRequest() *OapiAlitripBtripAddressGetRequest {
 }
 
 type OapiAlitripBtripAddressGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripAddressGetResponse
 	Request         string

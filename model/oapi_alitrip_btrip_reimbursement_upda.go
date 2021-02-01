@@ -11,7 +11,7 @@ func NewOapiAlitripBtripReimbursementUpdateRequest() *OapiAlitripBtripReimbursem
 }
 
 type OapiAlitripBtripReimbursementUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripReimbursementUpdateResponse
 	Rq              string

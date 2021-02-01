@@ -10,7 +10,7 @@ func NewOapiImChatServicegroupMemberUpdateRequest() *OapiImChatServicegroupMembe
 }
 
 type OapiImChatServicegroupMemberUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiImChatServicegroupMemberUpdateResponse
 	Action            string

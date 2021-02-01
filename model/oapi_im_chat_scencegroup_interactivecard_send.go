@@ -10,7 +10,7 @@ func NewOapiImChatScencegroupInteractivecardSendRequest() *OapiImChatScencegroup
 }
 
 type OapiImChatScencegroupInteractivecardSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                     OapiImChatScencegroupInteractivecardSendResponse
 	CardMediaidParamMap      string

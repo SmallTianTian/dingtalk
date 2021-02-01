@@ -9,7 +9,7 @@ func NewOapiOrgListshortcutRequest() *OapiOrgListshortcutRequest {
 }
 
 type OapiOrgListshortcutRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOrgListshortcutResponse
 	TopHttpMethod   string

@@ -10,7 +10,7 @@ func NewOapiOpenencryptHeartbeatRequest() *OapiOpenencryptHeartbeatRequest {
 }
 
 type OapiOpenencryptHeartbeatRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOpenencryptHeartbeatResponse
 	Appid           int64

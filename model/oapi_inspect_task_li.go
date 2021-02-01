@@ -9,7 +9,7 @@ func NewOapiInspectTaskListRequest() *OapiInspectTaskListRequest {
 }
 
 type OapiInspectTaskListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiInspectTaskListResponse
 	Param           string

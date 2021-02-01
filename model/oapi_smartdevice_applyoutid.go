@@ -10,7 +10,7 @@ func NewOapiSmartdeviceApplyoutidRequest() *OapiSmartdeviceApplyoutidRequest {
 }
 
 type OapiSmartdeviceApplyoutidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceApplyoutidResponse
 	DevServId       int64

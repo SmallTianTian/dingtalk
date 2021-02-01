@@ -9,7 +9,7 @@ func NewOapiCrmObjectmetaFollowrecordDescribeRequest() *OapiCrmObjectmetaFollowr
 }
 
 type OapiCrmObjectmetaFollowrecordDescribeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmObjectmetaFollowrecordDescribeResponse
 	TopHttpMethod   string

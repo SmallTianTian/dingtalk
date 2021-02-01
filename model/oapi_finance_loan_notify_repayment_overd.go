@@ -10,7 +10,7 @@ func NewOapiFinanceLoanNotifyRepaymentOverdueRequest() *OapiFinanceLoanNotifyRep
 }
 
 type OapiFinanceLoanNotifyRepaymentOverdueRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceLoanNotifyRepaymentOverdueResponse
 	IdCardNo        string

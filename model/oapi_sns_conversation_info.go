@@ -10,7 +10,7 @@ func NewOapiSnsConversationInfoRequest() *OapiSnsConversationInfoRequest {
 }
 
 type OapiSnsConversationInfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiSnsConversationInfoResponse
 	OpenConversationId string

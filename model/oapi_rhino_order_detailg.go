@@ -9,7 +9,7 @@ func NewOapiRhinoOrderDetailGetRequest() *OapiRhinoOrderDetailGetRequest {
 }
 
 type OapiRhinoOrderDetailGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoOrderDetailGetResponse
 	Req             string

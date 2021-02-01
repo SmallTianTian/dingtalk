@@ -10,7 +10,7 @@ func NewOapiOcrStructuredRecognizeRequest() *OapiOcrStructuredRecognizeRequest {
 }
 
 type OapiOcrStructuredRecognizeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOcrStructuredRecognizeResponse
 	ImageUrl        string

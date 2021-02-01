@@ -9,7 +9,7 @@ func NewOapiRhinoMosSpaceWorkstationListRequest() *OapiRhinoMosSpaceWorkstationL
 }
 
 type OapiRhinoMosSpaceWorkstationListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosSpaceWorkstationListResponse
 	Request         string

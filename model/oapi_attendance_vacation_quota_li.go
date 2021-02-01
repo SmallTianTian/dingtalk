@@ -10,7 +10,7 @@ func NewOapiAttendanceVacationQuotaListRequest() *OapiAttendanceVacationQuotaLis
 }
 
 type OapiAttendanceVacationQuotaListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceVacationQuotaListResponse
 	LeaveCode       string

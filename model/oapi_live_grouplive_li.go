@@ -10,7 +10,7 @@ func NewOapiLiveGroupliveListRequest() *OapiLiveGroupliveListRequest {
 }
 
 type OapiLiveGroupliveListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiLiveGroupliveListResponse
 	Cid             int64

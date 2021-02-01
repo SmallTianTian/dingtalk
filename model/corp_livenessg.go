@@ -9,7 +9,7 @@ func NewCorpLivenessGetRequest() *CorpLivenessGetRequest {
 }
 
 type CorpLivenessGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpLivenessGetResponse
 	TopHttpMethod   string

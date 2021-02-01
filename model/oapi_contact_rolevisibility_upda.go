@@ -10,7 +10,7 @@ func NewOapiContactRolevisibilityUpdateRequest() *OapiContactRolevisibilityUpdat
 }
 
 type OapiContactRolevisibilityUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiContactRolevisibilityUpdateResponse
 	Permissions     string

@@ -10,7 +10,7 @@ func NewOapiAttendanceCorpInviteactiveOpenRequest() *OapiAttendanceCorpInviteact
 }
 
 type OapiAttendanceCorpInviteactiveOpenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceCorpInviteactiveOpenResponse
 	AdminName       string

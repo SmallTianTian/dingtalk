@@ -9,7 +9,7 @@ func NewOapiCustomerserviceStatusGetRequest() *OapiCustomerserviceStatusGetReque
 }
 
 type OapiCustomerserviceStatusGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomerserviceStatusGetResponse
 	TopHttpMethod   string

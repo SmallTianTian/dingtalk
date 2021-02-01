@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmEmployeeQueryonjobRequest() *OapiSmartworkHrmEmployeeQue
 }
 
 type OapiSmartworkHrmEmployeeQueryonjobRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeQueryonjobResponse
 	Offset          int64

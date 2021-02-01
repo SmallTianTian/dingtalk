@@ -9,7 +9,7 @@ func NewOapiSnsSendMsgRequest() *OapiSnsSendMsgRequest {
 }
 
 type OapiSnsSendMsgRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSnsSendMsgResponse
 	Code            string

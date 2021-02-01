@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecPerformStartRequest() *OapiRhinoMosExecPerformStartReque
 }
 
 type OapiRhinoMosExecPerformStartRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                      OapiRhinoMosExecPerformStartResponse
 	DeviceIds                 string

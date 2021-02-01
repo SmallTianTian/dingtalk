@@ -9,7 +9,7 @@ func NewOapiMessageCorpconversationGetsendresultRequest() *OapiMessageCorpconver
 }
 
 type OapiMessageCorpconversationGetsendresultRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageCorpconversationGetsendresultResponse
 	AgentId         int64
@@ -69,8 +69,7 @@ func (this *OapiMessageCorpconversationGetsendresultRequest) GetTaobaoResp() *ta
 
 type OapiMessageCorpconversationGetsendresultResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64           `json:"errcode,omitempty"`
-	Errmsg     string          `json:"errmsg,omitempty"`
+
 	SendResult AsyncSendResult `json:"send_result,omitempty"`
 }
 type SendForbiddenModel struct {

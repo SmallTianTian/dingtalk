@@ -10,7 +10,7 @@ func NewOapiAppstoreInternalUnfinishedorderListRequest() *OapiAppstoreInternalUn
 }
 
 type OapiAppstoreInternalUnfinishedorderListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreInternalUnfinishedorderListResponse
 	ItemCode        string

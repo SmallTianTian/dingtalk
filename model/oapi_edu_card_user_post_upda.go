@@ -9,7 +9,7 @@ func NewOapiEduCardUserPostUpdateRequest() *OapiEduCardUserPostUpdateRequest {
 }
 
 type OapiEduCardUserPostUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCardUserPostUpdateResponse
 	TopHttpMethod   string

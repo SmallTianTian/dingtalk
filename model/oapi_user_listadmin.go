@@ -9,7 +9,7 @@ func NewOapiUserListadminRequest() *OapiUserListadminRequest {
 }
 
 type OapiUserListadminRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserListadminResponse
 	TopHttpMethod   string

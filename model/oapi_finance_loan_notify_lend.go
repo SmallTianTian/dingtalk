@@ -10,7 +10,7 @@ func NewOapiFinanceLoanNotifyLendRequest() *OapiFinanceLoanNotifyLendRequest {
 }
 
 type OapiFinanceLoanNotifyLendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                 OapiFinanceLoanNotifyLendResponse
 	AvailableLimit       int64

@@ -9,7 +9,7 @@ func NewOapiCrmAuthGroupListRequest() *OapiCrmAuthGroupListRequest {
 }
 
 type OapiCrmAuthGroupListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmAuthGroupListResponse
 	TopHttpMethod   string

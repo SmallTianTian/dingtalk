@@ -10,7 +10,7 @@ func NewOapiDingpayOrderMarkotherpayRequest() *OapiDingpayOrderMarkotherpayReque
 }
 
 type OapiDingpayOrderMarkotherpayRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiDingpayOrderMarkotherpayResponse
 	ApplyPayOperatorUserid string

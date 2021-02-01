@@ -10,7 +10,7 @@ func NewOapiRobotMessageSendorggroupRequest() *OapiRobotMessageSendorggroupReque
 }
 
 type OapiRobotMessageSendorggroupRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiRobotMessageSendorggroupResponse
 	ChatbotId          string

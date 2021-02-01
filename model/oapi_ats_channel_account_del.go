@@ -10,7 +10,7 @@ func NewOapiAtsChannelAccountDeleteRequest() *OapiAtsChannelAccountDeleteRequest
 }
 
 type OapiAtsChannelAccountDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiAtsChannelAccountDeleteResponse
 	BizCode             string

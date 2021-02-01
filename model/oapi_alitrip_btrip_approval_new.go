@@ -9,7 +9,7 @@ func NewOapiAlitripBtripApprovalNewRequest() *OapiAlitripBtripApprovalNewRequest
 }
 
 type OapiAlitripBtripApprovalNewRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripApprovalNewResponse
 	Rq              string

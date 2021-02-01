@@ -10,7 +10,7 @@ func NewOapiTdpProjectMemberRemoveRequest() *OapiTdpProjectMemberRemoveRequest {
 }
 
 type OapiTdpProjectMemberRemoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpProjectMemberRemoveResponse
 	MemberId        string

@@ -10,7 +10,7 @@ func NewOapiChatbotUninstallRequest() *OapiChatbotUninstallRequest {
 }
 
 type OapiChatbotUninstallRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatbotUninstallResponse
 	ChatbotId       string

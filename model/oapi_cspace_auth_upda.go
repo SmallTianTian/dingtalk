@@ -10,7 +10,7 @@ func NewOapiCspaceAuthUpdateRequest() *OapiCspaceAuthUpdateRequest {
 }
 
 type OapiCspaceAuthUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCspaceAuthUpdateResponse
 	AgentId         int64

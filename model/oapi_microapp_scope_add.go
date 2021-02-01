@@ -10,7 +10,7 @@ func NewOapiMicroappScopeAddRequest() *OapiMicroappScopeAddRequest {
 }
 
 type OapiMicroappScopeAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappScopeAddResponse
 	Agentid         int64

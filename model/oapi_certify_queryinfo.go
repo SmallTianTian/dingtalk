@@ -10,7 +10,7 @@ func NewOapiCertifyQueryinfoRequest() *OapiCertifyQueryinfoRequest {
 }
 
 type OapiCertifyQueryinfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCertifyQueryinfoResponse
 	TopHttpMethod   string

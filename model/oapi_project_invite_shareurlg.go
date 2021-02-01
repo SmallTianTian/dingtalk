@@ -9,7 +9,7 @@ func NewOapiProjectInviteShareurlGetRequest() *OapiProjectInviteShareurlGetReque
 }
 
 type OapiProjectInviteShareurlGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProjectInviteShareurlGetResponse
 	InviteInfo      string

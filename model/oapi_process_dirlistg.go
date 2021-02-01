@@ -9,7 +9,7 @@ func NewOapiProcessDirlistGetRequest() *OapiProcessDirlistGetRequest {
 }
 
 type OapiProcessDirlistGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessDirlistGetResponse
 	Request         string

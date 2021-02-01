@@ -10,7 +10,7 @@ func NewOapiV2SafeQuerystatusRequest() *OapiV2SafeQuerystatusRequest {
 }
 
 type OapiV2SafeQuerystatusRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2SafeQuerystatusResponse
 	TopHttpMethod   string

@@ -10,7 +10,7 @@ func NewOapiCateringApplylistCorpidlistGetRequest() *OapiCateringApplylistCorpid
 }
 
 type OapiCateringApplylistCorpidlistGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringApplylistCorpidlistGetResponse
 	ShopIdList      string

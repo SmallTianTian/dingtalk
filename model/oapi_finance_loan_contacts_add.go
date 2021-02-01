@@ -10,7 +10,7 @@ func NewOapiFinanceLoanContactsAddRequest() *OapiFinanceLoanContactsAddRequest {
 }
 
 type OapiFinanceLoanContactsAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceLoanContactsAddResponse
 	ContactMobile   string

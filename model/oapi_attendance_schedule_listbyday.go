@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiAttendanceScheduleListbydayRequest() *OapiAttendanceScheduleListbydayRequest {
@@ -11,7 +12,7 @@ func NewOapiAttendanceScheduleListbydayRequest() *OapiAttendanceScheduleListbyda
 }
 
 type OapiAttendanceScheduleListbydayRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceScheduleListbydayResponse
 	DateTime        int64

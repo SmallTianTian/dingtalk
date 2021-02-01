@@ -9,7 +9,7 @@ func NewOapiDepartmentCreateRequest() *OapiDepartmentCreateRequest {
 }
 
 type OapiDepartmentCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiDepartmentCreateResponse
 	CreateDeptGroup    bool

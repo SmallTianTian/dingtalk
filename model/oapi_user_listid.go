@@ -10,7 +10,7 @@ func NewOapiUserListidRequest() *OapiUserListidRequest {
 }
 
 type OapiUserListidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserListidResponse
 	DeptId          int64

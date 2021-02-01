@@ -9,7 +9,7 @@ func NewOapiAttendanceIsopensmartreportRequest() *OapiAttendanceIsopensmartrepor
 }
 
 type OapiAttendanceIsopensmartreportRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceIsopensmartreportResponse
 	TopHttpMethod   string

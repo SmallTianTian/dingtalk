@@ -10,7 +10,7 @@ func NewIsvBlazersGeneratecodeRequest() *IsvBlazersGeneratecodeRequest {
 }
 
 type IsvBlazersGeneratecodeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            IsvBlazersGeneratecodeResponse
 	BizId           string

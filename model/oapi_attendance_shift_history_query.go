@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiAttendanceShiftHistoryQueryRequest() *OapiAttendanceShiftHistoryQueryRequest {
@@ -11,7 +12,7 @@ func NewOapiAttendanceShiftHistoryQueryRequest() *OapiAttendanceShiftHistoryQuer
 }
 
 type OapiAttendanceShiftHistoryQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceShiftHistoryQueryResponse
 	OpUserId        string

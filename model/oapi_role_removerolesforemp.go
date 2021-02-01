@@ -10,7 +10,7 @@ func NewOapiRoleRemoverolesforempsRequest() *OapiRoleRemoverolesforempsRequest {
 }
 
 type OapiRoleRemoverolesforempsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRoleRemoverolesforempsResponse
 	RoleIds         string

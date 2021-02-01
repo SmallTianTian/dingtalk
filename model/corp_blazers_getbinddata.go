@@ -9,7 +9,7 @@ func NewCorpBlazersGetbinddataRequest() *CorpBlazersGetbinddataRequest {
 }
 
 type CorpBlazersGetbinddataRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpBlazersGetbinddataResponse
 	TopHttpMethod   string

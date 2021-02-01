@@ -10,7 +10,7 @@ func NewSmartworkBpmsProcessinstanceGetRequest() *SmartworkBpmsProcessinstanceGe
 }
 
 type SmartworkBpmsProcessinstanceGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              SmartworkBpmsProcessinstanceGetResponse
 	ProcessInstanceId string

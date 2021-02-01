@@ -10,7 +10,7 @@ func NewOapiAppstoreOrdersSpecialCanalCreateOrderRequest() *OapiAppstoreOrdersSp
 }
 
 type OapiAppstoreOrdersSpecialCanalCreateOrderRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreOrdersSpecialCanalCreateOrderResponse
 	Corpid          string
@@ -130,6 +130,4 @@ func (this *OapiAppstoreOrdersSpecialCanalCreateOrderRequest) GetTaobaoResp() *t
 type OapiAppstoreOrdersSpecialCanalCreateOrderResponse struct {
 	taobao.TaobaoResponse
 	DingOrderId string `json:"ding_order_id,omitempty"`
-	Errcode     int64  `json:"errcode,omitempty"`
-	Errmsg      string `json:"errmsg,omitempty"`
 }

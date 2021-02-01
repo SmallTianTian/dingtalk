@@ -10,7 +10,7 @@ func NewOapiCcoserviceEntranceSendnotifyRequest() *OapiCcoserviceEntranceSendnot
 }
 
 type OapiCcoserviceEntranceSendnotifyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCcoserviceEntranceSendnotifyResponse
 	AppId           int64

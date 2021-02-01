@@ -12,7 +12,7 @@ func NewOapiAttendanceListscheduleRequest() *OapiAttendanceListscheduleRequest {
 }
 
 type OapiAttendanceListscheduleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceListscheduleResponse
 	Offset          int64

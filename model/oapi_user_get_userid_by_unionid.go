@@ -9,7 +9,7 @@ func NewOapiUserGetUseridByUnionidRequest() *OapiUserGetUseridByUnionidRequest {
 }
 
 type OapiUserGetUseridByUnionidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetUseridByUnionidResponse
 	TopHttpMethod   string
@@ -61,8 +61,7 @@ func (this *OapiUserGetUseridByUnionidRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiUserGetUseridByUnionidResponse struct {
 	taobao.TaobaoResponse
-	ContactType int64  `json:"contactType,omitempty"`
-	Errcode     int64  `json:"errcode,omitempty"`
-	Errmsg      string `json:"errmsg,omitempty"`
-	Userid      string `json:"userid,omitempty"`
+	ContactType int64 `json:"contactType,omitempty"`
+
+	Userid string `json:"userid,omitempty"`
 }

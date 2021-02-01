@@ -10,7 +10,7 @@ func NewCorpRoleDeleteroleRequest() *CorpRoleDeleteroleRequest {
 }
 
 type CorpRoleDeleteroleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpRoleDeleteroleResponse
 	RoleId          int64

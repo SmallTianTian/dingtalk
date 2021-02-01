@@ -9,7 +9,7 @@ func NewOapiHrmEmployeeAddresumerecordRequest() *OapiHrmEmployeeAddresumerecordR
 }
 
 type OapiHrmEmployeeAddresumerecordRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHrmEmployeeAddresumerecordResponse
 	Content         string

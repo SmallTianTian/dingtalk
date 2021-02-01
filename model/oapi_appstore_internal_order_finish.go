@@ -10,7 +10,7 @@ func NewOapiAppstoreInternalOrderFinishRequest() *OapiAppstoreInternalOrderFinis
 }
 
 type OapiAppstoreInternalOrderFinishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreInternalOrderFinishResponse
 	BizOrderId      int64

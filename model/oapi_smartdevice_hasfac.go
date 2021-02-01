@@ -10,7 +10,7 @@ func NewOapiSmartdeviceHasfaceRequest() *OapiSmartdeviceHasfaceRequest {
 }
 
 type OapiSmartdeviceHasfaceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceHasfaceResponse
 	TopHttpMethod   string
@@ -65,7 +65,6 @@ func (this *OapiSmartdeviceHasfaceRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiSmartdeviceHasfaceResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64    `json:"errcode,omitempty"`
-	Errmsg     string   `json:"errmsg,omitempty"`
+
 	UseridList []string `json:"userid_list,omitempty"`
 }

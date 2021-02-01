@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecOperationConditionInactiveRequest() *OapiRhinoMosExecOpe
 }
 
 type OapiRhinoMosExecOperationConditionInactiveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                 OapiRhinoMosExecOperationConditionInactiveResponse
 	InactiveOperationReq string
@@ -71,8 +71,7 @@ type InactiveOperationByConditionReq struct {
 }
 type OapiRhinoMosExecOperationConditionInactiveResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64  `json:"errcode,omitempty"`
-	Errmsg          string `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string `json:"external_msg_info,omitempty"`
 	Model           bool   `json:"model,omitempty"`
 }

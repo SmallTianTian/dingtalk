@@ -10,7 +10,7 @@ func NewOapiMessageCorpconversationStatusBarUpdateRequest() *OapiMessageCorpconv
 }
 
 type OapiMessageCorpconversationStatusBarUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageCorpconversationStatusBarUpdateResponse
 	AgentId         int64

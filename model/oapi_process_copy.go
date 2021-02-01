@@ -10,7 +10,7 @@ func NewOapiProcessCopyRequest() *OapiProcessCopyRequest {
 }
 
 type OapiProcessCopyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessCopyResponse
 	AgentId         int64

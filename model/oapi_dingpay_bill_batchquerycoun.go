@@ -12,7 +12,7 @@ func NewOapiDingpayBillBatchquerycountRequest() *OapiDingpayBillBatchquerycountR
 }
 
 type OapiDingpayBillBatchquerycountRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiDingpayBillBatchquerycountResponse
 	ApplyPayOperatorUserid string

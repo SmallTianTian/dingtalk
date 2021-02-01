@@ -10,7 +10,7 @@ func NewOapiAttendanceAdvancedServiceBindRequest() *OapiAttendanceAdvancedServic
 }
 
 type OapiAttendanceAdvancedServiceBindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceAdvancedServiceBindResponse
 	OpUserid        string

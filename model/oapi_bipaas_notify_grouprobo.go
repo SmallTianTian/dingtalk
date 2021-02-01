@@ -9,7 +9,7 @@ func NewOapiBipaasNotifyGrouprobotRequest() *OapiBipaasNotifyGrouprobotRequest {
 }
 
 type OapiBipaasNotifyGrouprobotRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBipaasNotifyGrouprobotResponse
 	RobotNotify     string

@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecClothesSizeCountRequest() *OapiRhinoMosExecClothesSizeCo
 }
 
 type OapiRhinoMosExecClothesSizeCountRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecClothesSizeCountResponse
 	Req             string

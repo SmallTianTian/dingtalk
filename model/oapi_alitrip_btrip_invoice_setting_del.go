@@ -9,7 +9,7 @@ func NewOapiAlitripBtripInvoiceSettingDeleteRequest() *OapiAlitripBtripInvoiceSe
 }
 
 type OapiAlitripBtripInvoiceSettingDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripInvoiceSettingDeleteResponse
 	Request         string

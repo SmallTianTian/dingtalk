@@ -9,7 +9,7 @@ func NewOapiRhinoCooperationCarrierGetRequest() *OapiRhinoCooperationCarrierGetR
 }
 
 type OapiRhinoCooperationCarrierGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoCooperationCarrierGetResponse
 	CarrierId       int64
@@ -77,8 +77,7 @@ func (this *OapiRhinoCooperationCarrierGetRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiRhinoCooperationCarrierGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64      `json:"errcode,omitempty"`
-	Errmsg          string     `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string     `json:"external_msg_info,omitempty"`
 	Model           CarrierDto `json:"model,omitempty"`
 	Success         bool       `json:"success,omitempty"`

@@ -10,7 +10,7 @@ func NewOapiImChatScenegroupTemplateCloseRequest() *OapiImChatScenegroupTemplate
 }
 
 type OapiImChatScenegroupTemplateCloseRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatScenegroupTemplateCloseResponse
 	ApplyMode          int64

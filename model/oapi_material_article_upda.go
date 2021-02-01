@@ -10,7 +10,7 @@ func NewOapiMaterialArticleUpdateRequest() *OapiMaterialArticleUpdateRequest {
 }
 
 type OapiMaterialArticleUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMaterialArticleUpdateResponse
 	Article         string

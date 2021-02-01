@@ -10,7 +10,7 @@ func NewOapiEduStudentAttendanceStatisticsGetRequest() *OapiEduStudentAttendance
 }
 
 type OapiEduStudentAttendanceStatisticsGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduStudentAttendanceStatisticsGetResponse
 	Date            string

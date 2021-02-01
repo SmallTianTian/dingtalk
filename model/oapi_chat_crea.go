@@ -9,7 +9,7 @@ func NewOapiChatCreateRequest() *OapiChatCreateRequest {
 }
 
 type OapiChatCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiChatCreateResponse
 	ChatBannedType      int64
@@ -157,9 +157,8 @@ func (this *OapiChatCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiChatCreateResponse struct {
 	taobao.TaobaoResponse
-	Chatid             string `json:"chatid,omitempty"`
-	ConversationTag    int64  `json:"conversationTag,omitempty"`
-	Errcode            int64  `json:"errcode,omitempty"`
-	Errmsg             string `json:"errmsg,omitempty"`
+	Chatid          string `json:"chatid,omitempty"`
+	ConversationTag int64  `json:"conversationTag,omitempty"`
+
 	OpenConversationId string `json:"openConversationId,omitempty"`
 }

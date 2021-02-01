@@ -9,7 +9,7 @@ func NewOapiCallGetuserlistRequest() *OapiCallGetuserlistRequest {
 }
 
 type OapiCallGetuserlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallGetuserlistResponse
 	Offset          int64

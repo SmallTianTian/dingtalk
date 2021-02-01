@@ -10,7 +10,7 @@ func NewOapiRhinoMosLayoutOperationdefsSectionfirstRequest() *OapiRhinoMosLayout
 }
 
 type OapiRhinoMosLayoutOperationdefsSectionfirstRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosLayoutOperationdefsSectionfirstResponse
 	FlowVersion     int64

@@ -10,7 +10,7 @@ func NewOapiMicroappDelwithuseridRequest() *OapiMicroappDelwithuseridRequest {
 }
 
 type OapiMicroappDelwithuseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappDelwithuseridResponse
 	AgentId         int64

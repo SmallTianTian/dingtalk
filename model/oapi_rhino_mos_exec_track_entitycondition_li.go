@@ -11,7 +11,7 @@ func NewOapiRhinoMosExecTrackEntityconditionListRequest() *OapiRhinoMosExecTrack
 }
 
 type OapiRhinoMosExecTrackEntityconditionListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecTrackEntityconditionListResponse
 	Req             string

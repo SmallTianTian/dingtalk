@@ -10,7 +10,7 @@ func NewOapiAttendanceVacationTypeListRequest() *OapiAttendanceVacationTypeListR
 }
 
 type OapiAttendanceVacationTypeListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceVacationTypeListResponse
 	OpUserid        string

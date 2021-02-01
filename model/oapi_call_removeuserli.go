@@ -10,7 +10,7 @@ func NewOapiCallRemoveuserlistRequest() *OapiCallRemoveuserlistRequest {
 }
 
 type OapiCallRemoveuserlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallRemoveuserlistResponse
 	StaffIdList     string

@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewSmartworkAttendsListscheduleRequest() *SmartworkAttendsListscheduleRequest {
@@ -11,7 +12,7 @@ func NewSmartworkAttendsListscheduleRequest() *SmartworkAttendsListscheduleReque
 }
 
 type SmartworkAttendsListscheduleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkAttendsListscheduleResponse
 	Offset          int64

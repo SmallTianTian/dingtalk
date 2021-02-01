@@ -10,7 +10,7 @@ func NewOapiEduUserBindSyncRequest() *OapiEduUserBindSyncRequest {
 }
 
 type OapiEduUserBindSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduUserBindSyncResponse
 	TopHttpMethod   string

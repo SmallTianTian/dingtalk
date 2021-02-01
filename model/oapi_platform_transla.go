@@ -10,7 +10,7 @@ func NewOapiPlatformTranslateRequest() *OapiPlatformTranslateRequest {
 }
 
 type OapiPlatformTranslateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPlatformTranslateResponse
 	Query           string

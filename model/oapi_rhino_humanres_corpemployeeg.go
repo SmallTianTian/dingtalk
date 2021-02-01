@@ -11,7 +11,7 @@ func NewOapiRhinoHumanresCorpemployeeGetRequest() *OapiRhinoHumanresCorpemployee
 }
 
 type OapiRhinoHumanresCorpemployeeGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiRhinoHumanresCorpemployeeGetResponse
 	QueryCorpEmployeeParam string
@@ -68,12 +68,11 @@ type QueryCorpEmployeeDto struct {
 }
 type OapiRhinoHumanresCorpemployeeGetResponse struct {
 	taobao.TaobaoResponse
-	CorpEmployeeInfo Model  `json:"corp_employee_info,omitempty"`
-	Errcode          int64  `json:"errcode,omitempty"`
-	Errmsg           string `json:"errmsg,omitempty"`
-	ExternalMsgInfo  string `json:"external_msg_info,omitempty"`
-	StatusCode       int64  `json:"status_code,omitempty"`
-	Success          bool   `json:"success,omitempty"`
+	CorpEmployeeInfo Model `json:"corp_employee_info,omitempty"`
+
+	ExternalMsgInfo string `json:"external_msg_info,omitempty"`
+	StatusCode      int64  `json:"status_code,omitempty"`
+	Success         bool   `json:"success,omitempty"`
 }
 type Model struct {
 	BuMail         string    `json:"bu_mail,omitempty"`

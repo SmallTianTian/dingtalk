@@ -10,7 +10,7 @@ func NewOapiUserGetAdminScopeRequest() *OapiUserGetAdminScopeRequest {
 }
 
 type OapiUserGetAdminScopeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetAdminScopeResponse
 	TopHttpMethod   string
@@ -66,6 +66,4 @@ func (this *OapiUserGetAdminScopeRequest) GetTaobaoResp() *taobao.TaobaoResponse
 type OapiUserGetAdminScopeResponse struct {
 	taobao.TaobaoResponse
 	DeptIds []int64 `json:"dept_ids,omitempty"`
-	Errcode int64   `json:"errcode,omitempty"`
-	Errmsg  string  `json:"errmsg,omitempty"`
 }

@@ -9,7 +9,7 @@ func NewOapiImpaasConversationOpencidGetRequest() *OapiImpaasConversationOpencid
 }
 
 type OapiImpaasConversationOpencidGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasConversationOpencidGetResponse
 	Model           string
@@ -65,7 +65,6 @@ type CrossDomainBaseConversationModel struct {
 }
 type OapiImpaasConversationOpencidGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode            int64  `json:"errcode,omitempty"`
-	Errmsg             string `json:"errmsg,omitempty"`
+
 	OpenConversationId string `json:"open_conversation_id,omitempty"`
 }

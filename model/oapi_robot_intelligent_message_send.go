@@ -10,7 +10,7 @@ func NewOapiRobotIntelligentMessageSendRequest() *OapiRobotIntelligentMessageSen
 }
 
 type OapiRobotIntelligentMessageSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiRobotIntelligentMessageSendResponse
 	AtUnionIds         string

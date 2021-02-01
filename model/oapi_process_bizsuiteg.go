@@ -9,7 +9,7 @@ func NewOapiProcessBizsuiteGetRequest() *OapiProcessBizsuiteGetRequest {
 }
 
 type OapiProcessBizsuiteGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessBizsuiteGetResponse
 	Request         string

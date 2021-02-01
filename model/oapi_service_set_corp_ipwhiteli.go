@@ -9,7 +9,7 @@ func NewOapiServiceSetCorpIpwhitelistRequest() *OapiServiceSetCorpIpwhitelistReq
 }
 
 type OapiServiceSetCorpIpwhitelistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceSetCorpIpwhitelistResponse
 	AuthCorpid      string

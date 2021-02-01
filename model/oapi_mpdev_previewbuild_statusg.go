@@ -10,7 +10,7 @@ func NewOapiMpdevPreviewbuildStatusGetRequest() *OapiMpdevPreviewbuildStatusGetR
 }
 
 type OapiMpdevPreviewbuildStatusGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMpdevPreviewbuildStatusGetResponse
 	MiniappId       string

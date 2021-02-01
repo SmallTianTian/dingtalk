@@ -9,7 +9,7 @@ func NewOapiChatbotInstallRequest() *OapiChatbotInstallRequest {
 }
 
 type OapiChatbotInstallRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatbotInstallResponse
 	ChatbotVo       string

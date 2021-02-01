@@ -9,7 +9,7 @@ func NewOapiEduCircleTopiclistRequest() *OapiEduCircleTopiclistRequest {
 }
 
 type OapiEduCircleTopiclistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCircleTopiclistResponse
 	BizType         int64

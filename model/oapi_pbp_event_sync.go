@@ -9,7 +9,7 @@ func NewOapiPbpEventSyncRequest() *OapiPbpEventSyncRequest {
 }
 
 type OapiPbpEventSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPbpEventSyncResponse
 	Param           string

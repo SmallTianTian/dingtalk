@@ -10,7 +10,7 @@ func NewOapiAtsJobBatchaddRequest() *OapiAtsJobBatchaddRequest {
 }
 
 type OapiAtsJobBatchaddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsJobBatchaddResponse
 	BizCode         string

@@ -10,7 +10,7 @@ func NewOapiRobotSendRequest() *OapiRobotSendRequest {
 }
 
 type OapiRobotSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRobotSendResponse
 	ActionCard      string

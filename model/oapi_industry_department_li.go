@@ -10,7 +10,7 @@ func NewOapiIndustryDepartmentListRequest() *OapiIndustryDepartmentListRequest {
 }
 
 type OapiIndustryDepartmentListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiIndustryDepartmentListResponse
 	Cursor          int64

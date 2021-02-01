@@ -9,7 +9,7 @@ func NewOapiEduAlumniGetRequest() *OapiEduAlumniGetRequest {
 }
 
 type OapiEduAlumniGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduAlumniGetResponse
 	TopHttpMethod   string

@@ -10,7 +10,7 @@ func NewOapiWikiGroupPublicListRequest() *OapiWikiGroupPublicListRequest {
 }
 
 type OapiWikiGroupPublicListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWikiGroupPublicListResponse
 	AuthCode        string

@@ -10,7 +10,7 @@ func NewCorpDeviceManageHasbinddeviceRequest() *CorpDeviceManageHasbinddeviceReq
 }
 
 type CorpDeviceManageHasbinddeviceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDeviceManageHasbinddeviceResponse
 	DeviceServiceId int64

@@ -9,7 +9,7 @@ func NewOapiRetailUserTokenCheckRequest() *OapiRetailUserTokenCheckRequest {
 }
 
 type OapiRetailUserTokenCheckRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRetailUserTokenCheckResponse
 	Channel         string

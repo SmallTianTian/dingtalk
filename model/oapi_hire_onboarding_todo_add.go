@@ -10,7 +10,7 @@ func NewOapiHireOnboardingTodoAddRequest() *OapiHireOnboardingTodoAddRequest {
 }
 
 type OapiHireOnboardingTodoAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHireOnboardingTodoAddResponse
 	TopHttpMethod   string

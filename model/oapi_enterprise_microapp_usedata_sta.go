@@ -10,7 +10,7 @@ func NewOapiEnterpriseMicroappUsedataStatRequest() *OapiEnterpriseMicroappUsedat
 }
 
 type OapiEnterpriseMicroappUsedataStatRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEnterpriseMicroappUsedataStatResponse
 	CorpId          string

@@ -10,7 +10,7 @@ func NewOapiSmartbotMsgPushRequest() *OapiSmartbotMsgPushRequest {
 }
 
 type OapiSmartbotMsgPushRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartbotMsgPushResponse
 	ChatIdList      string

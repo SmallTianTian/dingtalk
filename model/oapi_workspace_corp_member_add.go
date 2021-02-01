@@ -10,7 +10,7 @@ func NewOapiWorkspaceCorpMemberAddRequest() *OapiWorkspaceCorpMemberAddRequest {
 }
 
 type OapiWorkspaceCorpMemberAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiWorkspaceCorpMemberAddResponse
 	MemberAddDtoList string

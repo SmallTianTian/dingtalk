@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmEmployeeQuerydimissionRequest() *OapiSmartworkHrmEmploye
 }
 
 type OapiSmartworkHrmEmployeeQuerydimissionRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeQuerydimissionResponse
 	Offset          int64

@@ -10,7 +10,7 @@ func NewCorpMessageCorpconversationGetsendprogressRequest() *CorpMessageCorpconv
 }
 
 type CorpMessageCorpconversationGetsendprogressRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpMessageCorpconversationGetsendprogressResponse
 	AgentId         int64

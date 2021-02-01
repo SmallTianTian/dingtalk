@@ -9,7 +9,7 @@ func NewOapiAlitripBtripCostCenterQueryRequest() *OapiAlitripBtripCostCenterQuer
 }
 
 type OapiAlitripBtripCostCenterQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripCostCenterQueryResponse
 	Rq              string
@@ -69,9 +69,8 @@ type OpenCostCenterQueryRq struct {
 type OapiAlitripBtripCostCenterQueryResponse struct {
 	taobao.TaobaoResponse
 	CostCenterList []OpenCostCenterQueryRs `json:"cost_center_list,omitempty"`
-	Errcode        int64                   `json:"errcode,omitempty"`
-	Errmsg         string                  `json:"errmsg,omitempty"`
-	Success        bool                    `json:"success,omitempty"`
+
+	Success bool `json:"success,omitempty"`
 }
 type OpenCostCenterQueryRs struct {
 	AlipayNo    string            `json:"alipay_no,omitempty"`

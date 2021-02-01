@@ -11,7 +11,7 @@ func NewOapiEduCardCreateRequest() *OapiEduCardCreateRequest {
 }
 
 type OapiEduCardCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiEduCardCreateResponse
 	Opencardcreateparam string

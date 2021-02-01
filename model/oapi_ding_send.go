@@ -9,7 +9,7 @@ func NewOapiDingSendRequest() *OapiDingSendRequest {
 }
 
 type OapiDingSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingSendResponse
 	OpenDingSendVo  string

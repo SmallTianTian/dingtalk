@@ -10,7 +10,7 @@ func NewOapiCspaceAuditlogListRequest() *OapiCspaceAuditlogListRequest {
 }
 
 type OapiCspaceAuditlogListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiCspaceAuditlogListResponse
 	EndDate           int64

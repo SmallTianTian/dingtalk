@@ -12,7 +12,7 @@ func NewOapiSmartdeviceFacelevelGetRequest() *OapiSmartdeviceFacelevelGetRequest
 }
 
 type OapiSmartdeviceFacelevelGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceFacelevelGetResponse
 	TopHttpMethod   string

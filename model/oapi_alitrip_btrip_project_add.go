@@ -9,7 +9,7 @@ func NewOapiAlitripBtripProjectAddRequest() *OapiAlitripBtripProjectAddRequest {
 }
 
 type OapiAlitripBtripProjectAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripProjectAddResponse
 	Request         string

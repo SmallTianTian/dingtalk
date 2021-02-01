@@ -10,7 +10,7 @@ func NewOapiImChatServicegroupCreateRequest() *OapiImChatServicegroupCreateReque
 }
 
 type OapiImChatServicegroupCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatServicegroupCreateResponse
 	GroupUniqId     string

@@ -9,7 +9,7 @@ func NewOapiNewretailQueryorginfoRequest() *OapiNewretailQueryorginfoRequest {
 }
 
 type OapiNewretailQueryorginfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiNewretailQueryorginfoResponse
 	TopHttpMethod   string

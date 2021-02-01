@@ -10,7 +10,7 @@ func NewOapiProcessinstanceFileUploadRequest() *OapiProcessinstanceFileUploadReq
 }
 
 type OapiProcessinstanceFileUploadRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiProcessinstanceFileUploadResponse
 	AgentId           int64

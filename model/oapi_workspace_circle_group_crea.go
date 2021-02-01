@@ -9,7 +9,7 @@ func NewOapiWorkspaceCircleGroupCreateRequest() *OapiWorkspaceCircleGroupCreateR
 }
 
 type OapiWorkspaceCircleGroupCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceCircleGroupCreateResponse
 	Req             string

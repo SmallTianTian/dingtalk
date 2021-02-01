@@ -9,7 +9,7 @@ func NewOapiProcessProcvisibleSaveRequest() *OapiProcessProcvisibleSaveRequest {
 }
 
 type OapiProcessProcvisibleSaveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessProcvisibleSaveResponse
 	Request         string

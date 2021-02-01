@@ -9,7 +9,7 @@ func NewOapiSmartdeviceAtmachineGetByUseridRequest() *OapiSmartdeviceAtmachineGe
 }
 
 type OapiSmartdeviceAtmachineGetByUseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceAtmachineGetByUseridResponse
 	Param           string

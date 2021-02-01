@@ -12,7 +12,7 @@ func NewOapiAttendanceScheduleShiftListbydaysRequest() *OapiAttendanceScheduleSh
 }
 
 type OapiAttendanceScheduleShiftListbydaysRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceScheduleShiftListbydaysResponse
 	FromDateTime    int64

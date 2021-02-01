@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiBlackboardListidsRequest() *OapiBlackboardListidsRequest {
@@ -10,7 +11,7 @@ func NewOapiBlackboardListidsRequest() *OapiBlackboardListidsRequest {
 }
 
 type OapiBlackboardListidsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBlackboardListidsResponse
 	QueryRequest    string

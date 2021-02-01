@@ -10,7 +10,7 @@ func NewOapiAppstoreInternalSkupageGetRequest() *OapiAppstoreInternalSkupageGetR
 }
 
 type OapiAppstoreInternalSkupageGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreInternalSkupageGetResponse
 	CallbackPage    string

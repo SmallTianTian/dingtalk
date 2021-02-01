@@ -10,7 +10,7 @@ func NewOapiChatTagSetRequest() *OapiChatTagSetRequest {
 }
 
 type OapiChatTagSetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatTagSetResponse
 	Chatid          string

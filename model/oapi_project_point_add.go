@@ -10,7 +10,7 @@ func NewOapiProjectPointAddRequest() *OapiProjectPointAddRequest {
 }
 
 type OapiProjectPointAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProjectPointAddResponse
 	ActionTime      int64

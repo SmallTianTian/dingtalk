@@ -9,7 +9,7 @@ func NewOapiUserGetDeptMemberRequest() *OapiUserGetDeptMemberRequest {
 }
 
 type OapiUserGetDeptMemberRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetDeptMemberResponse
 	DeptId          string

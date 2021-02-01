@@ -10,7 +10,7 @@ func NewOapiAtsChannelAccountAddRequest() *OapiAtsChannelAccountAddRequest {
 }
 
 type OapiAtsChannelAccountAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiAtsChannelAccountAddResponse
 	BizCode             string

@@ -10,7 +10,7 @@ func NewOapiServiceaccountListRequest() *OapiServiceaccountListRequest {
 }
 
 type OapiServiceaccountListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceaccountListResponse
 	PageSize        int64
@@ -73,8 +73,7 @@ func (this *OapiServiceaccountListRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiServiceaccountListResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64          `json:"errcode,omitempty"`
-	Errmsg     string         `json:"errmsg,omitempty"`
+
 	ItemCount  int64          `json:"item_count,omitempty"`
 	Items      []PublisherDTO `json:"items,omitempty"`
 	TotalCount int64          `json:"total_count,omitempty"`

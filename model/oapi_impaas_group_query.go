@@ -9,7 +9,7 @@ func NewOapiImpaasGroupQueryRequest() *OapiImpaasGroupQueryRequest {
 }
 
 type OapiImpaasGroupQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasGroupQueryResponse
 	Request         string

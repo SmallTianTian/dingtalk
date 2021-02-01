@@ -10,7 +10,7 @@ func NewOapiAtsEvaluateJobmatchFinishRequest() *OapiAtsEvaluateJobmatchFinishReq
 }
 
 type OapiAtsEvaluateJobmatchFinishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiAtsEvaluateJobmatchFinishResponse
 	BizCode           string

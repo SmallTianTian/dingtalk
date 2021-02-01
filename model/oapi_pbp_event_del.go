@@ -9,7 +9,7 @@ func NewOapiPbpEventDeleteRequest() *OapiPbpEventDeleteRequest {
 }
 
 type OapiPbpEventDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPbpEventDeleteResponse
 	Param           string

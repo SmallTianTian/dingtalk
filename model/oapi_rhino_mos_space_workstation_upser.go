@@ -9,7 +9,7 @@ func NewOapiRhinoMosSpaceWorkstationUpsertRequest() *OapiRhinoMosSpaceWorkstatio
 }
 
 type OapiRhinoMosSpaceWorkstationUpsertRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosSpaceWorkstationUpsertResponse
 	Request         string

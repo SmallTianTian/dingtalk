@@ -10,7 +10,7 @@ func NewOapiWorkspaceTaskDeletebyprojectRequest() *OapiWorkspaceTaskDeletebyproj
 }
 
 type OapiWorkspaceTaskDeletebyprojectRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceTaskDeletebyprojectResponse
 	MicroappAgentId int64

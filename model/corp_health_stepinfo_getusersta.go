@@ -10,7 +10,7 @@ func NewCorpHealthStepinfoGetuserstatusRequest() *CorpHealthStepinfoGetuserstatu
 }
 
 type CorpHealthStepinfoGetuserstatusRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpHealthStepinfoGetuserstatusResponse
 	TopHttpMethod   string

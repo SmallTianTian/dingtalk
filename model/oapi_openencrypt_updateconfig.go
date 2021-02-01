@@ -9,7 +9,7 @@ func NewOapiOpenencryptUpdateconfigRequest() *OapiOpenencryptUpdateconfigRequest
 }
 
 type OapiOpenencryptUpdateconfigRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                 OapiOpenencryptUpdateconfigResponse
 	TopHttpMethod        string

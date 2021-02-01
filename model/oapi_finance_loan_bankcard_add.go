@@ -10,7 +10,7 @@ func NewOapiFinanceLoanBankcardAddRequest() *OapiFinanceLoanBankcardAddRequest {
 }
 
 type OapiFinanceLoanBankcardAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceLoanBankcardAddResponse
 	BankCode        string

@@ -10,7 +10,7 @@ func NewOapiRobotMessageOtotaskQueryRequest() *OapiRobotMessageOtotaskQueryReque
 }
 
 type OapiRobotMessageOtotaskQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRobotMessageOtotaskQueryResponse
 	ChatbotId       string

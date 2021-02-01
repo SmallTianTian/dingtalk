@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecClothesConditionGetRequest() *OapiRhinoMosExecClothesCon
 }
 
 type OapiRhinoMosExecClothesConditionGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiRhinoMosExecClothesConditionGetResponse
 	GetClothesConditionReq string
@@ -83,8 +83,7 @@ type GetClothesConditionReq struct {
 }
 type OapiRhinoMosExecClothesConditionGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64      `json:"errcode,omitempty"`
-	Errmsg          string     `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string     `json:"external_msg_info,omitempty"`
 	Model           PageResult `json:"model,omitempty"`
 }

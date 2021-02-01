@@ -10,7 +10,7 @@ func NewOapiAttendanceGetleavestatusRequest() *OapiAttendanceGetleavestatusReque
 }
 
 type OapiAttendanceGetleavestatusRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetleavestatusResponse
 	EndTime         int64

@@ -10,7 +10,7 @@ func NewOapiEduStudentCreateRequest() *OapiEduStudentCreateRequest {
 }
 
 type OapiEduStudentCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduStudentCreateResponse
 	BizId           string

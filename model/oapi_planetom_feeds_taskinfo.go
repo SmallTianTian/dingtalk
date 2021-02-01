@@ -10,7 +10,7 @@ func NewOapiPlanetomFeedsTaskinfoRequest() *OapiPlanetomFeedsTaskinfoRequest {
 }
 
 type OapiPlanetomFeedsTaskinfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPlanetomFeedsTaskinfoResponse
 	TaskId          string

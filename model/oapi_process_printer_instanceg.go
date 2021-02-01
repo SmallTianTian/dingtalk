@@ -9,7 +9,7 @@ func NewOapiProcessPrinterInstanceGetRequest() *OapiProcessPrinterInstanceGetReq
 }
 
 type OapiProcessPrinterInstanceGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessPrinterInstanceGetResponse
 	Request         string

@@ -9,7 +9,7 @@ func NewOapiUserSeniorWhitelistSetRequest() *OapiUserSeniorWhitelistSetRequest {
 }
 
 type OapiUserSeniorWhitelistSetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiUserSeniorWhitelistSetResponse
 	SeniorWhitelistRequest string

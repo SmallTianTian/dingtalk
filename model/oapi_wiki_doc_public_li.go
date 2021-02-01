@@ -10,7 +10,7 @@ func NewOapiWikiDocPublicListRequest() *OapiWikiDocPublicListRequest {
 }
 
 type OapiWikiDocPublicListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWikiDocPublicListResponse
 	Agentid         int64

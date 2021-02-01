@@ -10,7 +10,7 @@ func NewOapiAttendanceShiftListRequest() *OapiAttendanceShiftListRequest {
 }
 
 type OapiAttendanceShiftListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceShiftListResponse
 	Cursor          int64

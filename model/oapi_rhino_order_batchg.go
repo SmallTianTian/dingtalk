@@ -11,7 +11,7 @@ func NewOapiRhinoOrderBatchGetRequest() *OapiRhinoOrderBatchGetRequest {
 }
 
 type OapiRhinoOrderBatchGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoOrderBatchGetResponse
 	Req             string

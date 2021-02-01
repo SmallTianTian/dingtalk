@@ -10,7 +10,7 @@ func NewOapiDingmiGroupGetRequest() *OapiDingmiGroupGetRequest {
 }
 
 type OapiDingmiGroupGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingmiGroupGetResponse
 	ConversationId  string

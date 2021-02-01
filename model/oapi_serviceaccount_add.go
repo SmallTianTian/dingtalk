@@ -10,7 +10,7 @@ func NewOapiServiceaccountAddRequest() *OapiServiceaccountAddRequest {
 }
 
 type OapiServiceaccountAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceaccountAddResponse
 	AvatarMediaId   string

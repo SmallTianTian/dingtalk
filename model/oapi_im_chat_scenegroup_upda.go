@@ -10,7 +10,7 @@ func NewOapiImChatScenegroupUpdateRequest() *OapiImChatScenegroupUpdateRequest {
 }
 
 type OapiImChatScenegroupUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiImChatScenegroupUpdateResponse
 	ChatBannedType      int64

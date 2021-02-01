@@ -9,7 +9,7 @@ func NewOapiAlitripBtripCostCenterDeleteRequest() *OapiAlitripBtripCostCenterDel
 }
 
 type OapiAlitripBtripCostCenterDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripCostCenterDeleteResponse
 	Rq              string

@@ -10,7 +10,7 @@ func NewOapiInactiveUserGetRequest() *OapiInactiveUserGetRequest {
 }
 
 type OapiInactiveUserGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiInactiveUserGetResponse
 	Offset          int64

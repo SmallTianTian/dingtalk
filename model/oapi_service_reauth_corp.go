@@ -9,7 +9,7 @@ func NewOapiServiceReauthCorpRequest() *OapiServiceReauthCorpRequest {
 }
 
 type OapiServiceReauthCorpRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceReauthCorpResponse
 	AppId           string

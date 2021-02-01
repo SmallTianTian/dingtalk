@@ -10,7 +10,7 @@ func NewOapiCspaceFilePresignedurlGetRequest() *OapiCspaceFilePresignedurlGetReq
 }
 
 type OapiCspaceFilePresignedurlGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCspaceFilePresignedurlGetResponse
 	Dentryid        string
@@ -89,8 +89,7 @@ func (this *OapiCspaceFilePresignedurlGetRequest) GetTaobaoResp() *taobao.Taobao
 
 type OapiCspaceFilePresignedurlGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode            int64             `json:"errcode,omitempty"`
-	Errmsg             string            `json:"errmsg,omitempty"`
+
 	PresignedUrlResult GenerateUrlResult `json:"presigned_url_result,omitempty"`
 	Success            bool              `json:"success,omitempty"`
 }

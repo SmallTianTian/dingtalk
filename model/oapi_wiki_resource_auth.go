@@ -10,7 +10,7 @@ func NewOapiWikiResourceAuthRequest() *OapiWikiResourceAuthRequest {
 }
 
 type OapiWikiResourceAuthRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWikiResourceAuthResponse
 	Agentid         int64

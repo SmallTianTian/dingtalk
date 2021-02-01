@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmMasterDeleteRequest() *OapiSmartworkHrmMasterDeleteReque
 }
 
 type OapiSmartworkHrmMasterDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmMasterDeleteResponse
 	BizData         string

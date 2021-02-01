@@ -10,7 +10,7 @@ func NewCorpHrmEmployeeGetRequest() *CorpHrmEmployeeGetRequest {
 }
 
 type CorpHrmEmployeeGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpHrmEmployeeGetResponse
 	TopHttpMethod   string

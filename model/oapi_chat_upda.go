@@ -9,7 +9,7 @@ func NewOapiChatUpdateRequest() *OapiChatUpdateRequest {
 }
 
 type OapiChatUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiChatUpdateResponse
 	AddExtidlist        []string

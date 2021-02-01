@@ -10,7 +10,7 @@ func NewOapiWorkrecordUpdateRequest() *OapiWorkrecordUpdateRequest {
 }
 
 type OapiWorkrecordUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkrecordUpdateResponse
 	RecordId        string

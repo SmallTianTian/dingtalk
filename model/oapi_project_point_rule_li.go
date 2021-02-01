@@ -10,7 +10,7 @@ func NewOapiProjectPointRuleListRequest() *OapiProjectPointRuleListRequest {
 }
 
 type OapiProjectPointRuleListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProjectPointRuleListResponse
 	TenantId        int64

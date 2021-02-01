@@ -9,7 +9,7 @@ func NewOapiCallBackGetCallBackRequest() *OapiCallBackGetCallBackRequest {
 }
 
 type OapiCallBackGetCallBackRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallBackGetCallBackResponse
 	TopHttpMethod   string
@@ -55,8 +55,7 @@ type OapiCallBackGetCallBackResponse struct {
 	taobao.TaobaoResponse
 	AesKey      string   `json:"aes_key,omitempty"`
 	CallBackTag []string `json:"call_back_tag,omitempty"`
-	Errcode     int64    `json:"errcode,omitempty"`
-	Errmsg      string   `json:"errmsg,omitempty"`
-	Token       string   `json:"token,omitempty"`
-	Url         string   `json:"url,omitempty"`
+
+	Token string `json:"token,omitempty"`
+	Url   string `json:"url,omitempty"`
 }

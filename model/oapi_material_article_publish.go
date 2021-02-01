@@ -10,7 +10,7 @@ func NewOapiMaterialArticlePublishRequest() *OapiMaterialArticlePublishRequest {
 }
 
 type OapiMaterialArticlePublishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMaterialArticlePublishResponse
 	ArticleId       int64

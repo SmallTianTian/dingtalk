@@ -9,7 +9,7 @@ func NewOapiCustomerserviceSessionCloseRequest() *OapiCustomerserviceSessionClos
 }
 
 type OapiCustomerserviceSessionCloseRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomerserviceSessionCloseResponse
 	CloseSession    string

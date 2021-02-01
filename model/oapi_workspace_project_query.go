@@ -9,7 +9,7 @@ func NewOapiWorkspaceProjectQueryRequest() *OapiWorkspaceProjectQueryRequest {
 }
 
 type OapiWorkspaceProjectQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceProjectQueryResponse
 	TopHttpMethod   string

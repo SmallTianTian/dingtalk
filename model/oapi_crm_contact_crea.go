@@ -10,7 +10,7 @@ func NewOapiCrmContactCreateRequest() *OapiCrmContactCreateRequest {
 }
 
 type OapiCrmContactCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiCrmContactCreateResponse
 	ContactName         string

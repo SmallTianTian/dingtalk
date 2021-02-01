@@ -10,7 +10,7 @@ func NewOapiSmartdeviceBatcheventPostRequest() *OapiSmartdeviceBatcheventPostReq
 }
 
 type OapiSmartdeviceBatcheventPostRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceBatcheventPostResponse
 	DeviceEventVos  string

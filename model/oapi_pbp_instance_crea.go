@@ -10,7 +10,7 @@ func NewOapiPbpInstanceCreateRequest() *OapiPbpInstanceCreateRequest {
 }
 
 type OapiPbpInstanceCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPbpInstanceCreateResponse
 	Active          bool
@@ -98,6 +98,4 @@ func (this *OapiPbpInstanceCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse
 type OapiPbpInstanceCreateResponse struct {
 	taobao.TaobaoResponse
 	BizInstId string `json:"biz_inst_id,omitempty"`
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
 }

@@ -10,7 +10,7 @@ func NewOapiAttendanceFaceRecognitionRequest() *OapiAttendanceFaceRecognitionReq
 }
 
 type OapiAttendanceFaceRecognitionRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceFaceRecognitionResponse
 	MediaId         string

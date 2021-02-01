@@ -10,7 +10,7 @@ func NewOapiInactiveUserV2GetRequest() *OapiInactiveUserV2GetRequest {
 }
 
 type OapiInactiveUserV2GetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiInactiveUserV2GetResponse
 	DeptIds         string

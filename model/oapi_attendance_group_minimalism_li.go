@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupMinimalismListRequest() *OapiAttendanceGroupMinimalis
 }
 
 type OapiAttendanceGroupMinimalismListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupMinimalismListResponse
 	Cursor          int64

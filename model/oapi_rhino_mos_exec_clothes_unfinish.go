@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecClothesUnfinishRequest() *OapiRhinoMosExecClothesUnfinis
 }
 
 type OapiRhinoMosExecClothesUnfinishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecClothesUnfinishResponse
 	Req             string

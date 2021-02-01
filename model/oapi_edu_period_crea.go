@@ -10,7 +10,7 @@ func NewOapiEduPeriodCreateRequest() *OapiEduPeriodCreateRequest {
 }
 
 type OapiEduPeriodCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduPeriodCreateResponse
 	OpenPeriod      string

@@ -10,7 +10,7 @@ func NewOapiEduHomeworkGroupRoleGetRequest() *OapiEduHomeworkGroupRoleGetRequest
 }
 
 type OapiEduHomeworkGroupRoleGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduHomeworkGroupRoleGetResponse
 	BizCode         string

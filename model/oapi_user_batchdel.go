@@ -9,7 +9,7 @@ func NewOapiUserBatchdeleteRequest() *OapiUserBatchdeleteRequest {
 }
 
 type OapiUserBatchdeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserBatchdeleteResponse
 	TopHttpMethod   string

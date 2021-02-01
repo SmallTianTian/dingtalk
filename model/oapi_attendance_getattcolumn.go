@@ -9,7 +9,7 @@ func NewOapiAttendanceGetattcolumnsRequest() *OapiAttendanceGetattcolumnsRequest
 }
 
 type OapiAttendanceGetattcolumnsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetattcolumnsResponse
 	TopHttpMethod   string

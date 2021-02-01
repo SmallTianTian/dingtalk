@@ -10,7 +10,7 @@ func NewOapiRhinoMosLayoutOperationdefsEditassignRequest() *OapiRhinoMosLayoutOp
 }
 
 type OapiRhinoMosLayoutOperationdefsEditassignRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiRhinoMosLayoutOperationdefsEditassignResponse
 	AssignInfoModifyItems string

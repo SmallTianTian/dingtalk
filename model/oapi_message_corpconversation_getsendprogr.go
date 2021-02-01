@@ -10,7 +10,7 @@ func NewOapiMessageCorpconversationGetsendprogressRequest() *OapiMessageCorpconv
 }
 
 type OapiMessageCorpconversationGetsendprogressRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageCorpconversationGetsendprogressResponse
 	AgentId         int64
@@ -73,7 +73,6 @@ func (this *OapiMessageCorpconversationGetsendprogressRequest) GetTaobaoResp() *
 
 type OapiMessageCorpconversationGetsendprogressResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64             `json:"errcode,omitempty"`
-	Errmsg   string            `json:"errmsg,omitempty"`
+
 	Progress AsyncSendProgress `json:"progress,omitempty"`
 }

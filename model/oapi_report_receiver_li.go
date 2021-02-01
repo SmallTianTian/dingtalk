@@ -10,7 +10,7 @@ func NewOapiReportReceiverListRequest() *OapiReportReceiverListRequest {
 }
 
 type OapiReportReceiverListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiReportReceiverListResponse
 	Offset          int64

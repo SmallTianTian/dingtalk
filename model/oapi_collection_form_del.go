@@ -9,7 +9,7 @@ func NewOapiCollectionFormDeleteRequest() *OapiCollectionFormDeleteRequest {
 }
 
 type OapiCollectionFormDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCollectionFormDeleteResponse
 	Request         string

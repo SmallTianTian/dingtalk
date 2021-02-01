@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecClothesIdListbypageRequest() *OapiRhinoMosExecClothesIdL
 }
 
 type OapiRhinoMosExecClothesIdListbypageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecClothesIdListbypageResponse
 	Req             string

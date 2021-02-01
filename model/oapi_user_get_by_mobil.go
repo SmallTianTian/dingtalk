@@ -10,7 +10,7 @@ func NewOapiUserGetByMobileRequest() *OapiUserGetByMobileRequest {
 }
 
 type OapiUserGetByMobileRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetByMobileResponse
 	Mobile          string

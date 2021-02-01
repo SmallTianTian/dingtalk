@@ -9,7 +9,7 @@ func NewOapiImpaasConverstionCreateo2oRequest() *OapiImpaasConverstionCreateo2oR
 }
 
 type OapiImpaasConverstionCreateo2oRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasConverstionCreateo2oResponse
 	Request         string
@@ -74,7 +74,5 @@ type CreateConversationRequest struct {
 }
 type OapiImpaasConverstionCreateo2oResponse struct {
 	taobao.TaobaoResponse
-	Chatid  string `json:"chatid,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Chatid string `json:"chatid,omitempty"`
 }

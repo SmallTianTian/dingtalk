@@ -10,7 +10,7 @@ func NewOapiEduGroupMsgSendRequest() *OapiEduGroupMsgSendRequest {
 }
 
 type OapiEduGroupMsgSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiEduGroupMsgSendResponse
 	AgentId           int64

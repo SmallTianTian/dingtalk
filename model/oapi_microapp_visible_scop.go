@@ -9,7 +9,7 @@ func NewOapiMicroappVisibleScopesRequest() *OapiMicroappVisibleScopesRequest {
 }
 
 type OapiMicroappVisibleScopesRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappVisibleScopesResponse
 	AgentId         int64
@@ -61,9 +61,8 @@ func (this *OapiMicroappVisibleScopesRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiMicroappVisibleScopesResponse struct {
 	taobao.TaobaoResponse
-	DeptVisibleScopes []int64  `json:"deptVisibleScopes,omitempty"`
-	Errcode           int64    `json:"errcode,omitempty"`
-	Errmsg            string   `json:"errmsg,omitempty"`
+	DeptVisibleScopes []int64 `json:"deptVisibleScopes,omitempty"`
+
 	IsHidden          bool     `json:"isHidden,omitempty"`
 	UserVisibleScopes []string `json:"userVisibleScopes,omitempty"`
 }

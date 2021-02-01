@@ -10,7 +10,7 @@ func NewOapiHealthStepinfoListbyuseridRequest() *OapiHealthStepinfoListbyuseridR
 }
 
 type OapiHealthStepinfoListbyuseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHealthStepinfoListbyuseridResponse
 	StatDate        string
@@ -73,7 +73,6 @@ func (this *OapiHealthStepinfoListbyuseridRequest) GetTaobaoResp() *taobao.Taoba
 
 type OapiHealthStepinfoListbyuseridResponse struct {
 	taobao.TaobaoResponse
-	Errcode      int64             `json:"errcode,omitempty"`
-	Errmsg       string            `json:"errmsg,omitempty"`
+
 	StepinfoList []BasicStepInfoVo `json:"stepinfo_list,omitempty"`
 }

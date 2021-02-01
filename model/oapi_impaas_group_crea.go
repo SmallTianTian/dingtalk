@@ -9,7 +9,7 @@ func NewOapiImpaasGroupCreateRequest() *OapiImpaasGroupCreateRequest {
 }
 
 type OapiImpaasGroupCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasGroupCreateResponse
 	Request         string
@@ -76,7 +76,5 @@ type CreateGroupRequest struct {
 }
 type OapiImpaasGroupCreateResponse struct {
 	taobao.TaobaoResponse
-	Chatid  string `json:"chatid,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Chatid string `json:"chatid,omitempty"`
 }

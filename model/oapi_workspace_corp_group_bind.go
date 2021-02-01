@@ -10,7 +10,7 @@ func NewOapiWorkspaceCorpGroupBindRequest() *OapiWorkspaceCorpGroupBindRequest {
 }
 
 type OapiWorkspaceCorpGroupBindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceCorpGroupBindResponse
 	ChatIds         string

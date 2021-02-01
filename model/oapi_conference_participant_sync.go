@@ -10,7 +10,7 @@ func NewOapiConferenceParticipantSyncRequest() *OapiConferenceParticipantSyncReq
 }
 
 type OapiConferenceParticipantSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiConferenceParticipantSyncResponse
 	BatchId               string
@@ -106,6 +106,4 @@ func (this *OapiConferenceParticipantSyncRequest) GetTaobaoResp() *taobao.Taobao
 type OapiConferenceParticipantSyncResponse struct {
 	taobao.TaobaoResponse
 	BatchId string `json:"batch_id,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
 }

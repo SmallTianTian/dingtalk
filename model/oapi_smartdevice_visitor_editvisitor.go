@@ -10,7 +10,7 @@ func NewOapiSmartdeviceVisitorEditvisitorRequest() *OapiSmartdeviceVisitorEditvi
 }
 
 type OapiSmartdeviceVisitorEditvisitorRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceVisitorEditvisitorResponse
 	ReservationId   string

@@ -10,7 +10,7 @@ func NewOapiImChatScencegroupInteractivecardCallbackRegisterRequest() *OapiImCha
 }
 
 type OapiImChatScencegroupInteractivecardCallbackRegisterRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatScencegroupInteractivecardCallbackRegisterResponse
 	ApiSecret       string

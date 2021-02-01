@@ -9,7 +9,7 @@ func NewOapiSmartdeviceExternalBindRequest() *OapiSmartdeviceExternalBindRequest
 }
 
 type OapiSmartdeviceExternalBindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceExternalBindResponse
 	DeviceBindReqVo string

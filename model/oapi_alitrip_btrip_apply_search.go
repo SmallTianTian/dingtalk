@@ -9,7 +9,7 @@ func NewOapiAlitripBtripApplySearchRequest() *OapiAlitripBtripApplySearchRequest
 }
 
 type OapiAlitripBtripApplySearchRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripApplySearchResponse
 	Rq              string

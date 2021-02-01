@@ -9,7 +9,7 @@ func NewOapiServiceGetSuiteTokenRequest() *OapiServiceGetSuiteTokenRequest {
 }
 
 type OapiServiceGetSuiteTokenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceGetSuiteTokenResponse
 	SuiteKey        string
@@ -77,8 +77,7 @@ func (this *OapiServiceGetSuiteTokenRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiServiceGetSuiteTokenResponse struct {
 	taobao.TaobaoResponse
-	Errcode          int64  `json:"errcode,omitempty"`
-	Errmsg           string `json:"errmsg,omitempty"`
+
 	ExpiresIn        int64  `json:"expires_in,omitempty"`
 	SuiteAccessToken string `json:"suite_access_token,omitempty"`
 }

@@ -10,7 +10,7 @@ func NewCorpHrmEmployeeSetuserworkdataRequest() *CorpHrmEmployeeSetuserworkdataR
 }
 
 type CorpHrmEmployeeSetuserworkdataRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                CorpHrmEmployeeSetuserworkdataResponse
 	HrmApiUserDataModel string

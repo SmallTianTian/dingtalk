@@ -10,7 +10,7 @@ func NewOapiMaterialArticleDeleteRequest() *OapiMaterialArticleDeleteRequest {
 }
 
 type OapiMaterialArticleDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMaterialArticleDeleteResponse
 	ArticleId       int64

@@ -10,7 +10,7 @@ func NewCorpChatbotUpdatebychatbotidRequest() *CorpChatbotUpdatebychatbotidReque
 }
 
 type CorpChatbotUpdatebychatbotidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpChatbotUpdatebychatbotidResponse
 	Breif           string

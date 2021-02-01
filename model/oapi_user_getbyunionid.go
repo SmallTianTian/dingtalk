@@ -10,7 +10,7 @@ func NewOapiUserGetbyunionidRequest() *OapiUserGetbyunionidRequest {
 }
 
 type OapiUserGetbyunionidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetbyunionidResponse
 	TopHttpMethod   string

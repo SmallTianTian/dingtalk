@@ -10,7 +10,7 @@ func NewOapiInspectFeedbackGetRequest() *OapiInspectFeedbackGetRequest {
 }
 
 type OapiInspectFeedbackGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiInspectFeedbackGetResponse
 	FormId          string
@@ -73,8 +73,7 @@ func (this *OapiInspectFeedbackGetRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiInspectFeedbackGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode      int64                `json:"errcode,omitempty"`
-	Errmsg       string               `json:"errmsg,omitempty"`
+
 	FeedbackForm TopInspectFeedbackVo `json:"feedback_form,omitempty"`
 }
 type TopInspectFeedbackFormItemVO struct {

@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecTrackUnbindRequest() *OapiRhinoMosExecTrackUnbindRequest
 }
 
 type OapiRhinoMosExecTrackUnbindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecTrackUnbindResponse
 	Entities        string

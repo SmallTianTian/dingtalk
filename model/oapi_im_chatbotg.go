@@ -10,7 +10,7 @@ func NewOapiImChatbotGetRequest() *OapiImChatbotGetRequest {
 }
 
 type OapiImChatbotGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatbotGetResponse
 	OpenConversationId string

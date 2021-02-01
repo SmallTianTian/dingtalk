@@ -9,7 +9,7 @@ func NewOapiProcessInstanceExecuteRequest() *OapiProcessInstanceExecuteRequest {
 }
 
 type OapiProcessInstanceExecuteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessInstanceExecuteResponse
 	Request         string

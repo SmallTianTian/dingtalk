@@ -10,7 +10,7 @@ func NewOapiWorkspaceCorpMemberRemoveRequest() *OapiWorkspaceCorpMemberRemoveReq
 }
 
 type OapiWorkspaceCorpMemberRemoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceCorpMemberRemoveResponse
 	TargetCorpId    string

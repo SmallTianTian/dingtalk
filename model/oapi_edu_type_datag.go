@@ -10,7 +10,7 @@ func NewOapiEduTypeDataGetRequest() *OapiEduTypeDataGetRequest {
 }
 
 type OapiEduTypeDataGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduTypeDataGetResponse
 	Orders          string

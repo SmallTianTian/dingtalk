@@ -9,7 +9,7 @@ func NewOapiXiaoxuanPreTest1Request() *OapiXiaoxuanPreTest1Request {
 }
 
 type OapiXiaoxuanPreTest1Request struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiXiaoxuanPreTest1Response
 	Name            string
@@ -69,8 +69,7 @@ func (this *OapiXiaoxuanPreTest1Request) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiXiaoxuanPreTest1Response struct {
 	taobao.TaobaoResponse
-	Errcode    int64  `json:"errcode,omitempty"`
-	Errmsg     string `json:"errmsg,omitempty"`
+
 	Name       string `json:"name,omitempty"`
 	ResultData string `json:"resultData,omitempty"`
 }

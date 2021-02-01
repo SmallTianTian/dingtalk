@@ -9,7 +9,7 @@ func NewOapiImpaasRelationAddRequest() *OapiImpaasRelationAddRequest {
 }
 
 type OapiImpaasRelationAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasRelationAddResponse
 	Request         string

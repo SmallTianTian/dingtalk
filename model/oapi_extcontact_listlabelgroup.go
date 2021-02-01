@@ -10,7 +10,7 @@ func NewOapiExtcontactListlabelgroupsRequest() *OapiExtcontactListlabelgroupsReq
 }
 
 type OapiExtcontactListlabelgroupsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiExtcontactListlabelgroupsResponse
 	Offset          int64

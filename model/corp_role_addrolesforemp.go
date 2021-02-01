@@ -10,7 +10,7 @@ func NewCorpRoleAddrolesforempsRequest() *CorpRoleAddrolesforempsRequest {
 }
 
 type CorpRoleAddrolesforempsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpRoleAddrolesforempsResponse
 	RolelidList     string

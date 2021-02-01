@@ -9,7 +9,7 @@ func NewOapiSnsGetuserinfoBycodeRequest() *OapiSnsGetuserinfoBycodeRequest {
 }
 
 type OapiSnsGetuserinfoBycodeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSnsGetuserinfoBycodeResponse
 	TmpAuthCode     string
@@ -61,8 +61,7 @@ func (this *OapiSnsGetuserinfoBycodeRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiSnsGetuserinfoBycodeResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64    `json:"errcode,omitempty"`
-	Errmsg   string   `json:"errmsg,omitempty"`
+
 	UserInfo UserInfo `json:"user_info,omitempty"`
 }
 type UserInfo struct {

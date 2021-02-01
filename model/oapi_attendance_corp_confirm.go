@@ -10,7 +10,7 @@ func NewOapiAttendanceCorpConfirmRequest() *OapiAttendanceCorpConfirmRequest {
 }
 
 type OapiAttendanceCorpConfirmRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceCorpConfirmResponse
 	CorpId          string

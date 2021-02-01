@@ -10,7 +10,7 @@ func NewOapiWorkbenchShortcutListRequest() *OapiWorkbenchShortcutListRequest {
 }
 
 type OapiWorkbenchShortcutListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkbenchShortcutListResponse
 	AppId           string

@@ -10,7 +10,7 @@ func NewOapiReportTemplateGetbynameRequest() *OapiReportTemplateGetbynameRequest
 }
 
 type OapiReportTemplateGetbynameRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiReportTemplateGetbynameResponse
 	TemplateName    string

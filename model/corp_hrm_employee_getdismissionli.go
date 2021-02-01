@@ -12,7 +12,7 @@ func NewCorpHrmEmployeeGetdismissionlistRequest() *CorpHrmEmployeeGetdismissionl
 }
 
 type CorpHrmEmployeeGetdismissionlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpHrmEmployeeGetdismissionlistResponse
 	Current         int64

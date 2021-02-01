@@ -10,7 +10,7 @@ func NewOapiAtsRpaResumeMailCollectRequest() *OapiAtsRpaResumeMailCollectRequest
 }
 
 type OapiAtsRpaResumeMailCollectRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsRpaResumeMailCollectResponse
 	BizCode         string

@@ -10,7 +10,7 @@ func NewOapiMiniappAppversionQueryRequest() *OapiMiniappAppversionQueryRequest {
 }
 
 type OapiMiniappAppversionQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMiniappAppversionQueryResponse
 	ModelKey        string
@@ -65,9 +65,7 @@ func (this *OapiMiniappAppversionQueryRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiMiniappAppversionQueryResponse struct {
 	taobao.TaobaoResponse
-	Data    AppVersionDoModel `json:"data,omitempty"`
-	Errcode int64             `json:"errcode,omitempty"`
-	Errmsg  string            `json:"errmsg,omitempty"`
+	Data AppVersionDoModel `json:"data,omitempty"`
 }
 type AppVersionDoModel struct {
 	AppId            string `json:"app_id,omitempty"`

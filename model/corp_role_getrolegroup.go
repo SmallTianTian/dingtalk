@@ -10,7 +10,7 @@ func NewCorpRoleGetrolegroupRequest() *CorpRoleGetrolegroupRequest {
 }
 
 type CorpRoleGetrolegroupRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpRoleGetrolegroupResponse
 	GroupId         int64

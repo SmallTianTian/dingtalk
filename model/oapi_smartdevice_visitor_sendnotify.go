@@ -9,7 +9,7 @@ func NewOapiSmartdeviceVisitorSendnotifyRequest() *OapiSmartdeviceVisitorSendnot
 }
 
 type OapiSmartdeviceVisitorSendnotifyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceVisitorSendnotifyResponse
 	ReservationId   string

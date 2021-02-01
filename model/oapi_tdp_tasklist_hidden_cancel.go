@@ -10,7 +10,7 @@ func NewOapiTdpTasklistHiddenCancelRequest() *OapiTdpTasklistHiddenCancelRequest
 }
 
 type OapiTdpTasklistHiddenCancelRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpTasklistHiddenCancelResponse
 	Agentid         int64

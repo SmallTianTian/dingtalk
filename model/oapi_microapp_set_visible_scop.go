@@ -9,7 +9,7 @@ func NewOapiMicroappSetVisibleScopesRequest() *OapiMicroappSetVisibleScopesReque
 }
 
 type OapiMicroappSetVisibleScopesRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiMicroappSetVisibleScopesResponse
 	AgentId           int64

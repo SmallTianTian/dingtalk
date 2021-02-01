@@ -9,7 +9,7 @@ func NewOapiCallBackGetCallBackFailedResultRequest() *OapiCallBackGetCallBackFai
 }
 
 type OapiCallBackGetCallBackFailedResultRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallBackGetCallBackFailedResultResponse
 	TopHttpMethod   string
@@ -53,8 +53,7 @@ func (this *OapiCallBackGetCallBackFailedResultRequest) GetTaobaoResp() *taobao.
 
 type OapiCallBackGetCallBackFailedResultResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64    `json:"errcode,omitempty"`
-	Errmsg     string   `json:"errmsg,omitempty"`
+
 	FailedList []Failed `json:"failed_list,omitempty"`
 	HasMore    bool     `json:"has_more,omitempty"`
 }

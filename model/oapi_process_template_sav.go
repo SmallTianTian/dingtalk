@@ -10,7 +10,7 @@ func NewOapiProcessTemplateSaveRequest() *OapiProcessTemplateSaveRequest {
 }
 
 type OapiProcessTemplateSaveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessTemplateSaveResponse
 	Font            string

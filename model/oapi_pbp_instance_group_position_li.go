@@ -10,7 +10,7 @@ func NewOapiPbpInstanceGroupPositionListRequest() *OapiPbpInstanceGroupPositionL
 }
 
 type OapiPbpInstanceGroupPositionListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPbpInstanceGroupPositionListResponse
 	BizId           string

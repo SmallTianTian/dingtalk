@@ -9,7 +9,7 @@ func NewOapiCircleEnworkUpdateRequest() *OapiCircleEnworkUpdateRequest {
 }
 
 type OapiCircleEnworkUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCircleEnworkUpdateResponse
 	OpenUpdateDto   string

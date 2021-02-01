@@ -10,7 +10,7 @@ func NewOapiV2SafeSetenableRequest() *OapiV2SafeSetenableRequest {
 }
 
 type OapiV2SafeSetenableRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2SafeSetenableResponse
 	TopHttpMethod   string

@@ -9,7 +9,7 @@ func NewOapiMicroappCreateRequest() *OapiMicroappCreateRequest {
 }
 
 type OapiMicroappCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappCreateResponse
 	AppDesc         string
@@ -101,7 +101,5 @@ func (this *OapiMicroappCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiMicroappCreateResponse struct {
 	taobao.TaobaoResponse
-	Agentid int64  `json:"agentid,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Agentid int64 `json:"agentid,omitempty"`
 }

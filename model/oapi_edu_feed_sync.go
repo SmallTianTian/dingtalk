@@ -10,7 +10,7 @@ func NewOapiEduFeedSyncRequest() *OapiEduFeedSyncRequest {
 }
 
 type OapiEduFeedSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduFeedSyncResponse
 	AlbumId         string

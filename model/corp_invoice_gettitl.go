@@ -9,7 +9,7 @@ func NewCorpInvoiceGettitleRequest() *CorpInvoiceGettitleRequest {
 }
 
 type CorpInvoiceGettitleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpInvoiceGettitleResponse
 	TopHttpMethod   string

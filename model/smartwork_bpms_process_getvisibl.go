@@ -10,7 +10,7 @@ func NewSmartworkBpmsProcessGetvisibleRequest() *SmartworkBpmsProcessGetvisibleR
 }
 
 type SmartworkBpmsProcessGetvisibleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkBpmsProcessGetvisibleResponse
 	ProcessCodeList string

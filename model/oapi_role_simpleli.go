@@ -10,7 +10,7 @@ func NewOapiRoleSimplelistRequest() *OapiRoleSimplelistRequest {
 }
 
 type OapiRoleSimplelistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRoleSimplelistResponse
 	Offset          int64

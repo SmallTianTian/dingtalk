@@ -10,7 +10,7 @@ func NewSmartworkBlackboardListtoptenRequest() *SmartworkBlackboardListtoptenReq
 }
 
 type SmartworkBlackboardListtoptenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkBlackboardListtoptenResponse
 	TopHttpMethod   string

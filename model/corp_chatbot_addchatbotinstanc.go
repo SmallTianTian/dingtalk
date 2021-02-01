@@ -10,7 +10,7 @@ func NewCorpChatbotAddchatbotinstanceRequest() *CorpChatbotAddchatbotinstanceReq
 }
 
 type CorpChatbotAddchatbotinstanceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               CorpChatbotAddchatbotinstanceResponse
 	ChatbotId          string

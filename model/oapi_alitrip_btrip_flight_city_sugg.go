@@ -9,7 +9,7 @@ func NewOapiAlitripBtripFlightCitySuggestRequest() *OapiAlitripBtripFlightCitySu
 }
 
 type OapiAlitripBtripFlightCitySuggestRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripFlightCitySuggestResponse
 	Rq              string

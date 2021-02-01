@@ -9,7 +9,7 @@ func NewOapiRetailUserUnbindRequest() *OapiRetailUserUnbindRequest {
 }
 
 type OapiRetailUserUnbindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiRetailUserUnbindResponse
 	AssociateUnionId string

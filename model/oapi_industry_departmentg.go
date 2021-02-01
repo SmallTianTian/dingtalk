@@ -10,7 +10,7 @@ func NewOapiIndustryDepartmentGetRequest() *OapiIndustryDepartmentGetRequest {
 }
 
 type OapiIndustryDepartmentGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiIndustryDepartmentGetResponse
 	DeptId          int64

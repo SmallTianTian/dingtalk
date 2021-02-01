@@ -10,7 +10,7 @@ func NewOapiWorkspaceTaskMigrateRequest() *OapiWorkspaceTaskMigrateRequest {
 }
 
 type OapiWorkspaceTaskMigrateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceTaskMigrateResponse
 	Agentid         int64

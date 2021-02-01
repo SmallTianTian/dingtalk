@@ -9,7 +9,7 @@ func NewOapiCallBackDeleteCallBackRequest() *OapiCallBackDeleteCallBackRequest {
 }
 
 type OapiCallBackDeleteCallBackRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallBackDeleteCallBackResponse
 	TopHttpMethod   string

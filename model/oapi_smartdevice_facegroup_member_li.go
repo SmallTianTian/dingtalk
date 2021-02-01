@@ -10,7 +10,7 @@ func NewOapiSmartdeviceFacegroupMemberListRequest() *OapiSmartdeviceFacegroupMem
 }
 
 type OapiSmartdeviceFacegroupMemberListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceFacegroupMemberListResponse
 	BizId           string

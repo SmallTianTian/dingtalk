@@ -9,7 +9,7 @@ func NewOapiProjectInviteDataQueryRequest() *OapiProjectInviteDataQueryRequest {
 }
 
 type OapiProjectInviteDataQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProjectInviteDataQueryResponse
 	InviteDataQuery string

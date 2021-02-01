@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiAttendanceGetsimplegroupsRequest() *OapiAttendanceGetsimplegroupsRequest {
@@ -10,7 +11,7 @@ func NewOapiAttendanceGetsimplegroupsRequest() *OapiAttendanceGetsimplegroupsReq
 }
 
 type OapiAttendanceGetsimplegroupsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetsimplegroupsResponse
 	Offset          int64

@@ -9,7 +9,7 @@ func NewOapiBlackboardCreateRequest() *OapiBlackboardCreateRequest {
 }
 
 type OapiBlackboardCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBlackboardCreateResponse
 	CreateRequest   string

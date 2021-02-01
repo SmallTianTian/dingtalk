@@ -10,7 +10,7 @@ func NewOapiEduSchoolInitRequest() *OapiEduSchoolInitRequest {
 }
 
 type OapiEduSchoolInitRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduSchoolInitResponse
 	Campus          string

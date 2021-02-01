@@ -10,7 +10,7 @@ func NewOapiMessageCorpconversationRecallRequest() *OapiMessageCorpconversationR
 }
 
 type OapiMessageCorpconversationRecallRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageCorpconversationRecallResponse
 	AgentId         int64

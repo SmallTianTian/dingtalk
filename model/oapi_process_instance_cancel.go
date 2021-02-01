@@ -9,7 +9,7 @@ func NewOapiProcessInstanceCancelRequest() *OapiProcessInstanceCancelRequest {
 }
 
 type OapiProcessInstanceCancelRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessInstanceCancelResponse
 	Request         string

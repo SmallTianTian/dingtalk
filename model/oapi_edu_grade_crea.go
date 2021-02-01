@@ -10,7 +10,7 @@ func NewOapiEduGradeCreateRequest() *OapiEduGradeCreateRequest {
 }
 
 type OapiEduGradeCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduGradeCreateResponse
 	OpenGrade       string

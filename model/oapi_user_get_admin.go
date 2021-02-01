@@ -9,7 +9,7 @@ func NewOapiUserGetAdminRequest() *OapiUserGetAdminRequest {
 }
 
 type OapiUserGetAdminRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetAdminResponse
 	TopHttpMethod   string
@@ -54,8 +54,6 @@ func (this *OapiUserGetAdminRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 type OapiUserGetAdminResponse struct {
 	taobao.TaobaoResponse
 	AdminList []AdminList `json:"admin_list,omitempty"`
-	Errcode   int64       `json:"errcode,omitempty"`
-	Errmsg    string      `json:"errmsg,omitempty"`
 }
 type AdminList struct {
 	AdminMobile string `json:"admin_mobile,omitempty"`

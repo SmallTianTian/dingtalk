@@ -10,7 +10,7 @@ func NewOapiProcessinstanceVariableUpdateRequest() *OapiProcessinstanceVariableU
 }
 
 type OapiProcessinstanceVariableUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiProcessinstanceVariableUpdateResponse
 	ProcessInstanceId string

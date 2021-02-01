@@ -10,7 +10,7 @@ func NewOapiAttendanceTokenGetRequest() *OapiAttendanceTokenGetRequest {
 }
 
 type OapiAttendanceTokenGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceTokenGetResponse
 	OpUserid        string

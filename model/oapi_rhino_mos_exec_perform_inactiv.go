@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecPerformInactiveRequest() *OapiRhinoMosExecPerformInactiv
 }
 
 type OapiRhinoMosExecPerformInactiveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecPerformInactiveResponse
 	Ids             string

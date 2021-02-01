@@ -10,7 +10,7 @@ func NewOapiEduUseridGetRequest() *OapiEduUseridGetRequest {
 }
 
 type OapiEduUseridGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduUseridGetResponse
 	Mobiles         string

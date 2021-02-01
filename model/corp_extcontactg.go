@@ -10,7 +10,7 @@ func NewCorpExtcontactGetRequest() *CorpExtcontactGetRequest {
 }
 
 type CorpExtcontactGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpExtcontactGetResponse
 	TopHttpMethod   string

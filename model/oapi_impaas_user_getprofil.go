@@ -9,7 +9,7 @@ func NewOapiImpaasUserGetprofileRequest() *OapiImpaasUserGetprofileRequest {
 }
 
 type OapiImpaasUserGetprofileRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasUserGetprofileResponse
 	Request         string

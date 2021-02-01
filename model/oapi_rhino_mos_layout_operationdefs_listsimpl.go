@@ -10,7 +10,7 @@ func NewOapiRhinoMosLayoutOperationdefsListsimpleRequest() *OapiRhinoMosLayoutOp
 }
 
 type OapiRhinoMosLayoutOperationdefsListsimpleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosLayoutOperationdefsListsimpleResponse
 	OperationUids   string

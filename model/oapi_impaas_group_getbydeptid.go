@@ -10,7 +10,7 @@ func NewOapiImpaasGroupGetbydeptidRequest() *OapiImpaasGroupGetbydeptidRequest {
 }
 
 type OapiImpaasGroupGetbydeptidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasGroupGetbydeptidResponse
 	DeptId          int64

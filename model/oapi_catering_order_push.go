@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiCateringOrderPushRequest() *OapiCateringOrderPushRequest {
@@ -10,7 +11,7 @@ func NewOapiCateringOrderPushRequest() *OapiCateringOrderPushRequest {
 }
 
 type OapiCateringOrderPushRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiCateringOrderPushResponse
 	FeeActuallyPay   int64

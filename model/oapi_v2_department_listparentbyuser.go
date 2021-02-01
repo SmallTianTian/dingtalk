@@ -10,7 +10,7 @@ func NewOapiV2DepartmentListparentbyuserRequest() *OapiV2DepartmentListparentbyu
 }
 
 type OapiV2DepartmentListparentbyuserRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2DepartmentListparentbyuserResponse
 	TopHttpMethod   string

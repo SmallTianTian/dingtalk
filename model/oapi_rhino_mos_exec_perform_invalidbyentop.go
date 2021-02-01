@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecPerformInvalidbyentopRequest() *OapiRhinoMosExecPerformI
 }
 
 type OapiRhinoMosExecPerformInvalidbyentopRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecPerformInvalidbyentopResponse
 	Req             string

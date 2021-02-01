@@ -10,7 +10,7 @@ func NewOapiMessageMassSendRequest() *OapiMessageMassSendRequest {
 }
 
 type OapiMessageMassSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageMassSendResponse
 	DepIdList       string

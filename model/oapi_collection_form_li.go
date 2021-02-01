@@ -10,7 +10,7 @@ func NewOapiCollectionFormListRequest() *OapiCollectionFormListRequest {
 }
 
 type OapiCollectionFormListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCollectionFormListResponse
 	BizType         int64

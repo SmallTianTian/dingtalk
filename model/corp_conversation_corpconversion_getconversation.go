@@ -10,7 +10,7 @@ func NewCorpConversationCorpconversionGetconversationRequest() *CorpConversation
 }
 
 type CorpConversationCorpconversionGetconversationRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               CorpConversationCorpconversionGetconversationResponse
 	OpenConversationId string

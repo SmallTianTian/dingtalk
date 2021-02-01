@@ -10,7 +10,7 @@ func NewCorpDeviceNickUpdateRequest() *CorpDeviceNickUpdateRequest {
 }
 
 type CorpDeviceNickUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDeviceNickUpdateResponse
 	DeviceId        string

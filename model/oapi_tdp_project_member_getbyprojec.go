@@ -12,7 +12,7 @@ func NewOapiTdpProjectMemberGetbyprojectRequest() *OapiTdpProjectMemberGetbyproj
 }
 
 type OapiTdpProjectMemberGetbyprojectRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpProjectMemberGetbyprojectResponse
 	MicroappAgentId int64

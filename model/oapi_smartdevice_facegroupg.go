@@ -10,7 +10,7 @@ func NewOapiSmartdeviceFacegroupGetRequest() *OapiSmartdeviceFacegroupGetRequest
 }
 
 type OapiSmartdeviceFacegroupGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceFacegroupGetResponse
 	BizId           string

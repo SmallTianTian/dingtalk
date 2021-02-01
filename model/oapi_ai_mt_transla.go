@@ -10,7 +10,7 @@ func NewOapiAiMtTranslateRequest() *OapiAiMtTranslateRequest {
 }
 
 type OapiAiMtTranslateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAiMtTranslateResponse
 	Query           string

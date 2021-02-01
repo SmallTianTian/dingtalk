@@ -9,7 +9,7 @@ func NewCorpBlazersUnbindRequest() *CorpBlazersUnbindRequest {
 }
 
 type CorpBlazersUnbindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpBlazersUnbindResponse
 	TopHttpMethod   string

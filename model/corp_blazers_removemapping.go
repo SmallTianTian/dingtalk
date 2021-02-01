@@ -9,7 +9,7 @@ func NewCorpBlazersRemovemappingRequest() *CorpBlazersRemovemappingRequest {
 }
 
 type CorpBlazersRemovemappingRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpBlazersRemovemappingResponse
 	BizId           string

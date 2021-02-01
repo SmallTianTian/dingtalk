@@ -10,7 +10,7 @@ func NewOapiCateringOpenOrderPushRequest() *OapiCateringOpenOrderPushRequest {
 }
 
 type OapiCateringOpenOrderPushRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringOpenOrderPushResponse
 	ActualAmount    int64

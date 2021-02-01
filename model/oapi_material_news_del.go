@@ -10,7 +10,7 @@ func NewOapiMaterialNewsDeleteRequest() *OapiMaterialNewsDeleteRequest {
 }
 
 type OapiMaterialNewsDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMaterialNewsDeleteResponse
 	MediaId         string

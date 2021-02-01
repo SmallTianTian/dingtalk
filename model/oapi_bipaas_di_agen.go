@@ -9,7 +9,7 @@ func NewOapiBipaasDiAgentRequest() *OapiBipaasDiAgentRequest {
 }
 
 type OapiBipaasDiAgentRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBipaasDiAgentResponse
 	Request         string

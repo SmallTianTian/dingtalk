@@ -9,7 +9,7 @@ func NewOapiServiceGetAgentRequest() *OapiServiceGetAgentRequest {
 }
 
 type OapiServiceGetAgentRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceGetAgentResponse
 	Agentid         string
@@ -88,8 +88,7 @@ type OapiServiceGetAgentResponse struct {
 	Agentid     int64  `json:"agentid,omitempty"`
 	Close       int64  `json:"close,omitempty"`
 	Description string `json:"description,omitempty"`
-	Errcode     int64  `json:"errcode,omitempty"`
-	Errmsg      string `json:"errmsg,omitempty"`
-	LogoUrl     string `json:"logo_url,omitempty"`
-	Name        string `json:"name,omitempty"`
+
+	LogoUrl string `json:"logo_url,omitempty"`
+	Name    string `json:"name,omitempty"`
 }

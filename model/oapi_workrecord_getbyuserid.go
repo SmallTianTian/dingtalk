@@ -10,7 +10,7 @@ func NewOapiWorkrecordGetbyuseridRequest() *OapiWorkrecordGetbyuseridRequest {
 }
 
 type OapiWorkrecordGetbyuseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkrecordGetbyuseridResponse
 	Limit           int64

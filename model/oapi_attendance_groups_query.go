@@ -9,7 +9,7 @@ func NewOapiAttendanceGroupsQueryRequest() *OapiAttendanceGroupsQueryRequest {
 }
 
 type OapiAttendanceGroupsQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupsQueryResponse
 	Cursor          string

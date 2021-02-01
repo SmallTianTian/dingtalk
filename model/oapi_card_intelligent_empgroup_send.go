@@ -10,7 +10,7 @@ func NewOapiCardIntelligentEmpgroupSendRequest() *OapiCardIntelligentEmpgroupSen
 }
 
 type OapiCardIntelligentEmpgroupSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCardIntelligentEmpgroupSendResponse
 	MsgKey          string

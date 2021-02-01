@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmEmployeeListbycertRequest() *OapiSmartworkHrmEmployeeLis
 }
 
 type OapiSmartworkHrmEmployeeListbycertRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeListbycertResponse
 	Params          string

@@ -10,7 +10,7 @@ func NewOapiRobotMessageSendgroupRequest() *OapiRobotMessageSendgroupRequest {
 }
 
 type OapiRobotMessageSendgroupRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRobotMessageSendgroupResponse
 	MsgKey          string

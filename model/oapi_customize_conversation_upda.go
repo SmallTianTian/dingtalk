@@ -10,7 +10,7 @@ func NewOapiCustomizeConversationUpdateRequest() *OapiCustomizeConversationUpdat
 }
 
 type OapiCustomizeConversationUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomizeConversationUpdateResponse
 	ChatId          string

@@ -10,7 +10,7 @@ func NewOapiBlackboardDeleteRequest() *OapiBlackboardDeleteRequest {
 }
 
 type OapiBlackboardDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBlackboardDeleteResponse
 	BlackboardId    string

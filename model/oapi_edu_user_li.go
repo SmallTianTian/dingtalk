@@ -10,7 +10,7 @@ func NewOapiEduUserListRequest() *OapiEduUserListRequest {
 }
 
 type OapiEduUserListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduUserListResponse
 	ClassId         int64

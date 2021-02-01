@@ -9,7 +9,7 @@ func NewOapiDepartmentListIdsRequest() *OapiDepartmentListIdsRequest {
 }
 
 type OapiDepartmentListIdsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDepartmentListIdsResponse
 	Id              string
@@ -61,7 +61,6 @@ func (this *OapiDepartmentListIdsRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiDepartmentListIdsResponse struct {
 	taobao.TaobaoResponse
-	Errcode       int64   `json:"errcode,omitempty"`
-	Errmsg        string  `json:"errmsg,omitempty"`
+
 	SubDeptIdList []int64 `json:"sub_dept_id_list,omitempty"`
 }

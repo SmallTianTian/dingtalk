@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecPerformConditionalFinishRequest() *OapiRhinoMosExecPerfo
 }
 
 type OapiRhinoMosExecPerformConditionalFinishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecPerformConditionalFinishResponse
 	DeviceIds       string
@@ -113,8 +113,7 @@ func (this *OapiRhinoMosExecPerformConditionalFinishRequest) GetTaobaoResp() *ta
 
 type OapiRhinoMosExecPerformConditionalFinishResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64  `json:"errcode,omitempty"`
-	Errmsg          string `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string `json:"external_msg_info,omitempty"`
 	Model           bool   `json:"model,omitempty"`
 	Success         bool   `json:"success,omitempty"`

@@ -9,7 +9,7 @@ func NewCorpExtListRequest() *CorpExtListRequest {
 }
 
 type CorpExtListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpExtListResponse
 	Offset          int64

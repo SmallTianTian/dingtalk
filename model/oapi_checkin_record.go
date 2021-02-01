@@ -9,7 +9,7 @@ func NewOapiCheckinRecordRequest() *OapiCheckinRecordRequest {
 }
 
 type OapiCheckinRecordRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCheckinRecordResponse
 	DepartmentId    string
@@ -101,7 +101,5 @@ func (this *OapiCheckinRecordRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiCheckinRecordResponse struct {
 	taobao.TaobaoResponse
-	Data    []Data `json:"data,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Data []Data `json:"data,omitempty"`
 }

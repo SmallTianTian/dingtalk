@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiConnectorTriggerSendV2Request() *OapiConnectorTriggerSendV2Request {
@@ -10,7 +11,7 @@ func NewOapiConnectorTriggerSendV2Request() *OapiConnectorTriggerSendV2Request {
 }
 
 type OapiConnectorTriggerSendV2Request struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiConnectorTriggerSendV2Response
 	TopHttpMethod     string

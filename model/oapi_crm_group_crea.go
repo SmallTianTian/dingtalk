@@ -10,7 +10,7 @@ func NewOapiCrmGroupCreateRequest() *OapiCrmGroupCreateRequest {
 }
 
 type OapiCrmGroupCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiCrmGroupCreateResponse
 	ColleagueUseridList string

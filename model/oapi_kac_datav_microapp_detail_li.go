@@ -9,7 +9,7 @@ func NewOapiKacDatavMicroappDetailListRequest() *OapiKacDatavMicroappDetailListR
 }
 
 type OapiKacDatavMicroappDetailListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiKacDatavMicroappDetailListResponse
 	Request         string

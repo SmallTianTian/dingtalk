@@ -10,7 +10,7 @@ func NewOapiImChatServicegroupNoticeCreateRequest() *OapiImChatServicegroupNotic
 }
 
 type OapiImChatServicegroupNoticeCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatServicegroupNoticeCreateResponse
 	ChatId          string

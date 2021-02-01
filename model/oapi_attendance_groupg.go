@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupGetRequest() *OapiAttendanceGroupGetRequest {
 }
 
 type OapiAttendanceGroupGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupGetResponse
 	GroupKey        string

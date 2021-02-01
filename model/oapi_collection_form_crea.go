@@ -11,7 +11,7 @@ func NewOapiCollectionFormCreateRequest() *OapiCollectionFormCreateRequest {
 }
 
 type OapiCollectionFormCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCollectionFormCreateResponse
 	Request         string

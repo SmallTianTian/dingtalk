@@ -9,7 +9,7 @@ func NewOapiDepartmentListRequest() *OapiDepartmentListRequest {
 }
 
 type OapiDepartmentListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDepartmentListResponse
 	FetchChild      bool
@@ -78,8 +78,6 @@ func (this *OapiDepartmentListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 type OapiDepartmentListResponse struct {
 	taobao.TaobaoResponse
 	Department []Department `json:"department,omitempty"`
-	Errcode    int64        `json:"errcode,omitempty"`
-	Errmsg     string       `json:"errmsg,omitempty"`
 }
 type Department struct {
 	AutoAddUser      bool   `json:"autoAddUser,omitempty"`

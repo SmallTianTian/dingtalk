@@ -10,7 +10,7 @@ func NewCorpReportListRequest() *CorpReportListRequest {
 }
 
 type CorpReportListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpReportListResponse
 	Cursor          int64

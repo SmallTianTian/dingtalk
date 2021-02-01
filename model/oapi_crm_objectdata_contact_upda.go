@@ -9,7 +9,7 @@ func NewOapiCrmObjectdataContactUpdateRequest() *OapiCrmObjectdataContactUpdateR
 }
 
 type OapiCrmObjectdataContactUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmObjectdataContactUpdateResponse
 	Instance        string

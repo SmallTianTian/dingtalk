@@ -9,7 +9,7 @@ func NewCorpEmpSearchRequest() *CorpEmpSearchRequest {
 }
 
 type CorpEmpSearchRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpEmpSearchResponse
 	Keyword         string

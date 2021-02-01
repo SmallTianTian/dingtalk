@@ -10,7 +10,7 @@ func NewOapiV2UserCreateRequest() *OapiV2UserCreateRequest {
 }
 
 type OapiV2UserCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiV2UserCreateResponse
 	DeptIdList       string

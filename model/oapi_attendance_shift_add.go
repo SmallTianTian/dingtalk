@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiAttendanceShiftAddRequest() *OapiAttendanceShiftAddRequest {
@@ -11,7 +12,7 @@ func NewOapiAttendanceShiftAddRequest() *OapiAttendanceShiftAddRequest {
 }
 
 type OapiAttendanceShiftAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceShiftAddResponse
 	OpUserId        string

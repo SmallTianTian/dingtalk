@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiTdpProjectBasicGetRequest() *OapiTdpProjectBasicGetRequest {
@@ -10,7 +11,7 @@ func NewOapiTdpProjectBasicGetRequest() *OapiTdpProjectBasicGetRequest {
 }
 
 type OapiTdpProjectBasicGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpProjectBasicGetResponse
 	MicroappAgentId int64

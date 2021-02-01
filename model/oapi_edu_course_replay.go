@@ -10,7 +10,7 @@ func NewOapiEduCourseReplayRequest() *OapiEduCourseReplayRequest {
 }
 
 type OapiEduCourseReplayRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCourseReplayResponse
 	CourseCode      string

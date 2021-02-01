@@ -10,7 +10,7 @@ func NewOapiUserAssociatedUnionidTransferRequest() *OapiUserAssociatedUnionidTra
 }
 
 type OapiUserAssociatedUnionidTransferRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiUserAssociatedUnionidTransferResponse
 	AssociatedUnionid string

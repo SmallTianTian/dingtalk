@@ -10,7 +10,7 @@ func NewOapiAttendanceRecordUploadRequest() *OapiAttendanceRecordUploadRequest {
 }
 
 type OapiAttendanceRecordUploadRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceRecordUploadResponse
 	DeviceId        string

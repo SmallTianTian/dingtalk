@@ -9,7 +9,7 @@ func NewOapiSmartdeviceDeviceUnbindRequest() *OapiSmartdeviceDeviceUnbindRequest
 }
 
 type OapiSmartdeviceDeviceUnbindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceDeviceUnbindResponse
 	DeviceUnbindVo  string

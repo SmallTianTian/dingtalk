@@ -10,7 +10,7 @@ func NewOapiCrmAppGetRequest() *OapiCrmAppGetRequest {
 }
 
 type OapiCrmAppGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmAppGetResponse
 	BizKey          string

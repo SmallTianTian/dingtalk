@@ -10,7 +10,7 @@ func NewOapiFinanceLoanQualificationGetRequest() *OapiFinanceLoanQualificationGe
 }
 
 type OapiFinanceLoanQualificationGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceLoanQualificationGetResponse
 	Code            string

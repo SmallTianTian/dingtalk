@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiRhinoMosExecPerformCreateRequest() *OapiRhinoMosExecPerformCreateRequest {
@@ -11,7 +12,7 @@ func NewOapiRhinoMosExecPerformCreateRequest() *OapiRhinoMosExecPerformCreateReq
 }
 
 type OapiRhinoMosExecPerformCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecPerformCreateResponse
 	Operations      string

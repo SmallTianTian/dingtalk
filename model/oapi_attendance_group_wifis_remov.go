@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupWifisRemoveRequest() *OapiAttendanceGroupWifisRemoveR
 }
 
 type OapiAttendanceGroupWifisRemoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupWifisRemoveResponse
 	GroupKey        string

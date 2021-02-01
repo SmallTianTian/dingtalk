@@ -9,7 +9,7 @@ func NewCorpSmartdeviceAddfaceRequest() *CorpSmartdeviceAddfaceRequest {
 }
 
 type CorpSmartdeviceAddfaceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpSmartdeviceAddfaceResponse
 	FaceVo          string

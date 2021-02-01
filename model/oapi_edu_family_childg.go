@@ -10,7 +10,7 @@ func NewOapiEduFamilyChildGetRequest() *OapiEduFamilyChildGetRequest {
 }
 
 type OapiEduFamilyChildGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduFamilyChildGetResponse
 	ChildUserid     string

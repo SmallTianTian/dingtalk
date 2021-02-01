@@ -10,7 +10,7 @@ func NewOapiUserListbypageRequest() *OapiUserListbypageRequest {
 }
 
 type OapiUserListbypageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserListbypageResponse
 	DepartmentId    int64
@@ -97,8 +97,7 @@ func (this *OapiUserListbypageRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserListbypageResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64      `json:"errcode,omitempty"`
-	Errmsg   string     `json:"errmsg,omitempty"`
+
 	HasMore  bool       `json:"hasMore,omitempty"`
 	Userlist []Userlist `json:"userlist,omitempty"`
 }

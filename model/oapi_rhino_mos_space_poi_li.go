@@ -9,7 +9,7 @@ func NewOapiRhinoMosSpacePoiListRequest() *OapiRhinoMosSpacePoiListRequest {
 }
 
 type OapiRhinoMosSpacePoiListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosSpacePoiListResponse
 	Request         string

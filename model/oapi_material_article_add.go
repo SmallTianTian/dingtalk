@@ -10,7 +10,7 @@ func NewOapiMaterialArticleAddRequest() *OapiMaterialArticleAddRequest {
 }
 
 type OapiMaterialArticleAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMaterialArticleAddResponse
 	Article         string
@@ -80,8 +80,7 @@ type ArticleCreateDTO struct {
 }
 type OapiMaterialArticleAddResponse struct {
 	taobao.TaobaoResponse
-	ArticleId int64  `json:"article_id,omitempty"`
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
-	Success   bool   `json:"success,omitempty"`
+	ArticleId int64 `json:"article_id,omitempty"`
+
+	Success bool `json:"success,omitempty"`
 }

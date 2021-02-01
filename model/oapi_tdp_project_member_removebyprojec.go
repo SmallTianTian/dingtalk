@@ -10,7 +10,7 @@ func NewOapiTdpProjectMemberRemovebyprojectRequest() *OapiTdpProjectMemberRemove
 }
 
 type OapiTdpProjectMemberRemovebyprojectRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpProjectMemberRemovebyprojectResponse
 	MicroappAgentId int64

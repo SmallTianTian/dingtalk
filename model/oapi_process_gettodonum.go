@@ -10,7 +10,7 @@ func NewOapiProcessGettodonumRequest() *OapiProcessGettodonumRequest {
 }
 
 type OapiProcessGettodonumRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessGettodonumResponse
 	TopHttpMethod   string
@@ -65,7 +65,5 @@ func (this *OapiProcessGettodonumRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiProcessGettodonumResponse struct {
 	taobao.TaobaoResponse
-	Count   int64  `json:"count,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Count int64 `json:"count,omitempty"`
 }

@@ -10,7 +10,7 @@ func NewOapiAttendanceScheduleListbyusersRequest() *OapiAttendanceScheduleListby
 }
 
 type OapiAttendanceScheduleListbyusersRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceScheduleListbyusersResponse
 	FromDateTime    int64

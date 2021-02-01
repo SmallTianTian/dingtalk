@@ -10,7 +10,7 @@ func NewOapiPlanetomFeedsUploadRequest() *OapiPlanetomFeedsUploadRequest {
 }
 
 type OapiPlanetomFeedsUploadRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPlanetomFeedsUploadResponse
 	FeedAppId       int64

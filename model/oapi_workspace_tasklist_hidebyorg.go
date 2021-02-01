@@ -10,7 +10,7 @@ func NewOapiWorkspaceTasklistHidebyorgRequest() *OapiWorkspaceTasklistHidebyorgR
 }
 
 type OapiWorkspaceTasklistHidebyorgRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceTasklistHidebyorgResponse
 	MicroappAgentId int64

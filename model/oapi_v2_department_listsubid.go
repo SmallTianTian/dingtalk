@@ -9,7 +9,7 @@ func NewOapiV2DepartmentListsubidRequest() *OapiV2DepartmentListsubidRequest {
 }
 
 type OapiV2DepartmentListsubidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2DepartmentListsubidResponse
 	DeptId          int64

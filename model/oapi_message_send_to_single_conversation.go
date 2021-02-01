@@ -10,7 +10,7 @@ func NewOapiMessageSendToSingleConversationRequest() *OapiMessageSendToSingleCon
 }
 
 type OapiMessageSendToSingleConversationRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageSendToSingleConversationResponse
 	Msg             string

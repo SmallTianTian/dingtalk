@@ -10,7 +10,7 @@ func NewOapiRhinoMosLayoutOperationdefGetRequest() *OapiRhinoMosLayoutOperationd
 }
 
 type OapiRhinoMosLayoutOperationdefGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiRhinoMosLayoutOperationdefGetResponse
 	FlowVersion         int64

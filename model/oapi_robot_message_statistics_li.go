@@ -10,7 +10,7 @@ func NewOapiRobotMessageStatisticsListRequest() *OapiRobotMessageStatisticsListR
 }
 
 type OapiRobotMessageStatisticsListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRobotMessageStatisticsListResponse
 	Page            int64

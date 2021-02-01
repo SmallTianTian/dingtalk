@@ -12,7 +12,7 @@ func NewOapiBlackboardGetRequest() *OapiBlackboardGetRequest {
 }
 
 type OapiBlackboardGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBlackboardGetResponse
 	BlackboardId    string

@@ -10,7 +10,7 @@ func NewOapiFinanceLoanContactsDeleteRequest() *OapiFinanceLoanContactsDeleteReq
 }
 
 type OapiFinanceLoanContactsDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceLoanContactsDeleteResponse
 	ContactId       int64

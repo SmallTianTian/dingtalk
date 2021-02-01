@@ -10,7 +10,7 @@ func NewOapiCollectionFormGetRequest() *OapiCollectionFormGetRequest {
 }
 
 type OapiCollectionFormGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCollectionFormGetResponse
 	ActionDate      string

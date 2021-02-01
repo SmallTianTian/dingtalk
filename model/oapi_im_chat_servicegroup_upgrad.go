@@ -10,7 +10,7 @@ func NewOapiImChatServicegroupUpgradeRequest() *OapiImChatServicegroupUpgradeReq
 }
 
 type OapiImChatServicegroupUpgradeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatServicegroupUpgradeResponse
 	ChatId          string

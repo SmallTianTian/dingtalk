@@ -10,7 +10,7 @@ func NewOapiRetailSellerOrgCheckRequest() *OapiRetailSellerOrgCheckRequest {
 }
 
 type OapiRetailSellerOrgCheckRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRetailSellerOrgCheckResponse
 	TopHttpMethod   string

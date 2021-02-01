@@ -10,7 +10,7 @@ func NewOapiWorkspaceProjectMemberRemoveRequest() *OapiWorkspaceProjectMemberRem
 }
 
 type OapiWorkspaceProjectMemberRemoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceProjectMemberRemoveResponse
 	OperatorStaffId string

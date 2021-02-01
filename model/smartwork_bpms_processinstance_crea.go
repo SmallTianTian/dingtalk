@@ -10,7 +10,7 @@ func NewSmartworkBpmsProcessinstanceCreateRequest() *SmartworkBpmsProcessinstanc
 }
 
 type SmartworkBpmsProcessinstanceCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                SmartworkBpmsProcessinstanceCreateResponse
 	AgentId             int64

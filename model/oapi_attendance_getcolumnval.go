@@ -12,7 +12,7 @@ func NewOapiAttendanceGetcolumnvalRequest() *OapiAttendanceGetcolumnvalRequest {
 }
 
 type OapiAttendanceGetcolumnvalRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetcolumnvalResponse
 	ColumnIdList    string

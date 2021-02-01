@@ -10,7 +10,7 @@ func NewOapiImChatbotDeleteRequest() *OapiImChatbotDeleteRequest {
 }
 
 type OapiImChatbotDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatbotDeleteResponse
 	ChatbotUserId      string

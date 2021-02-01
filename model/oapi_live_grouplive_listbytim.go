@@ -9,7 +9,7 @@ func NewOapiLiveGroupliveListbytimeRequest() *OapiLiveGroupliveListbytimeRequest
 }
 
 type OapiLiveGroupliveListbytimeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiLiveGroupliveListbytimeResponse
 	Req             string

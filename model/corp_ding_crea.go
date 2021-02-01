@@ -10,7 +10,7 @@ func NewCorpDingCreateRequest() *CorpDingCreateRequest {
 }
 
 type CorpDingCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDingCreateResponse
 	Attachment      string

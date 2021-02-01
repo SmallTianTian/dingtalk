@@ -9,7 +9,7 @@ func NewOapiAttendanceGroupScheduleClearRequest() *OapiAttendanceGroupScheduleCl
 }
 
 type OapiAttendanceGroupScheduleClearRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupScheduleClearResponse
 	OpUserid        string

@@ -10,7 +10,7 @@ func NewOapiV2UserGetRequest() *OapiV2UserGetRequest {
 }
 
 type OapiV2UserGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2UserGetResponse
 	Language        string

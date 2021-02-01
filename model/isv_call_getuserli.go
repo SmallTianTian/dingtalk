@@ -9,7 +9,7 @@ func NewIsvCallGetuserlistRequest() *IsvCallGetuserlistRequest {
 }
 
 type IsvCallGetuserlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            IsvCallGetuserlistResponse
 	Offset          int64

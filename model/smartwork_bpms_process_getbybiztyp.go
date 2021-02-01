@@ -10,7 +10,7 @@ func NewSmartworkBpmsProcessGetbybiztypeRequest() *SmartworkBpmsProcessGetbybizt
 }
 
 type SmartworkBpmsProcessGetbybiztypeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkBpmsProcessGetbybiztypeResponse
 	BizType         string

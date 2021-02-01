@@ -10,7 +10,7 @@ func NewOapiWorkspaceTaskUpdateRequest() *OapiWorkspaceTaskUpdateRequest {
 }
 
 type OapiWorkspaceTaskUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceTaskUpdateResponse
 	MicroappAgentId int64

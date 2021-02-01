@@ -10,7 +10,7 @@ func NewOapiConferenceParticipantAddRequest() *OapiConferenceParticipantAddReque
 }
 
 type OapiConferenceParticipantAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiConferenceParticipantAddResponse
 	ConferenceId          string

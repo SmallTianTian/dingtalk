@@ -9,7 +9,7 @@ func NewOapiLiveGroupliveDetailGetRequest() *OapiLiveGroupliveDetailGetRequest {
 }
 
 type OapiLiveGroupliveDetailGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiLiveGroupliveDetailGetResponse
 	Req             string

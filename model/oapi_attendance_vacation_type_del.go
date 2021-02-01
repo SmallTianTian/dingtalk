@@ -10,7 +10,7 @@ func NewOapiAttendanceVacationTypeDeleteRequest() *OapiAttendanceVacationTypeDel
 }
 
 type OapiAttendanceVacationTypeDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceVacationTypeDeleteResponse
 	LeaveCode       string

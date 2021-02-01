@@ -10,7 +10,7 @@ func NewOapiWorkbenchShortcutGetguideuriRequest() *OapiWorkbenchShortcutGetguide
 }
 
 type OapiWorkbenchShortcutGetguideuriRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkbenchShortcutGetguideuriResponse
 	AppId           string
@@ -65,7 +65,6 @@ func (this *OapiWorkbenchShortcutGetguideuriRequest) GetTaobaoResp() *taobao.Tao
 
 type OapiWorkbenchShortcutGetguideuriResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64  `json:"errcode,omitempty"`
-	Errmsg   string `json:"errmsg,omitempty"`
+
 	GuideUri string `json:"guide_uri,omitempty"`
 }

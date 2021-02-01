@@ -10,7 +10,7 @@ func NewCorpChatbotListbychatbotidsRequest() *CorpChatbotListbychatbotidsRequest
 }
 
 type CorpChatbotListbychatbotidsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpChatbotListbychatbotidsResponse
 	ChatbotIds      string

@@ -9,7 +9,7 @@ func NewCorpRoleListRequest() *CorpRoleListRequest {
 }
 
 type CorpRoleListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpRoleListResponse
 	Offset          int64

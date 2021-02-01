@@ -9,7 +9,7 @@ func NewOapiPbpInstanceGroupPositionUpdateRequest() *OapiPbpInstanceGroupPositio
 }
 
 type OapiPbpInstanceGroupPositionUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPbpInstanceGroupPositionUpdateResponse
 	SyncParam       string
@@ -73,7 +73,6 @@ type PunchGroupSyncPositionParam struct {
 }
 type OapiPbpInstanceGroupPositionUpdateResponse struct {
 	taobao.TaobaoResponse
-	Errcode      int64  `json:"errcode,omitempty"`
-	Errmsg       string `json:"errmsg,omitempty"`
+
 	PunchGroupId string `json:"punch_group_id,omitempty"`
 }

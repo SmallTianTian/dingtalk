@@ -9,7 +9,7 @@ func NewOapiMicroappRuleGetRuleListRequest() *OapiMicroappRuleGetRuleListRequest
 }
 
 type OapiMicroappRuleGetRuleListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappRuleGetRuleListResponse
 	AgentId         int64
@@ -69,7 +69,6 @@ func (this *OapiMicroappRuleGetRuleListRequest) GetTaobaoResp() *taobao.TaobaoRe
 
 type OapiMicroappRuleGetRuleListResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64   `json:"errcode,omitempty"`
-	Errmsg     string  `json:"errmsg,omitempty"`
+
 	RuleIdList []int64 `json:"ruleIdList,omitempty"`
 }

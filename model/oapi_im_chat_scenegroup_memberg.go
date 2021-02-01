@@ -10,7 +10,7 @@ func NewOapiImChatScenegroupMemberGetRequest() *OapiImChatScenegroupMemberGetReq
 }
 
 type OapiImChatScenegroupMemberGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatScenegroupMemberGetResponse
 	Cursor             string

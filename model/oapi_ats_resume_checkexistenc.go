@@ -10,7 +10,7 @@ func NewOapiAtsResumeCheckexistenceRequest() *OapiAtsResumeCheckexistenceRequest
 }
 
 type OapiAtsResumeCheckexistenceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiAtsResumeCheckexistenceResponse
 	BizCode          string

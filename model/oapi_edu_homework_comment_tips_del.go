@@ -10,7 +10,7 @@ func NewOapiEduHomeworkCommentTipsDeleteRequest() *OapiEduHomeworkCommentTipsDel
 }
 
 type OapiEduHomeworkCommentTipsDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduHomeworkCommentTipsDeleteResponse
 	BizCode         string

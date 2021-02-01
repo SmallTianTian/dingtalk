@@ -9,7 +9,7 @@ func NewOapiBlackboardUpdateRequest() *OapiBlackboardUpdateRequest {
 }
 
 type OapiBlackboardUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBlackboardUpdateResponse
 	TopHttpMethod   string

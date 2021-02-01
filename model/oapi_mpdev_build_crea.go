@@ -10,7 +10,7 @@ func NewOapiMpdevBuildCreateRequest() *OapiMpdevBuildCreateRequest {
 }
 
 type OapiMpdevBuildCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMpdevBuildCreateResponse
 	EnableTabbar    string

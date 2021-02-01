@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecTrackTrackconditionListRequest() *OapiRhinoMosExecTrackT
 }
 
 type OapiRhinoMosExecTrackTrackconditionListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecTrackTrackconditionListResponse
 	Req             string

@@ -10,7 +10,7 @@ func NewOapiSmartdeviceMeetingroomListRequest() *OapiSmartdeviceMeetingroomListR
 }
 
 type OapiSmartdeviceMeetingroomListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceMeetingroomListResponse
 	Cursor          string

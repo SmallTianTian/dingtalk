@@ -9,7 +9,7 @@ func NewOapiProcessInstanceCommentAddRequest() *OapiProcessInstanceCommentAddReq
 }
 
 type OapiProcessInstanceCommentAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessInstanceCommentAddResponse
 	Request         string

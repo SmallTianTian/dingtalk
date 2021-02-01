@@ -10,7 +10,7 @@ func NewOapiChatThemeUpdateRequest() *OapiChatThemeUpdateRequest {
 }
 
 type OapiChatThemeUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatThemeUpdateResponse
 	Chatid          string

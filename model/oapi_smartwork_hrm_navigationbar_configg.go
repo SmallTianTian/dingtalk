@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmNavigationbarConfigGetRequest() *OapiSmartworkHrmNavigat
 }
 
 type OapiSmartworkHrmNavigationbarConfigGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmNavigationbarConfigGetResponse
 	ChangeParam     string

@@ -9,7 +9,7 @@ func NewOapiGetJsapiTicketRequest() *OapiGetJsapiTicketRequest {
 }
 
 type OapiGetJsapiTicketRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiGetJsapiTicketResponse
 	TopHttpMethod   string
@@ -53,8 +53,7 @@ func (this *OapiGetJsapiTicketRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiGetJsapiTicketResponse struct {
 	taobao.TaobaoResponse
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
+
 	ExpiresIn int64  `json:"expires_in,omitempty"`
 	Ticket    string `json:"ticket,omitempty"`
 }

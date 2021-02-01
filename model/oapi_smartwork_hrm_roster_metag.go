@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmRosterMetaGetRequest() *OapiSmartworkHrmRosterMetaGetReq
 }
 
 type OapiSmartworkHrmRosterMetaGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmRosterMetaGetResponse
 	Agentid         int64

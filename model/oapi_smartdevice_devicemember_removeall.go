@@ -10,7 +10,7 @@ func NewOapiSmartdeviceDevicememberRemoveallRequest() *OapiSmartdeviceDevicememb
 }
 
 type OapiSmartdeviceDevicememberRemoveallRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceDevicememberRemoveallResponse
 	DeviceId        int64

@@ -9,7 +9,7 @@ func NewOapiProcessFormConditionListRequest() *OapiProcessFormConditionListReque
 }
 
 type OapiProcessFormConditionListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessFormConditionListResponse
 	Request         string

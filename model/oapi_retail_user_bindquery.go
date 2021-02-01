@@ -9,7 +9,7 @@ func NewOapiRetailUserBindqueryRequest() *OapiRetailUserBindqueryRequest {
 }
 
 type OapiRetailUserBindqueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiRetailUserBindqueryResponse
 	AssociateUnionId string

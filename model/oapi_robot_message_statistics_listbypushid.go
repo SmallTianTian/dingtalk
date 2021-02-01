@@ -10,7 +10,7 @@ func NewOapiRobotMessageStatisticsListbypushidRequest() *OapiRobotMessageStatist
 }
 
 type OapiRobotMessageStatisticsListbypushidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRobotMessageStatisticsListbypushidResponse
 	ConversationIds string

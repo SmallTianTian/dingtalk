@@ -9,7 +9,7 @@ func NewOapiProcessWorkrecordTaskgroupCancelRequest() *OapiProcessWorkrecordTask
 }
 
 type OapiProcessWorkrecordTaskgroupCancelRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessWorkrecordTaskgroupCancelResponse
 	Request         string

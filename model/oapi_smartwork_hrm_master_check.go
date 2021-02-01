@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmMasterCheckRequest() *OapiSmartworkHrmMasterCheckRequest
 }
 
 type OapiSmartworkHrmMasterCheckRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmMasterCheckResponse
 	BizUk           string

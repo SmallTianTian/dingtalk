@@ -9,7 +9,7 @@ func NewOapiProcessQuerypayrelatedtemplateRequest() *OapiProcessQuerypayrelatedt
 }
 
 type OapiProcessQuerypayrelatedtemplateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessQuerypayrelatedtemplateResponse
 	TopHttpMethod   string

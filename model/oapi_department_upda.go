@@ -9,7 +9,7 @@ func NewOapiDepartmentUpdateRequest() *OapiDepartmentUpdateRequest {
 }
 
 type OapiDepartmentUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiDepartmentUpdateResponse
 	AutoAddUser            bool

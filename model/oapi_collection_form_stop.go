@@ -9,7 +9,7 @@ func NewOapiCollectionFormStopRequest() *OapiCollectionFormStopRequest {
 }
 
 type OapiCollectionFormStopRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCollectionFormStopResponse
 	Request         string

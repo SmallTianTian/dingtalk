@@ -10,7 +10,7 @@ func NewOapiDingCreateRequest() *OapiDingCreateRequest {
 }
 
 type OapiDingCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingCreateResponse
 	Attachment      string

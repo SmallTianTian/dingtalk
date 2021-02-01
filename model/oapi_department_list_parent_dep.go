@@ -9,7 +9,7 @@ func NewOapiDepartmentListParentDeptsRequest() *OapiDepartmentListParentDeptsReq
 }
 
 type OapiDepartmentListParentDeptsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDepartmentListParentDeptsResponse
 	TopHttpMethod   string
@@ -62,6 +62,4 @@ func (this *OapiDepartmentListParentDeptsRequest) GetTaobaoResp() *taobao.Taobao
 type OapiDepartmentListParentDeptsResponse struct {
 	taobao.TaobaoResponse
 	Department string `json:"department,omitempty"`
-	Errcode    int64  `json:"errcode,omitempty"`
-	Errmsg     string `json:"errmsg,omitempty"`
 }

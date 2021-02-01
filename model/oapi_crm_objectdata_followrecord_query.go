@@ -10,7 +10,7 @@ func NewOapiCrmObjectdataFollowrecordQueryRequest() *OapiCrmObjectdataFollowreco
 }
 
 type OapiCrmObjectdataFollowrecordQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiCrmObjectdataFollowrecordQueryResponse
 	CurrentOperatorUserid string

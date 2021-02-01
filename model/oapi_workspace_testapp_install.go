@@ -9,7 +9,7 @@ func NewOapiWorkspaceTestappInstallRequest() *OapiWorkspaceTestappInstallRequest
 }
 
 type OapiWorkspaceTestappInstallRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceTestappInstallResponse
 	InstallTestapp  string

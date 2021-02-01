@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewCorpUserPersonainfoGetRequest() *CorpUserPersonainfoGetRequest {
@@ -11,7 +12,7 @@ func NewCorpUserPersonainfoGetRequest() *CorpUserPersonainfoGetRequest {
 }
 
 type CorpUserPersonainfoGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpUserPersonainfoGetResponse
 	TopHttpMethod   string

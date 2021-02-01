@@ -10,7 +10,7 @@ func NewOapiHireBizflowStartRequest() *OapiHireBizflowStartRequest {
 }
 
 type OapiHireBizflowStartRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHireBizflowStartResponse
 	JobId           string

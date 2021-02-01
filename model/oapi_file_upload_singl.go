@@ -11,7 +11,7 @@ func NewOapiFileUploadSingleRequest() *OapiFileUploadSingleRequest {
 }
 
 type OapiFileUploadSingleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFileUploadSingleResponse
 	AgentId         string

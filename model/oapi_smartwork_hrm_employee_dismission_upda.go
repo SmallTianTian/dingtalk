@@ -12,7 +12,7 @@ func NewOapiSmartworkHrmEmployeeDismissionUpdateRequest() *OapiSmartworkHrmEmplo
 }
 
 type OapiSmartworkHrmEmployeeDismissionUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeDismissionUpdateResponse
 	Agentid         string

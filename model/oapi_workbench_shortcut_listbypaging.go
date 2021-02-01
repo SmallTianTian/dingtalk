@@ -9,7 +9,7 @@ func NewOapiWorkbenchShortcutListbypagingRequest() *OapiWorkbenchShortcutListbyp
 }
 
 type OapiWorkbenchShortcutListbypagingRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkbenchShortcutListbypagingResponse
 	PageIndex       int64

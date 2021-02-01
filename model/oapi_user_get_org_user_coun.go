@@ -9,7 +9,7 @@ func NewOapiUserGetOrgUserCountRequest() *OapiUserGetOrgUserCountRequest {
 }
 
 type OapiUserGetOrgUserCountRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetOrgUserCountResponse
 	OnlyActive      int64
@@ -61,7 +61,5 @@ func (this *OapiUserGetOrgUserCountRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiUserGetOrgUserCountResponse struct {
 	taobao.TaobaoResponse
-	Count   int64  `json:"count,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Count int64 `json:"count,omitempty"`
 }

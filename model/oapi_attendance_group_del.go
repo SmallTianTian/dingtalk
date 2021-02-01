@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupDeleteRequest() *OapiAttendanceGroupDeleteRequest {
 }
 
 type OapiAttendanceGroupDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupDeleteResponse
 	GroupKey        string

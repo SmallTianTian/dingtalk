@@ -11,7 +11,7 @@ func NewOapiLivePlaybackRequest() *OapiLivePlaybackRequest {
 }
 
 type OapiLivePlaybackRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiLivePlaybackResponse
 	Request         string

@@ -10,7 +10,7 @@ func NewOapiEduHomeworkStudentTopicRecordRequest() *OapiEduHomeworkStudentTopicR
 }
 
 type OapiEduHomeworkStudentTopicRecordRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                 OapiEduHomeworkStudentTopicRecordResponse
 	StudentAnswerDetails string

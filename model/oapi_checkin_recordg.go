@@ -10,7 +10,7 @@ func NewOapiCheckinRecordGetRequest() *OapiCheckinRecordGetRequest {
 }
 
 type OapiCheckinRecordGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCheckinRecordGetResponse
 	Cursor          int64

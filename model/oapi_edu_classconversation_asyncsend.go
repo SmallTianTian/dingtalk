@@ -9,7 +9,7 @@ func NewOapiEduClassconversationAsyncsendRequest() *OapiEduClassconversationAsyn
 }
 
 type OapiEduClassconversationAsyncsendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduClassconversationAsyncsendResponse
 	Request         string

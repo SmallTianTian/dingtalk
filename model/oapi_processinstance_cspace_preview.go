@@ -9,7 +9,7 @@ func NewOapiProcessinstanceCspacePreviewRequest() *OapiProcessinstanceCspacePrev
 }
 
 type OapiProcessinstanceCspacePreviewRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessinstanceCspacePreviewResponse
 	Request         string

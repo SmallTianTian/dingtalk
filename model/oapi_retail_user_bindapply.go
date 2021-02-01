@@ -9,7 +9,7 @@ func NewOapiRetailUserBindapplyRequest() *OapiRetailUserBindapplyRequest {
 }
 
 type OapiRetailUserBindapplyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRetailUserBindapplyResponse
 	Channel         string

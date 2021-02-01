@@ -9,7 +9,7 @@ func NewOapiProcessPrinterTemplateDeleteRequest() *OapiProcessPrinterTemplateDel
 }
 
 type OapiProcessPrinterTemplateDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessPrinterTemplateDeleteResponse
 	Request         string

@@ -10,7 +10,7 @@ func NewOapiOrgUserteaminviteAcceptRequest() *OapiOrgUserteaminviteAcceptRequest
 }
 
 type OapiOrgUserteaminviteAcceptRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOrgUserteaminviteAcceptResponse
 	Mobile          string

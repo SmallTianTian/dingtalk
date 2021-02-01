@@ -10,7 +10,7 @@ func NewCorpDeviceManageUnbindRequest() *CorpDeviceManageUnbindRequest {
 }
 
 type CorpDeviceManageUnbindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDeviceManageUnbindResponse
 	DeviceId        string

@@ -10,7 +10,7 @@ func NewOapiEduSubjectUpdateRequest() *OapiEduSubjectUpdateRequest {
 }
 
 type OapiEduSubjectUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduSubjectUpdateResponse
 	OperatorUserid  string

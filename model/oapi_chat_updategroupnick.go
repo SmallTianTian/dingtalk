@@ -10,7 +10,7 @@ func NewOapiChatUpdategroupnickRequest() *OapiChatUpdategroupnickRequest {
 }
 
 type OapiChatUpdategroupnickRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatUpdategroupnickResponse
 	Chatid          string

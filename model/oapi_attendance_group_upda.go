@@ -9,7 +9,7 @@ func NewOapiAttendanceGroupUpdateRequest() *OapiAttendanceGroupUpdateRequest {
 }
 
 type OapiAttendanceGroupUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupUpdateResponse
 	Group           string

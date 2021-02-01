@@ -11,7 +11,7 @@ func NewOapiFileUploadChunkRequest() *OapiFileUploadChunkRequest {
 }
 
 type OapiFileUploadChunkRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFileUploadChunkResponse
 	AgentId         string

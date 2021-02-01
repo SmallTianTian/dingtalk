@@ -9,7 +9,7 @@ func NewOapiCustomerserviceSessionCreateRequest() *OapiCustomerserviceSessionCre
 }
 
 type OapiCustomerserviceSessionCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomerserviceSessionCreateResponse
 	CreateSession   string

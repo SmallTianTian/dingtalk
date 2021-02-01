@@ -10,7 +10,7 @@ func NewOapiEduUserAuthGetRequest() *OapiEduUserAuthGetRequest {
 }
 
 type OapiEduUserAuthGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduUserAuthGetResponse
 	Language        string

@@ -9,7 +9,7 @@ func NewOapiImpaasOtoconversationCreateRequest() *OapiImpaasOtoconversationCreat
 }
 
 type OapiImpaasOtoconversationCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasOtoconversationCreateResponse
 	Request         string

@@ -10,7 +10,7 @@ func NewOapiReportStatisticsListbytypeRequest() *OapiReportStatisticsListbytypeR
 }
 
 type OapiReportStatisticsListbytypeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiReportStatisticsListbytypeResponse
 	Offset          int64

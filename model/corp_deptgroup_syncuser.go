@@ -9,7 +9,7 @@ func NewCorpDeptgroupSyncuserRequest() *CorpDeptgroupSyncuserRequest {
 }
 
 type CorpDeptgroupSyncuserRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDeptgroupSyncuserResponse
 	DeptId          int64

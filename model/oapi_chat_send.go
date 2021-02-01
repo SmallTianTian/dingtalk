@@ -9,7 +9,7 @@ func NewOapiChatSendRequest() *OapiChatSendRequest {
 }
 
 type OapiChatSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatSendResponse
 	ActionCard      string
@@ -220,7 +220,6 @@ type Msg struct {
 }
 type OapiChatSendResponse struct {
 	taobao.TaobaoResponse
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
+
 	MessageId string `json:"messageId,omitempty"`
 }

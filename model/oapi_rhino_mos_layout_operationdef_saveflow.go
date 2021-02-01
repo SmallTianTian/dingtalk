@@ -10,7 +10,7 @@ func NewOapiRhinoMosLayoutOperationdefSaveflowRequest() *OapiRhinoMosLayoutOpera
 }
 
 type OapiRhinoMosLayoutOperationdefSaveflowRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosLayoutOperationdefSaveflowResponse
 	Active          bool

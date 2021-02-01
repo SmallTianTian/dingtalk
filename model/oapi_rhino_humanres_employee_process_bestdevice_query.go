@@ -10,7 +10,7 @@ func NewOapiRhinoHumanresEmployeeProcessBestdeviceQueryRequest() *OapiRhinoHuman
 }
 
 type OapiRhinoHumanresEmployeeProcessBestdeviceQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                         OapiRhinoHumanresEmployeeProcessBestdeviceQueryResponse
 	AvailableDeviceModels        string
@@ -97,8 +97,7 @@ type EmployeeProcessCapacityUnitReq struct {
 }
 type OapiRhinoHumanresEmployeeProcessBestdeviceQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64                              `json:"errcode,omitempty"`
-	Errmsg          string                             `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string                             `json:"external_msg_info,omitempty"`
 	Hsfcode         int64                              `json:"hsfcode,omitempty"`
 	Model           []EmployeeProcessDeviceCapacityDto `json:"model,omitempty"`

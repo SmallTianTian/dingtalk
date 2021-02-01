@@ -10,7 +10,7 @@ func NewOapiRhinoDeviceUniquecodeGetRequest() *OapiRhinoDeviceUniquecodeGetReque
 }
 
 type OapiRhinoDeviceUniquecodeGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoDeviceUniquecodeGetResponse
 	TopHttpMethod   string
@@ -73,8 +73,7 @@ func (this *OapiRhinoDeviceUniquecodeGetRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiRhinoDeviceUniquecodeGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64              `json:"errcode,omitempty"`
-	Errmsg          string             `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string             `json:"external_msg_info,omitempty"`
 	Model           MosDeviceTenantDto `json:"model,omitempty"`
 	Success         bool               `json:"success,omitempty"`

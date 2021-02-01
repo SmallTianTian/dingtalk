@@ -10,7 +10,7 @@ func NewOapiProcessTemplateUpgradeinfoQueryRequest() *OapiProcessTemplateUpgrade
 }
 
 type OapiProcessTemplateUpgradeinfoQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessTemplateUpgradeinfoQueryResponse
 	ProcessCodes    string

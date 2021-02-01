@@ -9,7 +9,7 @@ func NewOapiDingmiRobotPushRequest() *OapiDingmiRobotPushRequest {
 }
 
 type OapiDingmiRobotPushRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingmiRobotPushResponse
 	ConversationId  string

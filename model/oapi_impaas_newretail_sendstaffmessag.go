@@ -10,7 +10,7 @@ func NewOapiImpaasNewretailSendstaffmessageRequest() *OapiImpaasNewretailSendsta
 }
 
 type OapiImpaasNewretailSendstaffmessageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasNewretailSendstaffmessageResponse
 	Content         string

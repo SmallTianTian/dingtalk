@@ -9,7 +9,7 @@ func NewOapiEduCirclePostListRequest() *OapiEduCirclePostListRequest {
 }
 
 type OapiEduCirclePostListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiEduCirclePostListResponse
 	OpenFeedQueryParam string

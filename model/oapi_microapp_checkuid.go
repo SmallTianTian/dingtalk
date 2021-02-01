@@ -10,7 +10,7 @@ func NewOapiMicroappCheckuidRequest() *OapiMicroappCheckuidRequest {
 }
 
 type OapiMicroappCheckuidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappCheckuidResponse
 	Agentid         int64

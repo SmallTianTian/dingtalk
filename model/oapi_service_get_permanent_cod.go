@@ -9,7 +9,7 @@ func NewOapiServiceGetPermanentCodeRequest() *OapiServiceGetPermanentCodeRequest
 }
 
 type OapiServiceGetPermanentCodeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceGetPermanentCodeResponse
 	TmpAuthCode     string
@@ -63,7 +63,6 @@ type OapiServiceGetPermanentCodeResponse struct {
 	taobao.TaobaoResponse
 	AuthCorpInfo    AuthCorpInfo `json:"auth_corp_info,omitempty"`
 	ChPermanentCode string       `json:"ch_permanent_code,omitempty"`
-	Errcode         int64        `json:"errcode,omitempty"`
-	Errmsg          string       `json:"errmsg,omitempty"`
-	PermanentCode   string       `json:"permanent_code,omitempty"`
+
+	PermanentCode string `json:"permanent_code,omitempty"`
 }

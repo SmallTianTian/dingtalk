@@ -11,7 +11,7 @@ func NewOapiEduCardTaskTodayListRequest() *OapiEduCardTaskTodayListRequest {
 }
 
 type OapiEduCardTaskTodayListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCardTaskTodayListResponse
 	CardType        string

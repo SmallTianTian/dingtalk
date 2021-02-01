@@ -10,7 +10,7 @@ func NewOapiDingmiRobotUpdateRequest() *OapiDingmiRobotUpdateRequest {
 }
 
 type OapiDingmiRobotUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingmiRobotUpdateResponse
 	TopHttpMethod   string

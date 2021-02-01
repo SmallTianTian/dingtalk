@@ -9,7 +9,7 @@ func NewOapiImpaasUserSubaccountDeleteRequest() *OapiImpaasUserSubaccountDeleteR
 }
 
 type OapiImpaasUserSubaccountDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasUserSubaccountDeleteResponse
 	Request         string

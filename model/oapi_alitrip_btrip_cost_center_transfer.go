@@ -9,7 +9,7 @@ func NewOapiAlitripBtripCostCenterTransferRequest() *OapiAlitripBtripCostCenterT
 }
 
 type OapiAlitripBtripCostCenterTransferRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripCostCenterTransferResponse
 	Rq              string

@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecClothesBatchUnscrapRequest() *OapiRhinoMosExecClothesBat
 }
 
 type OapiRhinoMosExecClothesBatchUnscrapRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiRhinoMosExecClothesBatchUnscrapResponse
 	BatchClothesPerformReq string

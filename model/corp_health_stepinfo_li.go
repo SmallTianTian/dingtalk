@@ -10,7 +10,7 @@ func NewCorpHealthStepinfoListRequest() *CorpHealthStepinfoListRequest {
 }
 
 type CorpHealthStepinfoListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpHealthStepinfoListResponse
 	ObjectId        string

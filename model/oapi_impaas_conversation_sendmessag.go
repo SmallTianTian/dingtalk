@@ -10,7 +10,7 @@ func NewOapiImpaasConversationSendmessageRequest() *OapiImpaasConversationSendme
 }
 
 type OapiImpaasConversationSendmessageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasConversationSendmessageResponse
 	Chatid          string

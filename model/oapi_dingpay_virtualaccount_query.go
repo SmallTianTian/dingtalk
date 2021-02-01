@@ -9,7 +9,7 @@ func NewOapiDingpayVirtualaccountQueryRequest() *OapiDingpayVirtualaccountQueryR
 }
 
 type OapiDingpayVirtualaccountQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingpayVirtualaccountQueryResponse
 	Extension       string

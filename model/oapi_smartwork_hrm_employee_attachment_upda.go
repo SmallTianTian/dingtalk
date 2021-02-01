@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmEmployeeAttachmentUpdateRequest() *OapiSmartworkHrmEmplo
 }
 
 type OapiSmartworkHrmEmployeeAttachmentUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeAttachmentUpdateResponse
 	Agentid         string

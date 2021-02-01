@@ -11,7 +11,7 @@ func NewOapiUserListRequest() *OapiUserListRequest {
 }
 
 type OapiUserListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserListResponse
 	DepartmentId    int64
@@ -95,8 +95,7 @@ func (this *OapiUserListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserListResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64      `json:"errcode,omitempty"`
-	Errmsg   string     `json:"errmsg,omitempty"`
+
 	HasMore  bool       `json:"hasMore,omitempty"`
 	Userlist []Userlist `json:"userlist,omitempty"`
 }

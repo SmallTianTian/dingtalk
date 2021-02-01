@@ -10,7 +10,7 @@ func NewOapiHireGuideBeginnertaskFinishRequest() *OapiHireGuideBeginnertaskFinis
 }
 
 type OapiHireGuideBeginnertaskFinishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHireGuideBeginnertaskFinishResponse
 	TaskCode        string

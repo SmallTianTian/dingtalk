@@ -9,7 +9,7 @@ func NewOapiOrgpaasOrgInfoGetRequest() *OapiOrgpaasOrgInfoGetRequest {
 }
 
 type OapiOrgpaasOrgInfoGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOrgpaasOrgInfoGetResponse
 	TopHttpMethod   string

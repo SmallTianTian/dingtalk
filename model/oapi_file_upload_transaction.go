@@ -9,7 +9,7 @@ func NewOapiFileUploadTransactionRequest() *OapiFileUploadTransactionRequest {
 }
 
 type OapiFileUploadTransactionRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFileUploadTransactionResponse
 	AgentId         string
@@ -85,8 +85,7 @@ func (this *OapiFileUploadTransactionRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiFileUploadTransactionResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64  `json:"errcode,omitempty"`
-	Errmsg   string `json:"errmsg,omitempty"`
+
 	MediaId  string `json:"media_id,omitempty"`
 	UploadId string `json:"upload_id,omitempty"`
 }

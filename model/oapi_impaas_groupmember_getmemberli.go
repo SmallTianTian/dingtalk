@@ -9,7 +9,7 @@ func NewOapiImpaasGroupmemberGetmemberlistRequest() *OapiImpaasGroupmemberGetmem
 }
 
 type OapiImpaasGroupmemberGetmemberlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasGroupmemberGetmemberlistResponse
 	Request         string
@@ -66,8 +66,7 @@ type GetGroupMemberListRequest struct {
 }
 type OapiImpaasGroupmemberGetmemberlistResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64             `json:"errcode,omitempty"`
-	Errmsg     string            `json:"errmsg,omitempty"`
+
 	MemberList []GroupMemberInfo `json:"member_list,omitempty"`
 }
 type GroupMemberInfo struct {

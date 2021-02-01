@@ -9,7 +9,7 @@ func NewOapiCspaceAddToSingleChatRequest() *OapiCspaceAddToSingleChatRequest {
 }
 
 type OapiCspaceAddToSingleChatRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCspaceAddToSingleChatResponse
 	AgentId         string

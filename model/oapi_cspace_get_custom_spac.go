@@ -9,7 +9,7 @@ func NewOapiCspaceGetCustomSpaceRequest() *OapiCspaceGetCustomSpaceRequest {
 }
 
 type OapiCspaceGetCustomSpaceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCspaceGetCustomSpaceResponse
 	AgentId         string

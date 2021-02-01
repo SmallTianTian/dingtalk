@@ -10,7 +10,7 @@ func NewOapiAppstoreOrdersSpecialCanalUpdateOrderRequest() *OapiAppstoreOrdersSp
 }
 
 type OapiAppstoreOrdersSpecialCanalUpdateOrderRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreOrdersSpecialCanalUpdateOrderResponse
 	DingOrderId     string

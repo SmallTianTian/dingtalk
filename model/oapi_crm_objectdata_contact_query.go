@@ -10,7 +10,7 @@ func NewOapiCrmObjectdataContactQueryRequest() *OapiCrmObjectdataContactQueryReq
 }
 
 type OapiCrmObjectdataContactQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiCrmObjectdataContactQueryResponse
 	CurrentOperatorUserid string

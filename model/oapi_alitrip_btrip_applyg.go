@@ -11,7 +11,7 @@ func NewOapiAlitripBtripApplyGetRequest() *OapiAlitripBtripApplyGetRequest {
 }
 
 type OapiAlitripBtripApplyGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripApplyGetResponse
 	Rq              string

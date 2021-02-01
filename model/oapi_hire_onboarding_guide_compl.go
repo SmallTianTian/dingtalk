@@ -10,7 +10,7 @@ func NewOapiHireOnboardingGuideCompleteRequest() *OapiHireOnboardingGuideComplet
 }
 
 type OapiHireOnboardingGuideCompleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHireOnboardingGuideCompleteResponse
 	GuideName       string

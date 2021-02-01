@@ -9,7 +9,7 @@ func NewOapiAlitripBtripReimbursementAppstatusSyncRequest() *OapiAlitripBtripRei
 }
 
 type OapiAlitripBtripReimbursementAppstatusSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripReimbursementAppstatusSyncResponse
 	Rq              string

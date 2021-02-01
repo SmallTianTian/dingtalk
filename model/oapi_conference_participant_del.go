@@ -10,7 +10,7 @@ func NewOapiConferenceParticipantDeleteRequest() *OapiConferenceParticipantDelet
 }
 
 type OapiConferenceParticipantDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiConferenceParticipantDeleteResponse
 	ConferenceId          string

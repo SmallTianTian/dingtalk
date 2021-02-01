@@ -9,7 +9,7 @@ func NewOapiSmartdeviceDeviceQuerybyidRequest() *OapiSmartdeviceDeviceQuerybyidR
 }
 
 type OapiSmartdeviceDeviceQuerybyidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceDeviceQuerybyidResponse
 	DeviceQueryVo   string

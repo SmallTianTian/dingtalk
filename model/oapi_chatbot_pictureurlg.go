@@ -10,7 +10,7 @@ func NewOapiChatbotPictureurlGetRequest() *OapiChatbotPictureurlGetRequest {
 }
 
 type OapiChatbotPictureurlGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatbotPictureurlGetResponse
 	DownloadCode    string

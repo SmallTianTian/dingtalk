@@ -10,7 +10,7 @@ func NewOapiCustomizeConfigSetRequest() *OapiCustomizeConfigSetRequest {
 }
 
 type OapiCustomizeConfigSetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomizeConfigSetResponse
 	ActiveId        string

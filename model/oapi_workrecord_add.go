@@ -10,7 +10,7 @@ func NewOapiWorkrecordAddRequest() *OapiWorkrecordAddRequest {
 }
 
 type OapiWorkrecordAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiWorkrecordAddResponse
 	BizId            string
@@ -137,7 +137,6 @@ func (this *OapiWorkrecordAddRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiWorkrecordAddResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64  `json:"errcode,omitempty"`
-	Errmsg   string `json:"errmsg,omitempty"`
+
 	RecordId string `json:"record_id,omitempty"`
 }

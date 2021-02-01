@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupScheduleAsyncRequest() *OapiAttendanceGroupScheduleAs
 }
 
 type OapiAttendanceGroupScheduleAsyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupScheduleAsyncResponse
 	GroupId         int64

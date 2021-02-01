@@ -9,7 +9,7 @@ func NewOapiUserCanAccessMicroappRequest() *OapiUserCanAccessMicroappRequest {
 }
 
 type OapiUserCanAccessMicroappRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserCanAccessMicroappResponse
 	AppId           int64
@@ -69,7 +69,5 @@ func (this *OapiUserCanAccessMicroappRequest) GetTaobaoResp() *taobao.TaobaoResp
 
 type OapiUserCanAccessMicroappResponse struct {
 	taobao.TaobaoResponse
-	CanAccess bool   `json:"canAccess,omitempty"`
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
+	CanAccess bool `json:"canAccess,omitempty"`
 }

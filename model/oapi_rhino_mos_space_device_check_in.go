@@ -9,7 +9,7 @@ func NewOapiRhinoMosSpaceDeviceCheckInRequest() *OapiRhinoMosSpaceDeviceCheckInR
 }
 
 type OapiRhinoMosSpaceDeviceCheckInRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosSpaceDeviceCheckInResponse
 	Request         string

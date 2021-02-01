@@ -10,7 +10,7 @@ func NewIsvCallCalluserRequest() *IsvCallCalluserRequest {
 }
 
 type IsvCallCalluserRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            IsvCallCalluserResponse
 	AuthedCorpId    string

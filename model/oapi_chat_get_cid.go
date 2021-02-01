@@ -10,7 +10,7 @@ func NewOapiChatGetCidRequest() *OapiChatGetCidRequest {
 }
 
 type OapiChatGetCidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatGetCidResponse
 	Chatid          string

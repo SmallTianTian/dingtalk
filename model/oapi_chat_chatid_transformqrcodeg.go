@@ -10,7 +10,7 @@ func NewOapiChatChatidTransformqrcodeGetRequest() *OapiChatChatidTransformqrcode
 }
 
 type OapiChatChatidTransformqrcodeGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatChatidTransformqrcodeGetResponse
 	GroupUrl        string

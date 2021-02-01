@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiSmartdeviceFocusdetailGetRequest() *OapiSmartdeviceFocusdetailGetRequest {
@@ -10,7 +11,7 @@ func NewOapiSmartdeviceFocusdetailGetRequest() *OapiSmartdeviceFocusdetailGetReq
 }
 
 type OapiSmartdeviceFocusdetailGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceFocusdetailGetResponse
 	Cursor          int64

@@ -10,7 +10,7 @@ func NewOapiEduCampusGetRequest() *OapiEduCampusGetRequest {
 }
 
 type OapiEduCampusGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCampusGetResponse
 	CampusId        int64

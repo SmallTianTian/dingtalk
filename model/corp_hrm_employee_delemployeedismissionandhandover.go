@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewCorpHrmEmployeeDelemployeedismissionandhandoverRequest() *CorpHrmEmployeeDelemployeedismissionandhandoverRequest {
@@ -11,7 +12,7 @@ func NewCorpHrmEmployeeDelemployeedismissionandhandoverRequest() *CorpHrmEmploye
 }
 
 type CorpHrmEmployeeDelemployeedismissionandhandoverRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                       CorpHrmEmployeeDelemployeedismissionandhandoverResponse
 	DismissionInfoWithHandOver string

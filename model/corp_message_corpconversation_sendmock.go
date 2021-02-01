@@ -10,7 +10,7 @@ func NewCorpMessageCorpconversationSendmockRequest() *CorpMessageCorpconversatio
 }
 
 type CorpMessageCorpconversationSendmockRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpMessageCorpconversationSendmockResponse
 	Message         string

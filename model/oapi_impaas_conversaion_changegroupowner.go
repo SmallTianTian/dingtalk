@@ -9,7 +9,7 @@ func NewOapiImpaasConversaionChangegroupownerRequest() *OapiImpaasConversaionCha
 }
 
 type OapiImpaasConversaionChangegroupownerRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasConversaionChangegroupownerResponse
 	Channel         string

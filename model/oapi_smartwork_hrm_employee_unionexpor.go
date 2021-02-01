@@ -9,7 +9,7 @@ func NewOapiSmartworkHrmEmployeeUnionexportRequest() *OapiSmartworkHrmEmployeeUn
 }
 
 type OapiSmartworkHrmEmployeeUnionexportRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeUnionexportResponse
 	Param           string
@@ -69,8 +69,7 @@ type UnionExportParam struct {
 }
 type OapiSmartworkHrmEmployeeUnionexportResponse struct {
 	taobao.TaobaoResponse
-	Errcode   int64       `json:"errcode,omitempty"`
-	Errmsg    string      `json:"errmsg,omitempty"`
+
 	IsSuccess bool        `json:"is_success,omitempty"`
 	Result    ExportRsult `json:"result,omitempty"`
 }

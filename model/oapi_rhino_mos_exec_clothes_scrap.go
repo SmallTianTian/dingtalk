@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecClothesScrapRequest() *OapiRhinoMosExecClothesScrapReque
 }
 
 type OapiRhinoMosExecClothesScrapRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecClothesScrapResponse
 	EntityIds       string

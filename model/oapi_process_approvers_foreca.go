@@ -9,7 +9,7 @@ func NewOapiProcessApproversForecastRequest() *OapiProcessApproversForecastReque
 }
 
 type OapiProcessApproversForecastRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessApproversForecastResponse
 	Request         string

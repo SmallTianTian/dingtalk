@@ -10,7 +10,7 @@ func NewOapiOrgSetoaurlRequest() *OapiOrgSetoaurlRequest {
 }
 
 type OapiOrgSetoaurlRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOrgSetoaurlResponse
 	OaTitle         string

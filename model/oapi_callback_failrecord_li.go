@@ -9,7 +9,7 @@ func NewOapiCallbackFailrecordListRequest() *OapiCallbackFailrecordListRequest {
 }
 
 type OapiCallbackFailrecordListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallbackFailrecordListResponse
 	Req             string
@@ -70,8 +70,7 @@ type Req struct {
 }
 type OapiCallbackFailrecordListResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64        `json:"errcode,omitempty"`
-	Errmsg     string       `json:"errmsg,omitempty"`
+
 	FailedList []FailedList `json:"failed_list,omitempty"`
 	HasMore    bool         `json:"has_more,omitempty"`
 }

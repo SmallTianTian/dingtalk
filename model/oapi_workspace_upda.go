@@ -9,7 +9,7 @@ func NewOapiWorkspaceUpdateRequest() *OapiWorkspaceUpdateRequest {
 }
 
 type OapiWorkspaceUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceUpdateResponse
 	TopHttpMethod   string

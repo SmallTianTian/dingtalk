@@ -10,7 +10,7 @@ func NewOapiAlitripBtripProjectDeleteRequest() *OapiAlitripBtripProjectDeleteReq
 }
 
 type OapiAlitripBtripProjectDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripProjectDeleteResponse
 	Corpid          string

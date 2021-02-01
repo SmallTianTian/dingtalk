@@ -9,7 +9,7 @@ func NewOapiCollectionSchemaCreateRequest() *OapiCollectionSchemaCreateRequest {
 }
 
 type OapiCollectionSchemaCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCollectionSchemaCreateResponse
 	Request         string

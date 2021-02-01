@@ -10,7 +10,7 @@ func NewOapiSceneservicegroupMessageSendRequest() *OapiSceneservicegroupMessageS
 }
 
 type OapiSceneservicegroupMessageSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiSceneservicegroupMessageSendResponse
 	AtDingtalkids       string

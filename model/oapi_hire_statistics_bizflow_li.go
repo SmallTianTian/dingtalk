@@ -10,7 +10,7 @@ func NewOapiHireStatisticsBizflowListRequest() *OapiHireStatisticsBizflowListReq
 }
 
 type OapiHireStatisticsBizflowListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHireStatisticsBizflowListResponse
 	Cursor          string

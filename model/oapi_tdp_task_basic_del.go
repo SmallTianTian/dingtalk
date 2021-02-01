@@ -10,7 +10,7 @@ func NewOapiTdpTaskBasicDeleteRequest() *OapiTdpTaskBasicDeleteRequest {
 }
 
 type OapiTdpTaskBasicDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpTaskBasicDeleteResponse
 	MicroappAgentId int64

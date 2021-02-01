@@ -10,7 +10,7 @@ func NewOapiKefuSendmessageRequest() *OapiKefuSendmessageRequest {
 }
 
 type OapiKefuSendmessageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiKefuSendmessageResponse
 	Content         string

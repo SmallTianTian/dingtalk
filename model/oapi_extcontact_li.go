@@ -9,7 +9,7 @@ func NewOapiExtcontactListRequest() *OapiExtcontactListRequest {
 }
 
 type OapiExtcontactListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiExtcontactListResponse
 	Offset          int64

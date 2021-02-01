@@ -11,7 +11,7 @@ func NewOapiAlitripBtripHotelOrderSearchRequest() *OapiAlitripBtripHotelOrderSea
 }
 
 type OapiAlitripBtripHotelOrderSearchRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripHotelOrderSearchResponse
 	Rq              string

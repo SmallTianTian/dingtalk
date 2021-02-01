@@ -9,7 +9,7 @@ func NewOapiSnsGetSnsTokenRequest() *OapiSnsGetSnsTokenRequest {
 }
 
 type OapiSnsGetSnsTokenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSnsGetSnsTokenResponse
 	Openid          string
@@ -69,8 +69,7 @@ func (this *OapiSnsGetSnsTokenRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiSnsGetSnsTokenResponse struct {
 	taobao.TaobaoResponse
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
+
 	ExpiresIn int64  `json:"expires_in,omitempty"`
 	SnsToken  string `json:"sns_token,omitempty"`
 }

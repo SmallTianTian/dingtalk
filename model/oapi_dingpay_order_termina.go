@@ -10,7 +10,7 @@ func NewOapiDingpayOrderTerminateRequest() *OapiDingpayOrderTerminateRequest {
 }
 
 type OapiDingpayOrderTerminateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingpayOrderTerminateResponse
 	Extension       string

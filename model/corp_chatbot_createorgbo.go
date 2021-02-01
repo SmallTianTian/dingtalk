@@ -9,7 +9,7 @@ func NewCorpChatbotCreateorgbotRequest() *CorpChatbotCreateorgbotRequest {
 }
 
 type CorpChatbotCreateorgbotRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               CorpChatbotCreateorgbotResponse
 	CreateChatBotModel string

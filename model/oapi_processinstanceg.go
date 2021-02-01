@@ -12,7 +12,7 @@ func NewOapiProcessinstanceGetRequest() *OapiProcessinstanceGetRequest {
 }
 
 type OapiProcessinstanceGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiProcessinstanceGetResponse
 	ProcessInstanceId string
@@ -67,8 +67,7 @@ func (this *OapiProcessinstanceGetRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiProcessinstanceGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64                `json:"errcode,omitempty"`
-	Errmsg          string               `json:"errmsg,omitempty"`
+
 	ProcessInstance ProcessInstanceTopVo `json:"process_instance,omitempty"`
 }
 type OperationRecordsVo struct {

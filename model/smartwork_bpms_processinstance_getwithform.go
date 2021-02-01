@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewSmartworkBpmsProcessinstanceGetwithformRequest() *SmartworkBpmsProcessinstanceGetwithformRequest {
@@ -11,7 +12,7 @@ func NewSmartworkBpmsProcessinstanceGetwithformRequest() *SmartworkBpmsProcessin
 }
 
 type SmartworkBpmsProcessinstanceGetwithformRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              SmartworkBpmsProcessinstanceGetwithformResponse
 	ProcessInstanceId string

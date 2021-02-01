@@ -10,7 +10,7 @@ func NewOapiHrmEmployeeDelandhandoverRequest() *OapiHrmEmployeeDelandhandoverReq
 }
 
 type OapiHrmEmployeeDelandhandoverRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                       OapiHrmEmployeeDelandhandoverResponse
 	DismissionInfoWithHandOver string

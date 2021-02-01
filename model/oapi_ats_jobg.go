@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiAtsJobGetRequest() *OapiAtsJobGetRequest {
@@ -11,7 +12,7 @@ func NewOapiAtsJobGetRequest() *OapiAtsJobGetRequest {
 }
 
 type OapiAtsJobGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsJobGetResponse
 	BizCode         string

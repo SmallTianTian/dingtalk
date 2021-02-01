@@ -9,7 +9,7 @@ func NewOapiRhinoMosExecClothesUnperformedFilterRequest() *OapiRhinoMosExecCloth
 }
 
 type OapiRhinoMosExecClothesUnperformedFilterRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecClothesUnperformedFilterResponse
 	Req             string

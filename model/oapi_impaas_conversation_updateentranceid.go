@@ -9,7 +9,7 @@ func NewOapiImpaasConversationUpdateentranceidRequest() *OapiImpaasConversationU
 }
 
 type OapiImpaasConversationUpdateentranceidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasConversationUpdateentranceidResponse
 	Request         string

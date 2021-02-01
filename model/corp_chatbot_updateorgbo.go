@@ -10,7 +10,7 @@ func NewCorpChatbotUpdateorgbotRequest() *CorpChatbotUpdateorgbotRequest {
 }
 
 type CorpChatbotUpdateorgbotRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpChatbotUpdateorgbotResponse
 	ChatbotId       int64

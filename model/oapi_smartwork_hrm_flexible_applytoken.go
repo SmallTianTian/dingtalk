@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmFlexibleApplytokenRequest() *OapiSmartworkHrmFlexibleApp
 }
 
 type OapiSmartworkHrmFlexibleApplytokenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmFlexibleApplytokenResponse
 	Agentid         int64

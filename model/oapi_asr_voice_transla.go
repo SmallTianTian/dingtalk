@@ -10,7 +10,7 @@ func NewOapiAsrVoiceTranslateRequest() *OapiAsrVoiceTranslateRequest {
 }
 
 type OapiAsrVoiceTranslateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAsrVoiceTranslateResponse
 	MediaId         string

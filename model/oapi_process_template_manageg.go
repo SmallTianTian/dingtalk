@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiProcessTemplateManageGetRequest() *OapiProcessTemplateManageGetRequest {
@@ -11,7 +12,7 @@ func NewOapiProcessTemplateManageGetRequest() *OapiProcessTemplateManageGetReque
 }
 
 type OapiProcessTemplateManageGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessTemplateManageGetResponse
 	TopHttpMethod   string

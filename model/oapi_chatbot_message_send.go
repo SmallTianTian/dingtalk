@@ -10,7 +10,7 @@ func NewOapiChatbotMessageSendRequest() *OapiChatbotMessageSendRequest {
 }
 
 type OapiChatbotMessageSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatbotMessageSendResponse
 	ChatbotId       string

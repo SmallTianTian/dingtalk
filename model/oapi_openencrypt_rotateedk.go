@@ -9,7 +9,7 @@ func NewOapiOpenencryptRotateedkRequest() *OapiOpenencryptRotateedkRequest {
 }
 
 type OapiOpenencryptRotateedkRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiOpenencryptRotateedkResponse
 	TopEdkRotateManual string

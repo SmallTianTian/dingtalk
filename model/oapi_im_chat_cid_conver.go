@@ -10,7 +10,7 @@ func NewOapiImChatCidConvertRequest() *OapiImChatCidConvertRequest {
 }
 
 type OapiImChatCidConvertRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatCidConvertResponse
 	ChatId          string

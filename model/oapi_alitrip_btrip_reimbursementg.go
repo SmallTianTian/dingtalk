@@ -10,7 +10,7 @@ func NewOapiAlitripBtripReimbursementGetRequest() *OapiAlitripBtripReimbursement
 }
 
 type OapiAlitripBtripReimbursementGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiAlitripBtripReimbursementGetResponse
 	Corpid           string

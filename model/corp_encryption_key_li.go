@@ -9,7 +9,7 @@ func NewCorpEncryptionKeyListRequest() *CorpEncryptionKeyListRequest {
 }
 
 type CorpEncryptionKeyListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpEncryptionKeyListResponse
 	TopHttpMethod   string

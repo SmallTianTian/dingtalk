@@ -10,7 +10,7 @@ func NewOapiEduCourseCreateRequest() *OapiEduCourseCreateRequest {
 }
 
 type OapiEduCourseCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCourseCreateResponse
 	BizKey          string
@@ -122,7 +122,6 @@ func (this *OapiEduCourseCreateRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 type OapiEduCourseCreateResponse struct {
 	taobao.TaobaoResponse
 	CourseCode string `json:"course_code,omitempty"`
-	Errcode    int64  `json:"errcode,omitempty"`
-	Errmsg     string `json:"errmsg,omitempty"`
-	Success    bool   `json:"success,omitempty"`
+
+	Success bool `json:"success,omitempty"`
 }

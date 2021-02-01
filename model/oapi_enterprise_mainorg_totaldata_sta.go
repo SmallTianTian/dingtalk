@@ -10,7 +10,7 @@ func NewOapiEnterpriseMainorgTotaldataStatRequest() *OapiEnterpriseMainorgTotald
 }
 
 type OapiEnterpriseMainorgTotaldataStatRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEnterpriseMainorgTotaldataStatResponse
 	CorpId          string

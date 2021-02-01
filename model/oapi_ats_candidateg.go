@@ -10,7 +10,7 @@ func NewOapiAtsCandidateGetRequest() *OapiAtsCandidateGetRequest {
 }
 
 type OapiAtsCandidateGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsCandidateGetResponse
 	BizCode         string

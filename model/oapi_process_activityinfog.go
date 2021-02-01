@@ -9,7 +9,7 @@ func NewOapiProcessActivityinfoGetRequest() *OapiProcessActivityinfoGetRequest {
 }
 
 type OapiProcessActivityinfoGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessActivityinfoGetResponse
 	Request         string

@@ -10,7 +10,7 @@ func NewOapiAppstoreInternalOrderGetRequest() *OapiAppstoreInternalOrderGetReque
 }
 
 type OapiAppstoreInternalOrderGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreInternalOrderGetResponse
 	BizOrderId      int64

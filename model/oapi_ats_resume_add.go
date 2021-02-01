@@ -10,7 +10,7 @@ func NewOapiAtsResumeAddRequest() *OapiAtsResumeAddRequest {
 }
 
 type OapiAtsResumeAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsResumeAddResponse
 	BizCode         string

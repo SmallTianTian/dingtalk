@@ -9,7 +9,7 @@ func NewOapiMicroappRuleGetUserTotalRequest() *OapiMicroappRuleGetUserTotalReque
 }
 
 type OapiMicroappRuleGetUserTotalRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappRuleGetUserTotalResponse
 	AgentId         int64

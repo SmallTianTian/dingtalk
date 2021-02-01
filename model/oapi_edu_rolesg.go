@@ -10,7 +10,7 @@ func NewOapiEduRolesGetRequest() *OapiEduRolesGetRequest {
 }
 
 type OapiEduRolesGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduRolesGetResponse
 	TopHttpMethod   string

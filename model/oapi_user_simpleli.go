@@ -9,7 +9,7 @@ func NewOapiUserSimplelistRequest() *OapiUserSimplelistRequest {
 }
 
 type OapiUserSimplelistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserSimplelistResponse
 	DepartmentId    int64
@@ -93,8 +93,7 @@ func (this *OapiUserSimplelistRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserSimplelistResponse struct {
 	taobao.TaobaoResponse
-	Errcode  int64      `json:"errcode,omitempty"`
-	Errmsg   string     `json:"errmsg,omitempty"`
+
 	HasMore  bool       `json:"hasMore,omitempty"`
 	Userlist []Userlist `json:"userlist,omitempty"`
 }

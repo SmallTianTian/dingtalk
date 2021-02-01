@@ -10,7 +10,7 @@ func NewOapiUserTokenGetRequest() *OapiUserTokenGetRequest {
 }
 
 type OapiUserTokenGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserTokenGetResponse
 	TopHttpMethod   string

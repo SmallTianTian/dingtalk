@@ -9,7 +9,7 @@ func NewOapiOrgOpenencryptHeartbeatRequest() *OapiOrgOpenencryptHeartbeatRequest
 }
 
 type OapiOrgOpenencryptHeartbeatRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOrgOpenencryptHeartbeatResponse
 	TopHttpMethod   string

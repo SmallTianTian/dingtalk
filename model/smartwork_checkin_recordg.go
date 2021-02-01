@@ -10,7 +10,7 @@ func NewSmartworkCheckinRecordGetRequest() *SmartworkCheckinRecordGetRequest {
 }
 
 type SmartworkCheckinRecordGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkCheckinRecordGetResponse
 	Cursor          int64

@@ -10,7 +10,7 @@ func NewOapiCrmObjectdataListRequest() *OapiCrmObjectdataListRequest {
 }
 
 type OapiCrmObjectdataListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiCrmObjectdataListResponse
 	CurrentOperatorUserid string
@@ -81,7 +81,6 @@ func (this *OapiCrmObjectdataListRequest) GetTaobaoResp() *taobao.TaobaoResponse
 
 type OapiCrmObjectdataListResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64                  `json:"errcode,omitempty"`
-	Errmsg     string                 `json:"errmsg,omitempty"`
+
 	ResultList []ObjectDataInstanceVo `json:"result_list,omitempty"`
 }

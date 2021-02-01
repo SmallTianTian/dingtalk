@@ -10,7 +10,7 @@ func NewOapiV2DepartmentListparentbydeptRequest() *OapiV2DepartmentListparentbyd
 }
 
 type OapiV2DepartmentListparentbydeptRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2DepartmentListparentbydeptResponse
 	DeptId          int64

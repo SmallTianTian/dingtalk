@@ -10,7 +10,7 @@ func NewOapiChatQrcodeGetRequest() *OapiChatQrcodeGetRequest {
 }
 
 type OapiChatQrcodeGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatQrcodeGetResponse
 	Chatid          string

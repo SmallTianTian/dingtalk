@@ -10,7 +10,7 @@ func NewOapiAtsPluginDataDeleteRequest() *OapiAtsPluginDataDeleteRequest {
 }
 
 type OapiAtsPluginDataDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsPluginDataDeleteResponse
 	BizCode         string

@@ -10,7 +10,7 @@ func NewOapiDingtaxUserPushRequest() *OapiDingtaxUserPushRequest {
 }
 
 type OapiDingtaxUserPushRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingtaxUserPushResponse
 	SourceRegion    string

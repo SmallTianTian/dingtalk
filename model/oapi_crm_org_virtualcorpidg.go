@@ -9,7 +9,7 @@ func NewOapiCrmOrgVirtualcorpidGetRequest() *OapiCrmOrgVirtualcorpidGetRequest {
 }
 
 type OapiCrmOrgVirtualcorpidGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmOrgVirtualcorpidGetResponse
 	TopHttpMethod   string
@@ -53,7 +53,6 @@ func (this *OapiCrmOrgVirtualcorpidGetRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiCrmOrgVirtualcorpidGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode       int64  `json:"errcode,omitempty"`
-	Errmsg        string `json:"errmsg,omitempty"`
+
 	VirtualCorpid string `json:"virtual_corpid,omitempty"`
 }

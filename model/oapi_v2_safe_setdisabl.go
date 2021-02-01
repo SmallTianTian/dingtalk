@@ -10,7 +10,7 @@ func NewOapiV2SafeSetdisableRequest() *OapiV2SafeSetdisableRequest {
 }
 
 type OapiV2SafeSetdisableRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2SafeSetdisableResponse
 	Reason          string

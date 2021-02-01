@@ -9,7 +9,7 @@ func NewOapiRetailSellerSyncRequest() *OapiRetailSellerSyncRequest {
 }
 
 type OapiRetailSellerSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRetailSellerSyncResponse
 	SellerParam     string

@@ -10,7 +10,7 @@ func NewOapiProcessCleanRequest() *OapiProcessCleanRequest {
 }
 
 type OapiProcessCleanRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessCleanResponse
 	Corpid          string

@@ -10,7 +10,7 @@ func NewOapiWorkspaceTaskCleanRequest() *OapiWorkspaceTaskCleanRequest {
 }
 
 type OapiWorkspaceTaskCleanRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceTaskCleanResponse
 	Agentid         int64

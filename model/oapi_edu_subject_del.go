@@ -10,7 +10,7 @@ func NewOapiEduSubjectDeleteRequest() *OapiEduSubjectDeleteRequest {
 }
 
 type OapiEduSubjectDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduSubjectDeleteResponse
 	OperatorUserid  string

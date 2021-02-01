@@ -10,7 +10,7 @@ func NewOapiRobotMessageOrggrouptaskQueryRequest() *OapiRobotMessageOrggrouptask
 }
 
 type OapiRobotMessageOrggrouptaskQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiRobotMessageOrggrouptaskQueryResponse
 	ChatbotId          string

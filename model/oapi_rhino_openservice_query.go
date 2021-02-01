@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiRhinoOpenserviceQueryRequest() *OapiRhinoOpenserviceQueryRequest {
@@ -10,7 +11,7 @@ func NewOapiRhinoOpenserviceQueryRequest() *OapiRhinoOpenserviceQueryRequest {
 }
 
 type OapiRhinoOpenserviceQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoOpenserviceQueryResponse
 	Code            string

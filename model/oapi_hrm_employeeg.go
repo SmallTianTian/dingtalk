@@ -10,7 +10,7 @@ func NewOapiHrmEmployeeGetRequest() *OapiHrmEmployeeGetRequest {
 }
 
 type OapiHrmEmployeeGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHrmEmployeeGetResponse
 	TopHttpMethod   string
@@ -65,7 +65,6 @@ func (this *OapiHrmEmployeeGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiHrmEmployeeGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode   int64           `json:"errcode,omitempty"`
-	Errmsg    string          `json:"errmsg,omitempty"`
+
 	GroupList []FieldGroupVpo `json:"group_list,omitempty"`
 }

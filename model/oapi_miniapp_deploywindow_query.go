@@ -10,7 +10,7 @@ func NewOapiMiniappDeploywindowQueryRequest() *OapiMiniappDeploywindowQueryReque
 }
 
 type OapiMiniappDeploywindowQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMiniappDeploywindowQueryResponse
 	ModelKey        string
@@ -65,9 +65,7 @@ func (this *OapiMiniappDeploywindowQueryRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiMiniappDeploywindowQueryResponse struct {
 	taobao.TaobaoResponse
-	Data    DeployWindowDoModel `json:"data,omitempty"`
-	Errcode int64               `json:"errcode,omitempty"`
-	Errmsg  string              `json:"errmsg,omitempty"`
+	Data DeployWindowDoModel `json:"data,omitempty"`
 }
 type DeployWindowDoModel struct {
 	AndroidClientMax  string `json:"android_client_max,omitempty"`

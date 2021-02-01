@@ -10,7 +10,7 @@ func NewOapiAtsMessageCorpSystemaccountSendRequest() *OapiAtsMessageCorpSystemac
 }
 
 type OapiAtsMessageCorpSystemaccountSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsMessageCorpSystemaccountSendResponse
 	BizCode         string

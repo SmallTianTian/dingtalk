@@ -10,7 +10,7 @@ func NewSmartworkAttendsGetusergroupRequest() *SmartworkAttendsGetusergroupReque
 }
 
 type SmartworkAttendsGetusergroupRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkAttendsGetusergroupResponse
 	TopHttpMethod   string

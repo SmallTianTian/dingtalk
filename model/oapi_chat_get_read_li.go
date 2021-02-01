@@ -9,7 +9,7 @@ func NewOapiChatGetReadListRequest() *OapiChatGetReadListRequest {
 }
 
 type OapiChatGetReadListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatGetReadListResponse
 	Cursor          int64
@@ -77,8 +77,7 @@ func (this *OapiChatGetReadListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiChatGetReadListResponse struct {
 	taobao.TaobaoResponse
-	Errcode        int64    `json:"errcode,omitempty"`
-	Errmsg         string   `json:"errmsg,omitempty"`
+
 	NextCursor     int64    `json:"next_cursor,omitempty"`
 	ReadUserIdList []string `json:"readUserIdList,omitempty"`
 }

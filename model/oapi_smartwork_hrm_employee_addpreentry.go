@@ -11,7 +11,7 @@ func NewOapiSmartworkHrmEmployeeAddpreentryRequest() *OapiSmartworkHrmEmployeeAd
 }
 
 type OapiSmartworkHrmEmployeeAddpreentryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeAddpreentryResponse
 	Param           string

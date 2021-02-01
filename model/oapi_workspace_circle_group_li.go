@@ -10,7 +10,7 @@ func NewOapiWorkspaceCircleGroupListRequest() *OapiWorkspaceCircleGroupListReque
 }
 
 type OapiWorkspaceCircleGroupListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceCircleGroupListResponse
 	Cursor          int64

@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmMasterCorpconfigUpdateRequest() *OapiSmartworkHrmMasterC
 }
 
 type OapiSmartworkHrmMasterCorpconfigUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmMasterCorpconfigUpdateResponse
 	ScopeCode       string

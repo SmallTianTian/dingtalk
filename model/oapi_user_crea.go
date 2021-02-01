@@ -9,7 +9,7 @@ func NewOapiUserCreateRequest() *OapiUserCreateRequest {
 }
 
 type OapiUserCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserCreateResponse
 	Department      string

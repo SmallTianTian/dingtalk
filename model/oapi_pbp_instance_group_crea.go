@@ -9,7 +9,7 @@ func NewOapiPbpInstanceGroupCreateRequest() *OapiPbpInstanceGroupCreateRequest {
 }
 
 type OapiPbpInstanceGroupCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPbpInstanceGroupCreateResponse
 	GroupParam      string
@@ -65,7 +65,6 @@ type PunchGroupCreateParam struct {
 }
 type OapiPbpInstanceGroupCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode      int64  `json:"errcode,omitempty"`
-	Errmsg       string `json:"errmsg,omitempty"`
+
 	PunchGroupId string `json:"punch_group_id,omitempty"`
 }

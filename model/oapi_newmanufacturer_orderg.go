@@ -9,7 +9,7 @@ func NewOapiNewmanufacturerOrderGetRequest() *OapiNewmanufacturerOrderGetRequest
 }
 
 type OapiNewmanufacturerOrderGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiNewmanufacturerOrderGetResponse
 	Number          string

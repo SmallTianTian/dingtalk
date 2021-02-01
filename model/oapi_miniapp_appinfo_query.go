@@ -10,7 +10,7 @@ func NewOapiMiniappAppinfoQueryRequest() *OapiMiniappAppinfoQueryRequest {
 }
 
 type OapiMiniappAppinfoQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMiniappAppinfoQueryResponse
 	ModelKey        string
@@ -65,9 +65,7 @@ func (this *OapiMiniappAppinfoQueryRequest) GetTaobaoResp() *taobao.TaobaoRespon
 
 type OapiMiniappAppinfoQueryResponse struct {
 	taobao.TaobaoResponse
-	Data    AppInfoDoModel `json:"data,omitempty"`
-	Errcode int64          `json:"errcode,omitempty"`
-	Errmsg  string         `json:"errmsg,omitempty"`
+	Data AppInfoDoModel `json:"data,omitempty"`
 }
 type AppInfoDoModel struct {
 	Alias         string `json:"alias,omitempty"`

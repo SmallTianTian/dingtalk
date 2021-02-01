@@ -10,7 +10,7 @@ func NewOapiImIntelligentCardSendRequest() *OapiImIntelligentCardSendRequest {
 }
 
 type OapiImIntelligentCardSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImIntelligentCardSendResponse
 	BizType            int64

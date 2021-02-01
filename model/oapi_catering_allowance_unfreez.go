@@ -10,7 +10,7 @@ func NewOapiCateringAllowanceUnfreezeRequest() *OapiCateringAllowanceUnfreezeReq
 }
 
 type OapiCateringAllowanceUnfreezeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringAllowanceUnfreezeResponse
 	OrderId         string

@@ -12,7 +12,7 @@ func NewOapiUserGetRequest() *OapiUserGetRequest {
 }
 
 type OapiUserGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetResponse
 	TopHttpMethod   string
@@ -67,14 +67,13 @@ func (this *OapiUserGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiUserGetResponse struct {
 	taobao.TaobaoResponse
-	Active             bool      `json:"active,omitempty"`
-	AssociatedUnionId  string    `json:"associatedUnionId,omitempty"`
-	Avatar             string    `json:"avatar,omitempty"`
-	Department         []int64   `json:"department,omitempty"`
-	DingId             string    `json:"dingId,omitempty"`
-	Email              string    `json:"email,omitempty"`
-	Errcode            int64     `json:"errcode,omitempty"`
-	Errmsg             string    `json:"errmsg,omitempty"`
+	Active            bool    `json:"active,omitempty"`
+	AssociatedUnionId string  `json:"associatedUnionId,omitempty"`
+	Avatar            string  `json:"avatar,omitempty"`
+	Department        []int64 `json:"department,omitempty"`
+	DingId            string  `json:"dingId,omitempty"`
+	Email             string  `json:"email,omitempty"`
+
 	Extattr            string    `json:"extattr,omitempty"`
 	HiredDate          time.Time `json:"hiredDate,omitempty"`
 	InviteMobile       string    `json:"inviteMobile,omitempty"`

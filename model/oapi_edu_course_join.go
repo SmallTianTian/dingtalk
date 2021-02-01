@@ -10,7 +10,7 @@ func NewOapiEduCourseJoinRequest() *OapiEduCourseJoinRequest {
 }
 
 type OapiEduCourseJoinRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCourseJoinResponse
 	CourseCode      string

@@ -10,7 +10,7 @@ func NewOapiChatBanwordsQueryRequest() *OapiChatBanwordsQueryRequest {
 }
 
 type OapiChatBanwordsQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatBanwordsQueryResponse
 	Chatid          string

@@ -10,7 +10,7 @@ func NewOapiMicroappScopeDeleteRequest() *OapiMicroappScopeDeleteRequest {
 }
 
 type OapiMicroappScopeDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappScopeDeleteResponse
 	Agentid         int64

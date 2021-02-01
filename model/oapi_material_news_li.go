@@ -10,7 +10,7 @@ func NewOapiMaterialNewsListRequest() *OapiMaterialNewsListRequest {
 }
 
 type OapiMaterialNewsListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMaterialNewsListResponse
 	PageSize        int64
@@ -81,8 +81,7 @@ func (this *OapiMaterialNewsListRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiMaterialNewsListResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64         `json:"errcode,omitempty"`
-	Errmsg     string        `json:"errmsg,omitempty"`
+
 	ItemCount  int64         `json:"item_count,omitempty"`
 	Items      []NewsCardDTO `json:"items,omitempty"`
 	TotalCount int64         `json:"total_count,omitempty"`

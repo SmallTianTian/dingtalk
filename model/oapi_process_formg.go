@@ -10,7 +10,7 @@ func NewOapiProcessFormGetRequest() *OapiProcessFormGetRequest {
 }
 
 type OapiProcessFormGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessFormGetResponse
 	ProcessCode     string

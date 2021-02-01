@@ -9,7 +9,7 @@ func NewOapiIsvOpenencryptRegistekmsRequest() *OapiIsvOpenencryptRegistekmsReque
 }
 
 type OapiIsvOpenencryptRegistekmsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiIsvOpenencryptRegistekmsResponse
 	TopHttpMethod   string

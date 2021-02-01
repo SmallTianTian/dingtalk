@@ -9,7 +9,7 @@ func NewOapiImpaasGroupmemberModifyRequest() *OapiImpaasGroupmemberModifyRequest
 }
 
 type OapiImpaasGroupmemberModifyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasGroupmemberModifyResponse
 	Request         string

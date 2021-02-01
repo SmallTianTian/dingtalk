@@ -9,7 +9,7 @@ func NewOapiAttendanceTestGetclassRequest() *OapiAttendanceTestGetclassRequest {
 }
 
 type OapiAttendanceTestGetclassRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceTestGetclassResponse
 	ClassId         int64

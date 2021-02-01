@@ -9,7 +9,7 @@ func NewOapiSmartworkHrmSmsSendforpayslipRequest() *OapiSmartworkHrmSmsSendforpa
 }
 
 type OapiSmartworkHrmSmsSendforpayslipRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmSmsSendforpayslipResponse
 	Param           string

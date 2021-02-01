@@ -9,7 +9,7 @@ func NewOapiImpaasNewretailSendstaffgroupmessageRequest() *OapiImpaasNewretailSe
 }
 
 type OapiImpaasNewretailSendstaffgroupmessageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasNewretailSendstaffgroupmessageResponse
 	ChatId          string

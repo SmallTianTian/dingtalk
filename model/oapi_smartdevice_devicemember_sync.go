@@ -10,7 +10,7 @@ func NewOapiSmartdeviceDevicememberSyncRequest() *OapiSmartdeviceDevicememberSyn
 }
 
 type OapiSmartdeviceDevicememberSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceDevicememberSyncResponse
 	AddUserids      string

@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecClothesSynccreateRequest() *OapiRhinoMosExecClothesSyncc
 }
 
 type OapiRhinoMosExecClothesSynccreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                 OapiRhinoMosExecClothesSynccreateResponse
 	AdditionalOperations string

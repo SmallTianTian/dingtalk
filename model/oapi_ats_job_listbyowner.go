@@ -10,7 +10,7 @@ func NewOapiAtsJobListbyownerRequest() *OapiAtsJobListbyownerRequest {
 }
 
 type OapiAtsJobListbyownerRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsJobListbyownerResponse
 	BizCode         string

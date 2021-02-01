@@ -10,7 +10,7 @@ func NewOapiProcessBaseinfoListRequest() *OapiProcessBaseinfoListRequest {
 }
 
 type OapiProcessBaseinfoListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessBaseinfoListResponse
 	ProcessCodes    string

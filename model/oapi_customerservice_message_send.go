@@ -9,7 +9,7 @@ func NewOapiCustomerserviceMessageSendRequest() *OapiCustomerserviceMessageSendR
 }
 
 type OapiCustomerserviceMessageSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomerserviceMessageSendResponse
 	Message         string

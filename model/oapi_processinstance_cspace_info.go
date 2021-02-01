@@ -10,7 +10,7 @@ func NewOapiProcessinstanceCspaceInfoRequest() *OapiProcessinstanceCspaceInfoReq
 }
 
 type OapiProcessinstanceCspaceInfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessinstanceCspaceInfoResponse
 	AgentId         int64

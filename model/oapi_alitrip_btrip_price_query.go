@@ -11,7 +11,7 @@ func NewOapiAlitripBtripPriceQueryRequest() *OapiAlitripBtripPriceQueryRequest {
 }
 
 type OapiAlitripBtripPriceQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripPriceQueryResponse
 	Req             string

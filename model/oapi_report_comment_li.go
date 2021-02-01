@@ -12,7 +12,7 @@ func NewOapiReportCommentListRequest() *OapiReportCommentListRequest {
 }
 
 type OapiReportCommentListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiReportCommentListResponse
 	Offset          int64

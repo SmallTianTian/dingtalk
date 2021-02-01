@@ -9,7 +9,7 @@ func NewOapiKacDatavDeptVideoconfListRequest() *OapiKacDatavDeptVideoconfListReq
 }
 
 type OapiKacDatavDeptVideoconfListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiKacDatavDeptVideoconfListResponse
 	Request         string

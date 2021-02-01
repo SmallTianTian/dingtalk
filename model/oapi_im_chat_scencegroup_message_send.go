@@ -10,7 +10,7 @@ func NewOapiImChatScencegroupMessageSendRequest() *OapiImChatScencegroupMessageS
 }
 
 type OapiImChatScencegroupMessageSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                     OapiImChatScencegroupMessageSendResponse
 	AtMobiles                string

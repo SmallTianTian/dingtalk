@@ -10,7 +10,7 @@ func NewOapiV2DepartmentDeleteRequest() *OapiV2DepartmentDeleteRequest {
 }
 
 type OapiV2DepartmentDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2DepartmentDeleteResponse
 	DeptId          int64

@@ -9,7 +9,7 @@ func NewOapiEduHomeworkStudentMarkTagRequest() *OapiEduHomeworkStudentMarkTagReq
 }
 
 type OapiEduHomeworkStudentMarkTagRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduHomeworkStudentMarkTagResponse
 	BizCode         string

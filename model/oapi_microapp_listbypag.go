@@ -10,7 +10,7 @@ func NewOapiMicroappListbypageRequest() *OapiMicroappListbypageRequest {
 }
 
 type OapiMicroappListbypageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappListbypageResponse
 	AgentId         int64

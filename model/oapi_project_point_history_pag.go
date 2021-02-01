@@ -10,7 +10,7 @@ func NewOapiProjectPointHistoryPageRequest() *OapiProjectPointHistoryPageRequest
 }
 
 type OapiProjectPointHistoryPageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProjectPointHistoryPageResponse
 	Cursor          int64

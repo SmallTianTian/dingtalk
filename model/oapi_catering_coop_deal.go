@@ -10,7 +10,7 @@ func NewOapiCateringCoopDealRequest() *OapiCateringCoopDealRequest {
 }
 
 type OapiCateringCoopDealRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringCoopDealResponse
 	CoopStatus      int64

@@ -10,7 +10,7 @@ func NewCorpSmartdeviceHasfaceRequest() *CorpSmartdeviceHasfaceRequest {
 }
 
 type CorpSmartdeviceHasfaceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpSmartdeviceHasfaceResponse
 	TopHttpMethod   string

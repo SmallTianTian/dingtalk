@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiEduHomeworkQueryRequest() *OapiEduHomeworkQueryRequest {
@@ -11,7 +12,7 @@ func NewOapiEduHomeworkQueryRequest() *OapiEduHomeworkQueryRequest {
 }
 
 type OapiEduHomeworkQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduHomeworkQueryResponse
 	BizCode         string

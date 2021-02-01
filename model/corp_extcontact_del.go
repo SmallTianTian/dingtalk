@@ -10,7 +10,7 @@ func NewCorpExtcontactDeleteRequest() *CorpExtcontactDeleteRequest {
 }
 
 type CorpExtcontactDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpExtcontactDeleteResponse
 	TopHttpMethod   string

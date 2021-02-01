@@ -10,7 +10,7 @@ func NewOapiCalendarV2EventCancelRequest() *OapiCalendarV2EventCancelRequest {
 }
 
 type OapiCalendarV2EventCancelRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCalendarV2EventCancelResponse
 	Agentid         int64

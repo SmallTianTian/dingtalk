@@ -9,7 +9,7 @@ func NewOapiCalendarCreateRequest() *OapiCalendarCreateRequest {
 }
 
 type OapiCalendarCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCalendarCreateResponse
 	CreateVo        string

@@ -10,7 +10,7 @@ func NewSmartworkBpmsProcessinstanceidListRequest() *SmartworkBpmsProcessinstanc
 }
 
 type SmartworkBpmsProcessinstanceidListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkBpmsProcessinstanceidListResponse
 	Cursor          int64

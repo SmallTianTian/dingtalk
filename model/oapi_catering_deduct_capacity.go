@@ -10,7 +10,7 @@ func NewOapiCateringDeductCapacityRequest() *OapiCateringDeductCapacityRequest {
 }
 
 type OapiCateringDeductCapacityRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringDeductCapacityResponse
 	MeaTime         int64

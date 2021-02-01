@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmMasterSaveRequest() *OapiSmartworkHrmMasterSaveRequest {
 }
 
 type OapiSmartworkHrmMasterSaveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmMasterSaveResponse
 	BizData         string

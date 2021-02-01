@@ -10,7 +10,7 @@ func NewOapiRoleVisibleGetRequest() *OapiRoleVisibleGetRequest {
 }
 
 type OapiRoleVisibleGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRoleVisibleGetResponse
 	Offset          int64

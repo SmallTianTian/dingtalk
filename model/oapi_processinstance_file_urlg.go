@@ -9,7 +9,7 @@ func NewOapiProcessinstanceFileUrlGetRequest() *OapiProcessinstanceFileUrlGetReq
 }
 
 type OapiProcessinstanceFileUrlGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessinstanceFileUrlGetResponse
 	Request         string

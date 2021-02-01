@@ -10,7 +10,7 @@ func NewOapiWorkspaceCorpGroupUnbindRequest() *OapiWorkspaceCorpGroupUnbindReque
 }
 
 type OapiWorkspaceCorpGroupUnbindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceCorpGroupUnbindResponse
 	ChatIds         string

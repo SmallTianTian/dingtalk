@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecPerformReworkRequest() *OapiRhinoMosExecPerformReworkReq
 }
 
 type OapiRhinoMosExecPerformReworkRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecPerformReworkResponse
 	Context         string

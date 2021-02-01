@@ -10,7 +10,7 @@ func NewOapiImChatScenegroupTemplateApplyRequest() *OapiImChatScenegroupTemplate
 }
 
 type OapiImChatScenegroupTemplateApplyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatScenegroupTemplateApplyResponse
 	ApplyMode          int64

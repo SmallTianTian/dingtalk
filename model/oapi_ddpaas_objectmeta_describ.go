@@ -10,7 +10,7 @@ func NewOapiDdpaasObjectmetaDescribeRequest() *OapiDdpaasObjectmetaDescribeReque
 }
 
 type OapiDdpaasObjectmetaDescribeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDdpaasObjectmetaDescribeResponse
 	AppUuid         string

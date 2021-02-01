@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiCustomerserviceTicketQueryRequest() *OapiCustomerserviceTicketQueryRequest {
@@ -10,7 +11,7 @@ func NewOapiCustomerserviceTicketQueryRequest() *OapiCustomerserviceTicketQueryR
 }
 
 type OapiCustomerserviceTicketQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiCustomerserviceTicketQueryResponse
 	TicketPageQueryDto string

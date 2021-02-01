@@ -10,7 +10,7 @@ func NewOapiAttendanceApproveCancelRequest() *OapiAttendanceApproveCancelRequest
 }
 
 type OapiAttendanceApproveCancelRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceApproveCancelResponse
 	ApproveId       string

@@ -12,7 +12,7 @@ func NewOapiMediaUploadRequest() *OapiMediaUploadRequest {
 }
 
 type OapiMediaUploadRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMediaUploadResponse
 	Media           os.File
@@ -72,9 +72,8 @@ func (this *OapiMediaUploadRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiMediaUploadResponse struct {
 	taobao.TaobaoResponse
-	CreatedAt int64  `json:"created_at,omitempty"`
-	Errcode   int64  `json:"errcode,omitempty"`
-	Errmsg    string `json:"errmsg,omitempty"`
-	MediaId   string `json:"media_id,omitempty"`
-	Type      string `json:"type,omitempty"`
+	CreatedAt int64 `json:"created_at,omitempty"`
+
+	MediaId string `json:"media_id,omitempty"`
+	Type    string `json:"type,omitempty"`
 }

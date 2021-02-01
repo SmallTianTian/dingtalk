@@ -9,7 +9,7 @@ func NewOapiImpaasGroupDismissRequest() *OapiImpaasGroupDismissRequest {
 }
 
 type OapiImpaasGroupDismissRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasGroupDismissResponse
 	Request         string

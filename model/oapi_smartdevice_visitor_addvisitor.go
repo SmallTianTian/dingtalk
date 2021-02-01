@@ -9,7 +9,7 @@ func NewOapiSmartdeviceVisitorAddvisitorRequest() *OapiSmartdeviceVisitorAddvisi
 }
 
 type OapiSmartdeviceVisitorAddvisitorRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceVisitorAddvisitorResponse
 	TopHttpMethod   string

@@ -10,7 +10,7 @@ func NewOapiDdpaasObjectdataQueryRequest() *OapiDdpaasObjectdataQueryRequest {
 }
 
 type OapiDdpaasObjectdataQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiDdpaasObjectdataQueryResponse
 	AppUuid               string

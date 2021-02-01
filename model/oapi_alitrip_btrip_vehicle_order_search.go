@@ -11,7 +11,7 @@ func NewOapiAlitripBtripVehicleOrderSearchRequest() *OapiAlitripBtripVehicleOrde
 }
 
 type OapiAlitripBtripVehicleOrderSearchRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripVehicleOrderSearchResponse
 	Rq              string
@@ -63,8 +63,7 @@ func (this *OapiAlitripBtripVehicleOrderSearchRequest) GetTaobaoResp() *taobao.T
 
 type OapiAlitripBtripVehicleOrderSearchResponse struct {
 	taobao.TaobaoResponse
-	Errcode          int64                `json:"errcode,omitempty"`
-	Errmsg           string               `json:"errmsg,omitempty"`
+
 	Success          bool                 `json:"success,omitempty"`
 	VehicleOrderList []OpenVehicleOrderRs `json:"vehicle_order_list,omitempty"`
 }

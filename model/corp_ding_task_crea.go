@@ -9,7 +9,7 @@ func NewCorpDingTaskCreateRequest() *CorpDingTaskCreateRequest {
 }
 
 type CorpDingTaskCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDingTaskCreateResponse
 	TaskSendVO      string

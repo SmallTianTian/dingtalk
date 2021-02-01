@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupPositionsQueryRequest() *OapiAttendanceGroupPositions
 }
 
 type OapiAttendanceGroupPositionsQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupPositionsQueryResponse
 	Cursor          string

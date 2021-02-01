@@ -10,7 +10,7 @@ func NewOapiAttendanceApproveDurationCalculateRequest() *OapiAttendanceApproveDu
 }
 
 type OapiAttendanceApproveDurationCalculateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceApproveDurationCalculateResponse
 	BizType         int64

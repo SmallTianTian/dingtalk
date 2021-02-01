@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmEmployeeListdimissionRequest() *OapiSmartworkHrmEmployee
 }
 
 type OapiSmartworkHrmEmployeeListdimissionRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeListdimissionResponse
 	TopHttpMethod   string

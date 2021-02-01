@@ -9,7 +9,7 @@ func NewOapiAttendanceApproveCheckRequest() *OapiAttendanceApproveCheckRequest {
 }
 
 type OapiAttendanceApproveCheckRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceApproveCheckResponse
 	ApproveId       string

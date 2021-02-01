@@ -10,7 +10,7 @@ func NewOapiRoleDeleteroleRequest() *OapiRoleDeleteroleRequest {
 }
 
 type OapiRoleDeleteroleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRoleDeleteroleResponse
 	RoleId          int64

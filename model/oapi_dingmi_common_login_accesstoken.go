@@ -9,7 +9,7 @@ func NewOapiDingmiCommonLoginAccesstokenRequest() *OapiDingmiCommonLoginAccessto
 }
 
 type OapiDingmiCommonLoginAccesstokenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingmiCommonLoginAccesstokenResponse
 	ForeignId       string

@@ -9,7 +9,7 @@ func NewOapiOpenencryptEncryptboxStatusUpdateRequest() *OapiOpenencryptEncryptbo
 }
 
 type OapiOpenencryptEncryptboxStatusUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiOpenencryptEncryptboxStatusUpdateResponse
 	TopEncryptBoxStatus string

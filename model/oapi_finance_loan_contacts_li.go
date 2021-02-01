@@ -10,7 +10,7 @@ func NewOapiFinanceLoanContactsListRequest() *OapiFinanceLoanContactsListRequest
 }
 
 type OapiFinanceLoanContactsListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceLoanContactsListResponse
 	IdCardNo        string

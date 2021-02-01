@@ -10,7 +10,7 @@ func NewOapiConnectorOpenRequest() *OapiConnectorOpenRequest {
 }
 
 type OapiConnectorOpenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiConnectorOpenResponse
 	ConnectorId     string

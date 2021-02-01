@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecPerformCancelRequest() *OapiRhinoMosExecPerformCancelReq
 }
 
 type OapiRhinoMosExecPerformCancelRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                      OapiRhinoMosExecPerformCancelResponse
 	Context                   string

@@ -10,7 +10,7 @@ func NewCcoserviceServicegroupAddmemberRequest() *CcoserviceServicegroupAddmembe
 }
 
 type CcoserviceServicegroupAddmemberRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CcoserviceServicegroupAddmemberResponse
 	OpenGroupId     string

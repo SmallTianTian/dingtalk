@@ -9,7 +9,7 @@ func NewOapiProcessWorkrecordUpdateRequest() *OapiProcessWorkrecordUpdateRequest
 }
 
 type OapiProcessWorkrecordUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessWorkrecordUpdateResponse
 	Request         string

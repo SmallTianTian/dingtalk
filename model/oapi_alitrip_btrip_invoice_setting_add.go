@@ -9,7 +9,7 @@ func NewOapiAlitripBtripInvoiceSettingAddRequest() *OapiAlitripBtripInvoiceSetti
 }
 
 type OapiAlitripBtripInvoiceSettingAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripInvoiceSettingAddResponse
 	Rq              string

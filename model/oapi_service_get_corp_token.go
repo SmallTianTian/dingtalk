@@ -9,7 +9,7 @@ func NewOapiServiceGetCorpTokenRequest() *OapiServiceGetCorpTokenRequest {
 }
 
 type OapiServiceGetCorpTokenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceGetCorpTokenResponse
 	AuthCorpid      string
@@ -70,7 +70,6 @@ func (this *OapiServiceGetCorpTokenRequest) GetTaobaoResp() *taobao.TaobaoRespon
 type OapiServiceGetCorpTokenResponse struct {
 	taobao.TaobaoResponse
 	AccessToken string `json:"access_token,omitempty"`
-	Errcode     int64  `json:"errcode,omitempty"`
-	Errmsg      string `json:"errmsg,omitempty"`
-	ExpiresIn   int64  `json:"expires_in,omitempty"`
+
+	ExpiresIn int64 `json:"expires_in,omitempty"`
 }

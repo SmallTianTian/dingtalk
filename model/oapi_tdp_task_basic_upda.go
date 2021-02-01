@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiTdpTaskBasicUpdateRequest() *OapiTdpTaskBasicUpdateRequest {
@@ -11,7 +12,7 @@ func NewOapiTdpTaskBasicUpdateRequest() *OapiTdpTaskBasicUpdateRequest {
 }
 
 type OapiTdpTaskBasicUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpTaskBasicUpdateResponse
 	MicroappAgentId int64

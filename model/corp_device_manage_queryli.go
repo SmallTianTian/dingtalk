@@ -10,7 +10,7 @@ func NewCorpDeviceManageQuerylistRequest() *CorpDeviceManageQuerylistRequest {
 }
 
 type CorpDeviceManageQuerylistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDeviceManageQuerylistResponse
 	Cursor          int64

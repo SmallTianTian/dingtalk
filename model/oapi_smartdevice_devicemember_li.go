@@ -10,7 +10,7 @@ func NewOapiSmartdeviceDevicememberListRequest() *OapiSmartdeviceDevicememberLis
 }
 
 type OapiSmartdeviceDevicememberListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceDevicememberListResponse
 	Cursor          int64

@@ -10,7 +10,7 @@ func NewOapiProcessWorkrecordTaskQueryRequest() *OapiProcessWorkrecordTaskQueryR
 }
 
 type OapiProcessWorkrecordTaskQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessWorkrecordTaskQueryResponse
 	Count           int64

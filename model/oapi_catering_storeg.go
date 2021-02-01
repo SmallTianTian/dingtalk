@@ -9,7 +9,7 @@ func NewOapiCateringStoreGetRequest() *OapiCateringStoreGetRequest {
 }
 
 type OapiCateringStoreGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringStoreGetResponse
 	Offset          int64

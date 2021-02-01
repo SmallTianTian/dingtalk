@@ -9,7 +9,7 @@ func NewSmartworkAttendsGetsimplegroupsRequest() *SmartworkAttendsGetsimplegroup
 }
 
 type SmartworkAttendsGetsimplegroupsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            SmartworkAttendsGetsimplegroupsResponse
 	Offset          int64

@@ -9,7 +9,7 @@ func NewOapiSmartworkHrmEmployeeFieldListRequest() *OapiSmartworkHrmEmployeeFiel
 }
 
 type OapiSmartworkHrmEmployeeFieldListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeFieldListResponse
 	Agentid         int64

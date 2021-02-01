@@ -10,7 +10,7 @@ func NewOapiDingpayRedenvelopeSendRequest() *OapiDingpayRedenvelopeSendRequest {
 }
 
 type OapiDingpayRedenvelopeSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingpayRedenvelopeSendResponse
 	CorpBizNo       string

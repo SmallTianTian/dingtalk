@@ -10,7 +10,7 @@ func NewOapiWorkbenchShortcutDeleteRequest() *OapiWorkbenchShortcutDeleteRequest
 }
 
 type OapiWorkbenchShortcutDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkbenchShortcutDeleteResponse
 	AppId           string

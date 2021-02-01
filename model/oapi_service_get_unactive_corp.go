@@ -9,7 +9,7 @@ func NewOapiServiceGetUnactiveCorpRequest() *OapiServiceGetUnactiveCorpRequest {
 }
 
 type OapiServiceGetUnactiveCorpRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceGetUnactiveCorpResponse
 	AppId           int64
@@ -63,7 +63,6 @@ type OapiServiceGetUnactiveCorpResponse struct {
 	taobao.TaobaoResponse
 	AppId    int64    `json:"app_id,omitempty"`
 	CorpList []string `json:"corp_list,omitempty"`
-	Errcode  int64    `json:"errcode,omitempty"`
-	Errmsg   string   `json:"errmsg,omitempty"`
-	HasMore  bool     `json:"has_more,omitempty"`
+
+	HasMore bool `json:"has_more,omitempty"`
 }

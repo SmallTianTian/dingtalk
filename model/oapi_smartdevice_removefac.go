@@ -10,7 +10,7 @@ func NewOapiSmartdeviceRemovefaceRequest() *OapiSmartdeviceRemovefaceRequest {
 }
 
 type OapiSmartdeviceRemovefaceRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceRemovefaceResponse
 	TopHttpMethod   string

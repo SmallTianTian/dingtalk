@@ -9,7 +9,7 @@ func NewOapiRhinoHumanresEmployeeProductionteamListRequest() *OapiRhinoHumanresE
 }
 
 type OapiRhinoHumanresEmployeeProductionteamListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                             OapiRhinoHumanresEmployeeProductionteamListResponse
 	QueryEmployeeProductionTeamParam string
@@ -68,11 +68,10 @@ type QueryCorpEmployeeProductionTeamDto struct {
 type OapiRhinoHumanresEmployeeProductionteamListResponse struct {
 	taobao.TaobaoResponse
 	CorpEmployeeInfo []Model `json:"corp_employee_info,omitempty"`
-	Errcode          int64   `json:"errcode,omitempty"`
-	Errmsg           string  `json:"errmsg,omitempty"`
-	ExternalMsgInfo  string  `json:"external_msg_info,omitempty"`
-	StatusCode       int64   `json:"status_code,omitempty"`
-	Success          bool    `json:"success,omitempty"`
+
+	ExternalMsgInfo string `json:"external_msg_info,omitempty"`
+	StatusCode      int64  `json:"status_code,omitempty"`
+	Success         bool   `json:"success,omitempty"`
 }
 type ProductionTeamList struct {
 	BizId              string `json:"biz_id,omitempty"`

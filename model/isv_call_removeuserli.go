@@ -10,7 +10,7 @@ func NewIsvCallRemoveuserlistRequest() *IsvCallRemoveuserlistRequest {
 }
 
 type IsvCallRemoveuserlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            IsvCallRemoveuserlistResponse
 	StaffIdList     string

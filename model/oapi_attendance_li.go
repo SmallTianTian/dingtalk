@@ -9,7 +9,7 @@ func NewOapiAttendanceListRequest() *OapiAttendanceListRequest {
 }
 
 type OapiAttendanceListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceListResponse
 	IsI18n          bool
@@ -101,8 +101,7 @@ func (this *OapiAttendanceListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiAttendanceListResponse struct {
 	taobao.TaobaoResponse
-	Errcode      int64          `json:"errcode,omitempty"`
-	Errmsg       string         `json:"errmsg,omitempty"`
+
 	HasMore      bool           `json:"hasMore,omitempty"`
 	Recordresult []Recordresult `json:"recordresult,omitempty"`
 }

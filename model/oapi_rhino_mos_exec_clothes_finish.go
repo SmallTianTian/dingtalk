@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecClothesFinishRequest() *OapiRhinoMosExecClothesFinishReq
 }
 
 type OapiRhinoMosExecClothesFinishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecClothesFinishResponse
 	EntityIds       string

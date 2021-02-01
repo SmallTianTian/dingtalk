@@ -10,7 +10,7 @@ func NewOapiAtsPluginDataPushRequest() *OapiAtsPluginDataPushRequest {
 }
 
 type OapiAtsPluginDataPushRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsPluginDataPushResponse
 	BizCode         string

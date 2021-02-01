@@ -9,7 +9,7 @@ func NewOapiCrmObjectmetaContactDescribeRequest() *OapiCrmObjectmetaContactDescr
 }
 
 type OapiCrmObjectmetaContactDescribeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmObjectmetaContactDescribeResponse
 	TopHttpMethod   string

@@ -10,7 +10,7 @@ func NewOapiImChatScenegroupMemberDeleteRequest() *OapiImChatScenegroupMemberDel
 }
 
 type OapiImChatScenegroupMemberDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatScenegroupMemberDeleteResponse
 	ContactStaffIds    string

@@ -10,7 +10,7 @@ func NewOapiCcoserviceServicegroupUpdateservicetimeRequest() *OapiCcoserviceServ
 }
 
 type OapiCcoserviceServicegroupUpdateservicetimeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiCcoserviceServicegroupUpdateservicetimeResponse
 	EndTime            string

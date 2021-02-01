@@ -12,7 +12,7 @@ func NewOapiAttendanceGetAttendUpdateDataRequest() *OapiAttendanceGetAttendUpdat
 }
 
 type OapiAttendanceGetAttendUpdateDataRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetAttendUpdateDataResponse
 	TopHttpMethod   string

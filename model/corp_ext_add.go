@@ -9,7 +9,7 @@ func NewCorpExtAddRequest() *CorpExtAddRequest {
 }
 
 type CorpExtAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpExtAddResponse
 	Contact         string

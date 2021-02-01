@@ -10,7 +10,7 @@ func NewOapiV2UserGetuserinfoRequest() *OapiV2UserGetuserinfoRequest {
 }
 
 type OapiV2UserGetuserinfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiV2UserGetuserinfoResponse
 	Code            string

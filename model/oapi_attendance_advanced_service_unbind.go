@@ -10,7 +10,7 @@ func NewOapiAttendanceAdvancedServiceUnbindRequest() *OapiAttendanceAdvancedServ
 }
 
 type OapiAttendanceAdvancedServiceUnbindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceAdvancedServiceUnbindResponse
 	EntityId        string

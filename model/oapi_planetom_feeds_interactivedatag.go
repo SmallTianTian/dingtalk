@@ -10,7 +10,7 @@ func NewOapiPlanetomFeedsInteractivedataGetRequest() *OapiPlanetomFeedsInteracti
 }
 
 type OapiPlanetomFeedsInteractivedataGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPlanetomFeedsInteractivedataGetResponse
 	FeedId          string

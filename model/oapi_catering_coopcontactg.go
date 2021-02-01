@@ -10,7 +10,7 @@ func NewOapiCateringCoopcontactGetRequest() *OapiCateringCoopcontactGetRequest {
 }
 
 type OapiCateringCoopcontactGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringCoopcontactGetResponse
 	CallerUserid    string
@@ -81,8 +81,7 @@ func (this *OapiCateringCoopcontactGetRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiCateringCoopcontactGetResponse struct {
 	taobao.TaobaoResponse
-	Errcode    int64  `json:"errcode,omitempty"`
-	Errmsg     string `json:"errmsg,omitempty"`
+
 	Expiration int64  `json:"expiration,omitempty"`
 	PriMobile  string `json:"pri_mobile,omitempty"`
 	Success    bool   `json:"success,omitempty"`

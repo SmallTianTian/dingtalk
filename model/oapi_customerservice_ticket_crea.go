@@ -9,7 +9,7 @@ func NewOapiCustomerserviceTicketCreateRequest() *OapiCustomerserviceTicketCreat
 }
 
 type OapiCustomerserviceTicketCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomerserviceTicketCreateResponse
 	TicketCreate    string

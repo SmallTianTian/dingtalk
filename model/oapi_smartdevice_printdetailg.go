@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"time"
+
+	"github.com/SmallTianTian/dingtalk/model/taobao"
 )
 
 func NewOapiSmartdevicePrintdetailGetRequest() *OapiSmartdevicePrintdetailGetRequest {
@@ -10,7 +11,7 @@ func NewOapiSmartdevicePrintdetailGetRequest() *OapiSmartdevicePrintdetailGetReq
 }
 
 type OapiSmartdevicePrintdetailGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdevicePrintdetailGetResponse
 	Cursor          int64

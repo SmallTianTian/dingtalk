@@ -10,7 +10,7 @@ func NewOapiUserCorpinfoListRequest() *OapiUserCorpinfoListRequest {
 }
 
 type OapiUserCorpinfoListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserCorpinfoListResponse
 	CorpName        string
@@ -74,8 +74,6 @@ func (this *OapiUserCorpinfoListRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 type OapiUserCorpinfoListResponse struct {
 	taobao.TaobaoResponse
 	CorpList []CorpInfoVo `json:"corp_list,omitempty"`
-	Errcode  int64        `json:"errcode,omitempty"`
-	Errmsg   string       `json:"errmsg,omitempty"`
 }
 type CorpInfoVo struct {
 	AuthStatus int64  `json:"auth_status,omitempty"`

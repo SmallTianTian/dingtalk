@@ -10,7 +10,7 @@ func NewOapiBlackboardCategoryListRequest() *OapiBlackboardCategoryListRequest {
 }
 
 type OapiBlackboardCategoryListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBlackboardCategoryListResponse
 	OperationUserid string

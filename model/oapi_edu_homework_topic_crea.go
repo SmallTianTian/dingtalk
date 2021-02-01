@@ -10,7 +10,7 @@ func NewOapiEduHomeworkTopicCreateRequest() *OapiEduHomeworkTopicCreateRequest {
 }
 
 type OapiEduHomeworkTopicCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduHomeworkTopicCreateResponse
 	TopHttpMethod   string

@@ -9,7 +9,7 @@ func NewOapiFugongProcessCodeGetRequest() *OapiFugongProcessCodeGetRequest {
 }
 
 type OapiFugongProcessCodeGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFugongProcessCodeGetResponse
 	TopHttpMethod   string

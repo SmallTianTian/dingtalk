@@ -10,7 +10,7 @@ func NewOapiImChatScenegroupMemberAddRequest() *OapiImChatScenegroupMemberAddReq
 }
 
 type OapiImChatScenegroupMemberAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatScenegroupMemberAddResponse
 	ContactStaffIds    string

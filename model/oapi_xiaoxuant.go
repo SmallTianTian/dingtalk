@@ -9,7 +9,7 @@ func NewOapiXiaoxuanTestRequest() *OapiXiaoxuanTestRequest {
 }
 
 type OapiXiaoxuanTestRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiXiaoxuanTestResponse
 	NormalData      string

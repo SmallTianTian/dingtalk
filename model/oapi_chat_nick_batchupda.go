@@ -10,7 +10,7 @@ func NewOapiChatNickBatchupdateRequest() *OapiChatNickBatchupdateRequest {
 }
 
 type OapiChatNickBatchupdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatNickBatchupdateResponse
 	Chatid          string

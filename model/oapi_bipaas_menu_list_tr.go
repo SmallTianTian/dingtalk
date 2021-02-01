@@ -10,7 +10,7 @@ func NewOapiBipaasMenuListTreeRequest() *OapiBipaasMenuListTreeRequest {
 }
 
 type OapiBipaasMenuListTreeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiBipaasMenuListTreeResponse
 	AntcloudTenantId string

@@ -9,7 +9,7 @@ func NewOapiAuthScopesRequest() *OapiAuthScopesRequest {
 }
 
 type OapiAuthScopesRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAuthScopesResponse
 	TopHttpMethod   string
@@ -56,8 +56,6 @@ type OapiAuthScopesResponse struct {
 	AuthOrgScopes  AuthOrgScopes `json:"auth_org_scopes,omitempty"`
 	AuthUserField  []string      `json:"auth_user_field,omitempty"`
 	ConditionField []string      `json:"condition_field,omitempty"`
-	Errcode        int64         `json:"errcode,omitempty"`
-	Errmsg         string        `json:"errmsg,omitempty"`
 }
 type AuthOrgScopes struct {
 	AuthedDept []int64  `json:"authed_dept,omitempty"`

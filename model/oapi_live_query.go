@@ -11,7 +11,7 @@ func NewOapiLiveQueryRequest() *OapiLiveQueryRequest {
 }
 
 type OapiLiveQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiLiveQueryResponse
 	Request         string

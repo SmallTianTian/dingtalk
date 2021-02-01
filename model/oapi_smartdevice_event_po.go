@@ -9,7 +9,7 @@ func NewOapiSmartdeviceEventPostRequest() *OapiSmartdeviceEventPostRequest {
 }
 
 type OapiSmartdeviceEventPostRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceEventPostResponse
 	DeviceEventVo   string

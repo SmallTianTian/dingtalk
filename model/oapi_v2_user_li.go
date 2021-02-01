@@ -10,7 +10,7 @@ func NewOapiV2UserListRequest() *OapiV2UserListRequest {
 }
 
 type OapiV2UserListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiV2UserListResponse
 	ContainAccessLimit bool

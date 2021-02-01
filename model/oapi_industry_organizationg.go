@@ -9,7 +9,7 @@ func NewOapiIndustryOrganizationGetRequest() *OapiIndustryOrganizationGetRequest
 }
 
 type OapiIndustryOrganizationGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiIndustryOrganizationGetResponse
 	TopHttpMethod   string

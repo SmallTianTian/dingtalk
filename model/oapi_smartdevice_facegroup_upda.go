@@ -10,7 +10,7 @@ func NewOapiSmartdeviceFacegroupUpdateRequest() *OapiSmartdeviceFacegroupUpdateR
 }
 
 type OapiSmartdeviceFacegroupUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceFacegroupUpdateResponse
 	BgImgUrl        string

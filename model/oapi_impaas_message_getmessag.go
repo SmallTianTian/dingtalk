@@ -9,7 +9,7 @@ func NewOapiImpaasMessageGetmessageRequest() *OapiImpaasMessageGetmessageRequest
 }
 
 type OapiImpaasMessageGetmessageRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasMessageGetmessageResponse
 	Request         string

@@ -10,7 +10,7 @@ func NewOapiAppstoreGoodsQueryRequest() *OapiAppstoreGoodsQueryRequest {
 }
 
 type OapiAppstoreGoodsQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreGoodsQueryResponse
 	GoodsCode       string
@@ -65,8 +65,7 @@ func (this *OapiAppstoreGoodsQueryRequest) GetTaobaoResp() *taobao.TaobaoRespons
 
 type OapiAppstoreGoodsQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode   int64       `json:"errcode,omitempty"`
-	Errmsg    string      `json:"errmsg,omitempty"`
+
 	GoodsInfo OpenGoodsVo `json:"goods_info,omitempty"`
 }
 type OpenGoodsItemCycVo struct {

@@ -10,7 +10,7 @@ func NewOapiRoleGetrolegroupRequest() *OapiRoleGetrolegroupRequest {
 }
 
 type OapiRoleGetrolegroupRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRoleGetrolegroupResponse
 	GroupId         int64
@@ -65,7 +65,6 @@ func (this *OapiRoleGetrolegroupRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiRoleGetrolegroupResponse struct {
 	taobao.TaobaoResponse
-	Errcode   int64         `json:"errcode,omitempty"`
-	Errmsg    string        `json:"errmsg,omitempty"`
+
 	RoleGroup OpenRoleGroup `json:"role_group,omitempty"`
 }

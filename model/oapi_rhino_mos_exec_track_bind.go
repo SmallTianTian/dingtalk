@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecTrackBindRequest() *OapiRhinoMosExecTrackBindRequest {
 }
 
 type OapiRhinoMosExecTrackBindRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosExecTrackBindResponse
 	Entities        string

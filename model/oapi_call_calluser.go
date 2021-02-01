@@ -10,7 +10,7 @@ func NewOapiCallCalluserRequest() *OapiCallCalluserRequest {
 }
 
 type OapiCallCalluserRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallCalluserResponse
 	AuthedCorpId    string

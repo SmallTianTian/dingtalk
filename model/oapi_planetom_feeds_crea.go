@@ -10,7 +10,7 @@ func NewOapiPlanetomFeedsCreateRequest() *OapiPlanetomFeedsCreateRequest {
 }
 
 type OapiPlanetomFeedsCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiPlanetomFeedsCreateResponse
 	AppointBeginTime   int64

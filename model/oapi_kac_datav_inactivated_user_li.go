@@ -9,7 +9,7 @@ func NewOapiKacDatavInactivatedUserListRequest() *OapiKacDatavInactivatedUserLis
 }
 
 type OapiKacDatavInactivatedUserListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiKacDatavInactivatedUserListResponse
 	Request         string

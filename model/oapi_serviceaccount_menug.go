@@ -10,7 +10,7 @@ func NewOapiServiceaccountMenuGetRequest() *OapiServiceaccountMenuGetRequest {
 }
 
 type OapiServiceaccountMenuGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceaccountMenuGetResponse
 	TopHttpMethod   string

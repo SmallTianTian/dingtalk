@@ -10,7 +10,7 @@ func NewIsvCallSetuserlistRequest() *IsvCallSetuserlistRequest {
 }
 
 type IsvCallSetuserlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            IsvCallSetuserlistResponse
 	StaffIdList     string

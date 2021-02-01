@@ -9,7 +9,7 @@ func NewOapiTrainingGroupinfoGetRequest() *OapiTrainingGroupinfoGetRequest {
 }
 
 type OapiTrainingGroupinfoGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTrainingGroupinfoGetResponse
 	Request         string

@@ -10,7 +10,7 @@ func NewOapiCcoserviceServicegroupIsignoreproblemcheckRequest() *OapiCcoserviceS
 }
 
 type OapiCcoserviceServicegroupIsignoreproblemcheckRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiCcoserviceServicegroupIsignoreproblemcheckResponse
 	DingtalkId         string

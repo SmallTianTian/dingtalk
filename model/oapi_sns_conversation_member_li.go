@@ -10,7 +10,7 @@ func NewOapiSnsConversationMemberListRequest() *OapiSnsConversationMemberListReq
 }
 
 type OapiSnsConversationMemberListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiSnsConversationMemberListResponse
 	Cursor             string

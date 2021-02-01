@@ -9,7 +9,7 @@ func NewOapiCustomerserviceEventChangeRequest() *OapiCustomerserviceEventChangeR
 }
 
 type OapiCustomerserviceEventChangeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCustomerserviceEventChangeResponse
 	EventDto        string

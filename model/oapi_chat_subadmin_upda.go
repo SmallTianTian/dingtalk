@@ -10,7 +10,7 @@ func NewOapiChatSubadminUpdateRequest() *OapiChatSubadminUpdateRequest {
 }
 
 type OapiChatSubadminUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatSubadminUpdateResponse
 	Chatid          string

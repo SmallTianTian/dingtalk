@@ -10,7 +10,7 @@ func NewOapiCateringMealconfigGetRequest() *OapiCateringMealconfigGetRequest {
 }
 
 type OapiCateringMealconfigGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringMealconfigGetResponse
 	MealDayOffset   int64

@@ -10,7 +10,7 @@ func NewOapiImChatScenegroupGetRequest() *OapiImChatScenegroupGetRequest {
 }
 
 type OapiImChatScenegroupGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImChatScenegroupGetResponse
 	OpenConversationId string

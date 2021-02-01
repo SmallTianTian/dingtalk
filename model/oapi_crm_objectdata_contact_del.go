@@ -10,7 +10,7 @@ func NewOapiCrmObjectdataContactDeleteRequest() *OapiCrmObjectdataContactDeleteR
 }
 
 type OapiCrmObjectdataContactDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmObjectdataContactDeleteResponse
 	DataId          string

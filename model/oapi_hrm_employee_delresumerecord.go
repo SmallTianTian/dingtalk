@@ -10,7 +10,7 @@ func NewOapiHrmEmployeeDelresumerecordRequest() *OapiHrmEmployeeDelresumerecordR
 }
 
 type OapiHrmEmployeeDelresumerecordRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHrmEmployeeDelresumerecordResponse
 	ResumeId        string

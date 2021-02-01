@@ -9,7 +9,7 @@ func NewCorpMessageCorpconversationGetsendresultRequest() *CorpMessageCorpconver
 }
 
 type CorpMessageCorpconversationGetsendresultRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpMessageCorpconversationGetsendresultResponse
 	AgentId         int64

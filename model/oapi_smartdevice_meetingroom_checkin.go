@@ -10,7 +10,7 @@ func NewOapiSmartdeviceMeetingroomCheckinRequest() *OapiSmartdeviceMeetingroomCh
 }
 
 type OapiSmartdeviceMeetingroomCheckinRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceMeetingroomCheckinResponse
 	Bookid          string

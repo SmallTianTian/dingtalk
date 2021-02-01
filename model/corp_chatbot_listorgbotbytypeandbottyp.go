@@ -10,7 +10,7 @@ func NewCorpChatbotListorgbotbytypeandbottypeRequest() *CorpChatbotListorgbotbyt
 }
 
 type CorpChatbotListorgbotbytypeandbottypeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpChatbotListorgbotbytypeandbottypeResponse
 	BotType         int64

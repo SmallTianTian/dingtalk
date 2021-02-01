@@ -10,7 +10,7 @@ func NewOapiSmartworkHrmEmployeeListcontactRequest() *OapiSmartworkHrmEmployeeLi
 }
 
 type OapiSmartworkHrmEmployeeListcontactRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartworkHrmEmployeeListcontactResponse
 	TopHttpMethod   string

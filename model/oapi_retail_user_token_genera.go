@@ -9,7 +9,7 @@ func NewOapiRetailUserTokenGenerateRequest() *OapiRetailUserTokenGenerateRequest
 }
 
 type OapiRetailUserTokenGenerateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRetailUserTokenGenerateResponse
 	Channel         string

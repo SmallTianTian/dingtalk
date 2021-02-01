@@ -9,7 +9,7 @@ func NewOapiSceneservicegroupGroupQueryRequest() *OapiSceneservicegroupGroupQuer
 }
 
 type OapiSceneservicegroupGroupQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiSceneservicegroupGroupQueryResponse
 	Cursor             int64

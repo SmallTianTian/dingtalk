@@ -10,7 +10,7 @@ func NewOapiCorpConversationMemberListRequest() *OapiCorpConversationMemberListR
 }
 
 type OapiCorpConversationMemberListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCorpConversationMemberListResponse
 	ChatId          string

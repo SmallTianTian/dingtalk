@@ -10,7 +10,7 @@ func NewOapiProcessinstanceCreateRequest() *OapiProcessinstanceCreateRequest {
 }
 
 type OapiProcessinstanceCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiProcessinstanceCreateResponse
 	AgentId             int64
@@ -133,7 +133,6 @@ type ProcessInstanceApproverVo struct {
 }
 type OapiProcessinstanceCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode           int64  `json:"errcode,omitempty"`
-	Errmsg            string `json:"errmsg,omitempty"`
+
 	ProcessInstanceId string `json:"process_instance_id,omitempty"`
 }

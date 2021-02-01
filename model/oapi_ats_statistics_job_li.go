@@ -10,7 +10,7 @@ func NewOapiAtsStatisticsJobListRequest() *OapiAtsStatisticsJobListRequest {
 }
 
 type OapiAtsStatisticsJobListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAtsStatisticsJobListResponse
 	BizCode         string

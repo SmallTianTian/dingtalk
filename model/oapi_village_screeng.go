@@ -9,7 +9,7 @@ func NewOapiVillageScreenGetRequest() *OapiVillageScreenGetRequest {
 }
 
 type OapiVillageScreenGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiVillageScreenGetResponse
 	Req             string

@@ -10,7 +10,7 @@ func NewOapiSceneservicegroupGroupsetCreateRequest() *OapiSceneservicegroupGroup
 }
 
 type OapiSceneservicegroupGroupsetCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSceneservicegroupGroupsetCreateResponse
 	GroupTemplateid string

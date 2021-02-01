@@ -10,7 +10,7 @@ func NewCorpSearchCorpcontactBaseinfoRequest() *CorpSearchCorpcontactBaseinfoReq
 }
 
 type CorpSearchCorpcontactBaseinfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpSearchCorpcontactBaseinfoResponse
 	Offset          int64

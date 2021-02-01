@@ -9,7 +9,7 @@ func NewOapiDingTaskStatusUpdateRequest() *OapiDingTaskStatusUpdateRequest {
 }
 
 type OapiDingTaskStatusUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingTaskStatusUpdateResponse
 	OperatorUserid  string

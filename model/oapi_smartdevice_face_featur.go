@@ -10,7 +10,7 @@ func NewOapiSmartdeviceFaceFeatureRequest() *OapiSmartdeviceFaceFeatureRequest {
 }
 
 type OapiSmartdeviceFaceFeatureRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceFaceFeatureResponse
 	ModelType       int64

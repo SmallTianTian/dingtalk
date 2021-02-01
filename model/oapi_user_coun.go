@@ -10,7 +10,7 @@ func NewOapiUserCountRequest() *OapiUserCountRequest {
 }
 
 type OapiUserCountRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserCountResponse
 	OnlyActive      bool

@@ -10,7 +10,7 @@ func NewOapiCateringPredeductRequest() *OapiCateringPredeductRequest {
 }
 
 type OapiCateringPredeductRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringPredeductResponse
 	ExpiryTime      int64

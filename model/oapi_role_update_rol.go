@@ -10,7 +10,7 @@ func NewOapiRoleUpdateRoleRequest() *OapiRoleUpdateRoleRequest {
 }
 
 type OapiRoleUpdateRoleRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRoleUpdateRoleResponse
 	RoleId          int64

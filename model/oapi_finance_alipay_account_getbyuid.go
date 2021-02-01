@@ -9,7 +9,7 @@ func NewOapiFinanceAlipayAccountGetbyuidRequest() *OapiFinanceAlipayAccountGetby
 }
 
 type OapiFinanceAlipayAccountGetbyuidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceAlipayAccountGetbyuidResponse
 	TopHttpMethod   string

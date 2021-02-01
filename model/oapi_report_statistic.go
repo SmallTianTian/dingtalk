@@ -10,7 +10,7 @@ func NewOapiReportStatisticsRequest() *OapiReportStatisticsRequest {
 }
 
 type OapiReportStatisticsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiReportStatisticsResponse
 	ReportId        string

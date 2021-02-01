@@ -9,7 +9,7 @@ func NewOapiChatGetRequest() *OapiChatGetRequest {
 }
 
 type OapiChatGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatGetResponse
 	Chatid          string
@@ -62,8 +62,6 @@ func (this *OapiChatGetRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 type OapiChatGetResponse struct {
 	taobao.TaobaoResponse
 	ChatInfo ChatInfo `json:"chat_info,omitempty"`
-	Errcode  int64    `json:"errcode,omitempty"`
-	Errmsg   string   `json:"errmsg,omitempty"`
 }
 type ChatInfo struct {
 	Agentidlist         []string `json:"agentidlist,omitempty"`

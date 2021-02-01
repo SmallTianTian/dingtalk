@@ -9,7 +9,7 @@ func NewOapiAlitripBtripCostCenterEntitySetRequest() *OapiAlitripBtripCostCenter
 }
 
 type OapiAlitripBtripCostCenterEntitySetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripCostCenterEntitySetResponse
 	Rq              string

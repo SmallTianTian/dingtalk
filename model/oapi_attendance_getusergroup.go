@@ -10,7 +10,7 @@ func NewOapiAttendanceGetusergroupRequest() *OapiAttendanceGetusergroupRequest {
 }
 
 type OapiAttendanceGetusergroupRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGetusergroupResponse
 	TopHttpMethod   string

@@ -9,7 +9,7 @@ func NewOapiDingtalkImpaasMessageCrossdomainReadRequest() *OapiDingtalkImpaasMes
 }
 
 type OapiDingtalkImpaasMessageCrossdomainReadRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiDingtalkImpaasMessageCrossdomainReadResponse
 	MessageReadModel string

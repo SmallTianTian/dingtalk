@@ -9,7 +9,7 @@ func NewOapiServiceGetAuthInfoRequest() *OapiServiceGetAuthInfoRequest {
 }
 
 type OapiServiceGetAuthInfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceGetAuthInfoResponse
 	AuthCorpid      string
@@ -73,8 +73,6 @@ type OapiServiceGetAuthInfoResponse struct {
 	AuthInfo        AuthInfo        `json:"auth_info,omitempty"`
 	AuthUserInfo    AuthUserInfo    `json:"auth_user_info,omitempty"`
 	ChannelAuthInfo ChannelAuthInfo `json:"channel_auth_info,omitempty"`
-	Errcode         int64           `json:"errcode,omitempty"`
-	Errmsg          string          `json:"errmsg,omitempty"`
 }
 type Agent struct {
 	AdminList []string `json:"admin_list,omitempty"`

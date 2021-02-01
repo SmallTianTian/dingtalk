@@ -10,7 +10,7 @@ func NewOapiCrmAuthGroupPermissionListRequest() *OapiCrmAuthGroupPermissionListR
 }
 
 type OapiCrmAuthGroupPermissionListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmAuthGroupPermissionListResponse
 	RoleId          int64

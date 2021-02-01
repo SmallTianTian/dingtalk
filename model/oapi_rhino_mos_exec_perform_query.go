@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecPerformQueryRequest() *OapiRhinoMosExecPerformQueryReque
 }
 
 type OapiRhinoMosExecPerformQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiRhinoMosExecPerformQueryResponse
 	ActiveCondition   string

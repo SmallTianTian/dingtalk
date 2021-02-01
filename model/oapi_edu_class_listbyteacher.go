@@ -9,7 +9,7 @@ func NewOapiEduClassListbyteacherRequest() *OapiEduClassListbyteacherRequest {
 }
 
 type OapiEduClassListbyteacherRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduClassListbyteacherResponse
 	FilterParam     string

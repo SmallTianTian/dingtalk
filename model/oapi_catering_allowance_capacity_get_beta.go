@@ -10,7 +10,7 @@ func NewOapiCateringAllowanceCapacityGetBetaRequest() *OapiCateringAllowanceCapa
 }
 
 type OapiCateringAllowanceCapacityGetBetaRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCateringAllowanceCapacityGetBetaResponse
 	MeaTime         int64

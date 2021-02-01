@@ -10,7 +10,7 @@ func NewOapiTdpTaskBasicGetRequest() *OapiTdpTaskBasicGetRequest {
 }
 
 type OapiTdpTaskBasicGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpTaskBasicGetResponse
 	MicroappAgentId int64

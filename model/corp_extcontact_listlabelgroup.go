@@ -10,7 +10,7 @@ func NewCorpExtcontactListlabelgroupsRequest() *CorpExtcontactListlabelgroupsReq
 }
 
 type CorpExtcontactListlabelgroupsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpExtcontactListlabelgroupsResponse
 	Offset          int64

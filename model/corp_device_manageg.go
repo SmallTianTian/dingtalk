@@ -10,7 +10,7 @@ func NewCorpDeviceManageGetRequest() *CorpDeviceManageGetRequest {
 }
 
 type CorpDeviceManageGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDeviceManageGetResponse
 	DeviceId        string

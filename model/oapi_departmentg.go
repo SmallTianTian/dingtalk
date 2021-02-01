@@ -9,7 +9,7 @@ func NewOapiDepartmentGetRequest() *OapiDepartmentGetRequest {
 }
 
 type OapiDepartmentGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDepartmentGetResponse
 	Id              string
@@ -75,19 +75,18 @@ type OapiDepartmentGetResponse struct {
 	DeptManagerUseridList string `json:"deptManagerUseridList,omitempty"`
 	DeptPerimits          string `json:"deptPerimits,omitempty"`
 	DeptPermits           string `json:"deptPermits,omitempty"`
-	Errcode               int64  `json:"errcode,omitempty"`
-	Errmsg                string `json:"errmsg,omitempty"`
-	GroupContainSubDept   bool   `json:"groupContainSubDept,omitempty"`
-	Id                    int64  `json:"id,omitempty"`
-	IsFromUnionOrg        bool   `json:"isFromUnionOrg,omitempty"`
-	Name                  string `json:"name,omitempty"`
-	Order                 int64  `json:"order,omitempty"`
-	OrgDeptOwner          string `json:"orgDeptOwner,omitempty"`
-	OuterDept             bool   `json:"outerDept,omitempty"`
-	OuterPermitDepts      string `json:"outerPermitDepts,omitempty"`
-	OuterPermitUsers      string `json:"outerPermitUsers,omitempty"`
-	Parentid              int64  `json:"parentid,omitempty"`
-	SourceIdentifier      string `json:"sourceIdentifier,omitempty"`
-	UserPerimits          string `json:"userPerimits,omitempty"`
-	UserPermits           string `json:"userPermits,omitempty"`
+
+	GroupContainSubDept bool   `json:"groupContainSubDept,omitempty"`
+	Id                  int64  `json:"id,omitempty"`
+	IsFromUnionOrg      bool   `json:"isFromUnionOrg,omitempty"`
+	Name                string `json:"name,omitempty"`
+	Order               int64  `json:"order,omitempty"`
+	OrgDeptOwner        string `json:"orgDeptOwner,omitempty"`
+	OuterDept           bool   `json:"outerDept,omitempty"`
+	OuterPermitDepts    string `json:"outerPermitDepts,omitempty"`
+	OuterPermitUsers    string `json:"outerPermitUsers,omitempty"`
+	Parentid            int64  `json:"parentid,omitempty"`
+	SourceIdentifier    string `json:"sourceIdentifier,omitempty"`
+	UserPerimits        string `json:"userPerimits,omitempty"`
+	UserPermits         string `json:"userPermits,omitempty"`
 }

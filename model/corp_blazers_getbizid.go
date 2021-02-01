@@ -9,7 +9,7 @@ func NewCorpBlazersGetbizidRequest() *CorpBlazersGetbizidRequest {
 }
 
 type CorpBlazersGetbizidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpBlazersGetbizidResponse
 	TopHttpMethod   string

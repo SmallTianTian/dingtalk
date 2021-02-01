@@ -9,7 +9,7 @@ func NewOapiCalendarV2EventUpdateRequest() *OapiCalendarV2EventUpdateRequest {
 }
 
 type OapiCalendarV2EventUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCalendarV2EventUpdateResponse
 	Agentid         int64

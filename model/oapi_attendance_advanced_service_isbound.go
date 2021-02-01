@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiAttendanceAdvancedServiceIsboundRequest() *OapiAttendanceAdvancedServiceIsboundRequest {
@@ -11,7 +12,7 @@ func NewOapiAttendanceAdvancedServiceIsboundRequest() *OapiAttendanceAdvancedSer
 }
 
 type OapiAttendanceAdvancedServiceIsboundRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceAdvancedServiceIsboundResponse
 	OpUserid        string

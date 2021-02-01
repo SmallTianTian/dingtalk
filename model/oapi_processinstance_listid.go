@@ -10,7 +10,7 @@ func NewOapiProcessinstanceListidsRequest() *OapiProcessinstanceListidsRequest {
 }
 
 type OapiProcessinstanceListidsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessinstanceListidsResponse
 	Cursor          int64

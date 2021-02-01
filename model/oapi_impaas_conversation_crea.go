@@ -10,7 +10,7 @@ func NewOapiImpaasConversationCreateRequest() *OapiImpaasConversationCreateReque
 }
 
 type OapiImpaasConversationCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasConversationCreateResponse
 	Channel         string
@@ -89,7 +89,5 @@ func (this *OapiImpaasConversationCreateRequest) GetTaobaoResp() *taobao.TaobaoR
 
 type OapiImpaasConversationCreateResponse struct {
 	taobao.TaobaoResponse
-	Chatid  string `json:"chatid,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Chatid string `json:"chatid,omitempty"`
 }

@@ -10,7 +10,7 @@ func NewOapiCallSetuserlistRequest() *OapiCallSetuserlistRequest {
 }
 
 type OapiCallSetuserlistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallSetuserlistResponse
 	StaffIdList     string

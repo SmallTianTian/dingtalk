@@ -10,7 +10,7 @@ func NewOapiEduCourseParticipantRemoveRequest() *OapiEduCourseParticipantRemoveR
 }
 
 type OapiEduCourseParticipantRemoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiEduCourseParticipantRemoveResponse
 	CourseCode        string

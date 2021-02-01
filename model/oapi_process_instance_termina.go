@@ -9,7 +9,7 @@ func NewOapiProcessInstanceTerminateRequest() *OapiProcessInstanceTerminateReque
 }
 
 type OapiProcessInstanceTerminateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessInstanceTerminateResponse
 	Request         string

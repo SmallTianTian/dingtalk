@@ -10,7 +10,7 @@ func NewOapiEduTextbookMetadataListRequest() *OapiEduTextbookMetadataListRequest
 }
 
 type OapiEduTextbookMetadataListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduTextbookMetadataListResponse
 	Cursor          int64

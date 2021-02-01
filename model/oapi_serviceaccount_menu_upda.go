@@ -10,7 +10,7 @@ func NewOapiServiceaccountMenuUpdateRequest() *OapiServiceaccountMenuUpdateReque
 }
 
 type OapiServiceaccountMenuUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceaccountMenuUpdateResponse
 	Menu            string

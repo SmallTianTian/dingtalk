@@ -9,7 +9,7 @@ func NewOapiAlitripBtripUnbindTaobaoRequest() *OapiAlitripBtripUnbindTaobaoReque
 }
 
 type OapiAlitripBtripUnbindTaobaoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAlitripBtripUnbindTaobaoResponse
 	Request         string

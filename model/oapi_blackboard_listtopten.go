@@ -10,7 +10,7 @@ func NewOapiBlackboardListtoptenRequest() *OapiBlackboardListtoptenRequest {
 }
 
 type OapiBlackboardListtoptenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBlackboardListtoptenResponse
 	TopHttpMethod   string
@@ -66,6 +66,4 @@ func (this *OapiBlackboardListtoptenRequest) GetTaobaoResp() *taobao.TaobaoRespo
 type OapiBlackboardListtoptenResponse struct {
 	taobao.TaobaoResponse
 	BlackboardList []OapiBlackboardVo `json:"blackboard_list,omitempty"`
-	Errcode        int64              `json:"errcode,omitempty"`
-	Errmsg         string             `json:"errmsg,omitempty"`
 }

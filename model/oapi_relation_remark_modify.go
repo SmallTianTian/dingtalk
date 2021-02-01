@@ -10,7 +10,7 @@ func NewOapiRelationRemarkModifyRequest() *OapiRelationRemarkModifyRequest {
 }
 
 type OapiRelationRemarkModifyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRelationRemarkModifyResponse
 	Markees         string

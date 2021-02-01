@@ -9,7 +9,7 @@ func NewOapiCalendarDeleteRequest() *OapiCalendarDeleteRequest {
 }
 
 type OapiCalendarDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCalendarDeleteResponse
 	CalendarId      string

@@ -10,7 +10,7 @@ func NewOapiAuthorizationRbacRoleActionUpdateRequest() *OapiAuthorizationRbacRol
 }
 
 type OapiAuthorizationRbacRoleActionUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAuthorizationRbacRoleActionUpdateResponse
 	AgentId         string

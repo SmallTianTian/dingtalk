@@ -9,7 +9,7 @@ func NewOapiEduCardUserTaskSubmitRequest() *OapiEduCardUserTaskSubmitRequest {
 }
 
 type OapiEduCardUserTaskSubmitRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCardUserTaskSubmitResponse
 	Taskparam       string

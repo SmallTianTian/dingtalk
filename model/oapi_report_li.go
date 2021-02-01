@@ -10,7 +10,7 @@ func NewOapiReportListRequest() *OapiReportListRequest {
 }
 
 type OapiReportListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiReportListResponse
 	Cursor            int64

@@ -10,7 +10,7 @@ func NewOapiChatTransformRequest() *OapiChatTransformRequest {
 }
 
 type OapiChatTransformRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiChatTransformResponse
 	OpenConversationId string

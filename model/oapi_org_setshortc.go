@@ -10,7 +10,7 @@ func NewOapiOrgSetshortcutRequest() *OapiOrgSetshortcutRequest {
 }
 
 type OapiOrgSetshortcutRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOrgSetshortcutResponse
 	AgentIds        string

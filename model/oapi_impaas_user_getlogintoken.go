@@ -9,7 +9,7 @@ func NewOapiImpaasUserGetlogintokenRequest() *OapiImpaasUserGetlogintokenRequest
 }
 
 type OapiImpaasUserGetlogintokenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasUserGetlogintokenResponse
 	Request         string

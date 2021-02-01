@@ -9,7 +9,7 @@ func NewOapiServiceActivateSuiteRequest() *OapiServiceActivateSuiteRequest {
 }
 
 type OapiServiceActivateSuiteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiServiceActivateSuiteResponse
 	AuthCorpid      string

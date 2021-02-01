@@ -9,7 +9,7 @@ func NewOapiWorkspaceProjectNoticeSendRequest() *OapiWorkspaceProjectNoticeSendR
 }
 
 type OapiWorkspaceProjectNoticeSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceProjectNoticeSendResponse
 	SendNoticeReq   string

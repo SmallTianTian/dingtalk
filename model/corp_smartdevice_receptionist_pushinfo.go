@@ -10,7 +10,7 @@ func NewCorpSmartdeviceReceptionistPushinfoRequest() *CorpSmartdeviceReceptionis
 }
 
 type CorpSmartdeviceReceptionistPushinfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpSmartdeviceReceptionistPushinfoResponse
 	DescContent     string

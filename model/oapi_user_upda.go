@@ -9,7 +9,7 @@ func NewOapiUserUpdateRequest() *OapiUserUpdateRequest {
 }
 
 type OapiUserUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserUpdateResponse
 	Department      []int64

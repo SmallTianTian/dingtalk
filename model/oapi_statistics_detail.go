@@ -9,7 +9,7 @@ func NewOapiStatisticsDetailsRequest() *OapiStatisticsDetailsRequest {
 }
 
 type OapiStatisticsDetailsRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiStatisticsDetailsResponse
 	TopHttpMethod   string

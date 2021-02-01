@@ -11,7 +11,7 @@ func NewOapiRhinoMosExecPerformBatchCreateRequest() *OapiRhinoMosExecPerformBatc
 }
 
 type OapiRhinoMosExecPerformBatchCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                    OapiRhinoMosExecPerformBatchCreateResponse
 	BatchCreateOperationReq string
@@ -87,8 +87,7 @@ type BatchCreateOperationWithEntityReq struct {
 }
 type OapiRhinoMosExecPerformBatchCreateResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64                 `json:"errcode,omitempty"`
-	Errmsg          string                `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string                `json:"external_msg_info,omitempty"`
 	Model           []OperationPerformDto `json:"model,omitempty"`
 }

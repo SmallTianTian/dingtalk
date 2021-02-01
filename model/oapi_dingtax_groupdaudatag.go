@@ -10,7 +10,7 @@ func NewOapiDingtaxGroupdaudataGetRequest() *OapiDingtaxGroupdaudataGetRequest {
 }
 
 type OapiDingtaxGroupdaudataGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                   OapiDingtaxGroupdaudataGetResponse
 	OpenConversationIdList string

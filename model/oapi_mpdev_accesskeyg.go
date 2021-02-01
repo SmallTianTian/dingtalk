@@ -10,7 +10,7 @@ func NewOapiMpdevAccesskeyGetRequest() *OapiMpdevAccesskeyGetRequest {
 }
 
 type OapiMpdevAccesskeyGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMpdevAccesskeyGetResponse
 	MiniappId       string

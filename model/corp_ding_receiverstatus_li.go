@@ -10,7 +10,7 @@ func NewCorpDingReceiverstatusListRequest() *CorpDingReceiverstatusListRequest {
 }
 
 type CorpDingReceiverstatusListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpDingReceiverstatusListResponse
 	ConfirmedStatus int64

@@ -10,7 +10,7 @@ func NewOapiImChatControlgroupCreateRequest() *OapiImChatControlgroupCreateReque
 }
 
 type OapiImChatControlgroupCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatControlgroupCreateResponse
 	AuthorityType   int64

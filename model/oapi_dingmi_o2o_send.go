@@ -9,7 +9,7 @@ func NewOapiDingmiO2oSendRequest() *OapiDingmiO2oSendRequest {
 }
 
 type OapiDingmiO2oSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingmiO2oSendResponse
 	MsgKey          string

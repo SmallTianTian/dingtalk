@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiCollectionInstanceListRequest() *OapiCollectionInstanceListRequest {
@@ -11,7 +12,7 @@ func NewOapiCollectionInstanceListRequest() *OapiCollectionInstanceListRequest {
 }
 
 type OapiCollectionInstanceListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCollectionInstanceListResponse
 	ActionDate      string

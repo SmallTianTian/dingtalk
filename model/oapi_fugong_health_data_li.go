@@ -10,7 +10,7 @@ func NewOapiFugongHealthDataListRequest() *OapiFugongHealthDataListRequest {
 }
 
 type OapiFugongHealthDataListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiFugongHealthDataListResponse
 	ActionDate        string

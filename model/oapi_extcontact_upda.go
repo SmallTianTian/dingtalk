@@ -9,7 +9,7 @@ func NewOapiExtcontactUpdateRequest() *OapiExtcontactUpdateRequest {
 }
 
 type OapiExtcontactUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiExtcontactUpdateResponse
 	Contact         string

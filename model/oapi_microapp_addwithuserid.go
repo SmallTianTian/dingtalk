@@ -10,7 +10,7 @@ func NewOapiMicroappAddwithuseridRequest() *OapiMicroappAddwithuseridRequest {
 }
 
 type OapiMicroappAddwithuseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappAddwithuseridResponse
 	AgentId         int64

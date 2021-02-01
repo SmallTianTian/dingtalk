@@ -10,7 +10,7 @@ func NewOapiProcessListbyuseridRequest() *OapiProcessListbyuseridRequest {
 }
 
 type OapiProcessListbyuseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessListbyuseridResponse
 	Offset          int64

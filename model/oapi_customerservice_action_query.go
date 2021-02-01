@@ -9,7 +9,7 @@ func NewOapiCustomerserviceActionQueryRequest() *OapiCustomerserviceActionQueryR
 }
 
 type OapiCustomerserviceActionQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                  OapiCustomerserviceActionQueryResponse
 	TicketActionPageQuery string

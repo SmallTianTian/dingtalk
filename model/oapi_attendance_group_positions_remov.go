@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupPositionsRemoveRequest() *OapiAttendanceGroupPosition
 }
 
 type OapiAttendanceGroupPositionsRemoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupPositionsRemoveResponse
 	GroupKey        string

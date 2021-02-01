@@ -9,7 +9,7 @@ func NewOapiAttendanceShiftQueryRequest() *OapiAttendanceShiftQueryRequest {
 }
 
 type OapiAttendanceShiftQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceShiftQueryResponse
 	OpUserId        string

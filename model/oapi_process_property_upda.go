@@ -9,7 +9,7 @@ func NewOapiProcessPropertyUpdateRequest() *OapiProcessPropertyUpdateRequest {
 }
 
 type OapiProcessPropertyUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessPropertyUpdateResponse
 	ComponentId     string

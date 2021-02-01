@@ -10,7 +10,7 @@ func NewOapiLiveGroupliveSharelistRequest() *OapiLiveGroupliveSharelistRequest {
 }
 
 type OapiLiveGroupliveSharelistRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiLiveGroupliveSharelistResponse
 	Cid             string
@@ -73,7 +73,6 @@ func (this *OapiLiveGroupliveSharelistRequest) GetTaobaoResp() *taobao.TaobaoRes
 
 type OapiLiveGroupliveSharelistResponse struct {
 	taobao.TaobaoResponse
-	Errcode      int64    `json:"errcode,omitempty"`
-	Errmsg       string   `json:"errmsg,omitempty"`
+
 	ShareCidList []string `json:"share_cid_list,omitempty"`
 }

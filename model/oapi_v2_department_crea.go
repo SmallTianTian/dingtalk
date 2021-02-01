@@ -10,7 +10,7 @@ func NewOapiV2DepartmentCreateRequest() *OapiV2DepartmentCreateRequest {
 }
 
 type OapiV2DepartmentCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiV2DepartmentCreateResponse
 	CreateDeptGroup   bool

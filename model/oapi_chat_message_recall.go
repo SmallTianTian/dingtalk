@@ -10,7 +10,7 @@ func NewOapiChatMessageRecallRequest() *OapiChatMessageRecallRequest {
 }
 
 type OapiChatMessageRecallRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatMessageRecallResponse
 	Chatid          string

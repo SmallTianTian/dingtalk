@@ -10,7 +10,7 @@ func NewOapiImGroupappSysmsgSendRequest() *OapiImGroupappSysmsgSendRequest {
 }
 
 type OapiImGroupappSysmsgSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiImGroupappSysmsgSendResponse
 	MsgKey             string

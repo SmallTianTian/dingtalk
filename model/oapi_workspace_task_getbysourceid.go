@@ -10,7 +10,7 @@ func NewOapiWorkspaceTaskGetbysourceidRequest() *OapiWorkspaceTaskGetbysourceidR
 }
 
 type OapiWorkspaceTaskGetbysourceidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiWorkspaceTaskGetbysourceidResponse
 	AgentId         int64

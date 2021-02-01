@@ -9,7 +9,7 @@ func NewOapiMicroappListByUseridRequest() *OapiMicroappListByUseridRequest {
 }
 
 type OapiMicroappListByUseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappListByUseridResponse
 	TopHttpMethod   string
@@ -62,8 +62,6 @@ func (this *OapiMicroappListByUseridRequest) GetTaobaoResp() *taobao.TaobaoRespo
 type OapiMicroappListByUseridResponse struct {
 	taobao.TaobaoResponse
 	AppList []Applist `json:"appList,omitempty"`
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
 }
 type Applist struct {
 	AgentId        int64  `json:"agentId,omitempty"`

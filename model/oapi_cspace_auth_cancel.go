@@ -10,7 +10,7 @@ func NewOapiCspaceAuthCancelRequest() *OapiCspaceAuthCancelRequest {
 }
 
 type OapiCspaceAuthCancelRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCspaceAuthCancelResponse
 	AgentId         int64

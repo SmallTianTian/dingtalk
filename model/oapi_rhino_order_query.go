@@ -11,7 +11,7 @@ func NewOapiRhinoOrderQueryRequest() *OapiRhinoOrderQueryRequest {
 }
 
 type OapiRhinoOrderQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoOrderQueryResponse
 	Req             string

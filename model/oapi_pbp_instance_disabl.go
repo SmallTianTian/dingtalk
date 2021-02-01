@@ -10,7 +10,7 @@ func NewOapiPbpInstanceDisableRequest() *OapiPbpInstanceDisableRequest {
 }
 
 type OapiPbpInstanceDisableRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPbpInstanceDisableResponse
 	BizId           string

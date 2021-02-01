@@ -10,7 +10,7 @@ func NewOapiKacDatavAnnualReportGetRequest() *OapiKacDatavAnnualReportGetRequest
 }
 
 type OapiKacDatavAnnualReportGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiKacDatavAnnualReportGetResponse
 	DeptId          int64

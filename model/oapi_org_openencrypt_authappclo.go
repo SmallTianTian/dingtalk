@@ -9,7 +9,7 @@ func NewOapiOrgOpenencryptAuthappcloseRequest() *OapiOrgOpenencryptAuthappcloseR
 }
 
 type OapiOrgOpenencryptAuthappcloseRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                 OapiOrgOpenencryptAuthappcloseResponse
 	TopAuthMicroAppClose string

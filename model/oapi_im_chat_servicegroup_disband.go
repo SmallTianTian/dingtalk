@@ -10,7 +10,7 @@ func NewOapiImChatServicegroupDisbandRequest() *OapiImChatServicegroupDisbandReq
 }
 
 type OapiImChatServicegroupDisbandRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImChatServicegroupDisbandResponse
 	ChatId          string

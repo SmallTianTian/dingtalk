@@ -10,7 +10,7 @@ func NewOapiProcessGetByNameRequest() *OapiProcessGetByNameRequest {
 }
 
 type OapiProcessGetByNameRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessGetByNameResponse
 	Name            string
@@ -65,7 +65,6 @@ func (this *OapiProcessGetByNameRequest) GetTaobaoResp() *taobao.TaobaoResponse 
 
 type OapiProcessGetByNameResponse struct {
 	taobao.TaobaoResponse
-	Errcode     int64  `json:"errcode,omitempty"`
-	Errmsg      string `json:"errmsg,omitempty"`
+
 	ProcessCode string `json:"process_code,omitempty"`
 }

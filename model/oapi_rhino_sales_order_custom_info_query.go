@@ -11,7 +11,7 @@ func NewOapiRhinoSalesOrderCustomInfoQueryRequest() *OapiRhinoSalesOrderCustomIn
 }
 
 type OapiRhinoSalesOrderCustomInfoQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoSalesOrderCustomInfoQueryResponse
 	Req             string

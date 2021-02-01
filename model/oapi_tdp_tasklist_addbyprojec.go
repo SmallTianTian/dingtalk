@@ -10,7 +10,7 @@ func NewOapiTdpTasklistAddbyprojectRequest() *OapiTdpTasklistAddbyprojectRequest
 }
 
 type OapiTdpTasklistAddbyprojectRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpTasklistAddbyprojectResponse
 	MicroappAgentId int64

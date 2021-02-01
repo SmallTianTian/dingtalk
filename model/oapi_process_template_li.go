@@ -9,7 +9,7 @@ func NewOapiProcessTemplateListRequest() *OapiProcessTemplateListRequest {
 }
 
 type OapiProcessTemplateListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessTemplateListResponse
 	Offset          int64

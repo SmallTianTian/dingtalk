@@ -10,7 +10,7 @@ func NewOapiRhinoHumanresEmployeeProcessCapacityQueryRequest() *OapiRhinoHumanre
 }
 
 type OapiRhinoHumanresEmployeeProcessCapacityQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                           OapiRhinoHumanresEmployeeProcessCapacityQueryResponse
 	Category                       string
@@ -97,8 +97,7 @@ func (this *OapiRhinoHumanresEmployeeProcessCapacityQueryRequest) GetTaobaoResp(
 
 type OapiRhinoHumanresEmployeeProcessCapacityQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64                                 `json:"errcode,omitempty"`
-	Errmsg          string                                `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string                                `json:"externalMsgInfo,omitempty"`
 	Hsfcode         int64                                 `json:"hsfcode,omitempty"`
 	Model           []EmployeeProcessCapacityStatisticDto `json:"model,omitempty"`

@@ -10,7 +10,7 @@ func NewOapiMcsConferenceCreateRequest() *OapiMcsConferenceCreateRequest {
 }
 
 type OapiMcsConferenceCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiMcsConferenceCreateResponse
 	BizKey           string

@@ -9,7 +9,7 @@ func NewOapiRhinoMosSpaceWorkerCheckOutRequest() *OapiRhinoMosSpaceWorkerCheckOu
 }
 
 type OapiRhinoMosSpaceWorkerCheckOutRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoMosSpaceWorkerCheckOutResponse
 	Request         string

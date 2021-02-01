@@ -10,7 +10,7 @@ func NewOapiEnterpriseFamilydrListRequest() *OapiEnterpriseFamilydrListRequest {
 }
 
 type OapiEnterpriseFamilydrListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEnterpriseFamilydrListResponse
 	CorpId          string

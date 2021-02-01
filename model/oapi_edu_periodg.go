@@ -10,7 +10,7 @@ func NewOapiEduPeriodGetRequest() *OapiEduPeriodGetRequest {
 }
 
 type OapiEduPeriodGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduPeriodGetResponse
 	PeriodId        int64

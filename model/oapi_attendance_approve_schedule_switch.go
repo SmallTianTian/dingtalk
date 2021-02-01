@@ -10,7 +10,7 @@ func NewOapiAttendanceApproveScheduleSwitchRequest() *OapiAttendanceApproveSched
 }
 
 type OapiAttendanceApproveScheduleSwitchRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiAttendanceApproveScheduleSwitchResponse
 	ApplyShiftId        int64

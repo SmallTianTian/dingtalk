@@ -9,7 +9,7 @@ func NewOapiReportGetunreadcountRequest() *OapiReportGetunreadcountRequest {
 }
 
 type OapiReportGetunreadcountRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiReportGetunreadcountResponse
 	TopHttpMethod   string
@@ -61,7 +61,5 @@ func (this *OapiReportGetunreadcountRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiReportGetunreadcountResponse struct {
 	taobao.TaobaoResponse
-	Count   int64  `json:"count,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Count int64 `json:"count,omitempty"`
 }

@@ -10,7 +10,7 @@ func NewOapiAppstoreOrdersInquiryRequest() *OapiAppstoreOrdersInquiryRequest {
 }
 
 type OapiAppstoreOrdersInquiryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAppstoreOrdersInquiryResponse
 	Corpid          string

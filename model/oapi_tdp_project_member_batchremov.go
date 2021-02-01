@@ -10,7 +10,7 @@ func NewOapiTdpProjectMemberBatchremoveRequest() *OapiTdpProjectMemberBatchremov
 }
 
 type OapiTdpProjectMemberBatchremoveRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpProjectMemberBatchremoveResponse
 	MicroappAgentId int64

@@ -10,7 +10,7 @@ func NewOapiBipaasGenericRequest() *OapiBipaasGenericRequest {
 }
 
 type OapiBipaasGenericRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiBipaasGenericResponse
 	Request         string

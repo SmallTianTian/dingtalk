@@ -10,7 +10,7 @@ func NewOapiMessageCorpconversationSendbytemplateRequest() *OapiMessageCorpconve
 }
 
 type OapiMessageCorpconversationSendbytemplateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageCorpconversationSendbytemplateResponse
 	AgentId         int64

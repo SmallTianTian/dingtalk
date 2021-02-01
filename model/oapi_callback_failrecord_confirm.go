@@ -10,7 +10,7 @@ func NewOapiCallbackFailrecordConfirmRequest() *OapiCallbackFailrecordConfirmReq
 }
 
 type OapiCallbackFailrecordConfirmRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallbackFailrecordConfirmResponse
 	IdList          string
@@ -66,6 +66,4 @@ func (this *OapiCallbackFailrecordConfirmRequest) GetTaobaoResp() *taobao.Taobao
 type OapiCallbackFailrecordConfirmResponse struct {
 	taobao.TaobaoResponse
 	ConfirmList []int64 `json:"confirm_list,omitempty"`
-	Errcode     int64   `json:"errcode,omitempty"`
-	Errmsg      string  `json:"errmsg,omitempty"`
 }

@@ -9,7 +9,7 @@ func NewOapiReportTemplateListbyuseridRequest() *OapiReportTemplateListbyuseridR
 }
 
 type OapiReportTemplateListbyuseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiReportTemplateListbyuseridResponse
 	Offset          int64

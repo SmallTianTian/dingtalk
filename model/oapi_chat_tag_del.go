@@ -10,7 +10,7 @@ func NewOapiChatTagDeleteRequest() *OapiChatTagDeleteRequest {
 }
 
 type OapiChatTagDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatTagDeleteResponse
 	Chatid          string

@@ -9,7 +9,7 @@ func NewOapiKacDatavGroupGetRequest() *OapiKacDatavGroupGetRequest {
 }
 
 type OapiKacDatavGroupGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiKacDatavGroupGetResponse
 	Request         string

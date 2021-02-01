@@ -10,7 +10,7 @@ func NewOapiHealthStepinfoGetuserstatusRequest() *OapiHealthStepinfoGetuserstatu
 }
 
 type OapiHealthStepinfoGetuserstatusRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHealthStepinfoGetuserstatusResponse
 	TopHttpMethod   string

@@ -9,7 +9,7 @@ func NewOapiCspaceAddRequest() *OapiCspaceAddRequest {
 }
 
 type OapiCspaceAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCspaceAddResponse
 	AgentId         string
@@ -109,7 +109,5 @@ func (this *OapiCspaceAddRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 
 type OapiCspaceAddResponse struct {
 	taobao.TaobaoResponse
-	Dentry  string `json:"dentry,omitempty"`
-	Errcode int64  `json:"errcode,omitempty"`
-	Errmsg  string `json:"errmsg,omitempty"`
+	Dentry string `json:"dentry,omitempty"`
 }

@@ -10,7 +10,7 @@ func NewOapiAttendanceShiftUpdatepunchesRequest() *OapiAttendanceShiftUpdatepunc
 }
 
 type OapiAttendanceShiftUpdatepunchesRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceShiftUpdatepunchesResponse
 	OpUserId        string

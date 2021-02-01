@@ -10,7 +10,7 @@ func NewOapiProcessSyncRequest() *OapiProcessSyncRequest {
 }
 
 type OapiProcessSyncRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp              OapiProcessSyncResponse
 	AgentId           int64

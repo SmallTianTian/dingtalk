@@ -10,7 +10,7 @@ func NewOapiServicegroupMessageSendRequest() *OapiServicegroupMessageSendRequest
 }
 
 type OapiServicegroupMessageSendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                OapiServicegroupMessageSendResponse
 	ConversationMessage string

@@ -10,7 +10,7 @@ func NewOapiRhinoTransportMaplocationQueryRequest() *OapiRhinoTransportMaplocati
 }
 
 type OapiRhinoTransportMaplocationQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiRhinoTransportMaplocationQueryResponse
 	IncludeConfig   bool
@@ -89,8 +89,7 @@ func (this *OapiRhinoTransportMaplocationQueryRequest) GetTaobaoResp() *taobao.T
 
 type OapiRhinoTransportMaplocationQueryResponse struct {
 	taobao.TaobaoResponse
-	Errcode         int64                     `json:"errcode,omitempty"`
-	Errmsg          string                    `json:"errmsg,omitempty"`
+
 	ExternalMsgInfo string                    `json:"external_msg_info,omitempty"`
 	Model           []MapLocationDetailResult `json:"model,omitempty"`
 	Success         bool                      `json:"success,omitempty"`

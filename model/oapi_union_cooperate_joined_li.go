@@ -10,7 +10,7 @@ func NewOapiUnionCooperateJoinedListRequest() *OapiUnionCooperateJoinedListReque
 }
 
 type OapiUnionCooperateJoinedListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUnionCooperateJoinedListResponse
 	Status          int64

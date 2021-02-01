@@ -10,7 +10,7 @@ func NewOapiImpaasConversationModifymemberRequest() *OapiImpaasConversationModif
 }
 
 type OapiImpaasConversationModifymemberRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasConversationModifymemberResponse
 	Channel         string

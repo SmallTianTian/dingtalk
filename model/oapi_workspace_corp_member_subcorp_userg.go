@@ -10,7 +10,7 @@ func NewOapiWorkspaceCorpMemberSubcorpUserGetRequest() *OapiWorkspaceCorpMemberS
 }
 
 type OapiWorkspaceCorpMemberSubcorpUserGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiWorkspaceCorpMemberSubcorpUserGetResponse
 	BelongOrgUserids string

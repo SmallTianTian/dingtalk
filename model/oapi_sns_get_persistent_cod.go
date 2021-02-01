@@ -9,7 +9,7 @@ func NewOapiSnsGetPersistentCodeRequest() *OapiSnsGetPersistentCodeRequest {
 }
 
 type OapiSnsGetPersistentCodeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSnsGetPersistentCodeResponse
 	TmpAuthCode     string
@@ -61,8 +61,7 @@ func (this *OapiSnsGetPersistentCodeRequest) GetTaobaoResp() *taobao.TaobaoRespo
 
 type OapiSnsGetPersistentCodeResponse struct {
 	taobao.TaobaoResponse
-	Errcode        int64  `json:"errcode,omitempty"`
-	Errmsg         string `json:"errmsg,omitempty"`
+
 	Openid         string `json:"openid,omitempty"`
 	PersistentCode string `json:"persistent_code,omitempty"`
 	Unionid        string `json:"unionid,omitempty"`

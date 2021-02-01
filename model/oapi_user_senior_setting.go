@@ -10,7 +10,7 @@ func NewOapiUserSeniorSettingRequest() *OapiUserSeniorSettingRequest {
 }
 
 type OapiUserSeniorSettingRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserSeniorSettingResponse
 	Open            bool

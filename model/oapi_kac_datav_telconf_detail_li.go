@@ -9,7 +9,7 @@ func NewOapiKacDatavTelconfDetailListRequest() *OapiKacDatavTelconfDetailListReq
 }
 
 type OapiKacDatavTelconfDetailListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiKacDatavTelconfDetailListResponse
 	Request         string

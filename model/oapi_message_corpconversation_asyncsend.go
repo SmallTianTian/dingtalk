@@ -10,7 +10,7 @@ func NewOapiMessageCorpconversationAsyncsendRequest() *OapiMessageCorpconversati
 }
 
 type OapiMessageCorpconversationAsyncsendRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMessageCorpconversationAsyncsendResponse
 	AgentId         int64

@@ -9,7 +9,7 @@ func NewOapiProcessWorkrecordDeleteRequest() *OapiProcessWorkrecordDeleteRequest
 }
 
 type OapiProcessWorkrecordDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessWorkrecordDeleteResponse
 	Request         string

@@ -10,7 +10,7 @@ func NewOapiChatMemberFriendswitchUpdateRequest() *OapiChatMemberFriendswitchUpd
 }
 
 type OapiChatMemberFriendswitchUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiChatMemberFriendswitchUpdateResponse
 	Chatid          string

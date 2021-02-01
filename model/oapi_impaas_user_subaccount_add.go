@@ -9,7 +9,7 @@ func NewOapiImpaasUserSubaccountAddRequest() *OapiImpaasUserSubaccountAddRequest
 }
 
 type OapiImpaasUserSubaccountAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiImpaasUserSubaccountAddResponse
 	Request         string

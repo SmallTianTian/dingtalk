@@ -12,7 +12,7 @@ func NewOapiPlanetomFeedsStatisticGetRequest() *OapiPlanetomFeedsStatisticGetReq
 }
 
 type OapiPlanetomFeedsStatisticGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiPlanetomFeedsStatisticGetResponse
 	FeedId          string

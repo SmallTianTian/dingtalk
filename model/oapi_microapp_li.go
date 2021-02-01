@@ -9,7 +9,7 @@ func NewOapiMicroappListRequest() *OapiMicroappListRequest {
 }
 
 type OapiMicroappListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMicroappListResponse
 	TopHttpMethod   string
@@ -54,6 +54,4 @@ func (this *OapiMicroappListRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 type OapiMicroappListResponse struct {
 	taobao.TaobaoResponse
 	AppList []Applist `json:"appList,omitempty"`
-	Errcode int64     `json:"errcode,omitempty"`
-	Errmsg  string    `json:"errmsg,omitempty"`
 }

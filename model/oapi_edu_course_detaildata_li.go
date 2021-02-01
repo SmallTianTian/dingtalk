@@ -10,7 +10,7 @@ func NewOapiEduCourseDetaildataListRequest() *OapiEduCourseDetaildataListRequest
 }
 
 type OapiEduCourseDetaildataListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduCourseDetaildataListResponse
 	CategoryCode    string

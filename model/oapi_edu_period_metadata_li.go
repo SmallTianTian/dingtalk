@@ -10,7 +10,7 @@ func NewOapiEduPeriodMetadataListRequest() *OapiEduPeriodMetadataListRequest {
 }
 
 type OapiEduPeriodMetadataListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiEduPeriodMetadataListResponse
 	AreaCode        string

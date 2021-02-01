@@ -9,7 +9,7 @@ func NewOapiOrgUnionBranchGetRequest() *OapiOrgUnionBranchGetRequest {
 }
 
 type OapiOrgUnionBranchGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiOrgUnionBranchGetResponse
 	TopHttpMethod   string

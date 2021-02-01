@@ -10,7 +10,7 @@ func NewOapiCalendarListRequest() *OapiCalendarListRequest {
 }
 
 type OapiCalendarListRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiCalendarListResponse
 	CalendarFolderId string

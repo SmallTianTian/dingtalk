@@ -9,7 +9,7 @@ func NewOapiContactRolevisibilityGetRequest() *OapiContactRolevisibilityGetReque
 }
 
 type OapiContactRolevisibilityGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiContactRolevisibilityGetResponse
 	RoleId          int64

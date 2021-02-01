@@ -10,7 +10,7 @@ func NewOapiAttendanceShiftDeleteRequest() *OapiAttendanceShiftDeleteRequest {
 }
 
 type OapiAttendanceShiftDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceShiftDeleteResponse
 	OpUserId        string

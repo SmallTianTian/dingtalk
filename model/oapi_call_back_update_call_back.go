@@ -9,7 +9,7 @@ func NewOapiCallBackUpdateCallBackRequest() *OapiCallBackUpdateCallBackRequest {
 }
 
 type OapiCallBackUpdateCallBackRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCallBackUpdateCallBackResponse
 	AesKey          string

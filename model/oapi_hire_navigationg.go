@@ -10,7 +10,7 @@ func NewOapiHireNavigationGetRequest() *OapiHireNavigationGetRequest {
 }
 
 type OapiHireNavigationGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHireNavigationGetResponse
 	TopHttpMethod   string

@@ -10,7 +10,7 @@ func NewOapiRhinoMosExecPerformFinishRequest() *OapiRhinoMosExecPerformFinishReq
 }
 
 type OapiRhinoMosExecPerformFinishRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp                      OapiRhinoMosExecPerformFinishResponse
 	DeviceIds                 string

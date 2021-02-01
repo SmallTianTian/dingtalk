@@ -10,7 +10,7 @@ func NewOapiFinanceLoanBankcardDeleteRequest() *OapiFinanceLoanBankcardDeleteReq
 }
 
 type OapiFinanceLoanBankcardDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFinanceLoanBankcardDeleteResponse
 	BankCode        string

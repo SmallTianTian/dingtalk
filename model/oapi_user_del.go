@@ -9,7 +9,7 @@ func NewOapiUserDeleteRequest() *OapiUserDeleteRequest {
 }
 
 type OapiUserDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserDeleteResponse
 	TopHttpMethod   string

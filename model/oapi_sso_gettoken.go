@@ -9,7 +9,7 @@ func NewOapiSsoGettokenRequest() *OapiSsoGettokenRequest {
 }
 
 type OapiSsoGettokenRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSsoGettokenResponse
 	Corpid          string
@@ -70,6 +70,4 @@ func (this *OapiSsoGettokenRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 type OapiSsoGettokenResponse struct {
 	taobao.TaobaoResponse
 	AccessToken string `json:"access_token,omitempty"`
-	Errcode     int64  `json:"errcode,omitempty"`
-	Errmsg      string `json:"errmsg,omitempty"`
 }

@@ -9,7 +9,7 @@ func NewOapiSmartdeviceDeviceUpdatenickRequest() *OapiSmartdeviceDeviceUpdatenic
 }
 
 type OapiSmartdeviceDeviceUpdatenickRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp               OapiSmartdeviceDeviceUpdatenickResponse
 	DeviceNickModifyVo string

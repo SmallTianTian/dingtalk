@@ -9,7 +9,7 @@ func NewOapiProcessDentryAuthRequest() *OapiProcessDentryAuthRequest {
 }
 
 type OapiProcessDentryAuthRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessDentryAuthResponse
 	Request         string

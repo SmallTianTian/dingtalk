@@ -10,7 +10,7 @@ func NewOapiMicroappCustomUpdateRequest() *OapiMicroappCustomUpdateRequest {
 }
 
 type OapiMicroappCustomUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp             OapiMicroappCustomUpdateResponse
 	AgentId          int64

@@ -10,7 +10,7 @@ func NewOapiDingpayBillQuerytagRequest() *OapiDingpayBillQuerytagRequest {
 }
 
 type OapiDingpayBillQuerytagRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingpayBillQuerytagResponse
 	BizCode         string

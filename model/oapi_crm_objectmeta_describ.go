@@ -10,7 +10,7 @@ func NewOapiCrmObjectmetaDescribeRequest() *OapiCrmObjectmetaDescribeRequest {
 }
 
 type OapiCrmObjectmetaDescribeRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmObjectmetaDescribeResponse
 	Name            string

@@ -10,7 +10,7 @@ func NewCorpHealthStepinfoListbyuseridRequest() *CorpHealthStepinfoListbyuseridR
 }
 
 type CorpHealthStepinfoListbyuseridRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            CorpHealthStepinfoListbyuseridResponse
 	StatDate        string

@@ -9,7 +9,7 @@ func NewOapiAttendanceGroupDeletebyidRequest() *OapiAttendanceGroupDeletebyidReq
 }
 
 type OapiAttendanceGroupDeletebyidRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupDeletebyidResponse
 	GroupId         int64

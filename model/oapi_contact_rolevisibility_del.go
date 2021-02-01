@@ -9,7 +9,7 @@ func NewOapiContactRolevisibilityDeleteRequest() *OapiContactRolevisibilityDelet
 }
 
 type OapiContactRolevisibilityDeleteRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiContactRolevisibilityDeleteResponse
 	RoleId          int64

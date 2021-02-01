@@ -9,7 +9,7 @@ func NewOapiCrmAppUpdateRequest() *OapiCrmAppUpdateRequest {
 }
 
 type OapiCrmAppUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmAppUpdateResponse
 	Request         string

@@ -9,7 +9,7 @@ func NewOapiProcessWorkrecordForwardCreateRequest() *OapiProcessWorkrecordForwar
 }
 
 type OapiProcessWorkrecordForwardCreateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiProcessWorkrecordForwardCreateResponse
 	Request         string

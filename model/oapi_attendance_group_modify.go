@@ -10,7 +10,7 @@ func NewOapiAttendanceGroupModifyRequest() *OapiAttendanceGroupModifyRequest {
 }
 
 type OapiAttendanceGroupModifyRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiAttendanceGroupModifyResponse
 	OpUserId        string

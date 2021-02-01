@@ -10,7 +10,7 @@ func NewOapiFaceauthGetRequest() *OapiFaceauthGetRequest {
 }
 
 type OapiFaceauthGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiFaceauthGetResponse
 	AppBizId        string

@@ -10,7 +10,7 @@ func NewOapiDingmiCommonO2oPushRequest() *OapiDingmiCommonO2oPushRequest {
 }
 
 type OapiDingmiCommonO2oPushRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiDingmiCommonO2oPushResponse
 	ChatbotId       string

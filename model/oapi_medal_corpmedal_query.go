@@ -1,9 +1,10 @@
 package model
 
 import (
+	"time"
+
 	"github.com/SmallTianTian/dingtalk/model/taobao"
 	"github.com/SmallTianTian/dingtalk/utils"
-	"time"
 )
 
 func NewOapiMedalCorpmedalQueryRequest() *OapiMedalCorpmedalQueryRequest {
@@ -11,7 +12,7 @@ func NewOapiMedalCorpmedalQueryRequest() *OapiMedalCorpmedalQueryRequest {
 }
 
 type OapiMedalCorpmedalQueryRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiMedalCorpmedalQueryResponse
 	TopHttpMethod   string

@@ -9,7 +9,7 @@ func NewOapiUserGetuserinfoRequest() *OapiUserGetuserinfoRequest {
 }
 
 type OapiUserGetuserinfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiUserGetuserinfoResponse
 	Code            string
@@ -62,8 +62,7 @@ func (this *OapiUserGetuserinfoRequest) GetTaobaoResp() *taobao.TaobaoResponse {
 type OapiUserGetuserinfoResponse struct {
 	taobao.TaobaoResponse
 	DeviceId string `json:"deviceId,omitempty"`
-	Errcode  int64  `json:"errcode,omitempty"`
-	Errmsg   string `json:"errmsg,omitempty"`
+
 	IsSys    bool   `json:"is_sys,omitempty"`
 	SysLevel string `json:"sys_level,omitempty"`
 	Userid   string `json:"userid,omitempty"`

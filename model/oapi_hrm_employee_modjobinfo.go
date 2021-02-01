@@ -10,7 +10,7 @@ func NewOapiHrmEmployeeModjobinfoRequest() *OapiHrmEmployeeModjobinfoRequest {
 }
 
 type OapiHrmEmployeeModjobinfoRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiHrmEmployeeModjobinfoResponse
 	HrmApiJobModel  string

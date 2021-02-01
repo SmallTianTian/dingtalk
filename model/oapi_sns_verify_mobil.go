@@ -9,7 +9,7 @@ func NewOapiSnsVerifyMobileRequest() *OapiSnsVerifyMobileRequest {
 }
 
 type OapiSnsVerifyMobileRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSnsVerifyMobileResponse
 	Mobile          string

@@ -10,7 +10,7 @@ func NewOapiCrmMenuGetRequest() *OapiCrmMenuGetRequest {
 }
 
 type OapiCrmMenuGetRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiCrmMenuGetResponse
 	ClientType      string

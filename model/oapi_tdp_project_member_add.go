@@ -10,7 +10,7 @@ func NewOapiTdpProjectMemberAddRequest() *OapiTdpProjectMemberAddRequest {
 }
 
 type OapiTdpProjectMemberAddRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiTdpProjectMemberAddResponse
 	MicroappAgentId int64

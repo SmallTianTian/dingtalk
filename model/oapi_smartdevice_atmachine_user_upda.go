@@ -9,7 +9,7 @@ func NewOapiSmartdeviceAtmachineUserUpdateRequest() *OapiSmartdeviceAtmachineUse
 }
 
 type OapiSmartdeviceAtmachineUserUpdateRequest struct {
-	taobao.TaobaoRequest
+	taobao.SimpleTaobaoRequest
 	taobao.SimpleResponse
 	Resp            OapiSmartdeviceAtmachineUserUpdateResponse
 	Param           string
