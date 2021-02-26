@@ -124,7 +124,7 @@ func (client *DefaultDingTalkClient) executeOApi(req taobao.TaobaoRequest, sessi
 
 	var data *taobao.HttpResponse
 	var err error
-	if "GET" == req.GetApiMethodName() {
+	if "GET" == req.GetTopHttpMethod() {
 		data, err = taobao.DoGet(fullUrl, appParams, client.timeout)
 	} else if uq, ok := req.(taobao.TaobaoUploadRequest); ok {
 		fmt.Println(uq)

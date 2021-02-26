@@ -64,6 +64,6 @@ type OapiUserGetuserinfoResponse struct {
 	DeviceId string `json:"deviceId,omitempty"`
 
 	IsSys    bool   `json:"is_sys,omitempty"`
-	SysLevel string `json:"sys_level,omitempty"`
+	SysLevel int    `json:"sys_level,omitempty"`
 	Userid   string `json:"userid,omitempty"`
 }

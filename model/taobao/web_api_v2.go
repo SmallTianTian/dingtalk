@@ -103,7 +103,7 @@ func DoGet(url string, params map[string]string, timeout time.Duration) (*HttpRe
 
 	if len(params) > 0 {
 		if query := buildQuery(params); strings.Contains(url, "?") {
-			url += query
+			url += "&" + query
 		} else {
 			url = url + "?" + query
 		}
